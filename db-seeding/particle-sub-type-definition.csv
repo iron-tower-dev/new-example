@@ -1,0 +1,49 @@
+﻿ParticleSubTypeCategoryID,Value,Description,Active,SortOrder
+1,1,1,1,0
+1,2,2,1,1
+1,3,3,1,2
+1,4,4,1,3
+2,1,NA,1,0
+2,2,Blue,1,1
+2,3,Straw,1,2
+2,4,Purple,1,3
+2,5,No Change,1,4
+2,6,Melted,1,5
+2,7,Charred,1,6
+3,1,Few,1,0
+3,2,Moderate,1,1
+3,3,Many,1,2
+3,4,Heavy,1,3
+4,1,"Fine, &lt;5&micro;m",1,0
+4,2,"Small, 5 to 15&micro;m",1,1
+4,3,"Medium, 15 to 40&micro;m",1,2
+4,4,"Large, 40 to 100&micro;m",1,3
+4,5,"Huge, &gt;100&micro;m",1,4
+5,1,"Fine, &lt;5&micro;m",1,0
+5,2,"Small, 5 to 15&micro;m",1,1
+5,3,"Medium, 15 to 40&micro;m",1,2
+5,4,"Large, 40 to 100&micro;m",1,3
+5,5,"Huge, &gt;100&micro;m",1,4
+6,1,Red,1,0
+6,2,Black,1,1
+6,3,Tempered,1,2
+6,4,Metallic,1,3
+6,5,Straw,1,4
+6,6,Copper,1,5
+6,7,Brass,1,6
+6,8,Other Color,1,7
+7,1,Bright or Reflective,1,0
+7,2,Dull or Oxidized,1,1
+7,3,Pitted,1,2
+7,4,Striated,1,3
+7,5,Smeared,1,4
+7,6,Amorphous,1,5
+7,7,Other Texture,1,6
+8,1,Ferrous Metal,1,0
+8,2,Cupric Metal,1,1
+8,3,Other Metal,1,2
+8,4,Dust,1,3
+8,5,Organic,1,4
+8,6,Sludge,1,5
+8,7,Paint Chips,1,6
+8,8,Other Material,1,7

@@ -1,0 +1,1003 @@
+﻿eq_tag_num,lube_component_code,lube_location_code,lcde_id,sample_id,disposition,wr_num,comments,completed_date,enterID,reviewID,PDFFile
+2MCDNP01B,002,003,"97-CD-7442  ",7442,0," ",Oil acceptance criteria modeled after Turbo 68 oil.,1997-08-29 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01A,002,003,"97-RC-7780  ",7780,0," ","Oil RBOT time of 2685 minutes.  FTIR was satisfactory.  Particle count was high.  A recommendation to the maint. team/engineer was made to clean oil.  Oil is satisfactory for additional use. ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01A,002,001,"97-TC-7511  ",7511,0," "," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+3JSGAUV0177,005,009,"97-SG-7337  ",7337,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2MSPBP01,002,003,"97-SP-7361  ",7361,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MSIAP03,002,003,"97-SI-7615  ",7615,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,006,"97-CH-8110  ",8110,0," "," ",1997-11-05 00:00:00.000,"0         ","0         ",NULL
+3MDGNC02B,003,006,"97-DG-8303  ",8303,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01A,002,002,"97-TC-8556  ",8556,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01A,002,002,"98-NC-8468  ",8468,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+1MAFBP01,002,001,"98-AF-8601  ",8601,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01A,002,004,"98-PW-8141  ",8141,0," ",Higher than expected water.,1998-01-21 00:00:00.000,"0         ","0         ",NULL
+1MSCNP09,138,009,"98-SC-8727  ",8727,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+2MSCNP13,064,040,"98-SC-8833  ",8833,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+1MZCNG06B,031,009,"98-ZC-8778  ",8778,2,939749,ACID NUMBER OF 2.08....CHANGE OIL,1998-03-12 00:00:00.000,"0         ","0         ",NULL
+1MARNP01B,001,002,"98-AR-8958  ",8958,2,940482,Abrasive material found in oil.,1998-03-26 00:00:00.000,"0         ","0         ",NULL
+2MARNP01A,001,002,"98-AR-8932  ",8932,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01B,011,060,"98-OS-8944  ",8944,0," ",System RBOT time exceeds 100 minutes. NAS 9 criteria satisfied.,1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,006,"98-CH-9132  ",9132,2,942566,RBOT TEST OF 147 MINUTES,1998-05-05 00:00:00.000,"0         ","0         ",NULL
+2MIANC01C,003,006,"98-IA-9757  ",9757,2,824726,change oil due to viscosity - incorrect oil added (wr # 824726),1900-01-01 00:00:00.000,"0         ","0         ",NULL
+2MCHAP01,001,006,"98-CH-9729  ",9729,0," "," ",1998-07-01 00:00:00.000,"0         ","0         ",NULL
+2MNCNP01A,002,002,"98-NC-9968  ",9968,0," ",Viscosity acceptance criteria should be for 100 ISO oil.  Oil is sat.,1998-07-21 00:00:00.000,"0         ","0         ",NULL
+3MARNP01D,001,002,"98-AR-10153 ",10153,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MTCNP01A,002,002,"98-TC-9960  ",9960,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01A,001,001,"98-TC-10120 ",10120,0," "," ",1998-07-28 00:00:00.000,"0         ","0         ",NULL
+3MCWNA01L,031,009,"98-CW-9665  ",9665,1,NULL,NULL,1998-07-30 00:00:00.000,"0         ","0         ",NULL
+3MCWNA03D,031,009,"98-CW-9689  ",9689,0," ",Viscosity satisfactory per CRDR 980404,1998-07-30 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03M,031,009,"98-CW-10217 ",10217,0," ",oil viscosity is low.  Wear levels are low. Monitor at present intervals.,1998-08-20 00:00:00.000,"0         ","0         ",NULL
+2MCWNA01E,031,009,"98-CW-10342 ",10342,0," ",Oil is expected to perform satisfactory until next oil change.  See CRDR 980404,1998-09-03 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03B,031,009,"98-CW-10371 ",10371,2,948574," ",1900-01-01 00:00:00.000,"0         ","0         ",NULL
+2MCWNA01O,031,009,"98-CW-10352 ",10352,2,948572,change oil...see crdr 980404,1998-09-21 00:00:00.000,"0         ","0         ",NULL
+3MPWNP01A,002,004,"98-PW-10600 ",10600,0," ","Viscosity is slightly high, however acceptable. The sample interval is satisfactory to monitor this condition.",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01D,002,003,"98-RC-10641 ",10641,1,000000,"RUST - PASS, PARTICLE COUNT VERY HIGH. RESAMPLE REQUESTED AFTER FIELD PURIFICATION. OIL OTHERWISE ACCEPTABLE.",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+2MCWNA01J,031,009,"98-CW-10347 ",10347,2,948572,change oil due to viscosity drop,1998-10-14 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01B,002,001,"98-NC-10889 ",10889,0," "," ",1998-10-22 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01A,002,003,"98-CW-11026 ",11026,0," "," ",1998-11-23 00:00:00.000,"0         ","0         ",NULL
+3MARNP01C,001,002,"98-AR-11210 ",11210,0," "," ",1998-12-04 00:00:00.000,"0         ","0         ",NULL
+2MAFBP01,001,001,"98-AF-11291 ",11291,0," "," ",1998-12-22 00:00:00.000,"0         ","0         ",NULL
+3MSCNP13,064,040,"99-SC-11306 ",11306,0," "," ",1999-01-19 00:00:00.000,"0         ","0         ",NULL
+2JSGEUV0181,005,009,"99-SG-11680 ",11680,0," "," ",1999-02-04 00:00:00.000,"0         ","0         ",NULL
+2MCHEP01,001,007,"99-CH-11538 ",11538,0," "," ",1999-02-16 00:00:00.000,"0         ","0         ",NULL
+2MNCNP01B,002,002,"99-NC-11840 ",11840,0," "," ",1999-03-09 00:00:00.000,"0         ","0         ",NULL
+2NSRNM01,148,009,"99-SR-11547 ",11547,0," "," ",1999-03-11 00:00:00.000,"0         ","0         ",NULL
+2MSCNP14,064,040,"99-SC-11411 ",11411,0," "," ",1999-03-30 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01B,002,003,"99-RC-12001 ",12001,0," ","Rust, cleanliness, filter patch and ferrography acceptable",1999-04-01 00:00:00.000,"0         ","0         ",NULL
+1MIANC01A,003,006,"99-IA-11177 ",11177,0," "," ",1999-04-01 00:00:00.000,"0         ","0         ",NULL
+2JCDNUV0214A,097,040,"99-CD-12070 ",12070,2,957522,wear metals also found in oil,1999-04-07 00:00:00.000,"0         ","0         ",NULL
+2JCWNHV0012,097,040,"99-CW-12043 ",12043,0," "," ",1999-04-13 00:00:00.000,"0         ","0         ",NULL
+2JNCNUV0099,097,040,"99-NC-12287 ",12287,2,958111,incorrect oil in service...crdr written,1999-04-21 00:00:00.000,"0         ","0         ",NULL
+2MSIAP01,002,003,"99-SI-11223 ",11223,0," "," ",1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01A,002,001,"99-NC-12434 ",12434,0," "," ",1999-05-11 00:00:00.000,"0         ","0         ",NULL
+3MSPAP01,002,003,"99-SP-12557 ",12557,0," "," ",1999-05-19 00:00:00.000,"0         ","0         ",NULL
+2MSPBP01,002,004,"99-SP-12623 ",12623,0," "," ",1999-06-11 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01B,002,003,"99-PW-12579 ",12579,0," "," ",1999-06-15 00:00:00.000,"0         ","0         ",NULL
+2MDGAH01,006,009,"99-DG-12685 ",12685,0," ",filter patch test high...engineer notified and recommendation is to monitor condition,1999-07-01 00:00:00.000,"0         ","0         ",NULL
+3MZFNG01,054,047,"99-ZF-12840 ",12840,0," "," ",1999-07-14 00:00:00.000,"0         ","0         ",NULL
+3MAFBP01,001,002,"99-AF-12901 ",12901,0," "," ",1999-08-03 00:00:00.000,"0         ","0         ",NULL
+1MCDNP01C,002,003,"99-CD-12990 ",12990,0," "," ",1999-09-08 00:00:00.000,"0         ","0         ",NULL
+2MWCNE01A,007,009,"99-WC-12864 ",12864,0," ",oil change listed in sims. monitor with next sample to see effect.  water slightly high. monitor with next sample,1999-09-15 00:00:00.000,"0         ","0         ",NULL
+1MZFNG01,033,073,"99-ZF-12958 ",12958,0," "," ",1999-09-16 00:00:00.000,"0         ","0         ",NULL
+2MARNP01B,001,001,"99-AR-13283 ",13283,0," "," ",1999-10-05 00:00:00.000,"0         ","0         ",NULL
+1JCDNHV0199,097,040,"99-CD-13446 ",13446,0," "," ",1999-10-07 00:00:00.000,"0         ","0         ",NULL
+1JCDNHV0029,097,040,"99-CD-13502 ",13502,0," ",ba not used...oil is sat,1999-10-21 00:00:00.000,"0         ","0         ",NULL
+3MIANC02,003,115,"99-IA-13310 ",13310,0," "," ",1999-10-29 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,007,"99-CH-13688 ",13688,0," "," ",1999-11-04 00:00:00.000,"0         ","0         ",NULL
+1MDGBH01,006,009,"99-DG-13839 ",13839,0," ","second straight sample with filter residue at 2.0..trend, oil sat.",1999-12-21 00:00:00.000,"0         ","0         ",NULL
+AMGTNK01A,004,009,"99-GT-13786 ",13786,1,969080,Particle count above criteria...resample,1999-12-22 00:00:00.000,"0         ","0         ",NULL
+2MEDNP01A,002,003,"00-ED-14039 ",14039,0," "," ",2000-01-06 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01B,002,002,"00-TC-14124 ",14124,0," "," ",2000-01-25 00:00:00.000,"0         ","0         ",NULL
+3MLONT02A,016,008,"00-LO-14394 ",14394,0," "," ",2000-03-03 00:00:00.000,"0         ","0         ",NULL
+2MARNP01B,001,002,"00-AR-14604 ",14604,0," "," ",2000-03-15 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,006,"00-CH-14176 ",14176,0," "," ",2000-03-15 00:00:00.000,"0         ","0         ",NULL
+2MZFNG02,169,007,"00-ZF-14360 ",14360,0," "," ",2000-03-16 00:00:00.000,"0         ","0         ",NULL
+1MSIAP03,002,003,"00-SI-14643 ",14643,0," "," ",2000-03-22 00:00:00.000,"0         ","0         ",NULL
+3JCWNHV0009,097,040,"00-CW-14809 ",14809,0," "," ",2000-04-11 00:00:00.000,"0         ","0         ",NULL
+3JFWNHV0073,097,040,"00-FW-14944 ",14944,0," ",Ba not used,2000-04-14 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,007,"00-CH-14794 ",14794,0," "," ",2000-04-27 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01B,001,013,"00-RC-14767 ",14767,1,NULL,NULL,2000-05-03 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01B,011,060,"00-OS-15284 ",15284,0," "," ",2000-06-11 00:00:00.000,"0         ","0         ",NULL
+1JSGEUV0180,005,009,"00-SG-15356 ",15356,0," "," ",2000-07-03 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01A,002,004,"00-PW-15525 ",15525,0," "," ",2000-07-25 00:00:00.000,"0         ","0         ",NULL
+2MAFBP01,002,001,"00-AF-15585 ",15585,0," "," ",2000-07-26 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,007,"00-CH-15590 ",15590,0," "," ",2000-08-11 00:00:00.000,"0         ","0         ",NULL
+3JSGEUV0180,005,009,"00-SG-15641 ",15641,0," "," ",2000-08-15 00:00:00.000,"0         ","0         ",NULL
+3JSGBUV0132,005,009,"00-SG-15637 ",15637,2,231239,high acid number...change oil,2000-08-17 00:00:00.000,"0         ","0         ",NULL
+1JWCNHV0104,097,040,"00-WC-15631 ",15631,0," ",ba not used,2000-08-29 00:00:00.000,"0         ","0         ",NULL
+1JFWNFV0002,005,009,"00-FW-15998 ",15998,2,232452,change oil to remove debris,2000-09-27 00:00:00.000,"0         ","0         ",NULL
+3MCDNP01B,002,003,"00-CD-15828 ",15828,0," "," ",2000-09-28 00:00:00.000,"0         ","0         ",NULL
+2JCDNHV0029,097,040,"00-CD-16073 ",16073,2,232967,debris in oil,2000-10-13 00:00:00.000,"0         ","0         ",NULL
+2JFWNHV0102,097,040,"00-FW-16151 ",16151,0," ",ba not used in this oil..oil is sat,2000-10-20 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01D,001,013,"00-RC-16128 ",16128,0," ",RBOT test well above criteria.  Rust test pass. FTIR ok. cleanliness ok and oil to be cleaned.,2000-10-26 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01B,011,060,"00-OS-16390 ",16390,1,NULL,NULL,2000-11-03 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01B,011,060,"00-OS-16582 ",16582,0," ",advise sta to purify oil for 1-2 days,2000-12-01 00:00:00.000,"0         ","0         ",NULL
+1MSCNP11,064,040,"00-SC-16587 ",16587,0," "," ",2000-12-15 00:00:00.000,"0         ","0         ",NULL
+3MCONT01,019,009,"01-CO-16665 ",16665,0," ","smallest particals just above acceptance criteria.  continue monitoring with next sample. (note, previous sample also exceeded critieri for cleanliness",2001-01-05 00:00:00.000,"0         ","0         ",NULL
+1MAFAK01,004,001,"01-AF-16798 ",16798,0," ",viscosity slightly high. all other perameters satisfactory. continue routine monitoring. Oil is satisfactory.,2001-01-30 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,007,"01-CH-16858 ",16858,0," "," ",2001-02-01 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,007,"01-CH-17023 ",17023,0," "," ",2001-03-07 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,006,"01-CH-17299 ",17299,0," ",oil is acceptable and meets criteria.,2001-04-07 00:00:00.000,"0         ","0         ",NULL
+2MTCNP01B,002,001,"01-TC-17183 ",17183,0," "," ",2001-04-09 00:00:00.000,"0         ","0         ",NULL
+3MEWAP01,002,001,"01-EW-17222 ",17222,0," "," ",2001-04-11 00:00:00.000,"0         ","0         ",NULL
+1JFWNHV0102,097,040,"01-FW-17397 ",17397,0," ",ba not used for this oil ...oil is satisfactory,2001-04-14 00:00:00.000,"0         ","0         ",NULL
+1EPEBG02,010,002,"01-PE-17585 ",17585,0," ",viscosity below criteria. Low wear levels indicate satisfactory performance. Oil acceptable with continued trending,2001-04-22 00:00:00.000,"0         ","0         ",NULL
+1JNCNHV0485,097,040,"01-NC-17736 ",17736,0," ",ba not used,2001-05-07 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01A,002,001,"01-NC-17778 ",17778,0," "," ",2001-06-08 00:00:00.000,"0         ","0         ",NULL
+1MCONT01,019,009,"01-CO-17990 ",17990,0," ",25-50 micro particles just above criteria.....continue routine monitoring..note water at 802 ppm as possible contributor,2001-07-05 00:00:00.000,"0         ","0         ",NULL
+3MCONT01,019,009,"01-CO-17900 ",17900,1,NULL,NULL,2001-07-07 00:00:00.000,"0         ","0         ",NULL
+1JHPBUV0002,097,040,"01-HP-18079 ",18079,0," ",ba not used for this oil,2001-07-31 00:00:00.000,"0         ","0         ",NULL
+1MEWBP01,001,001,"01-EW-18188 ",18188,0," "," ",2001-08-15 00:00:00.000,"0         ","0         ",NULL
+1MEWAP01,001,002,"01-EW-18301 ",18301,0," "," ",2001-08-29 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,007,"01-CH-18417 ",18417,0," "," ",2001-09-19 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,007,"01-CH-18559 ",18559,0," "," ",2001-10-03 00:00:00.000,"0         ","0         ",NULL
+2JSGEUV0180,005,009,"01-SG-18527 ",18527,0," "," ",2001-10-05 00:00:00.000,"0         ","0         ",NULL
+3MZCNG01,168,007,"01-ZC-18748 ",18748,0," ",Tan number high due to vaportech. TAN sat. Vaportech concentration sat,2001-10-19 00:00:00.000,"0         ","0         ",NULL
+3JCWNHV0013,097,040,"01-CW-18762 ",18762,0," "," ",2001-10-19 00:00:00.000,"0         ","0         ",NULL
+2JSGAUV0174,005,009,"01-SG-18522 ",18522,2,243121,tan trending high...change oil,2001-10-23 00:00:00.000,"0         ","0         ",NULL
+3JCWNHV0010,097,040,"01-SG-18760 ",18760,0," "," ",2001-11-01 00:00:00.000,"0         ","0         ",NULL
+2MARNP01B,001,047,"01-AR-19208 ",19208,0," "," ",2001-11-15 00:00:00.000,"0         ","0         ",NULL
+3JMTNUV0328C,097,040,"01-MT-19317 ",19317,0," ",ba not used,2001-12-12 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,007,"01-CH-19456 ",19456,0," "," ",2001-12-20 00:00:00.000,"0         ","0         ",NULL
+2MZTNG01,052,113,"02-ZT-19876 ",19876,0," ",ba not used,2002-02-12 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01C,002,003,"02-CW-19523 ",19523,0," "," ",2002-02-13 00:00:00.000,"0         ","0         ",NULL
+2JSGNUV0034,097,040,"02-SG-19938 ",19938,0," ",ba not used,2002-03-22 00:00:00.000,"0         ","0         ",NULL
+2JSGNUV0031,097,040,"02-SG-19936 ",19936,0," ",trace levels wear metal,2002-03-28 00:00:00.000,"0         ","0         ",NULL
+2JNCNUV0099,097,040,"02-NC-20150 ",20150,0," "," ",2002-03-29 00:00:00.000,"0         ","0         ",NULL
+2MZCNG01,038,009,"02-ZC-20186 ",20186,0," ",ba  is used which increases TAN. Oil is acccaptable for continued use. FTIR sat. Vis affect by Vaportech & sat,2002-04-04 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01A,011,060,"02-OS-20386 ",20386,0," "," ",2002-04-09 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01D,002,004,"02-RC-20088 ",20088,0," ",RBOT above criteria. Rust and FTIR sat.  Oil to be purified via standard practice. Oil acceptable for re-use.,2002-04-17 00:00:00.000,"0         ","0         ",NULL
+1MARNP01A,001,002,"02-AR-20580 ",20580,0," "," ",2002-05-15 00:00:00.000,"0         ","0         ",NULL
+3JSGEUV0180,005,009,"02-SG-20724 ",20724,0," "," ",2002-06-14 00:00:00.000,"0         ","0         ",NULL
+1MCWNP01C,002,003,"02-CW-20821 ",20821,0," "," ",2002-06-28 00:00:00.000,"0         ","0         ",NULL
+1JHPAUV0003,097,040,"02-HP-20891 ",20891,0," ",ba not used,2002-07-10 00:00:00.000,"0         ","0         ",NULL
+1MAFBP01,001,002,"02-AF-20893 ",20893,0," "," ",2002-07-10 00:00:00.000,"0         ","0         ",NULL
+1MPWNP01A,002,003,"02-PW-21034 ",21034,1,NULL,NULL,2002-07-11 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01B,002,002,"02-NC-21031 ",21031,0," "," ",2002-07-11 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01B,002,001,"02-NC-21030 ",21030,0," "," ",2002-07-11 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01A,011,060,"02-OS-21009 ",21009,0," "," ",2002-07-11 00:00:00.000,"0         ","0         ",NULL
+3MWCNE01A,007,009,"02-WC-21041 ",21041,0," "," ",2002-07-11 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01B,011,060,"02-OS-21040 ",21040,0," "," ",2002-07-11 00:00:00.000,"0         ","0         ",NULL
+3MAFAP01,001,002,"02-AF-21027 ",21027,0," "," ",2002-07-11 00:00:00.000,"0         ","0         ",NULL
+3MAFAP01,001,001,"02-AF-21026 ",21026,0," "," ",2002-07-11 00:00:00.000,"0         ","0         ",NULL
+3MCWNP01D,002,003,"02-CW-20962 ",20962,0," "," ",2002-07-12 00:00:00.000,"0         ","0         ",NULL
+3MCWNP01A,002,003,"02-CW-20959 ",20959,0," "," ",2002-07-12 00:00:00.000,"0         ","0         ",NULL
+AMGTNK01A,004,009,"02-GT-21046 ",21046,0," "," ",2002-07-12 00:00:00.000,"0         ","0         ",NULL
+AMDGNH0T01,006,009,"02-DG-20561 ",20561,0," "," ",2002-07-12 00:00:00.000,"0         ","0         ",NULL
+2MDGAH01,006,009,"02-DG-20616 ",20616,0," ",viscosity slightly below criteria. monitor routinely  with future samples,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+2MDGAH01,006,009,"02-DG-20616 ",20616,1,NULL,NULL,2002-07-12 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"98-CH-8605  ",8605,1," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+2MSPAP01,002,004,"98-SP-8968  ",8968,1," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MIANC01C,003,006,"98-IA-9757  ",9757,1," ",change oil due to viscosity - incorrect oil added (wr # 824726),1900-01-01 00:00:00.000,"0         ","0         ",NULL
+2MEDNP01B,002,003,"98-ED-9975  ",9975,1," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01B,002,001,"98-NC-10165 ",10165,1," "," ",1998-07-28 00:00:00.000,"0         ","0         ",NULL
+2MSCNP11,064,040,"98-SC-10188 ",10188,1," "," ",1998-07-30 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01A,011,060,"98-OS-10223 ",10223,1," "," ",1998-09-01 00:00:00.000,"0         ","0         ",NULL
+3MSCNP09,064,040,"99-SC-10601 ",10601,1," "," ",1999-03-09 00:00:00.000,"0         ","0         ",NULL
+1JSGNHV0006,097,040,"00-SG-13443 ",13443,1," "," ",2000-03-15 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01B,011,060,"00-OS-15098 ",15098,1," "," ",2000-04-28 00:00:00.000,"0         ","0         ",NULL
+AMFPNM01A,006,006,"00-FP-15513 ",15513,1," "," ",2000-12-01 00:00:00.000,"0         ","0         ",NULL
+3MPWNP01A,002,003,"01-PW-15705 ",15705,0," "," ",1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01B,011,060,"00-OS-15826 ",15826,1," "," ",2000-09-05 00:00:00.000,"0         ","0         ",NULL
+1MPWNP01A,002,003,"00-PW-15903 ",15903,2,232475,change oil due to viscosity which tested at 166 vs expected of 150 cSt.,2000-09-28 00:00:00.000,"0         ","0         ",NULL
+2MZCNG01,168,007,"00-ZC-16067 ",16067,1," "," ",2000-10-17 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,006,"01-CH-17281 ",17281,0," ",oil meets criteria and is acceptable,2001-04-09 00:00:00.000,"0         ","0         ",NULL
+3JSGNHV1142,097,040,"01-SG-18773 ",18773,1," "," ",2001-11-01 00:00:00.000,"0         ","0         ",NULL
+3MZFNG01,033,080,"01-ZF-19246 ",19246,0," ",oil meets morlina 150 criteria,2001-12-12 00:00:00.000,"0         ","0         ",NULL
+2MZCNG01,168,007,"02-ZC-20182 ",20182,0," ",ba  is used which increases TAN. Oil is acccaptable for continued use. FTIR sat. Vis affect by Vaportech & sat,2002-04-04 00:00:00.000,"0         ","0         ",NULL
+2MSCNP13,064,040,"02-SC-20738 ",20738,0," ",lube meets requirements,2002-06-14 00:00:00.000,"0         ","0         ",NULL
+1JSGBUV0137,005,009,"99-SG-11262 ",11262,1," "," ",1999-04-01 00:00:00.000,"0         ","0         ",NULL
+3JSGAUV0177,005,009,"97-SG-8086  ",8086,1," ","Change oil per wr # 933416, MAint Engr. notified",1997-10-31 00:00:00.000,"0         ","0         ",NULL
+1MCONT01,019,009,"98-CO-8663  ",8663,1," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+3MARNP01B,001,002,"98-AR-10149 ",10149,1," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01B,001,013,"98-RC-10638 ",10638,1," "," ",1998-10-05 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,007,"00-CH-14347 ",14347,1," "," ",2000-02-17 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,007,"01-CH-16647 ",16647,1," "," ",2001-02-01 00:00:00.000,"0         ","0         ",NULL
+1MLONT01,016,008,"02-LO-20712 ",20712,1," "," ",2002-05-30 00:00:00.000,"0         ","0         ",NULL
+2MZCNG01,036,009,"02-ZC-20184 ",20184,0," ",ba from vaportech inflates TAN. TAN is acceptable,2002-04-04 00:00:00.000,"0         ","0         ",NULL
+3MCWNP01B,002,003,"02-CW-21602 ",21602,0,002454371,,2002-11-19 14:24:32.000,"99850     ","0         ",NULL
+3MLONT02A,016,008,"02-LO-21616 ",21616,0,002456975,Rust test not performed. LE written to satisfy software issue only. Oil is acceptable. No evidence of rust issue,2002-11-19 14:28:58.000,"99850     ","0         ",NULL
+AMZYNE10,175,009,"02-ZY-22064 ",22064,0,2461252,,2002-11-19 15:45:06.000,"99850     ","0         ",NULL
+1MLONT02A,016,008,"02-LO-22104 ",22104,0,2456538,unscheduled LE required due to glitch in software. Oil is acceptable.,2002-11-21 08:32:07.000,"99850     ","0         ",NULL
+3MSCNP09,064,040,"02-SC-22096 ",22096,0,2457226,,2002-11-21 09:38:52.000,"99850     ","0         ",NULL
+1JSGNUV0037,097,040,"02-SG-21806 ",21806,2,2455345,oil change and refurb recommended due to very high debris and wear load in sample.,2002-11-21 16:23:43.000,"99850     ","0         ",NULL
+3MLONT02A,016,008,"02-LO-22031 ",22031,0,2456976,unscheduled LE as a result of software glitch. FTIR is satisfactory and does not indicate issues. Oil is considered satisfactory,2002-11-22 13:49:08.000,"99850     ","0         ",NULL
+1MCHAP01,001,006,"97-CH-8458  ",8458,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,006,"97-CH-8285  ",8285,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MSIAP03,002,003,"97-SI-8463  ",8463,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MSIBP03,002,003,"97-SI-8466  ",8466,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MSIAP01,002,003,"97-SI-8553  ",8553,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MSPAP01,002,003,"97-SP-8500  ",8500,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MSPAP01,002,004,"97-SP-8503  ",8503,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MAFNP01,001,001,"97-AF-8490  ",8490,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MAFNP01,001,002,"97-AF-8491  ",8491,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MAFNP01,002,001,"97-AF-8488  ",8488,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MAFNP01,002,002,"97-AF-8489  ",8489,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MAFAP01,001,001,"97-AF-8485  ",8485,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MAFAP01,001,002,"97-AF-8486  ",8486,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MAFBP01,002,002,"97-AF-8185  ",8185,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MAFAK01,004,001,"97-AF-8487  ",8487,0," ",Insufficient oil available for Particle count.  Decreased debris level noted.,1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01A,002,001,"97-TC-8555  ",8555,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01S,017,155,"02-RC-20346 ",20346,0,2420569,This LE is being written to initiate the database. The original was written on 4-5-02.  This LE is not being written to satisfy an evaluation requirement. Rather to initiate the timeline for an LE previously written outside this database.  It was chacterized as ... The viscosity is just below the criteria.  Oil should either be changed or the diviation from the criteria evaluated to determine if the exception can be accepted.,2002-12-04 17:04:15.000,"99850     ","0         ",NULL
+2MRCEE01S,017,176,"02-RC-20388 ",20388,0,2420570,This LE is being written to initiate the database. The original was written on 4-9-02.  This LE is not being written to satisfy an evaluation requirement. Rather to initiate the timeline for an LE previously written outside this database.  It was chacterized as ... Acceptable.,2002-12-04 17:10:40.000,"99850     ","0         ",NULL
+2MDGBH01,006,009,"02-DG-22283 ",22283,0,2456794,viscosity as expected. FTIR indicates no dilution. Flash point acceptable on earlier test with no reason to expect change. Oil is acceptable.,2002-12-11 16:19:52.000,"99850     ","0         ","review\02-DG-22283.pdf                                                                                                                                                                                                                                    "
+1MOSNT01B,011,060,"02-OS-22323 ",22323,0,00,,2002-12-13 08:55:03.000,"99850     ","0         ",NULL
+1MLONT01,016,008,"02-LO-22291 ",22291,0,2566994,LE written for sample 22292. This LE is not required. Software glitch issue is cause for text entry to satisfy software code. No oil issues noted.,2002-12-13 09:04:04.000,"99850     ","0         ",NULL
+1MNCNP01B,002,001,"02-NC-22319 ",22319,0,2459715,,2002-12-13 09:38:47.000,"99850     ","0         ",NULL
+1MSPBP01,002,004,"02-SP-22281 ",22281,2,2456297,CRDR # 257570 written to document small addition of incorrect oil to this sump.  Oil to be changed at next routine interval due to incorrect oil addition.  Oil is acceptable pending change.,2002-12-17 12:44:11.000,"99850     ","0         ","review\02-SP-22281.pdf                                                                                                                                                                                                                                    "
+3JWCNHV0104,097,040,"02-WC-22339 ",22339,0,2513508,,2002-12-19 08:30:59.000,"99850     ","0         ",NULL
+2MARNP01C,001,002,"02-AR-22272 ",22272,2,2456566,crdr 2571204 written to document wrong viscosity and to change oil. Recommendation made to shift supervisor and maintenance engineer to change oil as crdr action. Oil has been changed.,2002-12-19 11:40:13.000,"99850     ","0         ",NULL
+1JMTNUV0328D,097,040,"02-MT-21941 ",21941,0,2458102,,2002-10-22 12:49:53.000,"99850     ","0         ","nqr\02-MT-21941.pdf                                                                                                                                                                                                                                       "
+Bldg,129,009,"02-dg-22014 ",22014,0,UAT TEST,,2002-10-22 12:52:13.000,"02367     ","0         ","nqr\02-dg-22014.pdf                                                                                                                                                                                                                                       "
+3JHPAUV0001,097,040,"02-HP-21398 ",21398,2,2455559,WM # 2554985 was written to change oil due to debris load in oil sample,2002-10-22 13:17:21.000,"99850     ","99850     ","tobeprinted\02-HP-21398.pdf                                                                                                                                                                                                                               "
+1JCDNUV0214A,097,040,"02-CD-21702 ",21702,0,2455396,wear debris found in sample and CNR written to document.,2002-10-22 15:39:51.000,"99850     ","0         ","nqr\02-CD-21702.pdf                                                                                                                                                                                                                                       "
+1JCDNUV0214B,097,040,"02-CD-21703 ",21703,0,2455163,,2002-10-22 15:44:33.000,"99850     ","0         ","nqr\02-CD-21703.pdf                                                                                                                                                                                                                                       "
+1JCDNHV0001,097,040,"02-CD-21776 ",21776,0,2455364,cnr # 3339 written. Maint engineer has agreed to lead to write wm to refurb next outage.  Oil properties meet criteria.,2002-10-22 16:26:52.000,"99850     ","0         ","nqr\02-CD-21776.pdf                                                                                                                                                                                                                                       "
+1JCDNUV0215A,097,040,"02-CD-21779 ",21779,0,2455398,,2002-10-22 16:32:41.000,"99850     ","0         ","nqr\02-CD-21779.pdf                                                                                                                                                                                                                                       "
+1JCDNHV0199,097,040,"02-CD-21739 ",21739,0,2518932,,2002-10-22 16:46:50.000,"99850     ","0         ","nqr\02-CD-21739.pdf                                                                                                                                                                                                                                       "
+2JSGNHV0006,097,040,"02-SG-21677 ",21677,0,2455438,,2002-10-22 16:49:51.000,"99850     ","0         ","nqr\02-SG-21677.pdf                                                                                                                                                                                                                                       "
+1JMTNUV0328B,097,040,"02-MT-21939 ",21939,0,2455155,,2002-10-22 16:55:43.000,"99850     ","0         ","nqr\02-MT-21939.pdf                                                                                                                                                                                                                                       "
+1JFWNHV0074,097,040,"02-FW-21732 ",21732,0,2455411,,2002-10-22 17:09:54.000,"99850     ","0         ","nqr\02-FW-21732.pdf                                                                                                                                                                                                                                       "
+1MRCEP01S,017,155,"02-RC-21928 ",21928,1,2477385,This evaluation is a duplicate to the one provided to the field dated 10-18-02. A subsequent resample # 22007 was taken and was a pass. This evaluation will show a recommendation to resample which was successfully performed.,2002-10-23 09:56:09.000,"99850     ","0         ","review\02-RC-21928.pdf                                                                                                                                                                                                                                    "
+1MRCEP01S,017,161,"02-RC-21931 ",21931,1,2477385,This evaluation is a duplicate to the one provided to the field dated 10-18-02. A subsequent resample # 21994 was taken and was a pass. This evaluation will show a recommendation to resample which was successfully performed.,2002-10-23 10:08:14.000,"99850     ","0         ","review\02-RC-21931.pdf                                                                                                                                                                                                                                    "
+1MRCEP01S,017,163,"02-RC-21932 ",21932,1,2477385,This is a duplicate evaluation for one which was provided to the field on 10-18-02.  The duplicate is needed due to the transition between old and new databases. This evaluation was a pass due to a successful retest sample performed by sample # 21995.,2002-10-23 11:16:43.000,"99850     ","0         ","review\02-RC-21932.pdf                                                                                                                                                                                                                                    "
+1MRCEE01S,017,177,"02-RC-22013 ",22013,2,2456112,"Oil change recommendation made to team due to high acid number. ",2002-10-23 12:32:01.000,"99850     ","0         ","review\02-RC-22013.pdf                                                                                                                                                                                                                                    "
+1MWCNE01A,007,009,"02-WC-22019 ",22019,0,2461191,,2002-10-23 13:25:57.000,"99850     ","0         ","nqr\02-WC-22019.pdf                                                                                                                                                                                                                                       "
+1JNCNHV0485,097,040,"02-NC-21997 ",21997,0,2458097,,2002-10-23 14:34:50.000,"99850     ","0         ",NULL
+1JSGNHV0005,097,040,"02-SG-21678 ",21678,0,2455437,,2002-10-23 16:13:24.000,"99850     ","0         ",NULL
+1MRCEE01S,017,176,"02-RC-22025 ",22025,2,2456112,Acid number well above criteria with an expected trend to worsen. Change oil. This is a duplicate entry to a manual evaluation provided to the field.  Duplicate made due to transition into new database.,2002-10-23 16:17:49.000,"99850     ","0         ","review\02-RC-22025.pdf                                                                                                                                                                                                                                    "
+1JNCNUV0105,097,040,"02-NC-18795 ",18795,0,2358695,error in software required LE to close....since point is NQR..LE performed,2002-10-25 13:48:13.000,"99850     ","0         ",NULL
+1JNCNUV0099,097,040,"02-NC-21926 ",21926,0,2455350,this LE is not valid and is needed to process this sample in the database...these criteria do not apply to grease.,2002-10-25 13:54:08.000,"99850     ","0         ",NULL
+2JNCNHV0486,097,040,"02-NC-20492 ",20492,0,2434055,,2002-11-19 13:04:47.000,"99850     ","0         ","nqr\02-NC-20492.pdf                                                                                                                                                                                                                                       "
+3JHPAUV0001,097,040,"02-HP-17944 ",17944,0,00223122,,2002-10-22 14:48:43.000,"99850     ","0         ","review\02-HP-17944.pdf                                                                                                                                                                                                                                    "
+1MOSNT01B,011,060,"02-OS-21992 ",21992,0,00000000,Water level high so particle count not done. oil drained from sample point to remove water. Oil satisfactory based upon water removal and that turbo tac would be used to transfer oil,2002-10-22 15:30:59.000,"99850     ","0         ","nqr\02-OS-21992.pdf                                                                                                                                                                                                                                       "
+1JCWNHV0010,097,040,"02-CW-21704 ",21704,0,2455360,cnr # 3057 updated. Wear metal found in sump. Lube meets acceptance criteria.,2002-10-22 15:49:56.000,"99850     ","0         ","nqr\02-CW-21704.pdf                                                                                                                                                                                                                                       "
+1JCDNHV0002,097,040,"02-CD-21777 ",21777,0,00,,2002-10-22 16:40:17.000,"99850     ","0         ","nqr\02-CD-21777.pdf                                                                                                                                                                                                                                       "
+1JFWNHV0032,097,040,"02-FW-21710 ",21710,0,2455409,,2002-10-22 17:03:41.000,"99850     ","0         ","nqr\02-FW-21710.pdf                                                                                                                                                                                                                                       "
+1JCDNHV0033,097,040,"02-CD-21735 ",21735,0,2455164,,2002-10-22 17:15:06.000,"99850     ","0         ","nqr\02-CD-21735.pdf                                                                                                                                                                                                                                       "
+1MRCEP01S,017,167,"02-RC-21934 ",21934,0,2477385,"Due to transition to the new software, a hard copy LE for this point was wriiten and provided to the field on 10-18-02.  Disposition was acceptable.  This is a duplicate entry for the other disposition.",2002-10-23 08:28:56.000,"99850     ","0         ","review\02-RC-21934.pdf                                                                                                                                                                                                                                    "
+1MRCEP01S,017,159,"02-RC-21930 ",21930,1,2477385,This evaluation is a duplicate to the one provided to the field dated 10-18-02. A subsequent resample # 22009 was taken and past. This evaluation will show a recommendation to resample which was successfully performed.,2002-10-23 09:51:27.000,"99850     ","0         ","review\02-RC-21930.pdf                                                                                                                                                                                                                                    "
+1MRCEP01S,017,157,"02-RC-21929 ",21929,1,2477385,This evaluation is a duplicate to the one provided to the field dated 10-18-02. A subsequent resample # 22008 was taken and was a pass. This evaluation will show a recommendation to resample which was successfully performed.,2002-10-23 10:00:10.000,"99850     ","0         ","review\02-RC-21929.pdf                                                                                                                                                                                                                                    "
+1MRCEP01S,017,153,"02-RC-21927 ",21927,1,2477385,This evaluation is a duplicate to the one provided to the field dated 10-18-02. A subsequent resample # 22006 was taken and was a pass. This evaluation will show a recommendation to resample which was successfully performed.,2002-10-23 10:05:29.000,"99850     ","99947     ","tobeprinted\02-RC-21927.pdf                                                                                                                                                                                                                               "
+1MRCEP01S,017,165,"02-RC-21933 ",21933,1,2477385,This evaluation is a duplicate to one provided to the field on 10-18-02. A retest was required and was a pass with sample 21993. The duplicate is needed due to the transition between databases.,2002-10-23 11:24:39.000,"99850     ","0         ","review\02-RC-21933.pdf                                                                                                                                                                                                                                    "
+1MRCEE01S,017,178,"02-RC-21935 ",21935,0,2456112,"The oil exceeded the criteria for cleanliness and was resampled per sample 22011. This sample meet cleanliness criteria. With a successful resample, oil is considered acceptable.",2002-10-23 11:56:12.000,"99850     ","0         ","review\02-RC-21935.pdf                                                                                                                                                                                                                                    "
+1MRCEE01S,017,179,"02-RC-22012 ",22012,0,2456112,"TAN criteria is overly conservation to require evaluation as acid number begins to change. The actual point of oxidation initiation is believed to begin at approximately 0.25.  The oil is considered to be oxidized as it approaches 0.5. This oil has not reached oxidation but is trending toward.  This was discussed with the responsible engineer and it was decided to do a planned oil change during the next refueling outage in anticipation of an increasing trend. ",2002-10-23 12:23:19.000,"99850     ","0         ","review\02-RC-22012.pdf                                                                                                                                                                                                                                    "
+1JCDNUV0216B,097,040,"02-CD-21711 ",21711,0,2455401,,2002-10-23 14:17:47.000,"99850     ","0         ","nqr\02-CD-21711.pdf                                                                                                                                                                                                                                       "
+1JCDNHV0191,097,040,"02-CD-21738 ",21738,0,2455394,,2002-10-23 14:23:43.000,"99850     ","0         ",NULL
+1JNCNHV0486,097,040,"02-NC-21996 ",21996,0,2455428,,2002-10-23 14:56:11.000,"99850     ","0         ",NULL
+2MDGBH01,006,009,"02-DG-21803 ",21803,0,002456792,sample rotates some tests. Previous sample tested water and TBN which were acceptable.,2002-10-23 15:54:02.000,"99850     ","0         ","review\02-DG-21803.pdf                                                                                                                                                                                                                                    "
+1JEDNUV0025,097,040,"02-ED-21737 ",21737,0,2455402,note...swmns shows oil change.  Oil satisfactory at time of change,2002-10-23 15:57:42.000,"99850     ","0         ",NULL
+AMDGNH0T01,006,009,"02-DG-22010 ",22010,0,2456043,oil had very low debris load based upon wear numbers and a satisfactory flash point test in August. Flash point and filter residue are periodic tests and not intended with each sample.,2002-10-25 17:02:50.000,"99850     ","0         ","nqr\02-DG-22010.pdf                                                                                                                                                                                                                                       "
+3MLONT01,016,008,"02-LO-22029 ",22029,0,2456976,"oil is acceptable based upon satisfactory FTIR screening values ",2002-11-19 13:53:59.000,"99850     ","0         ",NULL
+1MIANC02,003,115,"02-IA-22140 ",22140,0,2513243,,2002-11-21 13:10:39.000,"99850     ","0         ",NULL
+2MDGAH01,006,009,"02-DG-22041 ",22041,0,2456786,recent prior sample had acceptable flash point test. Sample is acceptable,2002-11-21 14:43:00.000,"99850     ","0         ","review\02-DG-22041.pdf                                                                                                                                                                                                                                    "
+1MOSNT01A,011,060,"02-OS-22322 ",22322,0,00,STA contacted and advised to purify oil for 24 hours to improve cleanliness. With purification oil is expected to be satisfactory.,2002-12-23 08:20:21.000,"99850     ","0         ",NULL
+2MOSNT01A,011,060,"02-OS-22372 ",22372,0,000000000000000,"transfer of oil would result in purification pass. With pass, oil would be expected to be satisfactory.  Oil is acceptable. ",2002-12-23 09:24:37.000,"99850     ","0         ",NULL
+2MOSNT01B,011,060,"02-OS-22373 ",22373,0,000000000000000,"Water higher than expected. Particle count not performed due to water. Oil would be transfered using purifier ans would be expected to result in dryer oil and improved cleanliness. Oil is satisfactory.
+
+",2002-12-23 09:28:01.000,"99850     ","0         ",NULL
+1MDGAH01,006,009,"02-DG-22390 ",22390,0,2456422,FTIR indicates low water and no fule dilution indications. TBN has virtualy no downward trend and is expected to be similar to previous test results. Oil is satisfactory.,2002-12-23 09:48:38.000,"99850     ","0         ",NULL
+3MLONT02A,016,008,"02-LO-22375 ",22375,0,2456978,no evidence of increase iron content which indicates effective anti-rust additive. Recent RBOT and current FTIR sat in terms of oxidation reserve.  Oil is satisfactory.,2002-12-23 10:05:48.000,"99850     ","0         ",NULL
+3MLONT01,016,008,"02-LO-22374 ",22374,0,2456978,"ftir indicates satisfactory oxidation reserve, RBOT not needed. No iron wear metal which indicates satisfactory performance of anti-rust additive. Rust test not needed.",2002-12-23 10:41:49.000,"99850     ","0         ",NULL
+3MLONT02B,016,008,"02-LO-22376 ",22376,0,2456978,"No iron metal in sample indicates acceptable anti-rust additive, rust test not required. FTIR indicates remaining oxidation reserve. TAN and viscosity also stable. RBOT not needed.",2002-12-23 10:45:49.000,"99850     ","0         ",NULL
+AMZYNE0X1,003,009,"02-ZY-22406 ",22406,0,2478859,,2002-12-23 11:08:19.000,"99850     ","0         ",NULL
+1MLONT02A,016,008,"03-LO-22435 ",22435,0,2456541,"FTIR indicates acceptable anti-oxidant, RBOT not needed. No Fe wear metal indicates anti-rust is effective. Recent acceptable rust test.  Oil is acceptable",2003-01-08 15:27:02.000,"99850     ","0         ",NULL
+1MLONT02B,016,008,"03-LO-22436 ",22436,0,2456541,acceptable anti-oxidant per ftir. No iron wear. Oil is considered acceptable.,2003-01-08 15:29:31.000,"99850     ","0         ",NULL
+3MDGAH01,006,009,"03-DG-22412 ",22412,0,2456880,Previous sample TBN well above criteria. Water per FTIR at 87 which is well within criteria.  Oil tests acceptable. Oil is acceptable.,2003-01-09 11:35:10.000,"99850     ","0         ","review\03-DG-22412.pdf                                                                                                                                                                                                                                    "
+2MDGBH01,006,009,"03-DG-22419 ",22419,0,2510991,TBN acceptable with previous sample and water at 41 ppm per this test using FTIR. Oil is acceptable.,2003-01-09 11:41:33.000,"99850     ","0         ","review\03-DG-22419.pdf                                                                                                                                                                                                                                    "
+3MAFBP01,002,001,"03-AF-22463 ",22463,0,2459600,,2003-01-14 16:56:35.000,"99850     ","0         ","review\03-AF-22463.pdf                                                                                                                                                                                                                                    "
+3MAFBP01,002,002,"03-AF-22464 ",22464,0,2459600,,2003-01-14 17:00:02.000,"99850     ","0         ","review\03-AF-22464.pdf                                                                                                                                                                                                                                    "
+2MIANC02,003,115,"03-IA-22461 ",22461,0,2511107,,2003-01-14 17:12:00.000,"99850     ","0         ",NULL
+1JCDNHV0029,097,040,"03-CD-22366 ",22366,0,2513339,,2003-01-15 08:55:30.000,"99850     ","0         ",NULL
+2MCONT01,019,009,"03-CO-22462 ",22462,1,00,contacted Maintenance engineer with recommendation to resample to verfiy cleanliness from this sample.  No wear metal seen in sample suggests that sample technique likely source of increase in debris.  Resample is conservative measure to verify.,2003-01-15 09:26:26.000,"99850     ","0         ",NULL
+3JSGNUV0033,097,040,"03-SG-22516 ",22516,0,2513501,,2003-01-23 08:34:14.000,"99850     ","0         ",NULL
+2MNCNP01B,002,001,"03-NC-22641 ",22641,2,2464132,wm # 2580134 written to change oil in both motor bearings and flush this cavity to remove any residual water.,2003-01-24 07:34:49.000,"99850     ","0         ",NULL
+2MNCNP01B,002,002,"03-NC-22642 ",22642,2,2464132,change oil per WM # 2580134 due to water in other motor bearing.,2003-01-24 07:36:51.000,"99850     ","0         ",NULL
+-2JWCNHV0140,097,040,"02-JW-22368 ",22368,0,2513721,,2002-12-23 09:36:12.000,"99850     ","0         ",NULL
+3MCONT01,019,009,"02-CO-22380 ",22380,0,000000000000000,past water levels have negitively influences particle count test results. Continue monitoring using present sampling interval.,2002-12-23 10:56:51.000,"99850     ","0         ",NULL
+1MLONT01,016,008,"03-LO-22447 ",22447,0,2566994,acceptable anti-oxidant per ftir and no iron wear metal. RBOT and Rust test not needed.,2003-01-08 15:33:20.000,"99850     ","0         ",NULL
+1JSGNUV0033,097,040,"03-SG-22367 ",22367,0,2513345,cnr 3366 written to document debris (copper),2003-01-15 09:19:08.000,"99850     ","0         ",NULL
+2JSGEUV0180,005,009,"03-SG-22654 ",22654,0,2511114,,2003-01-29 10:00:06.000,"99850     ","0         ","review\03-SG-22654.pdf                                                                                                                                                                                                                                    "
+2JSGEUV0181,005,009,"03-SG-22655 ",22655,0,2511114,,2003-01-29 10:05:57.000,"99850     ","0         ","review\03-SG-22655.pdf                                                                                                                                                                                                                                    "
+2JSGBUV0132,005,009,"03-SG-22648 ",22648,0,2511114,,2003-01-29 16:57:03.000,"99850     ","0         ","review\03-SG-22648.pdf                                                                                                                                                                                                                                    "
+2JSGAUV0177,005,009,"03-SG-22653 ",22653,0,2511114,,2003-01-29 17:12:01.000,"99850     ","0         ","review\03-SG-22653.pdf                                                                                                                                                                                                                                    "
+2MEDNP01A,002,003,"03-ED-22639 ",22639,0,2464241,ftir indicates anti-oxidant remaining,2003-01-30 08:23:09.000,"99850     ","0         ",NULL
+2MEDNP01B,002,003,"03-ED-22640 ",22640,0,2464241,ftir indicates anti-oxidant is present,2003-01-30 08:43:06.000,"99850     ","0         ",NULL
+2MAFAK01,004,001,"03-AF-22512 ",22512,1,2510967,resample to verify cleanliness measured. Cleanliness just above SAE 5 level.,2003-01-30 16:49:26.000,"99850     ","0         ","review\03-AF-22512.pdf                                                                                                                                                                                                                                    "
+3MZTNG01,033,113,"03-ZT-22714 ",22714,0,2511340,,2003-01-31 17:03:33.000,"99850     ","0         ",NULL
+3MZTNG01,052,113,"03-ZT-22711 ",22711,0,2511340,,2003-01-31 17:11:47.000,"99850     ","0         ",NULL
+3MZTNG01,034,144,"03-ZT-22712 ",22712,0,2511340,,2003-01-31 17:14:51.000,"99850     ","0         ",NULL
+1MCONT01,019,009,"03-CO-22684 ",22684,0,0,Water just above criteria with all other tests acceptable.  Continue routine monitoring to determine if water test is abnormal or system change. Previous results would indicate that sample does not represent a system change.,2003-02-05 17:14:26.000,"99850     ","0         ",NULL
+2MSPBP01,002,004,"03-SP-22697 ",22697,0,2511118,,2003-02-06 08:07:17.000,"99850     ","0         ","review\03-SP-22697.pdf                                                                                                                                                                                                                                    "
+2MWCNE01B,007,009,"03-WC-22616 ",22616,0,2478634,note that water is near criteria.,2003-02-06 09:06:10.000,"99850     ","0         ",NULL
+-3JCDNHV0029,097,040,"03-JC-22728 ",22728,2,2528758,Change oil to improve chemistry and cleanliness,2003-02-07 14:05:26.000,"99850     ","0         ",NULL
+2MSIBP03,002,003,"03-SI-22726 ",22726,0,2511104,,2003-02-07 14:17:54.000,"99850     ","0         ","review\03-SI-22726.pdf                                                                                                                                                                                                                                    "
+AMFPNM01B,006,006,"03-FP-22715 ",22715,0,2563798,Viscosity as expected. Prior flash point test acceptable. Oil is acceptable for continued use.,2003-02-07 14:21:40.000,"99850     ","0         ","review\03-FP-22715.pdf                                                                                                                                                                                                                                    "
+2JSGEUV0171,005,009,"03-SG-22650 ",22650,1,2511114,resample oil to verify TAN test result. WM # 2583809,2003-02-11 15:57:22.000,"99850     ","0         ","review\03-SG-22650.pdf                                                                                                                                                                                                                                    "
+1JSGEUV0171,005,009,"03-SG-22670 ",22670,2,2510885,change oil to remove degraded material.  Change per WM # 2583812,2003-02-11 16:00:12.000,"99850     ","0         ","review\03-SG-22670.pdf                                                                                                                                                                                                                                    "
+1MLONT01,016,008,"03-LO-22434 ",22434,0,2456541,ftir indicates acceptable anti-oxidant. Rbot not needed. No iron wear indicates acceptable rust protection. Rust test not needed.,2003-01-08 15:36:46.000,"99850     ","0         ",NULL
+3MOSNT01A,011,060,"03-OS-22448 ",22448,0,0,,2003-01-09 10:53:45.000,"99850     ","0         ",NULL
+3MOSNT01B,011,060,"03-OS-22449 ",22449,0,0,Particle count not performed due to higher than normal water.  Water content was acceptable.  Oil would be expected t be transfered into the main systems using the centrifuge which would improve cleanliss and remove dbris.  Accept oil without Particle conut test.,2003-01-09 13:21:48.000,"99850     ","0         ",NULL
+1JSGAUV0174,005,009,"03-SG-22665 ",22665,1,2510885,resample to verify data.  WM # 2583813,2003-02-11 16:07:59.000,"99850     ","0         ","review\03-SG-22665.pdf                                                                                                                                                                                                                                    "
+3MARNP01A,001,001,"03-AR-22787 ",22787,0,2511367,,2003-02-11 16:23:03.000,"99850     ","0         ",NULL
+3MARNP01A,001,002,"03-AR-22788 ",22788,0,2511367,,2003-02-11 16:24:13.000,"99850     ","0         ",NULL
+3MARNP01C,001,001,"03-AR-22791 ",22791,0,2511367,,2003-02-11 16:28:51.000,"99850     ","0         ",NULL
+3MARNP01C,001,002,"03-AR-22792 ",22792,0,2511367,,2003-02-11 16:30:22.000,"99850     ","0         ",NULL
+3MARNP01D,001,001,"03-AR-22793 ",22793,0,2511367,,2003-02-11 16:31:49.000,"99850     ","0         ",NULL
+2JHPAUV0005,097,040,"03-HP-22720 ",22720,0,2513781,trace debris found in sample. Debris examined visually and as a result oil is considered acceptable.,2003-02-12 13:33:33.000,"99850     ","0         ","review\03-HP-22720.pdf                                                                                                                                                                                                                                    "
+2MWCNE01C,007,009,"03-WC-22799 ",22799,0,2478635,,2003-02-14 10:51:29.000,"99850     ","0         ",NULL
+3MTCNP01B,002,001,"03-TC-22802 ",22802,0,2464004,,2003-02-14 16:11:58.000,"99850     ","0         ",NULL
+3MTCNP01B,002,002,"03-TC-22803 ",22803,0,2464004,,2003-02-14 16:13:49.000,"99850     ","0         ",NULL
+1MAFAP01,001,002,"03-AF-22832 ",22832,0,2510732,,2003-02-26 07:23:15.000,"99850     ","0         ","review\03-AF-22832.pdf                                                                                                                                                                                                                                    "
+3MCWNP01C,002,003,"03-CW-22785 ",22785,0,2557131,FTIR water at 523. KF not performed on sample. Continue monitoring water using routine scheduled tests. Oi is considered acceptable.,2003-02-26 15:01:36.000,"99850     ","0         ",NULL
+2MAFNP01,002,001,"03-AF-22922 ",22922,0,2464240,,2003-02-26 15:23:31.000,"99850     ","0         ","review\03-AF-22922.pdf                                                                                                                                                                                                                                    "
+2MAFNP01,002,002,"03-AF-22923 ",22923,0,2464240,,2003-02-26 15:26:09.000,"99850     ","0         ","review\03-AF-22923.pdf                                                                                                                                                                                                                                    "
+2JSGEUV0171,005,009,"03-SG-22921 ",22921,2,2583809,wm # 2588747 writen to change oil due to increase TAN trend.,2003-02-26 16:43:44.000,"99850     ","0         ","review\03-SG-22921.pdf                                                                                                                                                                                                                                    "
+1JSGNUV0034,097,040,"03-SG-22839 ",22839,0,2513346,,2003-02-27 07:18:22.000,"99850     ","0         ",NULL
+1MAFAK01,004,001,"03-AF-22830 ",22830,0,2510749,,2003-02-27 07:21:34.000,"99850     ","0         ","review\03-AF-22830.pdf                                                                                                                                                                                                                                    "
+1MCONT01,019,009,"03-CO-23133 ",23133,0,0,Water just above criteria limit with all other tests acceptable.  Continue routine monitoring. Previous results would indicate that sample does not represent a system change.,2003-04-10 16:32:59.000,"98992     ","0         ",NULL
+2MOSNT01B,011,060,"03-OS-23033 ",23033,0,0,"PC high. System engineer, Byron Harrison notified to have OPS purify oil for 24 hours prior to transfer.",2003-04-23 13:39:12.000,"99947     ","0         ",NULL
+2MCHBP01,001,007,"03-CH-22342 ",22342,2,2551395,wm # 2578328 to change oil. Oil change to improve cleanliness,2003-01-16 07:38:15.000,"99850     ","0         ","review\03-CH-22342.pdf                                                                                                                                                                                                                                    "
+3MWCNE01B,007,009,"03-WC-22509 ",22509,2,2478638,WM # 2578673 written to change oil due to high water content.,2003-01-16 07:57:55.000,"99850     ","0         ",NULL
+1JHPBUV0004,097,040,"03-HP-22514 ",22514,0,2455337,,2003-01-23 08:59:33.000,"99850     ","0         ",NULL
+2MPWNP01A,002,003,"03-PW-22643 ",22643,2,2464218,oil to be changed per WO_NUM: 2573423 scheduled for 1-23-03,2003-01-24 07:44:56.000,"99850     ","0         ",NULL
+1MCWNP01D,002,003,"03-CW-22901 ",22901,0,2464271,water test acceptable per FTIR,2003-02-26 15:05:50.000,"99850     ","0         ",NULL
+2MOSNT01A,011,060,"03-OS-23032 ",23032,0,0,"PC level high. System engineer, Byron Harrison notified to have OPS purfiy oil for 24 hours prior to transfer.",2003-04-23 13:46:04.000,"99947     ","0         ",NULL
+3MRCEP01S,017,157,"03-RC-23444 ",23444,0,2488835,,2003-04-23 14:03:51.000,"99947     ","0         ","review\03-RC-23444.pdf                                                                                                                                                                                                                                    "
+3MRCEP01S,017,155,"03-RC-23443 ",23443,0,2488835,,2003-04-23 14:16:57.000,"99947     ","0         ","review\03-RC-23443.pdf                                                                                                                                                                                                                                    "
+3MRCEP01S,017,167,"03-RC-23417 ",23417,0,2488835,,2003-04-23 14:53:10.000,"99947     ","0         ","review\03-RC-23417.pdf                                                                                                                                                                                                                                    "
+3MRCEP01S,017,163,"03-RC-23415 ",23415,0,2488835,,2003-04-23 15:07:10.000,"99947     ","0         ","review\03-RC-23415.pdf                                                                                                                                                                                                                                    "
+3MRCEP01S,017,161,"03-RC-23414 ",23414,0,2488835,,2003-04-23 15:12:52.000,"99947     ","0         ","review\03-RC-23414.pdf                                                                                                                                                                                                                                    "
+3MRCEP01D,001,013,"03-RC-23173 ",23173,0,2511269,"RBOT in excess of 1000, FTIR sat, Rust sat, recomendation made to field to filter to improve cleanliness. All other tests sat.  Due to reduced RBOT and trend, recomendation was made to field to sweeten oil with new oil. It was agreed to add a minimum of 55 gallons of new oil to the sump to improve the chemical additive margin of the oil and freshen the existing oil through mixing of used and newly added oil.  Oil is acceptable for continued use.",2003-04-29 09:56:59.000,"99850     ","0         ","review\03-RC-23173.pdf                                                                                                                                                                                                                                    "
+3MRCEP01C,001,013,"03-RC-23170 ",23170,0,2511268,"RBOT in excess of 1000, FTIR sat, Rust sat, recomendation made to field to filter to improve cleanliness. All other tests sat.  Due to reduced RBOT and trend, recomendation was made to field to sweeten oil with new oil. It was agreed to add a minimum of 55 gallons of new oil to the sump to improve the chemical additive margin of the oil and freshen the existing oil through mixing of used and newly added oil.  Oil is acceptable for continued use.",2003-04-29 10:05:14.000,"99850     ","0         ","review\03-RC-23170.pdf                                                                                                                                                                                                                                    "
+3MRCEP01A,001,013,"03-RC-23164 ",23164,0,2511266,"RBOT in excess of 1000, FTIR sat, Rust sat, recomendation made to field to filter to improve cleanliness. All other tests sat.  Due to reduced RBOT and trend, recomendation was made to field to sweeten oil with new oil. It was agreed to add a minimum of 55 gallons of new oil to the sump to improve the chemical additive margin of the oil and freshen the existing oil through mixing of used and newly added oil.  Oil is acceptable for continued use.",2003-04-29 10:23:10.000,"99850     ","0         ","review\03-RC-23164.pdf                                                                                                                                                                                                                                    "
+3MRCEP01D,002,004,"03-RC-23172 ",23172,0,2511269,rbot test result well above criteria which is conservative. Acceptable RBOT trend expected. Rust test was a pass. Water content and FTIR acceptable. Recomemendation made to field to improve cleaniness of oil through purification.  Oil is suitable and acceptavle for continued use.,2003-04-30 09:46:47.000,"99850     ","0         ","review\03-RC-23172.pdf                                                                                                                                                                                                                                    "
+3MRCEP01C,002,004,"03-RC-23169 ",23169,0,2511268,rbot test result well above criteria which is conservative. Acceptable RBOT trend expected. Rust test was a pass. Water content and FTIR acceptable. Recomemendation made to field to improve cleaniness of oil through purification.  Oil is suitable and acceptavle for continued use.,2003-04-30 09:59:39.000,"99850     ","0         ","review\03-RC-23169.pdf                                                                                                                                                                                                                                    "
+3MRCEP01C,002,003,"03-RC-23168 ",23168,0,2511268,rbot test result well above criteria which is conservative. Acceptable RBOT trend expected. Rust test was a pass. Water content and FTIR acceptable. Recomemendation made to field to improve cleaniness of oil through purification.  Oil is suitable and acceptavle for continued use.,2003-04-30 10:04:05.000,"99850     ","0         ","review\03-RC-23168.pdf                                                                                                                                                                                                                                    "
+3MRCEP01B,002,004,"03-RC-23166 ",23166,0,2511267,rbot test result well above criteria which is conservative. Acceptable RBOT trend expected. Rust test was a pass. Water content and FTIR acceptable. Recomemendation made to field to improve cleaniness of oil through purification.  Oil is suitable and acceptavle for continued use.,2003-04-30 10:07:59.000,"99850     ","0         ","review\03-RC-23166.pdf                                                                                                                                                                                                                                    "
+3MRCEP01B,002,003,"03-RC-23165 ",23165,0,2511267,rbot test result well above criteria which is conservative. Acceptable RBOT trend expected. Rust test was a pass. Water content and FTIR acceptable. Recomemendation made to field to improve cleaniness of oil through purification.  Oil is suitable and acceptavle for continued use.,2003-04-30 10:13:37.000,"99850     ","0         ","review\03-RC-23165.pdf                                                                                                                                                                                                                                    "
+3MRCEP01A,002,003,"03-RC-23162 ",23162,0,2511266,rbot test result well above criteria which is conservative. Acceptable RBOT trend expected. Rust test was a pass. Water content and FTIR acceptable. Recomemendation made to field to improve cleaniness of oil through purification.  Oil is suitable and acceptavle for continued use.,2003-04-30 10:33:17.000,"99850     ","0         ","review\03-RC-23162.pdf                                                                                                                                                                                                                                    "
+3JCDNHV0033,097,040,"03-CD-23268 ",23268,0,2513594,,2003-05-01 08:57:42.000,"99850     ","0         ",NULL
+3JCDNUV0214B,097,040,"03-CD-23259 ",23259,0,2513456,,2003-05-01 09:07:28.000,"99850     ","0         ",NULL
+2JSGBUV0137,005,009,"03-SG-22649 ",22649,0,2511114,,2003-01-29 17:00:25.000,"99850     ","0         ","review\03-SG-22649.pdf                                                                                                                                                                                                                                    "
+2JSGEUV0170,005,009,"03-SG-22651 ",22651,0,2511114,,2003-01-29 17:06:16.000,"99850     ","0         ","review\03-SG-22651.pdf                                                                                                                                                                                                                                    "
+2JSGAUV0174,005,009,"03-SG-22652 ",22652,0,2511114,,2003-01-29 17:09:33.000,"99850     ","0         ","review\03-SG-22652.pdf                                                                                                                                                                                                                                    "
+3MZTNG01,033,130,"03-ZT-22709 ",22709,0,2511340,,2003-01-31 16:51:37.000,"99850     ","0         ",NULL
+3MZTNG01,056,113,"03-ZT-22710 ",22710,0,2511340,,2003-01-31 16:58:00.000,"99850     ","0         ",NULL
+1JSGEUV0170,005,009,"03-SG-22669 ",22669,0,2510885,,2003-02-06 07:43:15.000,"99850     ","0         ","review\03-SG-22669.pdf                                                                                                                                                                                                                                    "
+1JSGEUV0180,005,009,"03-SG-22671 ",22671,0,2510885,,2003-02-06 07:46:36.000,"99850     ","0         ","review\03-SG-22671.pdf                                                                                                                                                                                                                                    "
+1JSGEUV0181,005,009,"03-SG-22672 ",22672,0,2510885,,2003-02-06 07:49:05.000,"99850     ","0         ","review\03-SG-22672.pdf                                                                                                                                                                                                                                    "
+1JSGAUV0177,005,009,"03-SG-22666 ",22666,0,2510885,,2003-02-06 07:51:04.000,"99850     ","0         ","review\03-SG-22666.pdf                                                                                                                                                                                                                                    "
+AMFPNM01A,006,006,"03-FP-22617 ",22617,2,2423858,change oil WM # 2582968 to improve cleanliness. High soot loading found in oil.,2003-02-06 08:37:11.000,"99850     ","0         ","review\03-FP-22617.pdf                                                                                                                                                                                                                                    "
+2MSPBP01,002,003,"03-SP-22695 ",22695,0,2511118,,2003-02-06 08:42:57.000,"99850     ","0         ","review\03-SP-22695.pdf                                                                                                                                                                                                                                    "
+3MSIAP03,002,003,"03-SI-22633 ",22633,0,2511348,,2003-02-06 08:48:04.000,"99850     ","0         ","review\03-SI-22633.pdf                                                                                                                                                                                                                                    "
+3MCONT01,019,009,"03-CO-22511 ",22511,0,00,continue monitoring at present frequency. Note that particle count and metals are testing normal and acceptable.,2003-02-06 09:01:43.000,"99850     ","0         ",NULL
+3JSGNUV0032,097,040,"03-SG-22515 ",22515,0,2513514,trace levels of copper and iron found in sample. Oil is otherwise satisfactory and is acceptable for futher use.,2003-02-11 17:11:21.000,"99850     ","0         ",NULL
+3MDGAH01,006,009,"03-DG-23515 ",23515,0,2511411,Recommendation was made during out to add makeup oil to system to improve additive reserve and oil quaility.  This was performed and oil is acceptable. Recent flash point and TBN tests are acceptable.,2003-05-01 09:15:40.000,"99850     ","0         ","review\03-DG-23515.pdf                                                                                                                                                                                                                                    "
+3JCDNHV0032,097,040,"03-CD-23225 ",23225,0,2513454,,2003-05-02 08:31:08.000,"99850     ","0         ",NULL
+3MAFAK01,004,001,"03-AF-23025 ",23025,0,2511362,,2003-05-02 08:34:39.000,"99850     ","0         ","review\03-AF-23025.pdf                                                                                                                                                                                                                                    "
+3JSGNUV0038,097,040,"03-SG-23233 ",23233,0,2513510,,2003-05-02 08:37:59.000,"99850     ","0         ",NULL
+3JSGNUV0035,097,040,"03-SG-23231 ",23231,0,2513645,,2003-05-02 08:43:56.000,"99850     ","0         ",NULL
+3JSGNUV0036,097,040,"03-SG-23230 ",23230,0,2513512,,2003-05-02 08:46:56.000,"99850     ","0         ",NULL
+3JCDNUV0215A,097,040,"03-CD-23227 ",23227,0,2513457,,2003-05-02 08:49:25.000,"99850     ","0         ",NULL
+3JCDNUV0215B,097,040,"03-CD-23228 ",23228,0,2513458,,2003-05-02 08:56:09.000,"99850     ","0         ",NULL
+2JSGEUV0180,005,009,"99-SG-11679 ",11679,0," "," ",1999-02-04 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01A,002,004,"97-RC-7779  ",7779,0," ",RBOT test time of 2737 minutes.  Other tests satisfactory.,1997-10-02 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01B,002,003,"97-RC-7745  ",7745,0," ","RBOT time of 2273, Rust test satisfactory.",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01B,002,004,"97-RC-7744  ",7744,0," ","RBOT time of 1381,  evidence of residual turbo 68 in oil.",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01C,002,003,"97-RC-7782  ",7782,0," ",RBOT time of 2423 ans successful rust test.  Oil purification recommended.,1997-10-02 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01C,002,004,"97-RC-7781  ",7781,0," ",RBOT time of 2667 minutes and successful rust test,1997-10-02 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01D,002,003,"97-RC-7747  ",7747,0," ",RBOT time of 2435.  Rust test was satisfactory.,1997-10-02 00:00:00.000,"0         ","0         ",NULL
+1MCDNP01C,002,003,"97-CD-7443  ",7443,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,006,"97-CH-7368  ",7368,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"97-CH-7430  ",7430,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,006,"97-CH-7301  ",7301,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+3MSCNP11,064,040,"97-SC-7346  ",7346,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+3MSCNP12,064,040,"97-SC-7367  ",7367,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+3MSCNP13,064,040,"97-SC-7347  ",7347,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+3MSCNP14,064,040,"97-SC-7372  ",7372,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+1MSCNP09,064,040,"97-SC-7432  ",7432,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+1MSCNP11,064,040,"97-SC-7433  ",7433,0," "," ",1997-10-02 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,007,"97-CH-7297  ",7297,0," "," ",1997-10-03 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,007,"97-CH-7279  ",7279,0," "," ",1997-10-03 00:00:00.000,"0         ","0         ",NULL
+2MDGAH01,006,009,"97-DG-7492  ",7492,0," ","TFOUT test performed, FTIR sat. Recomend adding 4 barrels makeup oil.",1997-10-03 00:00:00.000,"0         ","0         ",NULL
+3MSIAP03,002,003,"97-SI-7300  ",7300,0," "," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01B,002,001,"97-NC-7491  ",7491,0," "," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01A,002,002,"97-TC-7510  ",7510,0," "," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01B,002,001,"97-TC-7309  ",7309,0," "," ",1997-09-02 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01B,002,002,"97-TC-7310  ",7310,0," ",Oil is satisfactory for use.,1997-09-02 00:00:00.000,"0         ","0         ",NULL
+3MARNP01A,001,047,"97-AR-7303  ",7303,0," "," ",1997-09-02 00:00:00.000,"0         ","0         ",NULL
+3MARNP01B,001,047,"97-AR-7304  ",7304,0," "," ",1997-09-02 00:00:00.000,"0         ","0         ",NULL
+3MARNP01C,001,047,"97-AR-7305  ",7305,0," "," ",1997-09-02 00:00:00.000,"0         ","0         ",NULL
+3MARNP01D,001,047,"97-AR-7306  ",7306,0," "," ",1997-09-02 00:00:00.000,"0         ","0         ",NULL
+1MSCNP12,064,040,"97-SC-7434  ",7434,0," "," ",1997-09-03 00:00:00.000,"0         ","0         ",NULL
+1MSCNP13,064,040,"97-SC-7435  ",7435,0," ",Oil is acceptable for continued use.,1997-09-03 00:00:00.000,"0         ","0         ",NULL
+1MSCNP14,064,040,"97-SC-7436  ",7436,0," "," ",1997-09-03 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01B,002,002,"97-TC-7348  ",7348,0," "," ",1997-09-03 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01B,002,001,"97-TC-7349  ",7349,0," "," ",1997-09-03 00:00:00.000,"0         ","0         ",NULL
+1MARNP01D,001,047,"97-AR-7360  ",7360,0," "," ",1997-09-03 00:00:00.000,"0         ","0         ",NULL
+2MSIAP01,002,003,"97-SI-7295  ",7295,0," "," ",1997-09-03 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,007,"97-CH-7369  ",7369,0," "," ",1997-09-03 00:00:00.000,"0         ","0         ",NULL
+1MARNP01A,001,001,"97-AR-8030  ",8030,0," "," ",1997-10-01 00:00:00.000,"0         ","0         ",NULL
+1MARNP01A,001,002,"97-AR-8031  ",8031,0," "," ",1997-10-01 00:00:00.000,"0         ","0         ",NULL
+1MARNP01B,001,001,"97-AR-8032  ",8032,0," "," ",1997-10-01 00:00:00.000,"0         ","0         ",NULL
+1MARNP01B,001,002,"97-AR-8033  ",8033,0," "," ",1997-10-01 00:00:00.000,"0         ","0         ",NULL
+1MARNP01C,001,001,"97-AR-8034  ",8034,0," "," ",1997-10-01 00:00:00.000,"0         ","0         ",NULL
+1MARNP01C,001,002,"97-AR-8035  ",8035,0," "," ",1997-10-01 00:00:00.000,"0         ","0         ",NULL
+1MARNP01D,001,001,"97-AR-8036  ",8036,0," "," ",1997-10-01 00:00:00.000,"0         ","0         ",NULL
+1MARNP01D,001,002,"97-AR-8037  ",8037,0," "," ",1997-10-01 00:00:00.000,"0         ","0         ",NULL
+3JSGAUV0174,005,009,"97-SG-7336  ",7336,1,930126,Acid number is presently acceptable.  An adverse trend is beginning.  Resample requested for Nov. - Dec. 1997 to allow monitoring.,1997-08-25 00:00:00.000,"0         ","0         ",NULL
+3JSGEUV0171,005,009,"97-SG-7341  ",7341,1,930128,Oil sample trending upwards.  Resample required to monitor.  Viscosity is trending flat.  Oil is accetable pending additional information.  Flat viscosity and increased acid number indicate an early degraded condition or a sample which was not representative.,1997-08-25 00:00:00.000,"0         ","0         ",NULL
+1JSGBUV0132,005,009,"97-SG-7322  ",7322,1,930134,"Oil met criteria, however, it is trending up in acid number.  Additonal sampling is recommended.",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+1JSGEUV0180,005,009,"97-SG-7326  ",7326,1,930134,Oil meets acceptance criteria.  A sample is requested due to possible early acid number trend.,1997-08-25 00:00:00.000,"0         ","0         ",NULL
+1JSGEUV0181,005,009,"97-SG-7327  ",7327,1,930134,Oil meets acceptance criteria.  Early signs of adverse trend exist.  Resample is recommended.,1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2JSGAUV0174,005,009,"97-SG-7328  ",7328,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2JSGAUV0177,005,009,"97-SG-7329  ",7329,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2JSGBUV0132,005,009,"97-SG-7330  ",7330,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2JSGBUV0137,005,009,"97-SG-7331  ",7331,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2JSGEUV0170,005,009,"97-SG-7332  ",7332,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2JSGEUV0171,005,009,"97-SG-7333  ",7333,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2JSGEUV0180,005,009,"97-SG-7334  ",7334,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2JSGEUV0181,005,009,"97-SG-7335  ",7335,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+3JSGBUV0132,005,009,"97-SG-7338  ",7338,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+3JSGBUV0137,005,009,"97-SG-7339  ",7339,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+3JSGEUV0170,005,009,"97-SG-7340  ",7340,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+3JSGEUV0180,005,009,"97-SG-7342  ",7342,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+1JSGEUV0170,005,009,"97-SG-7324  ",7324,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+1JSGEUV0171,005,009,"97-SG-7325  ",7325,0," "," ",1997-08-25 00:00:00.000,"0         ","0         ",NULL
+2MEDNP01A,002,003,"97-ED-7308  ",7308,0," ",RBOT testing and FTIR performed.  Both were satisfactory to allow an additional cycle of use.,1997-08-29 00:00:00.000,"0         ","0         ",NULL
+2MEDNP01B,002,003,"97-ED-7307  ",7307,0," ",Oil was tested with RBOT and FTIR methods.  Oil was satisfactory per these tests.,1997-08-29 00:00:00.000,"0         ","0         ",NULL
+2MCDNP01A,002,003,"97-CD-7437  ",7437,0," ",Some of the oil purchased years ago was built to saybolt spec.  ISO grades are now used.  The Saybolt spec is sligthly lower at this viscosity.  The 61.41 viscosity is acceptable for this motor.,1997-08-29 00:00:00.000,"0         ","0         ",NULL
+1MCONT01,019,009,"97-CO-7127  ",7127,0," ",Partical count high.  Sample dated 10 days later acceptable.  Likely contamination of sample / sample bottle.,1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MIANC02,003,115,"97-IA-8013  ",8013,0," "," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MARNP01A,001,047,"97-AR-7811  ",7811,0," ",RBOT time of 419 minutes,1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MARNP01B,001,047,"97-AR-7812  ",7812,0," ",RBOT test of 317 minutes,1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,006,"97-CH-8017  ",8017,0," "," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,007,"97-CH-8018  ",8018,0," "," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"97-CH-8019  ",8019,0," "," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1JSGAUV0177,005,009,"97-SG-7321  ",7321,2,930133,Oil change recommended,1997-08-25 00:00:00.000,"0         ","0         ",NULL
+1MDGNC02B,003,006,"97-DG-7431  ",7431,2,931640,CHANGE OIL DUE TO ABRASIVE DEBRIS FOUND IN OIL SAMPLE,1997-09-29 00:00:00.000,"0         ","0         ",NULL
+1MDGNC01A,003,006,"97-DG-7608  ",7608,2,931641,cHANGE OIL DUE TO HIGH WATER CONTENT,1997-09-29 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01A,001,013,"97-RC-7788  ",7788,2,....,Change oil to Amoco Amakon 68.  Maint. Engineer was contacted with the information concerning the abnormal water content of the oil sample.  High water content in thrust bearings is a periodic re-occuriin issue.  All other testing done was satisfactory.  Maint. team/engineer is to initiate the work request.,1997-10-02 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01B,001,013,"97-RC-7748  ",7748,2,000000,Change oil to Amoco Amakon 68.  Maintenace notified.,1997-10-02 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01D,001,013,"97-RC-7749  ",7749,2,000000,Oil to be changed to Amoco Amakon 68.,1997-10-02 00:00:00.000,"0         ","0         ",NULL
+3MPWNP01A,002,003,"97-PW-7483  ",7483,2,931639,Change oil to remove iron wear debris.,1997-10-04 00:00:00.000,"0         ","0         ",NULL
+2MRCEP01C,001,013,"97-RC-7789  ",7789,2,00000,Change oil to Amoco Amokon 68 oil.  RCP team notified,1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MCONT01,019,009,"97-CO-7273  ",7273,0," "," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+3MDGNC01A,003,006,"97-DG-7731  ",7731,2,931645,WATER TESTED AT 0.69 % OR 6915 PPM.,1997-09-29 00:00:00.000,"0         ","0         ",NULL
+3MDGNC02B,003,006,"97-DG-7640  ",7640,2,930829," ",1997-09-29 00:00:00.000,"0         ","0         ",NULL
+1MCWNP01A,002,003,"97-CW-7600  ",7600,2,931858,Decreasing oxidation reserve trend,1997-10-02 00:00:00.000,"0         ","0         ",NULL
+1MCWNP01C,002,003,"97-CW-7602  ",7602,2,931859,Acid number tested at 0.07 (-1.0 is in error.  Oil oxidation reserve is depleting.,1997-10-02 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01C,002,003,"97-CW-7606  ",7606,2,929990,Decreasing oxidation reserve,1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,007,"97-CH-8020  ",8020,2,931943," ",1997-10-04 00:00:00.000,"0         ","0         ",NULL
+1MAFAP01,001,001,"97-AF-7512  ",7512,2,931970,CRDR was written to document a likely incorrect oil addition. Oil is satisfactory until the oil change,1997-10-07 00:00:00.000,"0         ","0         ",NULL
+1JSGAUV0174,005,009,"97-SG-7320  ",7320,0," "," ",1997-10-10 00:00:00.000,"0         ","0         ",NULL
+1MAFNP01,002,002,"97-AF-7730  ",7730,0," "," ",1997-10-10 00:00:00.000,"0         ","0         ",NULL
+1MAFNP01,002,001,"97-AF-7729  ",7729,0," "," ",1997-10-10 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01A,011,060,"97-OS-7787  ",7787,0," ",Particle count testing was satisfactory,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+1MAFAP01,001,002,"97-AF-7513  ",7513,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+1MAFNP01,001,001,"97-AF-7728  ",7728,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3JSGEUV0181,005,009,"97-SG-7343  ",7343,0," ",Tan of 0.09 is less than 0.5 and 431 ppm wtr. is less than 1000 ppm allowable. Viscosity of 40.76 is satisfactory,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MAFAK01,004,001,"97-AF-7763  ",7763,0," ",Oil viscosiy listed incrrect. Viscosity tested at 31.03 which is sat.  Insufficent sample for particle count. Oil is sat based upon prefiltration.,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MSPBP01,002,003,"97-SP-7855  ",7855,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MSPBP01,002,004,"97-SP-7856  ",7856,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MCONT01,019,009,"97-CO-7832  ",7832,0," ",Small particles exceeded criteria. Likely due to contamination. Oil is sat. pending future adverse trend. sampled monthly.,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MPWNP01B,002,003,"97-PW-7836  ",7836,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01A,002,001,"97-NC-7833  ",7833,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01A,002,002,"97-NC-7834  ",7834,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,006,"97-CH-7280  ",7280,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,006,"97-CH-7598  ",7598,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,007,"97-CH-7599  ",7599,0," ","High Si, low wear rates.  Oil is satisfactory",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01B,002,002,"97-NC-7490  ",7490,0," ",Abnormal level of iron debris in the oil.  Change oil,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MDGNC01B,003,006,"97-DG-7489  ",7489,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MSIBP01,002,003,"97-SI-7725  ",7725,0," ","High Si reading, low wear metals and low Large spec value for Si.  Oil is acceptable",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+3MIANC02,003,115,"97-IA-7824  ",7824,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MSPBP01,002,004,"97-SP-7362  ",7362,0," ",Slight level of iron found in sample,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MLONT01,016,008,"97-LO-7714  ",7714,0," ","RBOT time of 134 minutes, low and acceptable particle count. Oil is satisfactory",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01C,001,002,"97-AR-7758  ",7758,2,931979,Abnormal level of iron found in the oil.  Change oil,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MCDNP01A,002,003,"97-CD-7752  ",7752,1,000000,Resample due to abnormal level of wear debris,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01A,002,003,"97-CW-7710  ",7710,2,929990,decreasing oxidation reserve,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01B,002,003,"97-CW-7605  ",7605,2,929990,Depleting oxidation reserve,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01D,002,003,"97-CW-7712  ",7712,2,929990,Depleting oxidation reserve,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MCHEP01,001,006,"97-CH-7596  ",7596,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01D,001,047,"97-AR-7590  ",7590,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MSCNP09,064,040,"97-SC-7609  ",7609,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MSCNP11,064,040,"97-SC-7610  ",7610,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MSCNP12,064,040,"97-SC-7611  ",7611,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MSCNP13,064,040,"97-SC-7612  ",7612,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MSCNP14,064,040,"97-SC-7613  ",7613,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01A,001,002,"97-AR-7754  ",7754,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01A,001,047,"97-AR-7588  ",7588,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01B,001,001,"97-AR-7755  ",7755,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01B,001,002,"97-AR-7756  ",7756,0," ",Trend of iron debris dropped for unknown reason,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01C,001,001,"97-AR-7757  ",7757,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01C,001,047,"97-AR-7589  ",7589,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01D,001,001,"97-AR-7790  ",7790,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MARNP01D,001,002,"97-AR-7791  ",7791,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MSIBP03,002,003,"97-SI-7444  ",7444,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MCHAP01,001,006,"97-CH-7630  ",7630,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MCHAP01,001,007,"97-CH-7631  ",7631,0," "," ",1900-01-01 00:00:00.000,"0         ","0         ",NULL
+2MCHAP01,001,007,"97-CH-7631  ",7631,1,NULL,NULL,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,006,"97-CH-7296  ",7296,0," ",RBOT time of 248 minutes,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MTCNP01A,002,002,"97-TC-7637  ",7637,2,932362,Viscosity slightly out of range,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01A,011,060,"97-OS-7721  ",7721,0," ",Particle count was satisfactory,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MLONT02A,016,008,"97-LO-7841  ",7841,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MLONT02B,016,008,"97-LO-7842  ",7842,0," "," ",1997-10-11 00:00:00.000,"0         ","0         ",NULL
+2MTCNP01A,002,002,"97-TC-7635  ",7635,2,932362," ",1997-10-15 00:00:00.000,"0         ","0         ",NULL
+2MDGNC02B,003,006,"97-DG-7825  ",7825,2,931974," ",1997-10-15 00:00:00.000,"0         ","0         ",NULL
+1MARNP01D,001,047,"97-AR-7814  ",7814,0," "," ",1997-10-15 00:00:00.000,"0         ","0         ",NULL
+1MARNP01C,001,047,"97-AR-7813  ",7813,0," "," ",1997-10-15 00:00:00.000,"0         ","0         ",NULL
+2MZCNG06A,031,009,"97-ZC-7638  ",7638,0," "," ",1997-10-21 00:00:00.000,"0         ","0         ",NULL
+2MZCNG06B,031,009,"97-ZC-7639  ",7639,0," "," ",1997-10-21 00:00:00.000,"0         ","0         ",NULL
+2MZCNG06C,031,009,"97-ZC-7616  ",7616,0," "," ",1997-10-21 00:00:00.000,"0         ","0         ",NULL
+2MZCNG06D,031,009,"97-ZC-7617  ",7617,0," "," ",1997-10-21 00:00:00.000,"0         ","0         ",NULL
+2MSPAP01,002,003,"97-SP-8060  ",8060,0," "," ",1997-10-21 00:00:00.000,"0         ","0         ",NULL
+2MSPAP01,002,004,"97-SP-8059  ",8059,0," "," ",1997-10-21 00:00:00.000,"0         ","0         ",NULL
+AASKNE01,006,009,"97-SK-7817  ",7817,0," ",Viscosity results transposed. Both are satisfactory.  No filter residue performed.  Satisfactory wear levels per Spectrometer.,1997-10-22 00:00:00.000,"0         ","0         ",NULL
+2MDGBH01,006,009,"97-DG-7861  ",7861,0," ",Filter reside test result of 1.4 mg/100 ml.  Recomendation to add four barrels new oil made.,1997-10-22 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"97-CH-8073  ",8073,0," "," ",1997-10-22 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,006,"97-CH-8075  ",8075,2,933755,RBOT test time of 134 minutes,1997-11-06 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,006,"97-CH-8075  ",8075,1,NULL,NULL,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,007,"97-CH-8076  ",8076,0," "," ",1997-11-06 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,006,"97-CH-8039  ",8039,0," "," ",1997-11-06 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,007,"97-CH-8107  ",8107,0," ",testing,1997-11-06 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,007,"97-CH-8040  ",8040,0," ",Retest requested on viscosity.  Retest of 217.7 is satisfactory.,1997-11-10 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01B,011,060,"97-OS-7741  ",7741,0," ",Particle count test results exceeded criteria. Likely introduced by sampling.  This oil is sat pending next routine sample.,1997-11-10 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01A,011,060,"97-OS-7722  ",7722,0," ",Particle count was unacceptable but also inconsistent with prior sample.  Oil is acceptable pending trend verification.,1997-11-10 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,006,"97-CH-8108  ",8108,0," "," ",1997-11-13 00:00:00.000,"0         ","0         ",NULL
+1MSIBP01,002,003,"97-SI-8134  ",8134,0," "," ",1997-12-02 00:00:00.000,"0         ","0         ",NULL
+3MDGNC01B,003,006,"97-DG-8182  ",8182,0," "," ",1997-12-02 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,007,"97-CH-8109  ",8109,0," "," ",1997-12-02 00:00:00.000,"0         ","0         ",NULL
+3MAFBP01,001,001,"97-AF-8183  ",8183,0," "," ",1997-12-02 00:00:00.000,"0         ","0         ",NULL
+AMDGNH0T01,006,009,"97-DG-8155  ",8155,0," "," ",1997-12-02 00:00:00.000,"0         ","0         ",NULL
+3MAFBP01,001,002,"97-AF-8184  ",8184,0," "," ",1997-12-02 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01B,002,001,"97-NC-8119  ",8119,0," "," ",1997-12-02 00:00:00.000,"0         ","0         ",NULL
+2MDGNC02B,003,006,"97-DG-8105  ",8105,0," ",Oil will be accepted and location monitored with next sample.  Heater installed for water removal.,1997-12-02 00:00:00.000,"0         ","0         ",NULL
+3JSGEUV0171,005,009,"97-SG-8084  ",8084,2,819660,WO # 819660 generated to change the oil.,1997-12-03 00:00:00.000,"0         ","0         ",NULL
+2MECAE01,007,009,"97-EC-8041  ",8041,1,932358,Oil tested satisfactory with resample.,1997-10-11 00:00:00.000,"0         ","0         ",NULL
+1MSIAP01,002,003,"97-SI-8287  ",8287,0," "," ",1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MSIAP01,002,003,"97-SI-8287  ",8287,1,NULL,NULL,1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MAFBP01,002,001,"97-AF-8186  ",8186,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MSPAP01,002,003,"97-SP-8269  ",8269,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MSPAP01,002,003,"97-SP-8269  ",8269,1,NULL,NULL,1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MSPAP01,002,004,"97-SP-8270  ",8270,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MSPBP01,002,003,"97-SP-8289  ",8289,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MSPBP01,002,004,"97-SP-8290  ",8290,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MPWNP01B,002,004,"97-PW-8469  ",8469,2,935671,Rust also found in bearing,1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MWCNE01C,007,009,"98-WC-8952  ",8952,2,939932,Copper content is increasing and 295 ppm water found in the oil. Change oil.,1998-03-30 00:00:00.000,"0         ","0         ",NULL
+3MLONT01,016,008,"98-LO-8757  ",8757,0," ",Cleanliness meet NAS 9 criteria and rbot better than 100 minute criteria.,1998-03-30 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01A,011,060,"98-OS-8949  ",8949,0," ","NAS 9 cleanliness satisfied.  ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+3MPWNP01B,002,003,"98-PW-8999  ",8999,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01A,002,001,"98-NC-8995  ",8995,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01A,002,002,"98-NC-8996  ",8996,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+3MSPBP01,002,003,"98-SP-9001  ",9001,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+3MSPBP01,002,004,"98-SP-9002  ",9002,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MARNP01A,001,001,"98-AR-8933  ",8933,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MARNP01B,001,001,"98-AR-8936  ",8936,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MARNP01B,001,002,"98-AR-8934  ",8934,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MARNP01C,001,001,"98-AR-8939  ",8939,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MARNP01C,001,002,"98-AR-8940  ",8940,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MARNP01D,001,001,"98-AR-8937  ",8937,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MARNP01D,001,002,"98-AR-8938  ",8938,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MDGNC02B,003,006,"98-DG-9025  ",9025,0," "," ",1998-03-30 00:00:00.000,"0         ","0         ",NULL
+2MDGNC01A,003,006,"98-DG-9113  ",9113,0," ",CHANGE OIL (WR # 940644). REDUCED OXIDATION ADDITIVE,1998-03-30 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01A,002,003,"98-RC-9050  ",9050,0," "," ",1998-04-07 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01A,002,004,"98-RC-9051  ",9051,0," "," ",1998-04-07 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01B,002,003,"98-RC-9052  ",9052,0," "," ",1998-04-07 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01B,002,004,"98-RC-9053  ",9053,0," "," ",1998-04-07 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01B,001,013,"98-RC-9069  ",9069,0," "," ",1998-04-07 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01C,002,003,"98-RC-9054  ",9054,2,000000,Turbo 68 found in oil sump.  Oil to be changed.  Maint. team leader notified and will include in work scope.  WR not required.,1998-04-07 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01C,001,013,"98-RC-9108  ",9108,0," ","Viscosity @ 68.57, RBOT @ 2901, Water at 20 ppm and Acid Number of 0.04.  All are acceptable.  Oil is satisfactory.",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01D,001,013,"98-RC-9071  ",9071,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01A,001,013,"98-RC-9068  ",9068,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+1MRCEP01D,002,003,"98-RC-9056  ",9056,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MCHEP01,001,006,"98-CH-8825  ",8825,0," ",RBOT test time of 181 minutes.  FTIR was satisfactory.,1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,007,"98-CH-9131  ",9131,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MCHAP01,001,007,"98-CH-8916  ",8916,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01A,011,060,"98-OS-8942  ",8942,0," ",Oil cleanliness exceeds NAS 9 criteria. RBOT not performed on sample.  System exceeds 100 min. RBOT time.,1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MAFAK01,004,001,"98-AF-9093  ",9093,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MAFAP01,001,002,"98-AF-9092  ",9092,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MAFAP01,001,001,"98-AF-9091  ",9091,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MSPAP01,002,003,"98-SP-8969  ",8969,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MSPAP01,002,004,"98-SP-8968  ",8968,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MSIBP01,002,003,"98-SI-9049  ",9049,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MCHAP01,001,006,"98-CH-8915  ",8915,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+2MIANC01C,003,006,"98-IA-8941  ",8941,0," "," ",1998-04-08 00:00:00.000,"0         ","0         ",NULL
+3MSCNP09,064,040,"98-SC-9137  ",9137,0," "," ",1998-04-09 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,006,"98-CH-8797  ",8797,0," "," ",1998-04-09 00:00:00.000,"0         ","0         ",NULL
+3MDGNC02A,003,006,"98-DG-9326  ",9326,0," "," ",1998-04-09 00:00:00.000,"0         ","0         ",NULL
+3MCWNP01D,002,003,"98-CW-8873  ",8873,2,941145,change during next outage,1997-04-08 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,006,"98-CH-9134  ",9134,0," "," ",1998-04-09 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,007,"98-CH-9323  ",9323,0," "," ",1998-04-09 00:00:00.000,"0         ","0         ",NULL
+1MSIBP03,002,003,"98-SI-9139  ",9139,0," "," ",1998-04-09 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,007,"98-CH-9133  ",9133,0," "," ",1998-04-09 00:00:00.000,"0         ","0         ",NULL
+AASKNE01,006,009,"98-SK-9022  ",9022,0," "," ",1998-04-10 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,007,"98-CH-9321  ",9321,0," "," ",1998-04-10 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"98-CH-9322  ",9322,0," "," ",1998-04-10 00:00:00.000,"0         ","0         ",NULL
+1MSIAP01,002,003,"98-SI-9352  ",9352,0," "," ",1998-04-10 00:00:00.000,"0         ","0         ",NULL
+3MLONT02B,016,008,"98-LO-9095  ",9095,0," ",PARTICLE COUNTS WERE ACCEPTABLE.  AN RBOT TIME OF 354 MINUTES RESULTED.,1998-05-05 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,006,"98-CH-9320  ",9320,0," ",RBOT TEST TIME OF 473 MINUTES,1998-05-05 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01A,002,003,"98-PW-9135  ",9135,0," "," ",1998-05-05 00:00:00.000,"0         ","0         ",NULL
+1MIANC02,003,115,"98-IA-9023  ",9023,0," ",rbot TEST RESULT OF 256 MINUTES,1998-05-05 00:00:00.000,"0         ","0         ",NULL
+1MLONT02B,016,008,"98-LO-9008  ",9008,0," ",RBOT TEST OF 498 MINUTES,1998-05-05 00:00:00.000,"0         ","0         ",NULL
+1MLONT02A,016,008,"98-LO-9007  ",9007,0," ",RBOT TIME OF 545 MINUTES.  SATISFACTORY CLEANLINESS,1998-05-05 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01A,002,004,"98-PW-9136  ",9136,0," ","VISCOSITY IS SLIGHTLY HIGH HOWEVER PER REVIEW OF FTIR, IT IS ACCEPTABLE. ",1998-05-05 00:00:00.000,"0         ","0         ",NULL
+3MDGNC01B,003,006,"98-DG-9513  ",9513,2,942583," ",1998-05-05 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01B,002,001,"98-NC-9410  ",9410,0," "," ",1998-05-05 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01B,002,002,"98-NC-9409  ",9409,0," "," ",1998-05-05 00:00:00.000,"0         ","0         ",NULL
+2MNCNP01B,002,002,"98-NC-9412  ",9412,0," "," ",1998-05-05 00:00:00.000,"0         ","0         ",NULL
+3JFWNFV0001,005,009,"98-FW-9413  ",9413,0," "," ",1998-05-05 00:00:00.000,"0         ","0         ",NULL
+3JFWNFV0002,005,009,"98-FW-9414  ",9414,0," "," ",1998-05-05 00:00:00.000,"0         ","0         ",NULL
+1MWCNE01C,007,009,"98-WC-8844  ",8844,2,940488,Oil change was requested,1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MWCNE01A,007,009,"98-WC-9123  ",9123,0," ",Mineral oil dilution within 5 % limit.,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MWCNE01A,007,009,"98-WC-9123  ",9123,1,NULL,NULL,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,007,"98-CH-9591  ",9591,0," "," ",1998-05-15 00:00:00.000,"0         ","0         ",NULL
+3MDGNC02B,003,006,"98-DG-9639  ",9639,0," "," ",1998-05-15 00:00:00.000,"0         ","0         ",NULL
+1MSPBP01,002,003,"98-SP-9637  ",9637,0," "," ",1998-05-15 00:00:00.000,"0         ","0         ",NULL
+3MECAE01,007,009,"98-EC-9611  ",9611,0," ",Lubricant acceptable,1998-05-15 00:00:00.000,"0         ","0         ",NULL
+3MECBE01,007,009,"98-EC-9640  ",9640,0," "," ",1998-05-15 00:00:00.000,"0         ","0         ",NULL
+3MDGNC01A,003,006,"98-DG-9762  ",9762,0," "," ",1998-06-02 00:00:00.000,"0         ","0         ",NULL
+3MCDNP01C,002,003,"98-CD-9712  ",9712,0," "," ",1998-06-03 00:00:00.000,"0         ","0         ",NULL
+3MCDNP01B,002,003,"98-CD-9711  ",9711,0," "," ",1998-06-03 00:00:00.000,"0         ","0         ",NULL
+3MCDNP01A,002,003,"98-CD-9710  ",9710,0," "," ",1998-06-03 00:00:00.000,"0         ","0         ",NULL
+1MCDNP01C,002,003,"98-CD-9708  ",9708,0," "," ",1998-06-03 00:00:00.000,"0         ","0         ",NULL
+1MCDNP01A,002,003,"98-CD-9706  ",9706,0," "," ",1998-06-03 00:00:00.000,"0         ","0         ",NULL
+3MZFNG01,034,047,"98-ZF-9646  ",9646,0," "," ",1998-06-05 00:00:00.000,"0         ","0         ",NULL
+3MZFNG01,033,073,"98-ZF-9647  ",9647,0," "," ",1998-06-05 00:00:00.000,"0         ","0         ",NULL
+3MZFNG01,054,047,"98-ZF-9645  ",9645,0," "," ",1998-06-05 00:00:00.000,"0         ","0         ",NULL
+3MZFNG01,033,047,"98-ZF-9648  ",9648,0," "," ",1998-06-05 00:00:00.000,"0         ","0         ",NULL
+1MSPAP01,002,003,"98-SP-9754  ",9754,0," "," ",1998-06-05 00:00:00.000,"0         ","0         ",NULL
+1MSPAP01,002,004,"98-SP-9755  ",9755,0," "," ",1998-06-05 00:00:00.000,"0         ","0         ",NULL
+3MZFNG02,107,047,"98-ZF-9649  ",9649,0," "," ",1998-06-05 00:00:00.000,"0         ","0         ",NULL
+2MCHEP01,001,007,"98-CH-9730  ",9730,0," "," ",1998-06-05 00:00:00.000,"0         ","0         ",NULL
+2MWCNE01A,007,009,"98-WC-9030  ",9030,2,943561,change oil due to resample of oil with sample 9739,1998-06-05 00:00:00.000,"0         ","0         ",NULL
+2MCONT01,019,009,"98-CO-9709  ",9709,0," "," ",1998-06-06 00:00:00.000,"0         ","0         ",NULL
+3MCONT01,019,009,"98-CO-9744  ",9744,0," "," ",1998-06-06 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01B,011,060,"98-OS-9738  ",9738,0," "," ",1998-06-06 00:00:00.000,"0         ","0         ",NULL
+2MDGNC02B,003,006,"98-DG-9820  ",9820,0," "," ",1998-06-15 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,007,"98-CH-9826  ",9826,0," "," ",1998-06-15 00:00:00.000,"0         ","0         ",NULL
+2MCHEP01,001,006,"98-CH-9731  ",9731,0," "," ",1998-06-29 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01A,002,001,"98-TC-9795  ",9795,0," "," ",1998-06-30 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01A,002,002,"98-TC-9796  ",9796,0," "," ",1998-06-30 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,007,"98-CH-9948  ",9948,0," "," ",1998-06-30 00:00:00.000,"0         ","0         ",NULL
+3MZFNG01,052,007,"98-ZF-9786  ",9786,0," "," ",1998-06-30 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,006,"98-CH-8631  ",8631,2,945650,RBOT time approaching 100 minutes,1998-07-01 00:00:00.000,"0         ","0         ",NULL
+1MSPBP01,002,004,"98-SP-9635  ",9635,2,945651,Change oil to remove debris at lower bearing,1998-07-01 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01A,011,060,"98-OS-9782  ",9782,0," ",Oil cleanliness is satisfactory,1998-07-01 00:00:00.000,"0         ","0         ",NULL
+3MCWNA02L,031,009,"98-CW-9681  ",9681,2,943527," ",1998-07-01 00:00:00.000,"0         ","0         ",NULL
+3MCWNA03F,031,009,"98-CW-9691  ",9691,2,943529," ",1998-07-01 00:00:00.000,"0         ","0         ",NULL
+3MCWNA03J,031,009,"98-CW-9695  ",9695,2,943529," ",1998-07-01 00:00:00.000,"0         ","0         ",NULL
+AMDGNH0T01,006,009,"98-DG-9602  ",9602,0," "," ",1998-07-01 00:00:00.000,"0         ","0         ",NULL
+2MLONT02B,016,008,"98-LO-9824  ",9824,0," ",OIL CLEANLINESS IS SATISFACTORY,1998-07-01 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01A,011,060,"98-OS-9737  ",9737,0," ",CLEANLINESS IS SATISFACTORY,1998-07-01 00:00:00.000,"0         ","0         ",NULL
+1MDGNC01B,003,006,"98-DG-9930  ",9930,0," "," ",1998-07-01 00:00:00.000,"0         ","0         ",NULL
+2MCHAP01,001,007,"98-CH-9728  ",9728,0," ",iron ppm is constant,1998-07-02 00:00:00.000,"0         ","0         ",NULL
+AMFPNM01A,006,006,"98-FP-9751  ",9751,0," "," ",1998-07-02 00:00:00.000,"0         ","0         ",NULL
+2MAFAK01,004,001,"98-AF-9931  ",9931,0," "," ",1998-07-02 00:00:00.000,"0         ","0         ",NULL
+2MWCNE01B,007,009,"98-WC-9934  ",9934,2,see ab,"The oil had an incorrect percentage of Tellus and HFC oil.  Per previous conversation, the oil change recommendation was conveyed to the Main. Engr. He agreed to take the lead and initiate proper paper.",1998-07-08 00:00:00.000,"0         ","0         ",NULL
+3MWCNE01B,007,009,"98-WC-9922  ",9922,0," ",HFC of 84 (75 sat),1998-07-08 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01A,011,060,"98-OS-9718  ",9718,1,see ab,"Oil cleanliness exceeds criteria.  Recommend monitoring with next routine sample prior to field recommendations to clean the oil.  Note, system oil is clean in turbines.",1998-07-08 00:00:00.000,"0         ","0         ",NULL
+3MZFNG02,224,007,"98-ZF-9650  ",9650,0," "," ",1998-07-15 00:00:00.000,"0         ","0         ",NULL
+2MTCNP01A,002,001,"98-TC-9959  ",9959,0," "," ",1998-07-16 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,007,"98-CH-9952  ",9952,0," "," ",1998-07-16 00:00:00.000,"0         ","0         ",NULL
+3MSPAP01,002,004,"98-SP-9941  ",9941,0," ",Some debris found in oil sample,1998-07-16 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01A,002,004,"98-PW-9964  ",9964,1,945222,"Maint. Engineer contacted, re-sample was recommended",1998-07-16 00:00:00.000,"0         ","0         ",NULL
+2MNCNP01A,002,001,"98-NC-9967  ",9967,0," ",Viscosity of 100 is correct. Acceptance criteria in error. Oil is satisfactory.,1998-07-21 00:00:00.000,"0         ","0         ",NULL
+2MEDNP01B,002,003,"98-ED-9975  ",9975,0," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+2MEDNP01A,002,003,"98-ED-9976  ",9976,0," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+3MSIAP03,002,003,"98-SI-9965  ",9965,0," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+1MSCNP13,064,040,"98-SC-10049 ",10049,0," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+2MAFNP01,002,002,"98-AF-10069 ",10069,0," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+2MSIBP03,002,003,"98-SI-10070 ",10070,0," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+2MSPBP01,002,004,"98-SP-10032 ",10032,0," ",Trace levels of iron found in oil sample,1998-07-21 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,007,"98-CH-9983  ",9983,2,946497,debris in oil. change recommended,1998-07-21 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,006,"98-CH-9743  ",9743,0," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+1MCONT01,019,009,"98-CO-9636  ",9636,0," ",The resample for next two samples had acceptable oil cleanliness. Sample technique caused high values.,1998-07-21 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01B,011,060,"98-OS-9783  ",9783,1,0,water exceeded limit. Control was notified and agreed to address. Acceptable pending next routine sample.,1998-07-21 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01B,002,001,"98-TC-9789  ",9789,0," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01B,002,002,"98-TC-9790  ",9790,0," "," ",1998-07-21 00:00:00.000,"0         ","0         ",NULL
+2MPCBP01,001,019,"98-PC-9808  ",9808,0," ","Viscosity slightly above criteria, oil changed with sample",1998-07-22 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03D,031,009,"98-CW-9714  ",9714,0," "," ",1998-07-22 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03H,031,009,"98-CW-9797  ",9797,0," ",Viscosity is below the specification.  Wear metals are trending flat.,1998-07-22 00:00:00.000,"0         ","0         ",NULL
+3MARNP01A,001,002,"98-AR-10147 ",10147,0," ",Slightly low viscosity.  Wear metals flat. Continue to monitor at existing frequeny.,1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MARNP01B,001,001,"98-AR-10148 ",10148,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MARNP01B,001,002,"98-AR-10149 ",10149,0," ","Viscosity slightly low, present monitoring interval is satisfactory to allow continued usage.",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MARNP01C,001,001,"98-AR-10150 ",10150,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MARNP01C,001,002,"98-AR-10151 ",10151,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MARNP01D,001,001,"98-AR-10152 ",10152,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01A,002,003,"98-CW-10138 ",10138,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01B,002,003,"98-CW-10139 ",10139,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01C,002,003,"98-CW-10140 ",10140,0," ",Slightly abnormal water content,1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MCWNP01D,002,003,"98-CW-10141 ",10141,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+1MAFAK01,004,001,"98-AF-10085 ",10085,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+1MAFAP01,001,001,"98-AF-10086 ",10086,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+1MAFAP01,001,002,"98-AF-10087 ",10087,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2EPEAG01,010,002,"98-PE-10088 ",10088,0," ",viscosity is slightly low.  Trend this condition using routine intevals,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+2EPEAG01,010,002,"98-PE-10088 ",10088,1,NULL,NULL,1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,007,"98-CH-10130 ",10130,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MWCNE02,007,009,"98-WC-10155 ",10155,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01A,002,001,"98-NC-9774  ",9774,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01A,002,002,"98-NC-9775  ",9775,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01B,011,060,"98-OS-9719  ",9719,0," ",high particle counts. sample contamination is expected. Monitor at normal intervals,1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MAFNP01,002,001,"98-AF-10068 ",10068,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,006,"98-CH-9982  ",9982,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"98-CH-10038 ",10038,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,007,"98-CH-10039 ",10039,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MSIAP01,002,003,"98-SI-9972  ",9972,0," "," ",1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MIANC01C,003,006,"98-IA-10000 ",10000,0," ",viscosity low. WR # 944471 in place to change oil per earlier LCDE evaluation,1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MEWBP01,001,001,"98-EW-10029 ",10029,0," ",Viscosity slightly high....oil changed with sample,1998-07-27 00:00:00.000,"0         ","0         ",NULL
+2MEWBP01,001,002,"98-EW-10030 ",10030,0," ",slightly high viscosity. Oil satisfactory in performance at time of oil change.,1998-07-27 00:00:00.000,"0         ","0         ",NULL
+3MSCNP12,064,040,"99-SC-11305 ",11305,0," "," ",1999-01-19 00:00:00.000,"0         ","0         ",NULL
+3MSCNP11,064,040,"99-SC-11304 ",11304,0," "," ",1999-01-19 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,006,"99-CH-11222 ",11222,0," "," ",1999-01-19 00:00:00.000,"0         ","0         ",NULL
+2MARNP01D,001,047,"99-AR-11370 ",11370,0," ","Viscosity below criteria however, provides acceptable film. (ISO 150 used previously)",1999-01-19 00:00:00.000,"0         ","0         ",NULL
+1MDGBH01,006,009,"99-DG-11258 ",11258,0," ",Telfon tape found in sample.  Main Engineer (Hoffman) notified.  Recommended to trend.,1999-01-19 00:00:00.000,"0         ","0         ",NULL
+2MZFNG02,202,007,"99-ZF-11335 ",11335,2,954833," ",1999-01-28 00:00:00.000,"0         ","0         ",NULL
+2MZFNG02,169,007,"99-ZF-11328 ",11328,0," "," ",1999-01-28 00:00:00.000,"0         ","0         ",NULL
+2MSPBP01,002,004,"99-SP-11287 ",11287,0," "," ",1999-01-28 00:00:00.000,"0         ","0         ",NULL
+2MSIAP03,002,003,"99-SI-11384 ",11384,0," "," ",1999-01-28 00:00:00.000,"0         ","0         ",NULL
+3JEDNUV0032,097,040,"99-ED-11428 ",11428,0," ",Barium represents Mobil vaportech which is not used.. Ba is not applicable,1999-01-28 00:00:00.000,"0         ","0         ",NULL
+3MCWNA01E,031,009,"99-CW-11396 ",11396,0," ",New test oil. Acceptable viscosity,1999-01-28 00:00:00.000,"0         ","0         ",NULL
+3MCWNA01C,031,009,"99-CW-11350 ",11350,0," ",experimental oil is satisfactory,1999-01-28 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01A,002,002,"99-NC-11389 ",11389,0," "," ",1999-01-28 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01A,002,001,"99-NC-11388 ",11388,0," "," ",1999-01-28 00:00:00.000,"0         ","0         ",NULL
+1EPEAG01,010,002,"99-PE-11555 ",11555,0," "," ",1999-02-03 00:00:00.000,"0         ","0         ",NULL
+2JSGAUV0174,005,009,"99-SG-11677 ",11677,0," "," ",1999-02-04 00:00:00.000,"0         ","0         ",NULL
+2JSGAUV0177,005,009,"99-SG-11678 ",11678,0," "," ",1999-02-04 00:00:00.000,"0         ","0         ",NULL
+2JSGBUV0132,005,009,"99-SG-11673 ",11673,0," "," ",1999-02-04 00:00:00.000,"0         ","0         ",NULL
+2JSGBUV0137,005,009,"99-SG-11674 ",11674,0," "," ",1999-02-04 00:00:00.000,"0         ","0         ",NULL
+2JSGEUV0170,005,009,"99-SG-11675 ",11675,0," "," ",1999-02-04 00:00:00.000,"0         ","0         ",NULL
+2JSGEUV0171,005,009,"99-SG-11676 ",11676,0," "," ",1999-02-04 00:00:00.000,"0         ","0         ",NULL
+1MSCNP14,064,040,"99-SC-11324 ",11324,0," "," ",1999-01-08 00:00:00.000,"0         ","0         ",NULL
+1MSCNP12,064,040,"99-SC-11323 ",11323,0," "," ",1999-01-08 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01B,002,003,"99-PW-11268 ",11268,0," "," ",1999-01-08 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01B,002,001,"99-TC-11318 ",11318,0," "," ",1999-01-08 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01A,002,002,"99-TC-11317 ",11317,0," "," ",1999-01-08 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,006,"99-CH-11272 ",11272,0," "," ",1999-01-08 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"99-CH-11274 ",11274,0," "," ",1999-01-08 00:00:00.000,"0         ","0         ",NULL
+2MSPBP01,002,003,"99-SP-11288 ",11288,0," "," ",1999-01-12 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,007,"99-CH-11042 ",11042,0," ",Si contaminant does not appear to be abrasive. Oil is sat.,1999-01-12 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,006,"99-CH-11229 ",11229,0," "," ",1999-01-12 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,007,"99-CH-11362 ",11362,0," "," ",1999-01-12 00:00:00.000,"0         ","0         ",NULL
+1MAFAK01,004,001,"99-AF-11340 ",11340,0," "," ",1999-01-12 00:00:00.000,"0         ","0         ",NULL
+1MEDNP01A,002,003,"99-ED-11364 ",11364,0," ",Silicon does not appear to be abrasive,1999-01-12 00:00:00.000,"0         ","0         ",NULL
+1MEDNP01B,002,003,"99-ED-11365 ",11365,0," ",Silicon does not appear abrasive or have obvious source,1999-01-12 00:00:00.000,"0         ","0         ",NULL
+2EPEAG01,010,002,"99-PE-11366 ",11366,0," ",Viscosity slightly below criteria is acceptable.  Viscosity is satisfactory for use. Continue monitoring,1999-01-12 00:00:00.000,"0         ","0         ",NULL
+2MSIBP03,002,003,"99-SI-11326 ",11326,2,954220,WATER ABOVE CRITERIA. MOST REMOVED WITH SAMPLE. CHANGE AT NEXT WINDOW,1999-01-12 00:00:00.000,"0         ","0         ",NULL
+3MSCNP14,064,040,"99-SC-11307 ",11307,0," "," ",1999-01-19 00:00:00.000,"0         ","0         ",NULL
+1MDGNC02A,003,006,"97-DG-8539  ",8539,2,935678," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MZFNG02,202,007,"97-ZF-8520  ",8520,0," ",Viscosity test ran at 40 C. Viscosity is satisfactory,1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MZFNG02,224,007,"97-ZF-8518  ",8518,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+1MZFNG02,169,007,"97-ZF-8523  ",8523,0," "," ",1997-12-22 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,007,"98-CH-8233  ",8233,0," "," ",1998-01-07 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,006,"98-CH-8232  ",8232,0," "," ",1998-01-07 00:00:00.000,"0         ","0         ",NULL
+3MSCNP09,138,009,"98-SC-8094  ",8094,0," "," ",1998-01-07 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01A,011,060,"98-OS-8237  ",8237,0," ",Particle count acceptable,1998-01-07 00:00:00.000,"0         ","0         ",NULL
+3NSRNM01,148,009,"98-SR-8215  ",8215,0," "," ",1998-01-07 00:00:00.000,"0         ","0         ",NULL
+1JSGBUV0132,005,009,"98-SG-8245  ",8245,2,934741," ",1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1JSGEUV0180,005,009,"98-SG-8249  ",8249,0," ",Flat TAN trend over last 6 months,1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1JSGAUV0174,005,009,"98-SG-8243  ",8243,0," "," ",1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1JSGBUV0137,005,009,"98-SG-8246  ",8246,0," "," ",1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1JSGEUV0171,005,009,"98-SG-8248  ",8248,0," "," ",1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1MZFNG01,033,073,"98-ZF-8528  ",8528,0," "," ",1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1MZFNG01,033,080,"98-ZF-8529  ",8529,0," "," ",1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1MZFNG01,034,047,"98-ZF-8527  ",8527,0," "," ",1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1MZFNG01,052,007,"98-ZF-8524  ",8524,0," "," ",1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1MZFNG01,033,047,"98-ZF-8526  ",8526,0," "," ",1998-01-08 00:00:00.000,"0         ","0         ",NULL
+1JSGEUV0170,005,009,"98-SG-8247  ",8247,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"98-CH-8605  ",8605,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01A,002,001,"98-NC-8467  ",8467,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+1MCDNP01B,002,003,"98-CD-8098  ",8098,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+1MPWNP01A,002,003,"98-PW-8144  ",8144,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01A,011,060,"98-OS-8456  ",8456,0," ",High particle count recorded at both ltanks likely due to sample technic. Trend to next sample,1998-01-14 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01B,011,060,"98-OS-8457  ",8457,0," ",High Particle count similar to other tank sample.  Likely due to technic.  Trend to next sample.,1998-01-14 00:00:00.000,"0         ","0         ",NULL
+1MDGNC01B,003,006,"98-DG-8047  ",8047,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01B,002,003,"98-PW-8483  ",8483,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01B,002,004,"98-PW-8484  ",8484,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MNCNP01A,002,001,"98-NC-8479  ",8479,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MNCNP01A,002,002,"98-NC-8480  ",8480,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MNCNP01B,002,001,"98-NC-8149  ",8149,2,936522," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MNCNP01B,002,002,"98-NC-8148  ",8148,2,936522,Water found in inboard bearing,1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MTCNP01B,002,001,"98-TC-8478  ",8478,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01A,011,060,"98-OS-8235  ",8235,0," ",Low Particle Counts,1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01B,011,060,"98-OS-8236  ",8236,0," ",Low particle counts,1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MPWNP01A,002,003,"98-PW-8143  ",8143,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MAFAP01,001,001,"98-AF-8113  ",8113,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MAFAP01,001,002,"98-AF-8114  ",8114,0," "," ",1998-01-14 00:00:00.000,"0         ","0         ",NULL
+2MARNP01A,001,001,"98-AR-7753  ",7753,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+AMDGNH0T01,006,009,"98-DG-8648  ",8648,0," ",Oil metals satisfactory.  TBN not performed on sample.,1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,007,"98-CH-8653  ",8653,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MAFBP01,001,001,"98-AF-8599  ",8599,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MAFBP01,001,002,"98-AF-8600  ",8600,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MAFBP01,002,002,"98-AF-8602  ",8602,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,006,"98-CH-8603  ",8603,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,006,"98-CH-8654  ",8654,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1NSRNM01,148,009,"98-SR-8613  ",8613,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1JFWNFV0001,005,009,"98-FW-8609  ",8609,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1JFWNFV0002,005,009,"98-FW-8610  ",8610,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MDGNC01B,003,006,"98-DG-8608  ",8608,2,936254,Main. Engineer and main. team notified,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MDGNC01B,003,006,"98-DG-8608  ",8608,1,NULL,NULL,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01B,002,001,"98-NC-8582  ",8582,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MNCNP01B,002,002,"98-NC-8583  ",8583,0," "," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MPWNP01A,002,004,"98-PW-8142  ",8142,2,936575," ",1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MDGAH01,006,009,"98-DG-8607  ",8607,0," ",FTIR satisfactory.  Recommendation provided to add 5 barrels of new oil. (wr # 936582),1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MDGBH01,006,009,"98-DG-8535  ",8535,0," ",WR # 936582 to add 4-5 barrels of new oil. FTIR was satisfactory.,1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MDGBH01,006,009,"98-DG-8535  ",8535,1,NULL,NULL,1998-01-15 00:00:00.000,"0         ","0         ",NULL
+1MCWNP01B,002,003,"98-CW-8252  ",8252,0," ",Acceptence criteria for RBOT is greater than 350 minutes.  Oil is acceptable.,1998-01-15 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01B,002,001,"98-TC-8639  ",8639,0," "," ",1998-01-20 00:00:00.000,"0         ","0         ",NULL
+3MTCNP01B,002,002,"98-TC-8640  ",8640,0," "," ",1998-01-20 00:00:00.000,"0         ","0         ",NULL
+3MWCNE01B,007,009,"98-WC-8647  ",8647,2,936749,Oil change recommended due to incompatible mixture of oils found in oil sample.,1998-01-20 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,007,"98-CH-8595  ",8595,0," "," ",1998-01-21 00:00:00.000,"0         ","0         ",NULL
+3MSIBP03,002,003,"98-SI-8591  ",8591,0," "," ",1998-01-21 00:00:00.000,"0         ","0         ",NULL
+3MCHEP01,001,007,"98-CH-8632  ",8632,0," "," ",1998-01-21 00:00:00.000,"0         ","0         ",NULL
+2MDGNC02B,003,006,"98-DG-8594  ",8594,0," "," ",1998-01-21 00:00:00.000,"0         ","0         ",NULL
+2MARNP01A,001,047,"98-AR-8541  ",8541,0," "," ",1998-01-21 00:00:00.000,"0         ","0         ",NULL
+2MARNP01B,001,047,"98-AR-8592  ",8592,0," ","Oil viscosity, acid number, cleanliness and water satisfactory.",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+2MSPBP01,002,003,"98-SP-8710  ",8710,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+2MSPBP01,002,004,"98-SP-8711  ",8711,0," ",Trace level of iron debris in oil.,1998-01-23 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,007,"98-CH-8655  ",8655,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,007,"98-CH-8702  ",8702,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+AMFPNM01B,006,006,"98-FP-8598  ",8598,0," ",Oil is satisfactory.  Viscosity measured at 100 deg C. and is satisfactory.,1998-01-23 00:00:00.000,"0         ","0         ",NULL
+2MDGNC01A,003,006,"98-DG-8666  ",8666,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+2MSIAP01,002,003,"98-SI-8675  ",8675,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MDGNC02A,003,006,"98-DG-8679  ",8679,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MARNP01A,001,001,"98-AR-8728  ",8728,2,936934,Iron debris found in oil,1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MARNP01A,001,002,"98-AR-8729  ",8729,2,936934,Oil change needed at other bearing.  Change both,1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MARNP01B,001,001,"98-AR-8730  ",8730,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MARNP01B,001,002,"98-AR-8731  ",8731,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MARNP01C,001,001,"98-AR-8732  ",8732,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MARNP01C,001,002,"98-AR-8733  ",8733,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MARNP01D,001,001,"98-AR-8734  ",8734,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MARNP01D,001,002,"98-AR-8735  ",8735,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MSCNP11,138,009,"98-SC-8685  ",8685,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MSCNP12,138,009,"98-SC-8687  ",8687,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MSCNP13,138,009,"98-SC-8686  ",8686,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MSCNP14,138,009,"98-SC-8688  ",8688,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+1MSCNP11,138,009,"98-SC-8722  ",8722,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+1MSCNP12,138,009,"98-SC-8725  ",8725,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+1MSCNP13,138,009,"98-SC-8721  ",8721,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+1MSCNP14,138,009,"98-SC-8724  ",8724,0," "," ",1998-01-23 00:00:00.000,"0         ","0         ",NULL
+3MSIAP03,002,003,"98-SI-8690  ",8690,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01B,002,001,"98-TC-8661  ",8661,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01B,002,002,"98-TC-8662  ",8662,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+3MEDNP01A,002,003,"98-ED-8713  ",8713,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+3MEDNP01B,002,003,"98-ED-8714  ",8714,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+1MDGNC02B,003,006,"98-DG-8701  ",8701,2,937054,High water content.... change oil,1998-01-27 00:00:00.000,"0         ","0         ",NULL
+1MCONT01,019,009,"98-CO-8663  ",8663,0," ",Particle count is slightly high.  Contamination in sampling is likely cause. Oil is satisfactory.,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MDGBH01,006,009,"98-DG-8656  ",8656,0," ",TFOUT and 40 C viscosity also acceptable.  Add 5 drums new makeup oil. (wr # 936582),1998-01-27 00:00:00.000,"0         ","0         ",NULL
+1MPWNP01B,002,003,"98-PW-8470  ",8470,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+2MCHEP01,001,007,"98-CH-7597  ",7597,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,007,"98-CH-8651  ",8651,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+2MAFAK01,004,001,"98-AF-8115  ",8115,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+1MAFAK01,004,001,"98-AF-8181  ",8181,0," "," ",1998-01-27 00:00:00.000,"0         ","0         ",NULL
+1MZFNG01,054,047,"98-ZF-8525  ",8525,2,937111,Debris found in oil.  Oil change recommended.,1998-01-28 00:00:00.000,"0         ","0         ",NULL
+3MSIBP01,002,003,"98-SI-8853  ",8853,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+2MSCNP09,064,040,"98-SC-8832  ",8832,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+2MSCNP11,064,040,"98-SC-8850  ",8850,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+2MSCNP12,064,040,"98-SC-8852  ",8852,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+2MSCNP14,064,040,"98-SC-8834  ",8834,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+2MSIAP03,002,003,"98-SI-8796  ",8796,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,006,"98-CH-8703  ",8703,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,006,"98-CH-8664  ",8664,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+2MCHEP01,001,007,"98-CH-8826  ",8826,0," "," ",1998-02-17 00:00:00.000,"0         ","0         ",NULL
+1EPEBG02,010,002,"98-PE-8829  ",8829,0," ",FTIR was satisfactroy.  Oil viscosity of 136 cSt @ 40 C is satisfactory.,1998-02-17 00:00:00.000,"0         ","0         ",NULL
+3MWCNE02,007,009,"98-WC-8800  ",8800,0," "," ",1998-02-19 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,006,"98-CH-8596  ",8596,0," "," ",1998-02-19 00:00:00.000,"0         ","0         ",NULL
+1MDGNC01A,003,006,"98-DG-8774  ",8774,0," "," ",1998-02-19 00:00:00.000,"0         ","0         ",NULL
+1MEDNP01A,002,003,"98-ED-8775  ",8775,0," "," ",1998-02-19 00:00:00.000,"0         ","0         ",NULL
+1MEDNP01B,002,003,"98-ED-8776  ",8776,0," ",Note: The TAN test was repeated and tested at 0.06.  This test result is acceptable.,1998-03-11 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01A,002,001,"98-TC-8765  ",8765,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+2MSIBP03,002,003,"98-SI-8744  ",8744,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+2MCHAP01,001,006,"98-CH-8473  ",8473,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+2MAFNP01,001,001,"98-AF-8739  ",8739,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+2MAFNP01,001,002,"98-AF-8740  ",8740,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01B,002,001,"98-NC-8746  ",8746,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+3MNCNP01B,002,002,"98-NC-8747  ",8747,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+3MDGNC01B,003,006,"98-DG-8751  ",8751,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+2MIANC02,003,115,"98-IA-8548  ",8548,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+3MIANC02,003,115,"98-IA-8501  ",8501,0," "," ",1998-03-11 00:00:00.000,"0         ","0         ",NULL
+1MZCNG06A,031,009,"98-ZC-8777  ",8777,2,939749,ACID NUMBER OF 2.24....OIL CHANGE RECOMMENDED,1998-03-12 00:00:00.000,"0         ","0         ",NULL
+1MZCNG06C,031,009,"98-ZC-8779  ",8779,2,939749,CHANGE OIL DUE TO ACID NUMBER OF 2.00,1998-03-12 00:00:00.000,"0         ","0         ",NULL
+1MZCNG06D,031,009,"98-ZC-8780  ",8780,2,939749,ACID NUMBER OF 2.00.....CHANGE OIL,1998-03-12 00:00:00.000,"0         ","0         ",NULL
+1MCWNP01B,002,003,"98-CW-8783  ",8783,0," ",RBOT TIME OF 397 IN ACCEPTABLE,1998-03-12 00:00:00.000,"0         ","0         ",NULL
+1MCWNP01B,002,003,"98-CW-8783  ",8783,1,NULL,NULL,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MCWNP01D,002,003,"98-CW-8785  ",8785,0," "," ",1998-03-12 00:00:00.000,"0         ","0         ",NULL
+2JFWNFV0001,005,009,"98-FW-8864  ",8864,0," "," ",1998-03-12 00:00:00.000,"0         ","0         ",NULL
+2JFWNFV0002,005,009,"98-FW-8865  ",8865,0," "," ",1998-03-12 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01A,011,060,"98-OS-8862  ",8862,0," ",PARTICLE COUNTS ARE ACCEPTABLE.,1998-03-12 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"98-CH-8652  ",8652,0," "," ",1998-03-12 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,007,"98-CH-8928  ",8928,0," ",water tested at 38 ppm and the acid number was 0.83.  both are acceptable,1998-03-12 00:00:00.000,"0         ","0         ",NULL
+3MDGNC02B,003,006,"98-DG-8811  ",8811,0," "," ",1998-03-13 00:00:00.000,"0         ","0         ",NULL
+1MOSNT01B,011,060,"98-OS-8863  ",8863,0," "," ",1998-03-13 00:00:00.000,"0         ","0         ",NULL
+3MPWNP01A,002,004,"98-PW-8755  ",8755,0," "," ",1998-03-13 00:00:00.000,"0         ","0         ",NULL
+AMFPNM01A,006,006,"98-FP-8861  ",8861,2,939878,Some additive differences in the oil.  Main. Engr. notified.,1998-03-13 00:00:00.000,"0         ","0         ",NULL
+2MAFBP01,001,001,"98-AF-8911  ",8911,0," "," ",1998-03-13 00:00:00.000,"0         ","0         ",NULL
+2MAFBP01,001,002,"98-AF-8912  ",8912,2,939886," ",1998-03-13 00:00:00.000,"0         ","0         ",NULL
+2MAFBP01,002,002,"98-AF-8914  ",8914,0," "," ",1998-03-15 00:00:00.000,"0         ","0         ",NULL
+2MAFBP01,002,001,"98-AF-8913  ",8913,2,939931,Debris found in oil,1998-03-15 00:00:00.000,"0         ","0         ",NULL
+1MARNP01A,001,001,"98-AR-8955  ",8955,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MARNP01A,001,002,"98-AR-8954  ",8954,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MARNP01B,001,001,"98-AR-8957  ",8957,0," "," ",1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MARNP01B,001,001,"98-AR-8957  ",8957,1,NULL,NULL,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+1MARNP01C,001,001,"98-AR-8961  ",8961,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MARNP01C,001,002,"98-AR-8960  ",8960,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MWCNE02,007,009,"98-WC-8851  ",8851,0," ",Freon in oil has reduced test viscosity.  Oil is satisfactory.,1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1JSGEUV0181,005,009,"98-SG-8250  ",8250,2,940301,Increasing acid number trend.,1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01A,002,002,"98-TC-8766  ",8766,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01B,002,001,"98-TC-8987  ",8987,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MTCNP01B,002,002,"98-TC-8988  ",8988,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MLONT01,016,008,"98-LO-9006  ",9006,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MARNP01D,001,001,"98-AR-8978  ",8978,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+1MARNP01D,001,002,"98-AR-8979  ",8979,0," "," ",1998-03-26 00:00:00.000,"0         ","0         ",NULL
+3MPWNP01B,002,004,"98-PW-9000  ",9000,2,940573,change oil to remove abrasive materials.,1998-03-27 00:00:00.000,"0         ","0         ",NULL
+3MCWNP01A,002,003,"98-CW-8870  ",8870,0," "," ",1998-03-27 00:00:00.000,"0         ","0         ",NULL
+3MCWNP01B,002,003,"98-CW-8871  ",8871,0," "," ",1998-03-27 00:00:00.000,"0         ","0         ",NULL
+2MCWNA02O,031,009,"98-CW-10368 ",10368,0," ",Oil is expected to remain satisfactory until next outage...See CRDR 980404,1998-09-03 00:00:00.000,"0         ","0         ",NULL
+2MCWNA02P,031,009,"98-CW-10369 ",10369,0," ",Oil is expected to remain satisfactory until next outage....See CRDR 980404,1998-09-03 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03A,031,009,"98-CW-10370 ",10370,0," ",Oil is expected to perform satisfactory unil next change...See CRDR 980404,1998-09-04 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03B,031,009,"98-CW-10371 ",10371,1,NULL,NULL,1998-09-04 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03C,031,009,"98-CW-10372 ",10372,0," ",Oil is expected to remain satisfactory unil next change...See CRDR 980404,1998-09-04 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03D,031,009,"98-CW-10373 ",10373,0," ",Oil is expected to remain satisfactory until next outage....See CRDR 980404,1998-09-04 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03E,031,009,"98-CW-10374 ",10374,0," ",Oil is expected to remain useful until the next oil change...See CRDR 980404,1998-09-04 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03D,031,009,"98-CW-10373 ",10373,1,NULL,NULL,1998-09-15 00:00:00.000,"0         ","0         ",NULL
+2MOSNT01A,011,060,"98-OS-10485 ",10485,0," ",cleanliness meets criteria,1998-09-15 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03P,031,009,"98-CW-10385 ",10385,2,948579,Add four gallons of new oil....See CRDR 980404,1998-09-15 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01B,011,060,"98-OS-10274 ",10274,1,000000,"Ops contacted by lab to recir. oil through centrifuge to remove excess water.  With action, oil is acceptable until next sample.",1998-09-15 00:00:00.000,"0         ","0         ",NULL
+3MCHAP01,001,006,"98-CH-10131 ",10131,0," "," ",1998-09-15 00:00:00.000,"0         ","0         ",NULL
+2MCHAP01,001,006,"98-CH-10204 ",10204,2,949287," ",1998-09-15 00:00:00.000,"0         ","0         ",NULL
+3MDGAH01,006,009,"98-DG-10091 ",10091,0," ",Sweeten oil with 4 - 55 gllon drums of new.  Maintenace Engineer / team notified of recommendation.,1998-09-16 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,007,"98-CH-9955  ",9955,0," "," ",1998-09-16 00:00:00.000,"0         ","0         ",NULL
+3MAFBP01,001,001,"98-AF-10415 ",10415,0," "," ",1998-09-17 00:00:00.000,"0         ","0         ",NULL
+3MAFBP01,001,002,"98-AF-10416 ",10416,0," "," ",1998-09-17 00:00:00.000,"0         ","0         ",NULL
+3MAFBP01,002,001,"98-AF-10413 ",10413,0," "," ",1998-09-17 00:00:00.000,"0         ","0         ",NULL
+3MAFBP01,002,002,"98-AF-10414 ",10414,0," "," ",1998-09-17 00:00:00.000,"0         ","0         ",NULL
+3MSPBP01,002,003,"98-SP-10422 ",10422,0," "," ",1998-09-18 00:00:00.000,"0         ","0         ",NULL
+3MSPBP01,002,004,"98-SP-10423 ",10423,0," "," ",1998-09-18 00:00:00.000,"0         ","0         ",NULL
+2MARNP01B,001,047,"98-AR-10454 ",10454,0," ","Oil viscosity, acid number and water content are satisfactory.  Oil is acceptable for use.",1998-09-18 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,007,"98-CH-10448 ",10448,0," "," ",1998-09-18 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,006,"98-CH-10449 ",10449,0," "," ",1998-09-18 00:00:00.000,"0         ","0         ",NULL
+1MARNP01C,001,002,"98-AR-10336 ",10336,0," "," ",1998-09-21 00:00:00.000,"0         ","0         ",NULL
+2MCWNA01N,031,009,"98-CW-10351 ",10351,2,948572,see crdr #980404,1998-09-21 00:00:00.000,"0         ","0         ",NULL
+2MCWNA02C,031,009,"98-CW-10356 ",10356,0," ",see CRDR 980404.,1998-09-21 00:00:00.000,"0         ","0         ",NULL
+2MCWNA02L,031,009,"98-CW-10365 ",10365,2,948573," ",1998-09-21 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03F,031,009,"98-CW-10375 ",10375,0," ",see crdr 980404...oil is expected to remain satisfactory until the next outage.,1998-09-21 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03L,031,009,"98-CW-10381 ",10381,2,948576,add 4 gallons of new oil in lieu of full change...see crdr 980404,1998-09-21 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03H,031,009,"98-CW-10377 ",10377,0," ",see crdr 980404.. oil is being monitored and is expected to remain satisfactory,1998-09-21 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03E,031,009,"98-CW-10374 ",10374,1,NULL,NULL,1998-09-21 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01A,002,004,"98-RC-10620 ",10620,0," "," ",1998-10-05 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01B,001,013,"98-RC-10638 ",10638,0," ",rECOMMENDATION MADE TO FLUSH OIL A MINIMUM OF 2 PASSES.,1900-01-01 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01B,002,003,"98-RC-10621 ",10621,0," ",rECOMMENDATION MADE TO FLUSH A MINIMUN OF 2 PASSES.,1998-10-05 00:00:00.000,"0         ","0         ",NULL
+3MARNP01A,001,047,"98-AR-10514 ",10514,0," "," ",1998-10-05 00:00:00.000,"0         ","0         ",NULL
+3MARNP01B,001,047,"98-AR-10517 ",10517,0," "," ",1998-10-05 00:00:00.000,"0         ","0         ",NULL
+3MARNP01C,001,047,"98-AR-10518 ",10518,0," "," ",1998-10-05 00:00:00.000,"0         ","0         ",NULL
+3MARNP01D,001,047,"98-AR-10519 ",10519,0," "," ",1998-10-05 00:00:00.000,"0         ","0         ",NULL
+3MAFNP01,001,001,"98-AF-10510 ",10510,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MAFNP01,001,002,"98-AF-10511 ",10511,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MAFNP01,002,001,"98-AF-10513 ",10513,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MAFNP01,002,002,"98-AF-10512 ",10512,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MOSNT01A,011,060,"98-OS-10599 ",10599,0," ",particle count not performed due to water content.  Water content within allowable level.,1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MLONT02B,016,008,"98-LO-10525 ",10525,0," ",particle count acceptable,1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MCONT01,019,009,"98-CO-10520 ",10520,0," ",debris level is somewhat higher than normal primarily in the smallest sizes.  oil is satisfactory until the next sample,1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MDGBH01,006,009,"98-DG-10424 ",10424,2,949342,Oil change recommended due to decreasing TFOUT result.,1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MCHBP01,001,007,"98-CH-10470 ",10470,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MSCNP09,064,040,"98-SC-10601 ",10601,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3EPEAG01,010,002,"98-PE-10509 ",10509,0," ",Oil is satisfactory until routine scheduled change.,1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MAFNP01,001,002,"98-AF-10289 ",10289,2,950191,change oil to remove debris from oil sump,1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MARNP01B,001,047,"98-AR-10604 ",10604,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MARNP01D,001,047,"98-AR-10606 ",10606,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MARNP01A,001,047,"98-AR-10603 ",10603,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MARNP01B,001,001,"98-AR-10331 ",10331,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MARNP01A,001,001,"98-AR-10330 ",10330,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MARNP01D,001,001,"98-AR-10333 ",10333,2,950194," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MARNP01C,001,001,"98-AR-10332 ",10332,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,007,"98-CH-10575 ",10575,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MCHEP01,001,007,"98-CH-10575 ",10575,1,NULL,NULL,1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,007,"98-CH-10571 ",10571,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MCHAP01,001,006,"98-CH-10572 ",10572,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,007,"98-CH-10574 ",10574,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MCHBP01,001,006,"98-CH-10573 ",10573,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01A,001,013,"98-RC-10637 ",10637,0," ","RUST TEST - PASS, LOW LEVELS OF DEBRIS. FIELD TO FILTER PRIOR TO REUSE",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01A,002,003,"98-RC-10619 ",10619,0," ","RUST TEST - PASS, PARTICLE COUNT TO BE REDUCED BY FIELD FILTRATION PRIOR TO USE. DEBRIS LEVEL LOW",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01C,001,013,"98-RC-10639 ",10639,0," ","RUST TEST - PASS, RBOT TEST - PASS, OIL TO BE FILED PURIFIED PRIOR TO USE",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01C,002,003,"98-RC-10623 ",10623,0," ","RUST - PASS, RBOT - PASS, DEBRIS LEVEL WAS LOW",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01C,002,004,"98-RC-10624 ",10624,0," ","RUST - PASS, OIL CLEANLINESS SATISFACTORY, LOW DEBRIS LEVEL. FILTERING NOT NEEDED PER OIL RESULTS",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+3MRCEP01D,002,004,"98-RC-10642 ",10642,2,000000,CHANGE OIL OR PURIFY DUE TO HIGH DEBRIS LEVEL FOUND USING PARTICLE COUNT TECHNIC.  OIL CHANGE IS PART OF WORK ORDER...WR NOT NEEDED.,1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MARNP01B,001,002,"98-AR-10335 ",10335,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MIANC02,003,009,"98-IA-10492 ",10492,0," "," ",1998-10-06 00:00:00.000,"0         ","0         ",NULL
+1MEWBP01,001,001,"98-EW-10452 ",10452,0," ",Oil changed with sample.  No debris found in sample,1998-10-06 00:00:00.000,"0         ","0         ",NULL
+AMFPNM01B,006,006,"98-FP-10700 ",10700,0," ",SAMPLING INTERVAL IS SATISFACTORY TO MONITOR SLIGHTLY HIGH VISCOSITY TEST. NO OXIDATION APPARENT.,1998-10-07 00:00:00.000,"0         ","0         ",NULL
+1MWCNE01A,007,009,"98-WC-10579 ",10579,0," ",Maint. Engineer notified.  Continue routine monitoring,1998-10-13 00:00:00.000,"0         ","0         ",NULL
+1MARNP01C,001,047,"98-AR-10605 ",10605,0," "," ",1998-10-13 00:00:00.000,"0         ","0         ",NULL
+2MDGAH01,006,009,"98-DG-10494 ",10494,0," ",Trend using next monthly sample.  Soot level raised filter test,1998-10-13 00:00:00.000,"0         ","0         ",NULL
+2MSIBP02,002,001,"98-SI-10467 ",10467,2,000000,Slightly low viscosity...no wear debris..oil changed,1998-10-13 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03I,031,009,"98-CW-10378 ",10378,0," ",Oil is satisfactory for continued duty,1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03G,031,009,"98-CW-10376 ",10376,2,948579,Add 4 gallons of fresh new oil to improve viscosity,1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03J,031,009,"98-CW-10379 ",10379,2,*94857,Add 4 gallons of fresh new oil to improve oil quaility,1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MSIBP02,002,002,"98-SI-10468 ",10468,2,000000,Viscosity Low.  No increase seen in wear debris.  Oil has been changed,1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MTCNP01B,002,001,"98-TC-10507 ",10507,0," "," ",1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MTCNP01B,001,002,"98-TC-10506 ",10506,0," "," ",1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MTCNP01B,001,001,"98-TC-10505 ",10505,0," "," ",1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,006,"98-CH-10581 ",10581,0," "," ",1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MCHBP01,001,007,"98-CH-10582 ",10582,0," "," ",1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03N,031,009,"98-CW-10383 ",10383,0," ",Oil is considered satisafactory for use.,1998-10-14 00:00:00.000,"0         ","0         ",NULL
+2MCWNA03K,031,009,"98-CW-10380 ",10380,0," ",Viscosity is considered sat until outage.,1998-10-14 00:00:00.000,"0         ","0         ",NULL

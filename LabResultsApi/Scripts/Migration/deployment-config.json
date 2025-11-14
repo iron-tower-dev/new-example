@@ -1,0 +1,296 @@
+{
+    "deploymentSettings": {
+        "version": "1.0.0",
+        "supportedEnvironments": [
+            "Development",
+            "Staging",
+            "Production"
+        ],
+        "requiredComponents": [
+            {
+                "name": ".NET SDK",
+                "minimumVersion": "6.0.0",
+                "downloadUrl": "https://dotnet.microsoft.com/download"
+            },
+            {
+                "name": "SQL Server",
+                "minimumVersion": "2016",
+                "notes": "SQL Server 2016 or later, or Azure SQL Database"
+            },
+            {
+                "name": "PowerShell",
+                "minimumVersion": "5.0",
+                "notes": "PowerShell 5.0 or later for Windows deployment scripts"
+            }
+        ],
+        "systemRequirements": {
+            "minimumMemoryGB": 2,
+            "recommendedMemoryGB": 4,
+            "minimumDiskSpaceGB": 1,
+            "recommendedDiskSpaceGB": 5,
+            "minimumCpuCores": 1,
+            "recommendedCpuCores": 2
+        }
+    },
+    "environmentConfigurations": {
+        "Development": {
+            "description": "Local development environment",
+            "databaseSettings": {
+                "defaultServer": "localhost,1433",
+                "defaultDatabase": "LabResultsDb",
+                "useIntegratedSecurity": true,
+                "connectionTimeout": 30,
+                "commandTimeout": 300
+            },
+            "migrationSettings": {
+                "maxConcurrentOperations": 2,
+                "batchSize": 500,
+                "enableDetailedLogging": true,
+                "validateAgainstLegacy": true,
+                "createBackups": true
+            },
+            "requiredDirectories": [
+                "db-seeding",
+                "db-tables",
+                "logs",
+                "auth-backup",
+                "Configuration"
+            ],
+            "optionalFeatures": [
+                "Legacy database validation",
+                "Performance monitoring",
+                "Detailed error reporting"
+            ]
+        },
+        "Staging": {
+            "description": "Staging/testing environment",
+            "databaseSettings": {
+                "useIntegratedSecurity": false,
+                "connectionTimeout": 30,
+                "commandTimeout": 600,
+                "encryptConnection": true
+            },
+            "migrationSettings": {
+                "maxConcurrentOperations": 4,
+                "batchSize": 1500,
+                "enableDetailedLogging": true,
+                "validateAgainstLegacy": true,
+                "createBackups": true,
+                "performanceThresholdPercent": 25.0
+            },
+            "requiredDirectories": [
+                "db-seeding",
+                "db-tables",
+                "logs",
+                "auth-backup",
+                "Configuration"
+            ],
+            "requiredPermissions": [
+                "Database read/write access",
+                "File system write access",
+                "Network access to legacy systems"
+            ]
+        },
+        "Production": {
+            "description": "Production environment",
+            "databaseSettings": {
+                "useIntegratedSecurity": false,
+                "connectionTimeout": 60,
+                "commandTimeout": 900,
+                "encryptConnection": true,
+                "multipleActiveResultSets": true
+            },
+            "migrationSettings": {
+                "maxConcurrentOperations": 8,
+                "batchSize": 2000,
+                "enableDetailedLogging": false,
+                "validateAgainstLegacy": true,
+                "createBackups": true,
+                "performanceThresholdPercent": 15.0,
+                "continueOnError": false
+            },
+            "requiredDirectories": [
+                "db-seeding",
+                "db-tables",
+                "logs",
+                "auth-backup",
+                "Configuration"
+            ],
+            "requiredPermissions": [
+                "Database read/write access",
+                "File system write access",
+                "Network access to legacy systems",
+                "Administrator privileges (recommended)"
+            ],
+            "securityConsiderations": [
+                "Use service accounts for database connections",
+                "Encrypt connection strings",
+                "Enable audit logging",
+                "Restrict file system permissions",
+                "Monitor migration operations"
+            ]
+        }
+    },
+    "deploymentSteps": {
+        "preDeployment": [
+            {
+                "step": 1,
+                "name": "Validate Environment",
+                "description": "Run environment validation script",
+                "command": "Validate-Environment.ps1",
+                "required": true
+            },
+            {
+                "step": 2,
+                "name": "Backup Current System",
+                "description": "Create backup of current configuration",
+                "required": true,
+                "notes": "Especially important for production deployments"
+            },
+            {
+                "step": 3,
+                "name": "Check Prerequisites",
+                "description": "Verify all required components are installed",
+                "required": true
+            }
+        ],
+        "deployment": [
+            {
+                "step": 1,
+                "name": "Create Database Schema",
+                "description": "Execute migration table creation scripts",
+                "script": "01-create-migration-tables.sql",
+                "required": true
+            },
+            {
+                "step": 2,
+                "name": "Deploy Configuration",
+                "description": "Copy environment-specific configuration files",
+                "required": true
+            },
+            {
+                "step": 3,
+                "name": "Update Connection Strings",
+                "description": "Configure database connections in appsettings",
+                "required": true
+            },
+            {
+                "step": 4,
+                "name": "Build and Test API",
+                "description": "Compile API and run basic tests",
+                "required": true
+            }
+        ],
+        "postDeployment": [
+            {
+                "step": 1,
+                "name": "Validate Deployment",
+                "description": "Run deployment validation tests",
+                "required": true
+            },
+            {
+                "step": 2,
+                "name": "Test Migration Endpoints",
+                "description": "Verify migration API endpoints are accessible",
+                "required": true
+            },
+            {
+                "step": 3,
+                "name": "Run Sample Migration",
+                "description": "Execute a small test migration to verify functionality",
+                "required": false,
+                "notes": "Recommended for first-time deployments"
+            }
+        ]
+    },
+    "troubleshooting": {
+        "commonIssues": [
+            {
+                "issue": "Database connection failed",
+                "possibleCauses": [
+                    "Incorrect connection string",
+                    "SQL Server not running",
+                    "Firewall blocking connection",
+                    "Authentication failure"
+                ],
+                "solutions": [
+                    "Verify connection string format",
+                    "Check SQL Server service status",
+                    "Configure firewall rules",
+                    "Verify credentials and permissions"
+                ]
+            },
+            {
+                "issue": "Migration tables not created",
+                "possibleCauses": [
+                    "Insufficient database permissions",
+                    "SQL script execution failed",
+                    "Database does not exist"
+                ],
+                "solutions": [
+                    "Grant CREATE TABLE permissions",
+                    "Check SQL script for errors",
+                    "Create database before running scripts"
+                ]
+            },
+            {
+                "issue": "API build failed",
+                "possibleCauses": [
+                    "Missing dependencies",
+                    "Incorrect .NET version",
+                    "Code compilation errors"
+                ],
+                "solutions": [
+                    "Run 'dotnet restore'",
+                    "Install correct .NET SDK version",
+                    "Fix compilation errors in code"
+                ]
+            },
+            {
+                "issue": "Permission denied errors",
+                "possibleCauses": [
+                    "Insufficient file system permissions",
+                    "Running without administrator rights",
+                    "Antivirus blocking file operations"
+                ],
+                "solutions": [
+                    "Grant write permissions to directories",
+                    "Run as administrator",
+                    "Configure antivirus exclusions"
+                ]
+            }
+        ],
+        "logLocations": [
+            "logs/deployment.log",
+            "logs/migration/*.log",
+            "Windows Event Log (Application)",
+            "SQL Server Error Log"
+        ],
+        "supportContacts": [
+            {
+                "role": "Database Administrator",
+                "responsibilities": [
+                    "Database connectivity",
+                    "Schema deployment",
+                    "Performance issues"
+                ]
+            },
+            {
+                "role": "System Administrator",
+                "responsibilities": [
+                    "Server configuration",
+                    "Permissions",
+                    "Network connectivity"
+                ]
+            },
+            {
+                "role": "Development Team",
+                "responsibilities": [
+                    "API issues",
+                    "Configuration problems",
+                    "Code-related errors"
+                ]
+            }
+        ]
+    }
+}

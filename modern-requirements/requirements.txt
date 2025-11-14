@@ -1,0 +1,835 @@
+LABORATORY TEST RESULTS ENTRY REQUIREMENTS
+================================================================================
+
+Document Structure:
+- ID: Unique requirement identifier
+- Type: Work item classification
+- Title: Requirement name
+- Description: Detailed functional description
+- Acceptance Criteria: Success conditions
+
+================================================================================
+
+
+REQUIREMENT 12262: Enter Results - TAN by Color Indication
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  Sample Weight:
+    - Editable
+    - Numeric only
+  
+  Final Buret:
+    - Editable
+    - Numeric only
+  
+  TAN Calc:
+    - Display only, not editable
+    - Calculation: (Final Buret * 5.61) / Sample Weight
+    - Round to nearest 2 decimal places
+    - Set to 0.01 if calculated result is less
+  
+  The user is provided ability to select one or more trial records to perform 
+  Common Navigation Menu tasks.
+  
+  The user is provided ability to view results for Last 12 Sample IDs 
+  (Historical Record View):
+    - Header: Last 12 results for Test Name
+    - Sample Date
+    - Sample ID
+  
+  The user is provided ability to:
+    - Resize section for Historical Record View (Does nothing for me?)
+    - Navigate to single screen mode for Historical Record View
+    - View older history for Historical Record View (All or ?? count)
+  
+  Error Messaging:
+    The system shall display error message to user if field values do not meet 
+    criteria.
+    
+    Design Note: Current state error messaging
+    - Example: Display "NaN" in field if Sample Weight or Final Buret values 
+      are non-numeric
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering 
+    test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+
+REQUIREMENT 12263: Enter Results - Water - KF
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  Karl Fischer (KF) test.
+  
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter results by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  Result:
+    - Editable
+    - Numeric only
+  
+  File Data:
+    - The user is provided ability to Find File to upload, by trial record, 
+      by Sample ID
+    - Example: http://lubelab-t/lab/results/getResultsFromFile.asp?tid=20&sid=59124&row=1
+      (where specific Sample ID is pulled for list of available files to load)
+  
+  Common features:
+    - Select one or more trial records to perform Common Navigation Menu tasks
+    - View results for Last 12 Sample IDs (Historical Record View)
+    - Resize section for Historical Record View
+    - Navigate to single screen mode for Historical Record View
+    - View older history for Historical Record View
+  
+  Error Messaging:
+    The system shall display error message to user if field values do not meet criteria.
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+
+REQUIREMENT 12264: Enter Results - TBN by Auto Titration
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  Result:
+    - Editable
+    - Numeric only
+  
+  Common features:
+    - Select one or more trial records to perform Common Navigation Menu tasks
+    - View results for Last 12 Sample IDs (Historical Record View)
+    - Resize section for Historical Record View
+    - Navigate to single screen mode for Historical Record View
+    - View older history for Historical Record View
+  
+  Error Messaging:
+    The system shall display error message to user if field values do not meet criteria.
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+
+REQUIREMENT 12265: Enter Results - Emission Spectroscopy - Large
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  Element Field Labels:
+    Na, Cr, Sn, Si, Mo, Ca, Al, Ba, Mg, Ni, Mn, Zn, P, Ag, Pb, H, B, Cu, Fe
+    - Display only, not editable
+  
+  Results:
+    - Editable
+    - Numeric only
+  
+  The user is able to identify in Trial 1 if a Ferrography Test needs to be scheduled.
+  
+  File Data:
+    - The user is provided ability to Find File to upload, by trial record, by Sample ID
+    - Example: http://lubelab-t/lab/results/getResultsFromFile.asp?tid=20&sid=59124&row=1
+      (where specific Sample ID is pulled for list of available files to load)
+  
+  Common features:
+    - View results for Last 12 Sample IDs (Historical Record View)
+    - Resize section for Historical Record View
+    - Navigate to single screen mode for Historical Record View
+    - View older history for Historical Record View
+    - Select one or more trial records to perform Common Navigation Menu tasks
+  
+  Error Messaging:
+    The system shall display error message to user if field values do not meet criteria.
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12266: Enter Results - Viscosity @ 40
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Thermometer MTE# Editable The user is provided ability to select from a dropdown list Where does the list come from? Stop Watch MTE# Editable The user is provided ability to select from a dropdown list Where does the list come from? Tube ID Editable The user is provided ability to select from a dropdown list Where does the list come from? Stop watch time Editable Numeric cSt Display only, not editable Calculation: Stop watch time * Tube calibration value
+  Round to 2 DPs
+  Note that Tube calibration value is not displayed in the existing app
+  Viewing MTE data in Admin page shows value.
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria Design Note:  Current state error messaging  - Ex: Display "NaN" in field if Sample Weight or Final Buret values are non-numeric
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12267: Enter Results - Viscosity @ 100
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Thermometer MTE# Editable The user is provided ability to select from a dropdown list Where does the list come from? Stop Watch MTE# Editable The user is provided ability to select from a dropdown list Where does the list come from? Tube ID Editable The user is provided ability to select from a dropdown list Where does the list come from? Stop watch time Editable Numeric cSt Display only, not editable Calculation: Stop watch time * Tube calibration value
+  Round to 2 DPs
+  Note that Tube calibration value is not displayed in the existing app
+  Viewing MTE data in Admin page shows value
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria Design Note:  Current state error messaging  - Ex: Display "NaN" in field if Sample Weight or Final Buret values are non-numeric
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12270: Enter Results - Flashpoint
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter test results, by test name, by Sample ID
+  The following fields are displayed to the user: Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Barometer MTE# Editable The user is provided ability to select from a dropdown list Where does the list come from? Thermometer MTE# Editable The user is provided ability to select from a dropdown list Where does the list come from? Stop Barometric pressure (mm Hg) Editable Numeric Flash Point temperature (F) Editable Numeric Result Display only, not editable Calculation: Flash Point temperature+ (0.06 * (760 - Stop Barometric pressure))
+  Round to 2 DPs.
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks 
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria Design Note:  Current state error messaging  - Ex: Display "NaN" in field if Sample Weight or Final Buret values are non-numeric
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12272: Enter Results - Inspect Filter (Special Template)
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Overall Record The user is provided ability to see all Particle Types predefined to enter Inspect Filter results for: Rubbing Wear (Platlet) Rubbing Wear Black Oxide Dark Metallo-Oxide Abrasive Wear Rework Severe Wear Particles Chunks Spheres Red Oxide (Rust) Non Ferrous Metal Corrosive Non Metallic Crystalline Non Metallic Amorphous Friction Polymer Fibers The user is provided ability to see Descriptions predefined for each Particle Type
+  Description The user is provided ability to see Image examples predefined for each ParticleType
+  Image 1 Image 2 The user is provided ability to see Evaluated Severity that is a display of result Severity Level entered by user in the RESULTS screen for specific Particle Type
+  This is independent to Overall Severity Level
+  The user is provided ability to enter an Overall Severity value
+  1, 2, 3, 4 The user is provided ability to add Comments entered in RESULTS screen to the overall Comment
+  Comments are appended as they are entered into overall comment field
+  Max 1000 characters permitted The system provides a character counter to user, as each RESULTS comment is entered into the overall comment field
+  The user is provided ability to mark the overall record for Media Ready Do not know what this does?? The user is provided ability to assign filtered views to Particle Types Default View:  All Records The user is provided ability to view all Particle Types in one screen (N/A and Review) The user is provided ability to view selected Particle Types in one screen (Review) The user is provided ability to perform Common Navigation Menu tasks Will clear/save all data in the screens - this is not by Particle Type selection
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count Particle Type Enter Results The user is provided ability to display results entry screen by Particle Type The user is provided ability to show one or more Particle Types result entry screens The user is provided ability to hide results entry screen by Particle Type The user is provided ability to hide one or more Particle Types results entry screens The user is provided ability to enter results by each Particle Type, user is able to select one value from each of the following fields: Heat NA Blue Straw Purple No Change Melted Charred Concentration Few Moderate Many Heavy Size, Avg Fine, Small, 5 to 15µm Medium, 15 to 40µm Large, 40 to 100µm Huge, >100µm  Size, Max Fine, Small, 5 to 15µm Medium, 15 to 40µm Large, 40 to 100µm Huge, >100µm Color Red Black Tempered Metallic Straw Copper Brass Other Color Texture Bright or Reflective Dull or Oxidized Pitted Striated Smeared Amorphous Other Texture Composition Ferrous Metal Cupric Metal Other Metal Dust Organic Sludge Paint Chips Other Material Severity 1 2 3 4 The user is able to enter a Comment by each Particle Type
+  System is able to add result comment, appended, to overall comments
+  Design Note:  The comment field has a selector to be checked before user is able to save the record into the main comment, and also has to push the button to do so
+  Design Note:  Current design is the Enter Results screen is "expanded" into users view, it is not necessarity a separate 'pop up' window
+  The display information from Particle Type overall screen also displays still to the user
+  Design Note:  Current design the user is able to toggle between ALL or SELECTED views by selecting NA or REVIEW
+  A separate box SHOW/HIDE is used to display or hide the 'enter results' screen
+  Design Note:  Current design once the user DELETES data, the select button for Comments field is removed
+  User is forced to REFRESH the record to start over with all options.
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by Particle Type
+  - The user is able to select one or more Particle Type records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+  - The user is able to view all or reviewed data.
+
+REQUIREMENT 12273: Enter Results - Grease Penetration Worked
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 1st penetration Editable Numeric only 2nd penetration Editable Numeric only 3rd penetration Editable Numeric only Result Display only, not editable Calculation: ((Average of the 3 penetrations) * 3.75) + 24
+  Rounded to 0 DPs NLGI NLGI value from the lookup detailed below NLGI Lookup Field Label: NLGI value obtained from a lookup table where the calculated Result is between lower and upper values associated with the NLGI value
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12274: Enter Results - Grease Dropping Point
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Dropping Point Thermometer Editable The user is provided ability to select from a dropdown list Where does the list come from? Block Thermometer Editable The user is provided ability to select from a dropdown list Where does the list come from? Dropping Point Temperature Editable Numeric Block Temperature Editable Numeric Result Display only, not editable Calculation: Dropping Point Temperature + ((Block Temperature - Dropping Point Temperature) / 3)
+  Rounded to 0 DPs.
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12275: Enter Results - Particle Count
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 5-10 Editable Numeric only 10-15 Editable Numeric only 15-25 Editable Numeric only 25-50 Editable Numeric only 50-100 Editable Numeric only >100 Editable Numeric only File Data The user is provided ability to Find File to upload, by trial record, by Sample ID Ex:  http://lubelab-t/lab/results/getResultsFromFile.asp?tid=20&sid=59124&row=1 (where specific Sample ID is pulled for list of available files to load
+  Column NAS Display only, not editable Display value from NAS lookup field Column: NAS lookup Field Label: NAS value obtained from a lookup table where entered values are between lower and upper values for each of various 'channels' and takes the highest associated NAS value File Data The user is provided ability to Find File to upload, by trial record, by Sample ID Ex:  http://lubelab-t/lab/results/getResultsFromFile.asp?tid=20&sid=59124&row=1 (where specific Sample ID is pulled for list of available files to load.
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria Design Note:  The business wants to update the column numbering schema
+  Need to identify new schema still.
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12277: Enter Results - RBOT
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter test results, by test name, by Sample ID
+  The following fields are displayed to the user: Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Thermometer MTE# Editable Function: User is able to select from a dropdown list Where does the list come from? Fail Time Editable Numeric only File Data The user is provided ability to preview Sample ID file available to be uploaded Ex: file://pvfs-nucpro/pvnucpro/lubelab/RBOT/59082.DAT The user is provided ability to Find File to upload, by trial record, by Sample ID Ex: file://pvfs-nucpro/pvnucpro/lubelab/RBOT/59082.DAT
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12279: Enter Results - Ferrography (Special Template)
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Overall RecordThe user is provided ability to see all Particle Types predefined to enter Inspect Filter results for: Rubbing Wear (Platlet) Rubbing Wear Black Oxide Dark Metallo-Oxide Abrasive Wear Rework Severe Wear Particles Chunks Spheres Red Oxide (Rust) Non Ferrous Metal Corrosive Non Metallic Crystalline Non Metallic Amorphous Friction Polymer Fibers The user is provided ability to see Descriptions predefined for each Particle Type
+  Description The user is provided ability to see Image examples predefined for each ParticleType
+  Image 1 Image 2 The user is provided ability to see Evaluated Severity that is a display of result Severity Level entered by user in the RESULTS screen for specific Particle Type
+  This is independent to Overall Severity Level
+  The user is provided ability to enter an Overall Severity value
+  1, 2, 3, 4 The user is provided ability to enter one Dilution Factor ratio The system shall assign Sample ID as Test Status from X to E once a dilution factor is assigned 3:2 1:10 1:100 X/YYYY User is able to manually add a value if this ratio is selected On partial save, this value was removed from display field Clicking the Dilution Factor radio button enables the Media Ready button to activated
+  The user is provided ability to add Comments entered in RESULTS screen to the overall Comment
+  Comments are appended as they are entered into overall comment field
+  Max 1000 characters permitted The system provides a character counter to user, as each RESULTS comment is entered into the overall comment field
+  The user is provided ability to Save Partial Results The user is provided ability to assign filtered views to Particle Types Default View:  All Records The user is provided ability to view all Particle Types in one screen (N/A and Review) The user is provided ability to view selected Particle Types in one screen (Review) The user is provided ability to perform Common Navigation Menu tasks Will clear/save all data in the screens - this is not by Particle Type selection
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count Particle Type Enter ResultsThe user is provided ability to display results entry screen by Particle Type The user is provided ability to show one or more Particle Types result entry screens The user is provided ability to hide results entry screen by Particle Type The user is provided ability to hide one or more Particle Types results entry screens The user is provided ability to enter results by each Particle Type, user is able to select one value from each of the following fields: Heat NA Blue Straw Purple No Change Melted Charred Concentration Few Moderate Many Heavy Size, Avg Fine, Small, 5 to 15µm Medium, 15 to 40µm Large, 40 to 100µm Huge, >100µm  Size, Max Fine, Small, 5 to 15µm Medium, 15 to 40µm Large, 40 to 100µm Huge, >100µm Color Red Black Tempered Metallic Straw Copper Brass Other Color Texture Bright or Reflective Dull or Oxidized Pitted Striated Smeared Amorphous Other Texture Composition Ferrous Metal Cupric Metal Other Metal Dust Organic Sludge Paint Chips Other Material Severity 1 2 3 4 The user is able to enter a Comment by each Particle Type
+  System is able to add result comment, appended, to overall comments
+  Design Note:  The comment field has a selector to be checked before user is able to save the record into the main comment, and also has to push the button to do so.Design Note:  Current design is the Enter Results screen is "expanded" into users view, it is not necessarity a separate 'pop up' window
+  The display information from Particle Type overall screen also displays still to the user.Design Note:  Current design the user is able to toggle between ALL or SELECTED views by selecting NA or REVIEW
+  A separate box SHOW/HIDE is used to display or hide the 'enter results' screen.Design Note:  Current design for this template differs from Inspect Filter
+  No delete button, No Media Ready button
+  Added Partial Save button
+  Partial Save removed the record from the Sample ID list, is this as designed?
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by Particle Type
+  - The user is able to select one or more Particle Type records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+  - The user is able to view all or reviewed data.
+
+REQUIREMENT 12280: Enter Results - Rust
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter test results, by test name, by Sample ID
+  The following fields are displayed to the user: Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Thermometer MTE# Editable Function: User is able to select from a dropdown list Where does the list come from? Pass Yes/No Fail - Light Yes/No Fail - Moderate Yes/No Fail - Severe Yes/No File Data
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12281: Enter Results - TFOUT
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Thermometer MTE# Editable The user is provided ability to select from a dropdown list Where does the list come from? Fail Time Editable Numeric cSt Display only, not editable Calculation:  What is the calc? File Data The user is provided ability to preview Sample ID file available to be uploaded Ex: file://pvfs-nucpro/pvnucpro/lubelab/RBOT/59082.DAT
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12283: Enter Results - Deleterious
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Deleterious MTE# Editable Function: User is able to select from a dropdown list Where does the list come from? Pressure Editable Numeric Scratches Editable Numeric Pass / Fail Editable Function: User can select from a list (Pass, Fail)
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12284: Enter Results - Rheometer
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  Data is converted into a .TXT?? Does this enter test result for Rheometer need to be removed? See ADO #14033
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12285: Enter Results - D-inch
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 D-inch Editable Numeric
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12286: Enter Results - Oil Content
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Oil Content Editable Numeric
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template
+
+REQUIREMENT 12287: Enter Results - Varnish Potential Rating
+--------------------------------------------------------------------------------
+Type: Functional Requirement
+
+Description:
+  The user is provided ability to view Select Sample ID Template data.
+  The user is provided ability to view Display of Sample ID Data Template data.
+  The user is provided ability to select from Common Navigation Menu buttons Template.
+  
+  Test Name edit results Template:
+  The user is provided ability to enter test results, by test name, by Sample ID.
+  
+  The following fields are displayed to the user:
+  
+  Trial:
+    - Four trial lines shall be available for results data entry
+    - Field Header: Trial 1, Trial 2, Trial 3, Trial 4
+  
+  The user is provided ability to enter results by test name, by Sample ID
+  The following fields are displayed to the user
+  Trial Four trial lines shall be available for results data entry Field Header Trial 1, Trial 2, Trial 3, Trial 4 Varnish Potential Rating Editable Numeric
+  
+  The user is provided ability to view results for Last 12 Sample IDs (Historical Record View) (Historical Record View) Header Last 12 results for Test Name Sample Date Sample ID The user is provided ability to Resize section for Historical Record View Does nothing for me? The user is provided ability to navigate to single screen mode for Historical Record View The user is provided ability to view older history for Historical Record View All or ?? count
+  
+  The user is provided ability to select one or more trial records to perform Common Navigation Menu tasks
+  
+  Error Messaging:
+      The system shall display error message to user if field values do not meet criteria
+
+Acceptance Criteria:
+  - The user can select a Sample ID from list available for specific test
+  - The user is able to see specific Sample ID data
+  - The user is able to see specific test name template fields for entering test results
+  - The user is able to update Lab Comments
+  - The user is able to enter in test results by trial
+  - The user is able to select specific trial records to make changes to
+  - The user is able to save/clear or delete test result data entries
+  - The system calculates specific fields define for the test name template

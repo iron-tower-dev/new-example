@@ -1,0 +1,26 @@
+﻿ID,name
+10,TAN by Color Indication
+20,Water - KF
+30,Emission Spectroscopy - Standard
+40,Emission Spectroscopy - Large
+50,Viscosity @ 40
+60,Viscosity @ 100
+70,FT-IR
+80,Flash Point
+110,TBN by Auto Titration
+120,Inspect Filter
+130,Grease Penetration Worked
+140,Grease Dropping Point
+160,Particle Count
+170,RBOT
+180,Filter Residue
+210,Ferrography
+220,Rust
+230,TFOUT
+240,Debris Identification
+250,Deleterious
+270,Rheometer
+280,Misc. Tests
+284,D-inch
+285,Oil Content
+286,Varnish Potential Rating

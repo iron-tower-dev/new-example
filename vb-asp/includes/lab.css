@@ -1,0 +1,228 @@
+HTML
+{
+    BACKGROUND-COLOR: #ffffff
+}
+BODY
+{
+    MARGIN: 0px;
+    BACKGROUND-REPEAT: repeat;
+    BACKGROUND-COLOR: #ffffff
+}
+TABLE
+{
+    BORDER-RIGHT: 1pt ridge;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: 1pt ridge;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: 1pt ridge;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: 1pt ridge;
+    BACKGROUND-COLOR: #ffffcc
+}
+TABLE TH
+{
+    BORDER-RIGHT: 1pt ridge;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: 1pt ridge;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: 1pt ridge;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: 1pt ridge;
+    BACKGROUND-COLOR: #9999ff
+}
+TABLE TD
+{
+    BORDER-RIGHT: 1pt ridge;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: 1pt ridge;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: 1pt ridge;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: 1pt ridge;
+    BACKGROUND-COLOR: #ffffcc;
+    TEXT-ALIGN: center
+}
+.leftalign
+{
+    TEXT-ALIGN: left
+}
+.underlined
+{
+    TEXT_DECORATION: underline
+}
+.greentext
+{
+    COLOR: #009900
+}
+.orangetext
+{
+    COLOR: #ff6000
+}
+.redtext
+{
+    COLOR: #ff0033
+}
+.bluetext
+{
+    COLOR: #000099
+}
+.plumtext
+{
+    COLOR: #990099
+}
+.menuitem
+{
+    FONT-SIZE: x-small
+}
+IMG
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: 0px
+}
+.tablerowlabel
+{
+    BACKGROUND-COLOR: silver;
+    TEXT-ALIGN: left
+}
+.tablerowlabelcenter
+{
+    BACKGROUND-COLOR: silver;
+    TEXT-ALIGN: center
+}
+H1
+{
+    FONT-SIZE: large;
+    TEXT-ALIGN: center
+}
+H2
+{
+    FONT-SIZE: medium;
+    TEXT-ALIGN: center
+}
+H3
+{
+    FONT-SIZE: small;
+    TEXT-ALIGN: center
+}
+H4
+{
+    FONT-SIZE: x-small;
+    TEXT-ALIGN: center
+}
+H5
+{
+    FONT-SIZE: xx-small;
+    TEXT-ALIGN: center
+}
+.tc
+{
+    TEXT-ALIGN: center
+}
+.pframe
+{
+    BORDER-RIGHT: 1pt ridge;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: 1pt ridge;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: 1pt ridge;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: 1pt ridge
+}
+.noframe
+{
+    BORDER-RIGHT: 0pt;
+    BORDER-TOP: 0pt;
+    BORDER-LEFT: 0pt;
+    BORDER-BOTTOM: 0pt
+}
+A:link
+{
+    FONT-WEIGHT: bold;
+    COLOR: #0033ff;
+    TEXT-DECORATION: underline
+}
+A:visited
+{
+    FONT-WEIGHT: bold;
+    COLOR: #0033ff;
+    TEXT-DECORATION: underline
+}
+A:active
+{
+    FONT-WEIGHT: bold;
+    COLOR: #0033ff;
+    TEXT-DECORATION: underline
+}
+A:hover
+{
+    FONT-WEIGHT: bold;
+    COLOR: #006666;
+    TEXT-DECORATION: none
+}
+.pretendlink
+{
+    FONT-WEIGHT: bold;
+    COLOR: #0033ff
+}
+.ScheduledList
+{
+    FONT-SIZE: x-small;
+    TEXT-ALIGN: center
+}
+.nocomment
+{
+    COLOR: red;
+    FONT-STYLE: oblique
+}
+.samp
+{
+    COLOR: blue
+}
+.creq
+{
+    COLOR: blue
+}
+.labr
+{
+    COLOR: maroon
+}
+.insp
+{
+    COLOR: olive
+}
+TD.blank
+{
+    BORDER-RIGHT: 0pt;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: 0pt;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: 0pt;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: 0pt;
+    BACKGROUND-COLOR: transparent
+}
+TABLE.blank
+{
+    BORDER-RIGHT: 0px;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: 0px;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: 0px;
+    BACKGROUND-COLOR: transparent
+}

@@ -1,0 +1,9 @@
+﻿ID,Description,Active,SortOrder
+1,Severity,1,7
+2,Heat,1,0
+3,Concentration,1,1
+4,"Size, Ave",1,2
+5,"Size, Max",1,3
+6,Color,1,4
+7,Texture,1,5
+8,Composition,1,6

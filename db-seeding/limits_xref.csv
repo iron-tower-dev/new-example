@@ -1,0 +1,1001 @@
+﻿ID,group_name,valueat,tagNumber,component,location,exclude,excluded_on,fname
+5444,"Tommy Test                              ",258,11126-24,000,000,NULL,NULL,NULL
+5445,"Tommy Test                              ",258,11127-24,000,000,NULL,NULL,NULL
+5446,"Tommy Test                              ",258,11136-24,000,000,NULL,NULL,NULL
+5447,"Tommy Test                              ",258,11155-24,000,000,NULL,NULL,NULL
+5448,"Tommy Test                              ",258,11175-24,000,000,NULL,NULL,NULL
+5449,"Tommy Test                              ",258,2030111,000,000,NULL,NULL,NULL
+5450,"Tommy Test                              ",258,TD0111066,000,000,NULL,NULL,NULL
+5451,"Tommy Test                              ",258,TD1112319,000,000,NULL,NULL,NULL
+5452,"Tommy Test                              ",258,TD1113974,000,000,NULL,NULL,NULL
+5453,"Tommy Test                              ",258,TD1114304,000,000,NULL,NULL,NULL
+5454,"Tommy Test                              ",258,TD011222,000,000,NULL,NULL,NULL
+5455,"Tommy Test                              ",258,TD0222949,000,000,NULL,NULL,NULL
+5456,"Tommy Test                              ",258,TD0322228,000,000,NULL,NULL,NULL
+5457,"Tommy Test                              ",258,TD0523222,000,000,NULL,NULL,NULL
+5458,"Tommy Test                              ",258,TD1302223,000,000,NULL,NULL,NULL
+5459,"Tommy Test                              ",258,TD1322229,000,000,NULL,NULL,NULL
+5460,"Tommy Test                              ",258,TD1622296,000,000,NULL,NULL,NULL
+5461,"Tommy Test                              ",258,TD1622297,000,000,NULL,NULL,NULL
+5462,"Tommy Test                              ",258,TD0292333,000,000,NULL,NULL,NULL
+5463,"Tommy Test                              ",258,TD1475333,000,000,NULL,NULL,NULL
+5464,"Tommy Test                              ",258,TD1933395,000,000,NULL,NULL,NULL
+5465,"Tommy Test                              ",258,TD333999,000,000,NULL,NULL,NULL
+5466,"Tommy Test                              ",258,TD0124445,000,000,NULL,NULL,NULL
+5467,"Tommy Test                              ",258,TD0144426,000,000,NULL,NULL,NULL
+5468,"Tommy Test                              ",258,TD0232444,000,000,NULL,NULL,NULL
+5469,"Tommy Test                              ",258,TD0244411,000,000,NULL,NULL,NULL
+5470,"Tommy Test                              ",258,TD0244419,000,000,NULL,NULL,NULL
+5471,"Tommy Test                              ",258,TD1744416,000,000,NULL,NULL,NULL
+5472,"Tommy Test                              ",258,TD0415556,000,000,NULL,NULL,NULL
+5473,"Tommy Test                              ",258,TD1155521,000,000,NULL,NULL,NULL
+5474,"Tommy Test                              ",258,TD1155549,000,000,NULL,NULL,NULL
+5475,"Tommy Test                              ",258,TD1575551,000,000,NULL,NULL,NULL
+5476,"Tommy Test                              ",258,TD2085550,000,000,NULL,NULL,NULL
+5477,"Tommy Test                              ",258,1JSIAUV0666,099,020,NULL,NULL,NULL
+5478,"Tommy Test                              ",258,3JSIAUV0666,002,066,NULL,NULL,NULL
+5479,"Tommy Test                              ",258,TD0006665,000,000,NULL,NULL,NULL
+5480,"Tommy Test                              ",258,TD0006666,000,000,NULL,NULL,NULL
+5481,"Tommy Test                              ",258,TD0273777,000,000,NULL,NULL,NULL
+5482,"Tommy Test                              ",258,TD0777164,000,000,NULL,NULL,NULL
+5483,"Tommy Test                              ",258,TD1327773,000,000,NULL,NULL,NULL
+5484,"Tommy Test                              ",258,TD1777539,000,000,NULL,NULL,NULL
+5485,"Tommy Test                              ",258,TD1777540,000,000,NULL,NULL,NULL
+5486,"Tommy Test                              ",258,TD0888603,000,000,NULL,NULL,NULL
+5487,"Tommy Test                              ",258,TD0948884,000,000,NULL,NULL,NULL
+5488,"Tommy Test                              ",258,TD1888649,000,000,NULL,NULL,NULL
+5489,"Tommy Test                              ",258,TD2033888,000,000,NULL,NULL,NULL
+5490,"Tommy Test                              ",258,TD2075888,000,000,NULL,NULL,NULL
+5491,"Tommy Test                              ",258,TD2100888,000,000,NULL,NULL,NULL
+5492,"Tommy Test                              ",258,TD0699900,000,000,NULL,NULL,NULL
+5493,"Tommy Test                              ",258,TD1099960,000,000,NULL,NULL,NULL
+5494,"Tommy Test                              ",258,TD1179992,000,000,NULL,NULL,NULL
+5495,"Tommy Test                              ",258,TD1180999,000,000,NULL,NULL,NULL
+5496,"Tommy Test                              ",258,TD1199985,000,000,NULL,NULL,NULL
+5497,"Tommy Test                              ",258,TD1264999,000,000,NULL,NULL,NULL
+5498,"Tommy Test                              ",258,TD1767999,000,000,NULL,NULL,NULL
+5499,"Tommy Test                              ",258,TD1999277,000,000,NULL,NULL,NULL
+5503,"Chem Addition                           ",18,1MSCNP13,001,238,NULL,NULL,NULL
+5501,"Aux Hoist                               ",166,1MZCNG01,171,007,NULL,NULL,NULL
+3398,"PC Wtr Upper                            ",1,1MPWNP01B,002,003,NULL,NULL,NULL
+3399,"Breathing Air Comp                      ",39,2MIANC02,003,115,NULL,NULL,NULL
+5411,"RCP Mtr Brgs                            ",130,2MRCEP01A,002,003,NULL,NULL,NULL
+3964,"Polar Crane Bridge Drive                ",142,3MZCNG01,042,047,NULL,NULL,NULL
+5123,"Crane gearbox with Omala 320            ",181,2MZFNG02,261,007,NULL,NULL,NULL
+3333,"V - SMC-04D gear                        ",65,2JFTNHV0014,097,040,NULL,NULL,NULL
+16,"U1  tower gear                          ",3,1MCWNA01B,031,009,NULL,NULL,
+4864,"U1  tower gear                          ",3,1MCWNA01C,031,009,NULL,NULL,NULL
+18,"U1  tower gear                          ",3,1MCWNA01D,031,009,NULL,NULL,
+19,"U1  tower gear                          ",3,1MCWNA01E,031,009,NULL,NULL,
+4553,"Chem Addition                           ",18,3MSCNP14,064,040,NULL,NULL,NULL
+4730,"AR Gear w/syn                           ",126,1MARNP01A,001,047,NULL,NULL,
+22,"U1  tower gear                          ",3,1MCWNA01H,031,009,NULL,NULL,
+23,"U1  tower gear                          ",3,1MCWNA01I,031,009,NULL,NULL,
+24,"U1  tower gear                          ",3,1MCWNA01J,031,009,NULL,NULL,
+25,"U1  tower gear                          ",3,1MCWNA01K,031,009,NULL,NULL,
+26,"U1  tower gear                          ",3,1MCWNA01L,031,009,NULL,NULL,
+27,"U1  tower gear                          ",3,1MCWNA01M,031,009,NULL,NULL,
+28,"U1  tower gear                          ",3,1MCWNA01N,031,009,NULL,NULL,
+29,"U1  tower gear                          ",3,1MCWNA01O,031,009,NULL,NULL,
+30,"U1  tower gear                          ",3,1MCWNA01P,031,009,NULL,NULL,
+31,"U1  tower gear                          ",3,1MCWNA02A,031,009,NULL,NULL,
+32,"U1  tower gear                          ",3,1MCWNA02B,031,009,NULL,NULL,
+4753,"U1  tower gear                          ",3,1MCWNA02C,031,009,NULL,NULL,NULL
+4144,"V - SMB-00 Gear 8910 mild               ",54,1JAFBHV0031,097,040,NULL,NULL,NULL
+35,"U1  tower gear                          ",3,1MCWNA02E,031,009,NULL,NULL,
+36,"U1  tower gear                          ",3,1MCWNA02F,031,009,NULL,NULL,
+37,"U1  tower gear                          ",3,1MCWNA02G,031,009,NULL,NULL,
+38,"U1  tower gear                          ",3,1MCWNA02H,031,009,NULL,NULL,
+4749,"U1  tower gear                          ",3,1MCWNA02I,031,009,NULL,NULL,NULL
+3617,"Aux Hoist                               ",166,3MZCNG01,171,007,NULL,NULL,NULL
+41,"U1  tower gear                          ",3,1MCWNA02K,031,009,NULL,NULL,
+42,"U1  tower gear                          ",3,1MCWNA02L,031,009,NULL,NULL,
+43,"U1  tower gear                          ",3,1MCWNA02M,031,009,NULL,NULL,
+44,"U1  tower gear                          ",3,1MCWNA02N,031,009,NULL,NULL,
+2191,"V - SB-1 LS 8910                        ",101,3JCHAHV0531,099,040,NULL,NULL,
+46,"U1  tower gear                          ",3,1MCWNA02P,031,009,NULL,NULL,
+3400,"V - SMC-04 LS 8910                      ",107,2JSIBUV0668,099,040,NULL,NULL,NULL
+3342,"Crane gearbox with Omala 320            ",181,-3MZFNG01,167,007,NULL,NULL,NULL
+49,"U1  tower gear                          ",3,1MCWNA03A,031,009,NULL,NULL,
+50,"U1  tower gear                          ",3,1MCWNA03B,031,009,NULL,NULL,
+51,"U1  tower gear                          ",3,1MCWNA03C,031,009,NULL,NULL,
+52,"U1  tower gear                          ",3,1MCWNA03D,031,009,NULL,NULL,
+53,"U1  tower gear                          ",3,1MCWNA03E,031,009,NULL,NULL,
+54,"U1  tower gear                          ",3,1MCWNA03F,031,009,NULL,NULL,
+55,"U1  tower gear                          ",3,1MCWNA03G,031,009,NULL,NULL,
+56,"U1  tower gear                          ",3,1MCWNA03H,031,009,NULL,NULL,
+57,"U1  tower gear                          ",3,1MCWNA03I,031,009,NULL,NULL,
+58,"U1  tower gear                          ",3,1MCWNA03J,031,009,NULL,NULL,
+59,"U1  tower gear                          ",3,1MCWNA03K,031,009,NULL,NULL,
+60,"U1  tower gear                          ",3,1MCWNA03L,031,009,NULL,NULL,
+61,"U1  tower gear                          ",3,1MCWNA03M,031,009,NULL,NULL,
+62,"U1  tower gear                          ",3,1MCWNA03N,031,009,NULL,NULL,
+63,"U1  tower gear                          ",3,1MCWNA03O,031,009,NULL,NULL,
+64,"U1  tower gear                          ",3,1MCWNA03P,031,009,NULL,NULL,
+4733,"Diesels FP&SK                           ",36,AMFPNM01B,006,006,NULL,NULL,NULL
+3879,"Heat Rem Mtr Up                         ",21,2MEDNP01A,002,003,NULL,NULL,NULL
+3995,"Terry Turbine                           ",13,2MAFAK01,004,001,NULL,NULL,NULL
+5133,"Chem Addition                           ",18,3MSCNP15,001,238,NULL,NULL,NULL
+5404,"HPSI pmp IB                             ",133,3MSIAP02,001,001,NULL,NULL,NULL
+3541,"V - 2021 MG02 gear                      ",104,2JNCNUV0607,097,040,NULL,NULL,NULL
+77,"Circ Wtr Mtrs                           ",4,3MCWNP01C,002,003,NULL,NULL,
+3516,"aux compressor                          ",168,AMZYNE10,174,009,NULL,NULL,NULL
+4145,"diesel govenor                          ",214,1MDGBH01,162,009,NULL,NULL,NULL
+128,"U2 tower gear                           ",5,2MCWNA03P,031,009,NULL,NULL,NULL
+129,"U3 tower gear                           ",6,3MCWNA01A,031,009,NULL,NULL,NULL
+130,"U3 tower gear                           ",6,3MCWNA01B,031,009,NULL,NULL,
+3652,"FW mini flow Valve                      ",64,1JFWNFV0001,005,009,NULL,NULL,NULL
+4751,"U3 tower gear                           ",6,3MCWNA01D,031,009,NULL,NULL,NULL
+133,"U3 tower gear                           ",6,3MCWNA01E,031,009,NULL,NULL,
+134,"U3 tower gear                           ",6,3MCWNA01F,031,009,NULL,NULL,
+135,"U3 tower gear                           ",6,3MCWNA01G,031,009,NULL,NULL,
+136,"U3 tower gear                           ",6,3MCWNA01H,031,009,NULL,NULL,
+137,"U3 tower gear                           ",6,3MCWNA01I,031,009,NULL,NULL,
+138,"U3 tower gear                           ",6,3MCWNA01J,031,009,NULL,NULL,
+139,"U3 tower gear                           ",6,3MCWNA01K,031,009,NULL,NULL,
+4863,"U3 tower gear                           ",6,3MCWNA01L,031,009,NULL,NULL,NULL
+141,"U3 tower gear                           ",6,3MCWNA01M,031,009,NULL,NULL,
+142,"U3 tower gear                           ",6,3MCWNA01N,031,009,NULL,NULL,
+143,"U3 tower gear                           ",6,3MCWNA01O,031,009,NULL,NULL,
+144,"U3 tower gear                           ",6,3MCWNA01P,031,009,NULL,NULL,
+145,"U3 tower gear                           ",6,3MCWNA02A,031,009,NULL,NULL,
+146,"U3 tower gear                           ",6,3MCWNA02B,031,009,NULL,NULL,
+147,"U3 tower gear                           ",6,3MCWNA02C,031,009,NULL,NULL,
+148,"U3 tower gear                           ",6,3MCWNA02D,031,009,NULL,NULL,
+149,"U3 tower gear                           ",6,3MCWNA02E,031,009,NULL,NULL,
+66,"U1  tower gear                          ",3,1MCWNA01A,031,009,NULL,NULL,NULL
+4100,"PC Wtr Upper                            ",1,3MPWNP01B,002,003,NULL,NULL,NULL
+5157,"Turb Cool Mtr                           ",141,3MTCNP01A,002,001,NULL,NULL,NULL
+4106,"Turb Cool Mtr                           ",141,1MTCNP01A,002,001,NULL,NULL,NULL
+81,"U2 tower gear                           ",5,2MCWNA01C,031,009,NULL,NULL,
+82,"U2 tower gear                           ",5,2MCWNA01D,031,009,NULL,NULL,
+83,"U2 tower gear                           ",5,2MCWNA01E,031,009,NULL,NULL,
+150,"U3 tower gear                           ",6,3MCWNA02F,031,009,NULL,NULL,
+85,"U2 tower gear                           ",5,2MCWNA01F,031,009,NULL,NULL,
+86,"U2 tower gear                           ",5,2MCWNA01G,031,009,NULL,NULL,
+87,"U2 tower gear                           ",5,2MCWNA01H,031,009,NULL,NULL,
+4020,"Turb Cool pmp                           ",140,3MTCNP01B,001,002,NULL,NULL,NULL
+89,"U2 tower gear                           ",5,2MCWNA01J,031,009,NULL,NULL,
+4884,"U2 tower gear                           ",5,2MCWNA01K,031,009,NULL,NULL,NULL
+91,"U2 tower gear                           ",5,2MCWNA01L,031,009,NULL,NULL,
+92,"U2 tower gear                           ",5,2MCWNA01M,031,009,NULL,NULL,
+93,"U2 tower gear                           ",5,2MCWNA01N,031,009,NULL,NULL,
+94,"U2 tower gear                           ",5,2MCWNA01O,031,009,NULL,NULL,
+95,"U2 tower gear                           ",5,2MCWNA01P,031,009,NULL,NULL,
+96,"U2 tower gear                           ",5,2MCWNA02A,031,009,NULL,NULL,
+97,"U2 tower gear                           ",5,2MCWNA02B,031,009,NULL,NULL,
+4586,"GASEOUS RADWASTE COMP                   ",224,3NGRNC01A,003,006,NULL,NULL,NULL
+4750,"U2 tower gear                           ",5,2MCWNA02D,031,009,NULL,NULL,NULL
+100,"U2 tower gear                           ",5,2MCWNA02E,031,009,NULL,NULL,
+101,"U2 tower gear                           ",5,2MCWNA02F,031,009,NULL,NULL,
+102,"U2 tower gear                           ",5,2MCWNA02G,031,009,NULL,NULL,
+103,"U2 tower gear                           ",5,2MCWNA02H,031,009,NULL,NULL,
+104,"U2 tower gear                           ",5,2MCWNA02I,031,009,NULL,NULL,
+4590,"GASEOUS RADWASTE COMP                   ",224,2NGRNC01B,003,006,NULL,NULL,
+106,"U2 tower gear                           ",5,2MCWNA02K,031,009,NULL,NULL,
+4188,"V - SMB-0 HBC-3 LS 8910 m               ",84,1JCPBUV0003B,099,040,NULL,NULL,NULL
+108,"U2 tower gear                           ",5,2MCWNA02M,031,009,NULL,NULL,
+109,"U2 tower gear                           ",5,2MCWNA02N,031,009,NULL,NULL,
+110,"U2 tower gear                           ",5,2MCWNA02O,031,009,NULL,NULL,
+111,"U2 tower gear                           ",5,2MCWNA02P,031,009,NULL,NULL,
+112,"U2 tower gear                           ",5,2MCWNA03A,031,009,NULL,NULL,
+4022,"U2 tower gear                           ",5,2MCWNA03B,031,009,NULL,NULL,NULL
+114,"U2 tower gear                           ",5,2MCWNA03C,031,009,NULL,NULL,
+115,"U2 tower gear                           ",5,2MCWNA03D,031,009,NULL,NULL,
+4990,"Instrument Air                          ",127,1MIANC01A,003,009,NULL,NULL,NULL
+117,"U2 tower gear                           ",5,2MCWNA03F,031,009,NULL,NULL,
+118,"U2 tower gear                           ",5,2MCWNA03G,031,009,NULL,NULL,
+119,"U2 tower gear                           ",5,2MCWNA03H,031,009,NULL,NULL,
+120,"U2 tower gear                           ",5,2MCWNA03I,031,009,NULL,NULL,
+121,"U2 tower gear                           ",5,2MCWNA03J,031,009,NULL,NULL,
+122,"U2 tower gear                           ",5,2MCWNA03K,031,009,NULL,NULL,
+3168,"U2 tower gear                           ",5,2MCWNA03L,031,009,NULL,NULL,NULL
+4837,"cranes - morlina 100                    ",227,-AMZLNG01,079,107,NULL,NULL,NULL
+125,"U2 tower gear                           ",5,2MCWNA03N,031,009,NULL,NULL,
+126,"U2 tower gear                           ",5,2MCWNA03O,031,009,NULL,NULL,
+151,"U3 tower gear                           ",6,3MCWNA02G,031,009,NULL,NULL,
+152,"U3 tower gear                           ",6,3MCWNA02H,031,009,NULL,NULL,
+153,"U3 tower gear                           ",6,3MCWNA02I,031,009,NULL,NULL,
+154,"U3 tower gear                           ",6,3MCWNA02J,031,009,NULL,NULL,
+155,"U3 tower gear                           ",6,3MCWNA02K,031,009,NULL,NULL,
+156,"U3 tower gear                           ",6,3MCWNA02L,031,009,NULL,NULL,
+157,"U3 tower gear                           ",6,3MCWNA02M,031,009,NULL,NULL,
+158,"U3 tower gear                           ",6,3MCWNA02N,031,009,NULL,NULL,
+159,"U3 tower gear                           ",6,3MCWNA02O,031,009,NULL,NULL,
+160,"U3 tower gear                           ",6,3MCWNA02P,031,009,NULL,NULL,
+4394,"MT SMC-04 Gear                          ",42,1JMTNHV0253,097,040,NULL,NULL,NULL
+162,"U3 tower gear                           ",6,3MCWNA03B,031,009,NULL,NULL,
+163,"U3 tower gear                           ",6,3MCWNA03C,031,009,NULL,NULL,
+164,"U3 tower gear                           ",6,3MCWNA03D,031,009,NULL,NULL,
+165,"U3 tower gear                           ",6,3MCWNA03E,031,009,NULL,NULL,
+166,"U3 tower gear                           ",6,3MCWNA03F,031,009,NULL,NULL,
+167,"U3 tower gear                           ",6,3MCWNA03G,031,009,NULL,NULL,
+168,"U3 tower gear                           ",6,3MCWNA03H,031,009,NULL,NULL,
+169,"U3 tower gear                           ",6,3MCWNA03I,031,009,NULL,NULL,
+170,"U3 tower gear                           ",6,3MCWNA03J,031,009,NULL,NULL,
+171,"U3 tower gear                           ",6,3MCWNA03K,031,009,NULL,NULL,
+172,"U3 tower gear                           ",6,3MCWNA03L,031,009,NULL,NULL,
+173,"U3 tower gear                           ",6,3MCWNA03M,031,009,NULL,NULL,
+174,"U3 tower gear                           ",6,3MCWNA03N,031,009,NULL,NULL,
+175,"U3 tower gear                           ",6,3MCWNA03O,031,009,NULL,NULL,
+176,"U3 tower gear                           ",6,3MCWNA03P,031,009,NULL,NULL,
+5196,"V - 7NA1-43 : 8910 Mild                 ",46,3JHPAUV0003,097,040,NULL,NULL,NULL
+178,"Charging Pmp Crank                      ",7,1MCHBP01,001,006,NULL,NULL,
+5016,"Steam by-pass                           ",250,3JSGAUV0134A,097,040,NULL,NULL,NULL
+181,"Charging Pmp Crank                      ",7,2MCHBP01,001,006,NULL,NULL,
+4198,"V - SMB-00 HBC-2 Pinion 8910 m          ",74,1JSIBUV0675,002,066,NULL,NULL,NULL
+3173,"Charging Pmp Crank                      ",7,3MCHBP01,001,006,NULL,NULL,NULL
+2138,"V - SMB-000 pinion 8910                 ",93,3JRDAUV0023,002,066,NULL,NULL,
+187,"Charging Pmp Gear                       ",8,1MCHBP01,001,007,NULL,NULL,
+3546,"Hydra Baler                             ",156,1NSRNM01,148,009,NULL,NULL,NULL
+5086,"AF pmp brgs                             ",24,1MAFBP01,001,001,NULL,NULL,NULL
+183,"Charging Pmp Crank                      ",7,3MCHAP01,001,006,NULL,NULL,
+4802,"Aux Hoist                               ",166,3MZTNG01,056,113,NULL,NULL,NULL
+4957,"Charging Pmp Gear                       ",8,3MCHAP01,001,007,NULL,NULL,NULL
+3022,"Condensate Mtr Upper                    ",10,2MCDNP01A,002,003,NULL,NULL,NULL
+4828,"U2 tower gear                           ",5,2MCWNA02C,031,009,NULL,NULL,NULL
+4529,"MT SMC-04 LS                            ",41,1JMTNHV0245,099,040,NULL,NULL,NULL
+4754,"Water Rec - Rake Gear                   ",234,AWFCNX01E,177,009,NULL,NULL,NULL
+4607,"SHC 46 ISO                              ",225,2MAFBP01,001,002,NULL,NULL,NULL
+4391,"V - SMB-0 LS 8910                       ",116,1JSICHV0321,099,040,NULL,NULL,NULL
+3010,"Generator - Em Dies                     ",158,2EPEBG02,010,002,NULL,NULL,NULL
+3335,"MT SMC-04 Gear                          ",42,3JMTNHV0255,097,040,NULL,NULL,NULL
+3341,"V - SMB-000 gear 8910                   ",97,1JMTNHV0244,097,040,NULL,NULL,NULL
+3199,"fuel crane bridge reducers              ",177,2MZFNG02,240,007,NULL,NULL,
+3304,"V - SMB-000 LS                          ",98,3JRCNHV0453,099,040,NULL,NULL,NULL
+3206,"fuel crane dorris reducer               ",178,3MZFNG02,202,007,NULL,NULL,NULL
+5208,"Valve Bearing Trunnion                  ",249,1JCPBUV0003B,096,022,NULL,NULL,
+4244,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM03D,002,066,NULL,NULL,NULL
+3442,"Nuc Cooling Mtr                         ",138,3MNCNP01B,002,002,NULL,NULL,NULL
+3543,"V - 7NA1-43 : 8910 Mild                 ",46,2JHPBUV0006,097,040,NULL,NULL,NULL
+266,"A F Mtr driven Mtr                      ",14,3MAFBP01,002,001,NULL,NULL,
+267,"A F Mtr driven Mtr                      ",14,3MAFBP01,002,002,NULL,NULL,
+268,"A F Mtr driven Mtr                      ",14,3MAFNP01,002,001,NULL,NULL,
+3338,"V - SMB-0 gear 8910                     ",115,2JSIBHV0699,097,040,NULL,NULL,NULL
+4025,"Cont. Spray Mtr Lower                   ",150,2MSIBP03,002,004,NULL,NULL,NULL
+3444,"Generator - Em Dies                     ",158,3EPEAG01,010,002,NULL,NULL,NULL
+4883,"Polar Crane Bridge Drive                ",142,1MZCNG01,042,009,NULL,NULL,NULL
+3674,"turbine oil - GST                       ",190,2MLONT02A,016,011,NULL,NULL,
+930,"V - SMB-000 HBC-0 LS                    ",49,3MHCNM01A,099,040,NULL,NULL,
+3562,"Crane inching reducer                   ",180,1MZFNG02,224,007,NULL,NULL,NULL
+3450,"Condensate Mtr Upper                    ",10,3MCDNP01C,002,003,NULL,NULL,NULL
+3478,"fuel bldg crane reducers                ",174,1MZTNG01,034,144,NULL,NULL,NULL
+3095,"fuel bldg crane reducers                ",174,1MZTNG01,034,145,NULL,NULL,
+5342,"fuel bldg crane reducers                ",174,2MZTNG01,034,145,NULL,NULL,NULL
+3098,"fuel bldg crane reducers                ",174,2MZTNG01,052,113,NULL,NULL,
+4071,"Cranes - omala 220                      ",191,1MZFNG01,033,050,NULL,NULL,NULL
+3101,"fuel bldg crane reducers                ",174,3MZTNG01,034,145,NULL,NULL,
+3102,"chem addition                           ",167,2MSCNP13,138,009,NULL,NULL,NULL
+3104,"V - SMB-0 gear 8910                     ",115,2JSIBHV0689,097,040,NULL,NULL,NULL
+3105,"V - SMB-0 pinion 8910                   ",114,2JSIBHV0689,002,066,NULL,NULL,NULL
+5209,"Valve Bearing Trunnion                  ",249,2JCPAUV0002A,096,022,NULL,NULL,
+290,"hpsi pmp ob                             ",17,1MSIBP02,001,002,NULL,NULL,
+4072,"Cranes - omala 220                      ",191,1MZFNG01,054,230,NULL,NULL,NULL
+5212,"Valve Bearing Trunnion                  ",249,3JCPBUV0003A,096,023,NULL,NULL,
+3614,"Breathing Air Comp                      ",39,3MIANC02,003,115,NULL,NULL,NULL
+3572,"fuel crane bridge reducers              ",177,1MZFNG02,240,007,NULL,NULL,NULL
+3106,"V - SMB-0 LS 8910                       ",116,2JSIBHV0689,099,040,NULL,NULL,NULL
+298,"Chem Addition                           ",18,1MSCNP13,064,040,NULL,NULL,
+4534,"Main Hoist Cranes                       ",162,2MZTNG01,033,113,NULL,NULL,NULL
+4535,"V - SMC-04 gear 8910                    ",106,3JSIBUV0668,097,040,NULL,NULL,NULL
+4541,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM02D,002,066,NULL,NULL,NULL
+303,"Chem Addition                           ",18,2MSCNP13,064,040,NULL,NULL,
+304,"Chem Addition                           ",18,2MSCNP14,064,040,NULL,NULL,
+4085,"vapor extractor                         ",211,3MLONJ02B,141,063,NULL,NULL,NULL
+3117,"MT SMC-04 Gear                          ",42,1JMTNHV0388A,097,040,NULL,NULL,NULL
+4542,"V - SMB-000 HBC-0 LS                    ",49,2MHCNM02D,099,040,NULL,NULL,NULL
+308,"Chem Addition                           ",18,3MSCNP13,064,040,NULL,NULL,
+3305,"V - SMB-000 LS                          ",98,2JEDNPV0030,099,040,NULL,NULL,NULL
+311,"Spray Pond Mtr                          ",19,1MSPAP01,002,004,NULL,NULL,
+312,"Spray Pond Mtr                          ",19,1MSPBP01,002,004,NULL,NULL,
+5272,"Spray Pond Mtr                          ",19,1MSPBP01,002,003,NULL,NULL,NULL
+3127,"V - SMC-04 LS 8910                      ",107,3JHPBUV0006,099,040,NULL,NULL,NULL
+315,"Spray Pond Mtr                          ",19,2MSPAP01,002,003,NULL,NULL,
+316,"Spray Pond Mtr                          ",19,2MSPBP01,002,004,NULL,NULL,
+317,"Spray Pond Mtr                          ",19,2MSPBP01,002,003,NULL,NULL,
+319,"Spray Pond Mtr                          ",19,3MSPAP01,002,003,NULL,NULL,
+320,"Spray Pond Mtr                          ",19,3MSPBP01,002,004,NULL,NULL,
+3340,"MT SMC-04 Gear                          ",42,3JMTNHV0249,097,040,NULL,NULL,NULL
+322,"Stator clg pmp                          ",20,1MCENP01A,001,009,NULL,NULL,NULL
+323,"Stator clg pmp                          ",20,1MCENP01B,001,009,NULL,NULL,
+324,"Stator clg pmp                          ",20,2MCENP01A,001,009,NULL,NULL,
+325,"Stator clg pmp                          ",20,2MCENP01B,001,009,NULL,NULL,
+326,"Stator clg pmp                          ",20,3MCENP01A,001,009,NULL,NULL,
+327,"Stator clg pmp                          ",20,3MCENP01B,001,009,NULL,NULL,
+3355,"Chem addition - hydraulic               ",184,3MSCNP12,138,009,NULL,NULL,
+332,"Heat Rem Mtr Up                         ",21,3MEDNP01A,002,003,NULL,NULL,
+5168,"Heat Rem Mtr Lwr                        ",22,2MEDNP01A,002,004,NULL,NULL,NULL
+338,"Heat Rem Mtr Lwr                        ",22,3MEDNP01A,002,004,NULL,NULL,
+348,"DG starting Air                         ",23,3MDGNC01A,003,006,NULL,NULL,
+931,"V - SMB-000 HBC-0 LS                    ",49,3MHCNM01B,099,040,NULL,NULL,
+3690,"Cranes - omala 220                      ",191,1MZFNG01,033,073,NULL,NULL,
+5091,"Turb Cool Mtr                           ",141,1MTCNP01B,002,001,NULL,NULL,NULL
+4632,"LPSI lower mtr bearing                  ",226,3MSIAP01,002,004,NULL,NULL,
+4912,"Turb Cool Mtr                           ",141,2MTCNP01A,002,002,NULL,NULL,NULL
+4788,"V-SB-1 LS8910 MOVLL                     ",101,1JSGAUV0134,099,040,NULL,NULL,NULL
+5287,"tur bldg crane main hoist mtr           ",173,2MZTNG01,033,130,NULL,NULL,NULL
+193,"Charging Pmp Gear                       ",8,3MCHBP01,001,007,NULL,NULL,
+3297,"V - SMB-000 HBC-0                       ",47,3MHCNM01B,097,040,NULL,NULL,NULL
+2588,"Fuel Pool Mtr Brgs                      ",128,1MPCAP01,002,001,NULL,NULL,NULL
+3682,"V - SMB-00 HBC-1 LS 8910 m              ",80,3JCTAHV0001,099,040,NULL,NULL,NULL
+197,"Charging Pmp Filter                     ",9,1MCHEP01,001,172,NULL,NULL,
+199,"Charging Pmp Filter                     ",9,2MCHBP01,001,172,NULL,NULL,
+200,"Charging Pmp Filter                     ",9,2MCHEP01,001,172,NULL,NULL,
+201,"Charging Pmp Filter                     ",9,3MCHAP01,001,172,NULL,NULL,
+202,"Charging Pmp Filter                     ",9,3MCHBP01,001,172,NULL,NULL,
+203,"Charging Pmp Filter                     ",9,3MCHEP01,001,172,NULL,NULL,
+2589,"Fuel Pool Mtr Brgs                      ",128,1MPCAP01,002,002,NULL,NULL,
+3262,"Circ Wtr Mtrs                           ",4,3MCWNP01D,002,003,NULL,NULL,NULL
+206,"Condensate Mtr Upper                    ",10,1MCDNP01C,002,003,NULL,NULL,
+208,"Condensate Mtr Upper                    ",10,2MCDNP01B,002,003,NULL,NULL,
+3984,"Condensate Mtr Upper                    ",10,2MCDNP01C,002,003,NULL,NULL,NULL
+3547,"Nuc Cooling Mtr                         ",138,2MNCNP01A,002,001,NULL,NULL,NULL
+5254,"PC Mtr Lower                            ",134,1MPWNP01A,002,004,NULL,NULL,NULL
+2654,"HPSI pmp IB                             ",133,1MSIAP02,001,001,NULL,NULL,NULL
+4759,"Water Rec - Rake Gear                   ",234,AWFCNQ02D,177,009,NULL,NULL,
+2655,"HPSI pmp IB                             ",133,1MSIBP02,001,001,NULL,NULL,
+4152,"V - SMB-1 gear 8910 m                   ",91,1JSIAUV0634,097,040,NULL,NULL,NULL
+4141,"Air Removal Pmp                         ",11,1MARNP01C,001,001,NULL,NULL,NULL
+219,"Air Removal Pmp                         ",11,1MARNP01C,001,002,NULL,NULL,
+220,"Air Removal Pmp                         ",11,1MARNP01D,001,001,NULL,NULL,
+5177,"Air Removal Pmp                         ",11,1MARNP01D,001,002,NULL,NULL,NULL
+222,"Air Removal Pmp                         ",11,2MARNP01A,001,001,NULL,NULL,
+223,"Air Removal Pmp                         ",11,2MARNP01A,001,002,NULL,NULL,
+3966,"Sec Gate Hydra                          ",157,1EQFNJYFG10B,138,009,NULL,NULL,NULL
+225,"Air Removal Pmp                         ",11,2MARNP01B,001,002,NULL,NULL,
+4846,"Chillers                                ",151,1MWCNE01A,007,009,NULL,NULL,NULL
+3651,"V - 5AB/29 gear                         ",70,1JSGNUV0038,097,040,NULL,NULL,
+228,"Air Removal Pmp                         ",11,2MARNP01D,001,001,NULL,NULL,
+229,"Air Removal Pmp                         ",11,2MARNP01D,001,002,NULL,NULL,
+231,"Air Removal Pmp                         ",11,3MARNP01A,001,002,NULL,NULL,
+3914,"Ammonium Chloride pump                  ",200,3MSCNP032,001,006,NULL,NULL,NULL
+233,"Air Removal Pmp                         ",11,3MARNP01B,001,002,NULL,NULL,
+234,"Air Removal Pmp                         ",11,3MARNP01C,001,001,NULL,NULL,
+235,"Air Removal Pmp                         ",11,3MARNP01C,001,002,NULL,NULL,
+236,"Air Removal Pmp                         ",11,3MARNP01D,001,001,NULL,NULL,
+238,"Air Removal Pmp                         ",11,3MARNP01D,001,002,NULL,NULL,NULL
+3596,"V - 11NAZ1/ (86&21) - Gear              ",63,1JWCNHV0059,097,040,NULL,NULL,NULL
+4626,"LPSI Upper Mtr bearing                  ",148,1MSIAP01,002,003,NULL,NULL,
+4437,"V - SMB-00 gear hot                     ",215,3JSGNHV1145,097,040,NULL,NULL,NULL
+2657,"HPSI pmp IB                             ",133,2MSIBP02,001,001,NULL,NULL,
+4213,"V - SMB-00 Gear 8910 mild               ",54,1JSIBUV0636,097,040,NULL,NULL,NULL
+5409,"RCP Thrust Brg                          ",129,1MRCEP01A,001,013,NULL,NULL,NULL
+5339,"cranes - morlina 100                    ",227,AMZLNG01,107,107,NULL,NULL,NULL
+4726,"AR Gear w/syn                           ",126,2MARNP01A,001,047,NULL,NULL,NULL
+4796,"V - SMB-000 pinion                      ",96,1JRCNHV0451,002,066,NULL,NULL,NULL
+3676,"V - SMB-1 gear 8910 m                   ",91,2JAFCUV0036,097,040,NULL,NULL,NULL
+3599,"V - 40A/29 - gear -mild                 ",44,1JCDNUV0214A,097,040,NULL,NULL,NULL
+5048,"control oil pump                        ",228,2MCONP01A,001,063,NULL,NULL,NULL
+340,"DG starting Air                         ",23,1MDGNC01A,003,006,NULL,NULL,NULL
+341,"DG starting Air                         ",23,1MDGNC01B,003,006,NULL,NULL,
+342,"DG starting Air                         ",23,1MDGNC02A,003,006,NULL,NULL,
+5288,"DG starting Air                         ",23,1MDGNC02B,003,006,NULL,NULL,NULL
+345,"DG starting Air                         ",23,2MDGNC01B,003,006,NULL,NULL,
+346,"DG starting Air                         ",23,2MDGNC02A,003,006,NULL,NULL,
+347,"DG starting Air                         ",23,2MDGNC02B,003,006,NULL,NULL,
+3683,"Polar Crane Bridge Drive                ",142,3MZCNG01,040,009,NULL,NULL,NULL
+350,"DG starting Air                         ",23,3MDGNC02A,003,006,NULL,NULL,
+351,"DG starting Air                         ",23,3MDGNC02B,003,006,NULL,NULL,
+3601,"V - 40A/86 gear                         ",102,2JEDNUV0027,097,040,NULL,NULL,NULL
+4371,"V - SMB-000 gear 8910                   ",97,3JEDNPV0029,097,040,NULL,NULL,NULL
+5019,"Essen Chiller                           ",25,2MECAE01,007,009,NULL,NULL,NULL
+5241,"OSB crane                               ",252,AMZYNG22,206,047,NULL,NULL,NULL
+375,"Essen Chiller                           ",25,3MECBE01,007,009,NULL,NULL,
+3923,"Cranes - omala 220                      ",191,3MZFNG01,033,145,NULL,NULL,NULL
+3699,"Cranes - omala 220                      ",191,3MZFNG01,052,047,NULL,NULL,
+379,"EW Pmp Brgs                             ",27,1MEWAP01,001,001,NULL,NULL,NULL
+380,"EW Pmp Brgs                             ",27,1MEWAP01,001,002,NULL,NULL,
+381,"EW Pmp Brgs                             ",27,1MEWBP01,001,001,NULL,NULL,
+4849,"EW Pmp Brgs                             ",27,1MEWBP01,001,002,NULL,NULL,NULL
+383,"EW Pmp Brgs                             ",27,2MEWAP01,001,001,NULL,NULL,
+384,"EW Pmp Brgs                             ",27,2MEWAP01,001,002,NULL,NULL,
+385,"EW Pmp Brgs                             ",27,2MEWBP01,001,001,NULL,NULL,
+3915,"Ammonium Chloride pump                  ",200,2MSCNP032,001,006,NULL,NULL,
+388,"EW Pmp Brgs                             ",27,3MEWAP01,001,002,NULL,NULL,
+389,"EW Pmp Brgs                             ",27,3MEWBP01,001,001,NULL,NULL,
+390,"EW Pmp Brgs                             ",27,3MEWBP01,001,002,NULL,NULL,
+3603,"V - 70A/86 gear                         ",71,3JEDNUV0026,097,040,NULL,NULL,NULL
+392,"EW Mtr Brgs                             ",28,1MEWAP01,002,002,NULL,NULL,
+5369,"Turbine Oil                             ",135,1MLONT01,016,008,NULL,NULL,NULL
+198,"Charging Pmp Filter                     ",9,2MCHAP01,001,172,NULL,NULL,
+4520,"AR Gear w/syn                           ",126,2MARNP01B,001,047,NULL,NULL,NULL
+293,"hpsi pmp ob                             ",17,3MSIAP02,001,002,NULL,NULL,
+3538,"SG Snubber                              ",34,1MRCEE01S,017,176,NULL,NULL,NULL
+318,"Spray Pond Mtr                          ",19,3MSPAP01,002,004,NULL,NULL,
+3757,"cask crane bridge drive                 ",193,3MZFNG01,034,047,NULL,NULL,
+3483,"AF pmp brgs                             ",24,1MAFAP01,001,002,NULL,NULL,NULL
+3403,"Heat Rem Mtr Up                         ",21,3MEDNP01B,002,003,NULL,NULL,NULL
+3539,"RCP Snubber                             ",35,2MRCEP01S,017,153,NULL,NULL,NULL
+4642,"Cooling tower motor bearings            ",229,2MCWNA01A,002,002,NULL,NULL,
+335,"Heat Rem Mtr Lwr                        ",22,1MEDNP01B,002,004,NULL,NULL,
+337,"Heat Rem Mtr Lwr                        ",22,2MEDNP01B,002,004,NULL,NULL,
+339,"Heat Rem Mtr Lwr                        ",22,3MEDNP01B,002,004,NULL,NULL,
+4149,"V - SMB-00 Gear 8910 mild               ",54,1JSGEHV0042,097,040,NULL,NULL,NULL
+3052,"EW Mtr Brgs                             ",28,1MEWBP01,002,001,NULL,NULL,NULL
+5038,"EW Mtr Brgs                             ",28,1MEWBP01,002,002,NULL,NULL,NULL
+395,"EW Mtr Brgs                             ",28,2MEWAP01,002,001,NULL,NULL,
+396,"EW Mtr Brgs                             ",28,2MEWAP01,002,002,NULL,NULL,
+397,"EW Mtr Brgs                             ",28,2MEWBP01,002,001,NULL,NULL,
+3924,"Cranes - omala 220                      ",191,-1MZFNG01,052,007,NULL,NULL,
+400,"EW Mtr Brgs                             ",28,3MEWAP01,002,002,NULL,NULL,
+3012,"EW Mtr Brgs                             ",28,3MEWBP01,002,001,NULL,NULL,NULL
+402,"EW Mtr Brgs                             ",28,3MEWBP01,002,002,NULL,NULL,
+2524,"Emer DG Filter                          ",29,1MDGBF08,027,009,NULL,NULL,NULL
+404,"Emer DG Filter                          ",29,1MDGAF08,027,009,NULL,NULL,
+406,"Emer DG Filter                          ",29,2MDGBF08,027,009,NULL,NULL,
+407,"Emer DG Filter                          ",29,3MDGAF08,027,009,NULL,NULL,
+4643,"Cooling tower motor bearings            ",229,2MCWNA01B,002,001,NULL,NULL,
+3903,"govenor speed regulator                 ",199,3MDGAH01,161,009,NULL,NULL,
+3925,"Cranes - omala 220                      ",191,-1MZFNG01,033,050,NULL,NULL,NULL
+4644,"Cooling tower motor bearings            ",229,2MCWNA01B,002,002,NULL,NULL,
+3589,"tur bldg crane main hoist mtr           ",173,3MZTNG01,033,130,NULL,NULL,NULL
+413,"Mtr Gen Mtr End                         ",31,1MSFNM01A,165,190,NULL,NULL,NULL
+414,"Mtr Gen Mtr End                         ",31,1MSFNM01B,165,190,NULL,NULL,
+5120,"V - SMB-000 HBC-0                       ",47,1JSIBHV0689,002,066,NULL,NULL,NULL
+416,"Mtr Gen Mtr End                         ",31,2MSFNM01B,165,190,NULL,NULL,
+4151,"V - SMB-00 Pinion 8910 mild             ",55,1JSGEHV0044,002,066,NULL,NULL,NULL
+418,"Mtr Gen Mtr End                         ",31,3MSFNM01B,165,190,NULL,NULL,
+4294,"V - MT SMB-3-60 Gear                    ",60,1JMTNUV0330A,097,040,NULL,NULL,NULL
+420,"Mtr Gen Gen End                         ",32,1MSFNM01B,165,191,NULL,NULL,
+421,"Mtr Gen Gen End                         ",32,2MSFNM01A,165,191,NULL,NULL,
+422,"Mtr Gen Gen End                         ",32,2MSFNM01B,165,191,NULL,NULL,
+424,"Mtr Gen Gen End                         ",32,3MSFNM01B,165,191,NULL,NULL,
+2592,"RCP Thrust Brg                          ",129,1MRCEP01C,001,013,NULL,NULL,
+3594,"U2 tower gear                           ",5,2MCWNA01B,031,009,NULL,NULL,NULL
+427,"Fuel Pool Pmp Brg                       ",33,2MPCBP01,001,019,NULL,NULL,
+429,"Fuel Pool Pmp Brg                       ",33,3MPCBP01,001,019,NULL,NULL,
+458,"RCP Snubber                             ",35,3MRCEP01S,017,153,NULL,NULL,
+3334,"MT SMC-04 Gear                          ",42,3JMTNHV0251,097,040,NULL,NULL,NULL
+473,"Turbine Control                         ",37,1MCONT01,016,009,NULL,NULL,NULL
+2593,"RCP Thrust Brg                          ",129,1MRCEP01D,001,013,NULL,NULL,
+3598,"V - 40A/29 - gear -mild                 ",44,2JCDNHV0031,097,040,NULL,NULL,NULL
+2595,"RCP Thrust Brg                          ",129,2MRCEP01B,001,013,NULL,NULL,
+2596,"RCP Thrust Brg                          ",129,2MRCEP01C,001,013,NULL,NULL,
+492,"Compressor Filters                      ",40,2MIANC01A,003,172,NULL,NULL,
+500,"Compressor Filters                      ",40,1MIANC02,003,172,NULL,NULL,NULL
+586,"MT SMC-04 LS                            ",41,1JMTNHV0316,099,040,NULL,NULL,NULL
+587,"MT SMC-04 LS                            ",41,3JMTNHV0246,099,040,NULL,NULL,
+4414,"V - SMB-0 pinion 8910                   ",114,2JSIAHV0687,002,066,NULL,NULL,NULL
+629,"MT SMC-04 Gear                          ",42,1JMTNHV0247,097,040,NULL,NULL,
+3153,"MT SMC-04 Gear                          ",42,1JMTNHV0248,097,040,NULL,NULL,NULL
+631,"MT SMC-04 Gear                          ",42,1JMTNHV0249,097,040,NULL,NULL,
+632,"MT SMC-04 Gear                          ",42,1JMTNHV0251,097,040,NULL,NULL,
+633,"MT SMC-04 Gear                          ",42,1JMTNHV0252,097,040,NULL,NULL,
+5357,"Cont. Spray Mtr Upper                   ",149,1MSIAP03,002,003,NULL,NULL,NULL
+635,"MT SMC-04 Gear                          ",42,1JMTNHV0254,097,040,NULL,NULL,
+636,"MT SMC-04 Gear                          ",42,1JMTNHV0255,097,040,NULL,NULL,
+637,"MT SMC-04 Gear                          ",42,1JMTNHV0256,097,040,NULL,NULL,
+638,"MT SMC-04 Gear                          ",42,1JMTNHV0257,097,040,NULL,NULL,
+3864,"V - series 2000 MG05A gear              ",68,3JCWNUV0006,097,040,NULL,NULL,NULL
+640,"MT SMC-04 Gear                          ",42,1JMTNHV0259,097,040,NULL,NULL,
+641,"MT SMC-04 Gear                          ",42,1JMTNHV0260,097,040,NULL,NULL,
+642,"MT SMC-04 Gear                          ",42,1JMTNHV0315,097,040,NULL,NULL,
+643,"MT SMC-04 Gear                          ",42,1JMTNHV0321,097,040,NULL,NULL,
+644,"MT SMC-04 Gear                          ",42,1JMTNHV0322,097,040,NULL,NULL,
+645,"MT SMC-04 Gear                          ",42,1JMTNHV0327A,097,040,NULL,NULL,
+646,"MT SMC-04 Gear                          ",42,1JMTNHV0327B,097,040,NULL,NULL,
+647,"MT SMC-04 Gear                          ",42,1JMTNHV0327C,097,040,NULL,NULL,
+648,"MT SMC-04 Gear                          ",42,1JMTNHV0327D,097,040,NULL,NULL,
+649,"MT SMC-04 Gear                          ",42,1JMTNHV0327E,097,040,NULL,NULL,
+650,"MT SMC-04 Gear                          ",42,1JMTNHV0327F,097,040,NULL,NULL,
+651,"MT SMC-04 Gear                          ",42,1JMTNHV0327G,097,040,NULL,NULL,
+652,"MT SMC-04 Gear                          ",42,1JMTNHV0327H,097,040,NULL,NULL,
+653,"MT SMC-04 Gear                          ",42,1JMTNHV0374,097,040,NULL,NULL,
+768,"MT SMC-04 Gear                          ",42,1JMTNHV0375,097,040,NULL,NULL,NULL
+4647,"Cooling tower motor bearings            ",229,2MCWNA01F,031,047,NULL,NULL,
+4972,"AF pmp brgs                             ",24,2MAFNP01,001,001,NULL,NULL,NULL
+4745,"AF pmp brgs                             ",24,2MAFNP01,001,002,NULL,NULL,NULL
+364,"AF pmp brgs                             ",24,3MAFAP01,001,002,NULL,NULL,
+3456,"Generator - Em Dies                     ",158,1EPEBG02,010,002,NULL,NULL,NULL
+4744,"AF pmp brgs                             ",24,3MAFBP01,001,002,NULL,NULL,NULL
+367,"AF pmp brgs                             ",24,3MAFNP01,001,001,NULL,NULL,
+3382,"V - SMB-000 HBC-0 LS                    ",49,3MHCNM01C,099,040,NULL,NULL,NULL
+3388,"water rec compressor                    ",185,-AWPSNC01B,003,009,NULL,NULL,NULL
+387,"EW Pmp Brgs                             ",27,3MEWAP01,001,001,NULL,NULL,
+438,"SG Snubber                              ",34,3MRCEE01S,017,176,NULL,NULL,
+3459,"A F Mtr driven Mtr                      ",14,1MAFBP01,002,002,NULL,NULL,NULL
+3687,"V - SMB - 00 Gear -Oil                  ",187,3JSGNHV1142,097,040,NULL,NULL,
+588,"MT SMC-04 LS                            ",41,3JMTNHV0247,099,040,NULL,NULL,
+589,"MT SMC-04 LS                            ",41,3JMTNHV0248,099,040,NULL,NULL,
+590,"MT SMC-04 LS                            ",41,3JMTNHV0249,099,040,NULL,NULL,
+591,"MT SMC-04 LS                            ",41,3JMTNHV0251,099,040,NULL,NULL,
+592,"MT SMC-04 LS                            ",41,3JMTNHV0252,099,040,NULL,NULL,
+4446,"LPSI shaft bearing                      ",218,3MSIBP01,002,194,NULL,NULL,
+594,"MT SMC-04 LS                            ",41,3JMTNHV0254,099,040,NULL,NULL,
+595,"MT SMC-04 LS                            ",41,3JMTNHV0255,099,040,NULL,NULL,
+596,"MT SMC-04 LS                            ",41,3JMTNHV0256,099,040,NULL,NULL,
+597,"MT SMC-04 LS                            ",41,3JMTNHV0257,099,040,NULL,NULL,
+598,"MT SMC-04 LS                            ",41,3JMTNHV0258,099,040,NULL,NULL,
+599,"MT SMC-04 LS                            ",41,3JMTNHV0259,099,040,NULL,NULL,
+600,"MT SMC-04 LS                            ",41,3JMTNHV0260,099,040,NULL,NULL,
+601,"MT SMC-04 LS                            ",41,3JMTNHV0315,099,040,NULL,NULL,
+602,"MT SMC-04 LS                            ",41,3JMTNHV0316,099,040,NULL,NULL,
+603,"MT SMC-04 LS                            ",41,3JMTNHV0321,099,040,NULL,NULL,
+604,"MT SMC-04 LS                            ",41,3JMTNHV0322,099,040,NULL,NULL,
+605,"MT SMC-04 LS                            ",41,3JMTNHV0327A,099,040,NULL,NULL,
+606,"MT SMC-04 LS                            ",41,3JMTNHV0327B,099,040,NULL,NULL,
+607,"MT SMC-04 LS                            ",41,3JMTNHV0327C,099,040,NULL,NULL,
+608,"MT SMC-04 LS                            ",41,3JMTNHV0327D,099,040,NULL,NULL,
+609,"MT SMC-04 LS                            ",41,3JMTNHV0327E,099,040,NULL,NULL,
+610,"MT SMC-04 LS                            ",41,3JMTNHV0327F,099,040,NULL,NULL,
+611,"MT SMC-04 LS                            ",41,3JMTNHV0327G,099,040,NULL,NULL,
+612,"MT SMC-04 LS                            ",41,3JMTNHV0327H,099,040,NULL,NULL,
+613,"MT SMC-04 LS                            ",41,3JMTNHV0374,099,040,NULL,NULL,
+614,"MT SMC-04 LS                            ",41,3JMTNHV0375,099,040,NULL,NULL,
+615,"MT SMC-04 LS                            ",41,3JMTNHV0376,099,040,NULL,NULL,
+616,"MT SMC-04 LS                            ",41,3JMTNHV0377,099,040,NULL,NULL,
+617,"MT SMC-04 LS                            ",41,3JMTNHV0380,099,040,NULL,NULL,
+4448,"LPSI shaft bearing                      ",218,2MSIBP01,002,194,NULL,NULL,
+619,"MT SMC-04 LS                            ",41,3JMTNHV0388A,099,040,NULL,NULL,
+620,"MT SMC-04 LS                            ",41,3JMTNHV0388B,099,040,NULL,NULL,
+621,"MT SMC-04 LS                            ",41,3JMTNHV0388C,099,040,NULL,NULL,
+622,"MT SMC-04 LS                            ",41,3JMTNHV0388D,099,040,NULL,NULL,
+623,"MT SMC-04 LS                            ",41,3JMTNHV0389A,099,040,NULL,NULL,
+5141,"RCP Thrust Brg                          ",129,1MRCEP01B,001,013,NULL,NULL,NULL
+625,"MT SMC-04 LS                            ",41,3JMTNHV0389C,099,040,NULL,NULL,
+626,"MT SMC-04 LS                            ",41,3JMTNHV0389D,099,040,NULL,NULL,
+4591,"V - SMB-00 Pinion 8910 mild             ",55,1JSIAUV0637,002,066,NULL,NULL,NULL
+655,"MT SMC-04 Gear                          ",42,1JMTNHV0376,097,040,NULL,NULL,
+656,"MT SMC-04 Gear                          ",42,1JMTNHV0377,097,040,NULL,NULL,
+4465,"V - SMB-000 LS 8910                     ",95,2JRDAUV0023,099,040,NULL,NULL,NULL
+658,"MT SMC-04 Gear                          ",42,1JMTNHV0381,097,040,NULL,NULL,
+3732,"Cranes - omala 220                      ",191,-3MZFNG01,054,230,NULL,NULL,NULL
+660,"MT SMC-04 Gear                          ",42,1JMTNHV0388B,097,040,NULL,NULL,
+661,"MT SMC-04 Gear                          ",42,1JMTNHV0388C,097,040,NULL,NULL,
+662,"MT SMC-04 Gear                          ",42,1JMTNHV0388D,097,040,NULL,NULL,
+663,"MT SMC-04 Gear                          ",42,1JMTNHV0389A,097,040,NULL,NULL,
+5299,"SHC 630 as gearcase                     ",235,1MZCNG01,169,007,NULL,NULL,NULL
+665,"MT SMC-04 Gear                          ",42,1JMTNHV0389C,097,040,NULL,NULL,
+666,"MT SMC-04 Gear                          ",42,1JMTNHV0389D,097,040,NULL,NULL,
+667,"MT SMC-04 Gear                          ",42,2JMTNHV0246,097,040,NULL,NULL,
+708,"MT SMC-04 Gear                          ",42,3JMTNHV0246,097,040,NULL,NULL,
+709,"MT SMC-04 Gear                          ",42,3JMTNHV0247,097,040,NULL,NULL,
+710,"MT SMC-04 Gear                          ",42,3JMTNHV0248,097,040,NULL,NULL,
+3393,"V - SMB-000 gear 8910                   ",97,3JEDNPV0030,097,040,NULL,NULL,NULL
+4119,"security diesel                         ",189,AASKNE01,006,006,NULL,NULL,NULL
+713,"MT SMC-04 Gear                          ",42,3JMTNHV0252,097,040,NULL,NULL,
+5283,"SHC 630 as gearcase                     ",235,1MZCNG11,321,107,NULL,NULL,NULL
+715,"MT SMC-04 Gear                          ",42,3JMTNHV0254,097,040,NULL,NULL,
+4058,"Crane gearbox with Omala 320            ",181,3MZFNG01,167,007,NULL,NULL,NULL
+717,"MT SMC-04 Gear                          ",42,3JMTNHV0256,097,040,NULL,NULL,
+718,"MT SMC-04 Gear                          ",42,3JMTNHV0257,097,040,NULL,NULL,
+719,"MT SMC-04 Gear                          ",42,3JMTNHV0258,097,040,NULL,NULL,
+3891,"aux compressor                          ",168,AMZYNE0X1,003,009,NULL,NULL,NULL
+721,"MT SMC-04 Gear                          ",42,3JMTNHV0260,097,040,NULL,NULL,
+722,"MT SMC-04 Gear                          ",42,3JMTNHV0315,097,040,NULL,NULL,
+723,"MT SMC-04 Gear                          ",42,3JMTNHV0316,097,040,NULL,NULL,
+724,"MT SMC-04 Gear                          ",42,3JMTNHV0321,097,040,NULL,NULL,
+725,"MT SMC-04 Gear                          ",42,3JMTNHV0322,097,040,NULL,NULL,
+363,"AF pmp brgs                             ",24,3MAFAP01,001,001,NULL,NULL,
+4771,"RCP Thrust Brg                          ",129,2MRCEP01D,001,013,NULL,NULL,NULL
+374,"Essen Chiller                           ",25,3MECAE01,007,009,NULL,NULL,
+399,"EW Mtr Brgs                             ",28,3MEWAP01,002,001,NULL,NULL,
+2756,"SG Snubber                              ",34,2MRCEE01S,017,176,NULL,NULL,NULL
+3155,"RCP Thrust Brg                          ",129,3MRCEP01A,001,013,NULL,NULL,NULL
+2599,"RCP Thrust Brg                          ",129,3MRCEP01B,001,013,NULL,NULL,
+2600,"RCP Thrust Brg                          ",129,3MRCEP01C,001,013,NULL,NULL,
+3179,"RCP Thrust Brg                          ",129,3MRCEP01D,001,013,NULL,NULL,NULL
+3650,"V - 5AB/29 gear                         ",70,2JSGNUV0031,097,040,NULL,NULL,NULL
+5089,"fuel bldg crane reducers                ",174,3MZTNG01,052,113,NULL,NULL,NULL
+4654,"Cooling tower motor bearings            ",229,2MCWNA01J,002,001,NULL,NULL,
+496,"Compressor Filters                      ",40,3MIANC01A,003,172,NULL,NULL,
+4500,"V-5AB/29 gear NQR key                   ",221,3JSGNUV0032,097,040,NULL,NULL,
+4831,"U2 tower gear                           ",5,2MCWNA03M,031,009,NULL,NULL,NULL
+546,"MT SMC-04 LS                            ",41,2JMTNHV0246,099,040,NULL,NULL,
+766,"MT SMC-04 Pinion                        ",43,3JMTNHV0246,002,066,NULL,NULL,
+5191,"fuel crane bridge reducers              ",177,1MZFNG02,260,007,NULL,NULL,NULL
+771,"V - 40A/29 - gear -mild                 ",44,1JCDNHV0032,097,040,NULL,NULL,
+2893,"RCP Snubber                             ",35,1MRCEP01S,017,155,NULL,NULL,NULL
+3608,"V - EB-30 gear grease lubed             ",87,2JCDNHV0001,097,040,NULL,NULL,NULL
+774,"V - 40A/29 - gear -mild                 ",44,1JCDNUV0214B,097,040,NULL,NULL,
+775,"V - 40A/29 - gear -mild                 ",44,1JCDNUV0215A,097,040,NULL,NULL,
+776,"V - 40A/29 - gear -mild                 ",44,1JCDNUV0215B,097,040,NULL,NULL,
+777,"V - 40A/29 - gear -mild                 ",44,1JCDNUV0216A,097,040,NULL,NULL,
+778,"V - 40A/29 - gear -mild                 ",44,1JCDNUV0216B,097,040,NULL,NULL,
+780,"V - 40A/29 - gear -mild                 ",44,2JCDNHV0032,097,040,NULL,NULL,
+781,"V - 40A/29 - gear -mild                 ",44,2JCDNHV0033,097,040,NULL,NULL,
+782,"V - 40A/29 - gear -mild                 ",44,2JCDNUV0214A,097,040,NULL,NULL,
+783,"V - 40A/29 - gear -mild                 ",44,2JCDNUV0214B,097,040,NULL,NULL,
+784,"V - 40A/29 - gear -mild                 ",44,2JCDNUV0215A,097,040,NULL,NULL,
+785,"V - 40A/29 - gear -mild                 ",44,2JCDNUV0215B,097,040,NULL,NULL,
+786,"V - 40A/29 - gear -mild                 ",44,2JCDNUV0216A,097,040,NULL,NULL,
+787,"V - 40A/29 - gear -mild                 ",44,2JCDNUV0216B,097,040,NULL,NULL,
+788,"V - 40A/29 - gear -mild                 ",44,3JCDNHV0031,097,040,NULL,NULL,
+789,"V - 40A/29 - gear -mild                 ",44,3JCDNHV0032,097,040,NULL,NULL,
+790,"V - 40A/29 - gear -mild                 ",44,3JCDNHV0033,097,040,NULL,NULL,
+791,"V - 40A/29 - gear -mild                 ",44,3JCDNUV0214A,097,040,NULL,NULL,
+792,"V - 40A/29 - gear -mild                 ",44,3JCDNUV0214B,097,040,NULL,NULL,
+793,"V - 40A/29 - gear -mild                 ",44,3JCDNUV0215A,097,040,NULL,NULL,
+794,"V - 40A/29 - gear -mild                 ",44,3JCDNUV0215B,097,040,NULL,NULL,
+795,"V - 40A/29 - gear -mild                 ",44,3JCDNUV0216A,097,040,NULL,NULL,
+3675,"turbine oil - GST                       ",190,2MLONT02B,016,011,NULL,NULL,
+2920,"Bridge Drive Motors                     ",161,2MZCNG01,035,009,NULL,NULL,
+4655,"Cooling tower motor bearings            ",229,2MCWNA01J,002,002,NULL,NULL,
+4083,"Cranes - omala 220                      ",191,2MZFNG01,033,145,NULL,NULL,NULL
+4130,"Cont. Spray Mtr Upper                   ",149,3MSIAP03,002,003,NULL,NULL,NULL
+5115,"Essen Chiller                           ",25,1MECAE01,007,009,NULL,NULL,NULL
+4295,"V - MT SMB-3-60 LS                      ",62,3JMTNUV0330B,099,040,NULL,NULL,NULL
+3610,"Breathing Air Comp                      ",123,1MIANC02,003,009,NULL,NULL,NULL
+4137,"Charging Pmp Crank                      ",7,2MCHEP01,001,006,NULL,NULL,NULL
+4299,"V - SB-3 gear 8910                      ",109,1JSIAUV0635,097,040,NULL,NULL,NULL
+4302,"V - SB-3 LS 8910                        ",110,1JSIAUV0635,099,040,NULL,NULL,NULL
+4328,"V - SMB-00 gear hot                     ",215,2JSGNHV1143,097,040,NULL,NULL,
+2855,"Main Centrifuge                         ",155,1MOSNF01,031,009,NULL,NULL,NULL
+3404,"MT SMC-04 Gear                          ",42,1JMTNHV0389B,097,040,NULL,NULL,NULL
+870,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM01B,002,066,NULL,NULL,
+871,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM01C,002,066,NULL,NULL,
+872,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM01D,002,066,NULL,NULL,
+873,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM02A,002,066,NULL,NULL,
+874,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM02B,002,066,NULL,NULL,
+875,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM02C,002,066,NULL,NULL,
+876,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM02D,002,066,NULL,NULL,
+4355,"V - SMB-3 LS 8910                       ",113,1JSIBUV0652,099,040,NULL,NULL,NULL
+878,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM03B,002,066,NULL,NULL,
+879,"V - SMB-000 HBC-0 Pinion                ",48,1MHCNM03C,002,066,NULL,NULL,
+4363,"Tellus 100 misc                         ",216,-2NGRNC01B,003,006,NULL,NULL,NULL
+881,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM01A,002,066,NULL,NULL,
+882,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM01B,002,066,NULL,NULL,
+883,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM01C,002,066,NULL,NULL,
+884,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM01D,002,066,NULL,NULL,
+885,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM02A,002,066,NULL,NULL,
+886,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM02B,002,066,NULL,NULL,
+887,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM02C,002,066,NULL,NULL,
+4656,"Cooling tower motor bearings            ",229,2MCWNA01L,002,001,NULL,NULL,
+889,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM03A,002,066,NULL,NULL,
+890,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM03B,002,066,NULL,NULL,
+891,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM03C,002,066,NULL,NULL,
+892,"V - SMB-000 HBC-0 Pinion                ",48,2MHCNM03D,002,066,NULL,NULL,
+893,"V - SMB-000 HBC-0 Pinion                ",48,3MHCNM01A,002,066,NULL,NULL,
+894,"V - SMB-000 HBC-0 Pinion                ",48,3MHCNM01B,002,066,NULL,NULL,
+3613,"Breathing Air Comp                      ",123,3MIANC02,003,009,NULL,NULL,NULL
+3431,"DG starting Air                         ",23,2MDGNC01A,003,006,NULL,NULL,NULL
+897,"V - SMB-000 HBC-0 Pinion                ",48,3MHCNM02A,002,066,NULL,NULL,
+898,"V - SMB-000 HBC-0 Pinion                ",48,3MHCNM02B,002,066,NULL,NULL,
+405,"Emer DG Filter                          ",29,2MDGAF08,027,009,NULL,NULL,
+428,"Fuel Pool Pmp Brg                       ",33,3MPCAP01,001,019,NULL,NULL,
+5239,"Turbine Oil                             ",135,3MLONT01,016,008,NULL,NULL,NULL
+431,"SG Snubber                              ",34,1MRCEE01S,017,177,NULL,NULL,
+4847,"FUEL CRANE HOIST/TROLLEY                ",179,1MZFNG02,221,007,NULL,NULL,NULL
+433,"SG Snubber                              ",34,1MRCEE01S,017,179,NULL,NULL,
+435,"SG Snubber                              ",34,2MRCEE01S,017,177,NULL,NULL,
+436,"SG Snubber                              ",34,2MRCEE01S,017,178,NULL,NULL,
+437,"SG Snubber                              ",34,2MRCEE01S,017,179,NULL,NULL,
+5313,"SG Snubber                              ",34,3MRCEE01S,017,177,NULL,NULL,NULL
+440,"SG Snubber                              ",34,3MRCEE01S,017,178,NULL,NULL,
+3502,"Chillers                                ",151,2MWCNE01A,007,009,NULL,NULL,NULL
+3036,"RCP Snubber                             ",35,1MRCEP01S,017,153,NULL,NULL,NULL
+3678,"V - SMB-000 HBC-0                       ",47,1MHCNM01D,097,040,NULL,NULL,NULL
+444,"RCP Snubber                             ",35,1MRCEP01S,017,157,NULL,NULL,
+445,"RCP Snubber                             ",35,1MRCEP01S,017,159,NULL,NULL,
+2550,"AF pmp brgs                             ",24,1MAFAP01,001,001,NULL,NULL,NULL
+447,"RCP Snubber                             ",35,1MRCEP01S,017,163,NULL,NULL,
+448,"RCP Snubber                             ",35,1MRCEP01S,017,165,NULL,NULL,
+4743,"Emer DG Gov                             ",30,2MDGAH01,162,009,NULL,NULL,NULL
+4040,"V - 13A-43 gear                         ",204,2JCDNHV0029,097,040,NULL,NULL,NULL
+451,"RCP Snubber                             ",35,2MRCEP01S,017,155,NULL,NULL,
+452,"RCP Snubber                             ",35,2MRCEP01S,017,157,NULL,NULL,
+453,"RCP Snubber                             ",35,2MRCEP01S,017,159,NULL,NULL,
+454,"RCP Snubber                             ",35,2MRCEP01S,017,161,NULL,NULL,
+455,"RCP Snubber                             ",35,2MRCEP01S,017,163,NULL,NULL,
+456,"RCP Snubber                             ",35,2MRCEP01S,017,165,NULL,NULL,
+457,"RCP Snubber                             ",35,2MRCEP01S,017,167,NULL,NULL,
+459,"RCP Snubber                             ",35,3MRCEP01S,017,155,NULL,NULL,
+460,"RCP Snubber                             ",35,3MRCEP01S,017,157,NULL,NULL,
+461,"RCP Snubber                             ",35,3MRCEP01S,017,159,NULL,NULL,
+462,"RCP Snubber                             ",35,3MRCEP01S,017,161,NULL,NULL,
+3156,"RCP Snubber                             ",35,3MRCEP01S,017,163,NULL,NULL,NULL
+464,"RCP Snubber                             ",35,3MRCEP01S,017,165,NULL,NULL,
+3157,"RCP Snubber                             ",35,3MRCEP01S,017,167,NULL,NULL,NULL
+5338,"Turb Stor Tank                          ",136,3MOSNT01A,011,060,NULL,NULL,NULL
+502,"MT SMC-04 LS                            ",41,1JMTNHV0246,099,040,NULL,NULL,
+489,"Compressor Filters                      ",40,1MIANC01A,003,172,NULL,NULL,
+490,"Compressor Filters                      ",40,1MIANC01B,003,172,NULL,NULL,
+491,"Compressor Filters                      ",40,1MIANC01C,003,172,NULL,NULL,
+493,"Compressor Filters                      ",40,2MIANC01B,003,172,NULL,NULL,
+494,"Compressor Filters                      ",40,2MIANC02,003,172,NULL,NULL,
+503,"MT SMC-04 LS                            ",41,1JMTNHV0247,099,040,NULL,NULL,
+497,"Compressor Filters                      ",40,3MIANC01B,003,172,NULL,NULL,
+498,"Compressor Filters                      ",40,3MIANC01C,003,172,NULL,NULL,
+499,"Compressor Filters                      ",40,3MIANC02,003,172,NULL,NULL,
+504,"MT SMC-04 LS                            ",41,1JMTNHV0248,099,040,NULL,NULL,
+4140,"MT SMC-04 LS                            ",41,1JMTNHV0249,099,040,NULL,NULL,NULL
+506,"MT SMC-04 LS                            ",41,1JMTNHV0251,099,040,NULL,NULL,
+507,"MT SMC-04 LS                            ",41,1JMTNHV0252,099,040,NULL,NULL,
+508,"MT SMC-04 LS                            ",41,1JMTNHV0253,099,040,NULL,NULL,
+509,"MT SMC-04 LS                            ",41,1JMTNHV0254,099,040,NULL,NULL,
+510,"MT SMC-04 LS                            ",41,1JMTNHV0255,099,040,NULL,NULL,
+511,"MT SMC-04 LS                            ",41,1JMTNHV0256,099,040,NULL,NULL,
+512,"MT SMC-04 LS                            ",41,1JMTNHV0257,099,040,NULL,NULL,
+513,"MT SMC-04 LS                            ",41,1JMTNHV0258,099,040,NULL,NULL,
+514,"MT SMC-04 LS                            ",41,1JMTNHV0259,099,040,NULL,NULL,
+515,"MT SMC-04 LS                            ",41,1JMTNHV0260,099,040,NULL,NULL,
+516,"MT SMC-04 LS                            ",41,1JMTNHV0315,099,040,NULL,NULL,
+970,"V - SMB-00 Pinion hot                   ",52,1JSGNHV1144,002,066,NULL,NULL,
+518,"MT SMC-04 LS                            ",41,1JMTNHV0321,099,040,NULL,NULL,
+519,"MT SMC-04 LS                            ",41,1JMTNHV0322,099,040,NULL,NULL,
+520,"MT SMC-04 LS                            ",41,1JMTNHV0327A,099,040,NULL,NULL,
+521,"MT SMC-04 LS                            ",41,1JMTNHV0327B,099,040,NULL,NULL,
+522,"MT SMC-04 LS                            ",41,1JMTNHV0327C,099,040,NULL,NULL,
+523,"MT SMC-04 LS                            ",41,1JMTNHV0327D,099,040,NULL,NULL,
+524,"MT SMC-04 LS                            ",41,1JMTNHV0327E,099,040,NULL,NULL,
+525,"MT SMC-04 LS                            ",41,1JMTNHV0327F,099,040,NULL,NULL,
+526,"MT SMC-04 LS                            ",41,1JMTNHV0327G,099,040,NULL,NULL,
+527,"MT SMC-04 LS                            ",41,1JMTNHV0327H,099,040,NULL,NULL,
+971,"V - SMB-00 Pinion hot                   ",52,1JSGNHV1145,002,066,NULL,NULL,
+981,"V - SMB-00 LS hot                       ",53,2JSGNHV1143,099,040,NULL,NULL,
+4356,"V - SMC-04 pinion 8910                  ",105,1JLRNHV0273,002,066,NULL,NULL,NULL
+1292,"V - 11NAZ1/ (86&21) - Gear              ",63,2JWCNHV0060,097,040,NULL,NULL,NULL
+532,"MT SMC-04 LS                            ",41,1JMTNHV0374,099,040,NULL,NULL,
+987,"V - SMB-00 Gear 8910 mild               ",54,1JAFBHV0030,097,040,NULL,NULL,
+534,"MT SMC-04 LS                            ",41,1JMTNHV0376,099,040,NULL,NULL,
+535,"MT SMC-04 LS                            ",41,1JMTNHV0377,099,040,NULL,NULL,
+536,"MT SMC-04 LS                            ",41,1JMTNHV0380,099,040,NULL,NULL,
+537,"MT SMC-04 LS                            ",41,1JMTNHV0381,099,040,NULL,NULL,
+538,"MT SMC-04 LS                            ",41,1JMTNHV0388A,099,040,NULL,NULL,
+539,"MT SMC-04 LS                            ",41,1JMTNHV0388B,099,040,NULL,NULL,
+540,"MT SMC-04 LS                            ",41,1JMTNHV0388C,099,040,NULL,NULL,
+541,"MT SMC-04 LS                            ",41,1JMTNHV0388D,099,040,NULL,NULL,
+542,"MT SMC-04 LS                            ",41,1JMTNHV0389A,099,040,NULL,NULL,
+2991,"chem addition                           ",167,2MSCNP11,138,009,NULL,NULL,NULL
+2560,"Instrument Air                          ",127,1MIANC01A,003,006,NULL,NULL,NULL
+5058,"equipment hatch hoist                   ",251,2JZCNE0202,159,007,NULL,NULL,
+4624,"LPSI Upper Mtr bearing                  ",148,3MSIBP01,002,003,NULL,NULL,NULL
+2543,"A F Mtr driven Mtr                      ",14,2MAFNP01,002,001,NULL,NULL,
+4916,"A F Mtr driven Mtr                      ",14,2MAFNP01,002,002,NULL,NULL,NULL
+3621,"Air Removal Pmp                         ",11,2MARNP01C,001,002,NULL,NULL,NULL
+2561,"Instrument Air                          ",127,1MIANC01B,003,006,NULL,NULL,
+2562,"Instrument Air                          ",127,1MIANC01C,003,006,NULL,NULL,
+2564,"Instrument Air                          ",127,2MIANC01B,003,006,NULL,NULL,
+2565,"Instrument Air                          ",127,2MIANC01C,003,006,NULL,NULL,
+3756,"cask crane bridge drive                 ",193,2MZFNG01,034,047,NULL,NULL,
+2568,"Instrument Air                          ",127,3MIANC01C,003,006,NULL,NULL,
+4625,"LPSI Upper Mtr bearing                  ",148,2MSIAP01,002,003,NULL,NULL,NULL
+2610,"RCP Mtr Brgs                            ",130,2MRCEP01A,002,004,NULL,NULL,
+3975,"RCP Filters                             ",131,3MRCEP01B,001,172,NULL,NULL,NULL
+3259,"fuel crane bridge reducers              ",177,3MZFNG02,240,007,NULL,NULL,NULL
+3004,"PC Mtr Lower                            ",134,2MPWNP01B,002,004,NULL,NULL,NULL
+3427,"V - SMB-00 Gear 8910 mild               ",54,2JSGEHV0042,097,040,NULL,NULL,NULL
+2921,"Bridge Drive Motors                     ",161,2MZCNG01,038,009,NULL,NULL,
+2685,"Turb Stor Tank                          ",136,2MOSNT01A,011,060,NULL,NULL,
+2686,"Turb Stor Tank                          ",136,2MOSNT01B,011,060,NULL,NULL,
+2688,"Turb Stor Tank                          ",136,3MOSNT01B,011,060,NULL,NULL,
+2714,"Nuc Cool Pmp                            ",139,3MNCNP01A,001,001,NULL,NULL,
+4627,"LPSI Upper Mtr bearing                  ",148,1MSIBP01,002,003,NULL,NULL,
+5059,"equipment hatch hoist                   ",251,3JZCNE0201,159,007,NULL,NULL,
+2746,"Polar Crane Bridge Drive                ",142,1MZCNG01,040,009,NULL,NULL,
+2747,"Polar Crane Bridge Drive                ",142,1MZCNG01,041,009,NULL,NULL,
+2749,"Polar Crane Bridge Drive                ",142,2MZCNG01,042,009,NULL,NULL,
+2750,"Polar Crane Bridge Drive                ",142,2MZCNG01,040,009,NULL,NULL,
+5143,"Polar Crane Bridge Drive                ",142,2MZCNG01,041,009,NULL,NULL,NULL
+3762,"FUEL BLDG 5 TON HOIST                   ",194,-3MZFNG03,107,107,NULL,NULL,NULL
+3873,"GT turbine res                          ",196,AMGTNK01B,004,192,NULL,NULL,
+2755,"Polar Crane Bridge Drive                ",142,3MZCNG01,041,009,NULL,NULL,
+3429,"V - SMB-00 Gear 8910 mild               ",54,2JSGEHV0048,097,040,NULL,NULL,
+3994,"Cont. Spray Mtr Upper                   ",149,2MSIBP03,002,003,NULL,NULL,NULL
+5332,"68 ISO hydraulic                        ",263,3MZCNG01,144,040,NULL,NULL,NULL
+2761,"V - SMB-3 pinion 8910                   ",111,1JSIAUV0651,002,066,NULL,NULL,NULL
+2770,"V - 7A/43 gearbox                       ",50,1JWCNHV0103,097,040,NULL,NULL,NULL
+2771,"V - 7NA1-43 : 8910 Mild                 ",46,1JGRAUV0001,097,040,NULL,NULL,NULL
+4023,"FW Centrifuge                           ",143,1MOSNF02,031,009,NULL,NULL,NULL
+2984,"FW Centrifuge                           ",143,3MOSNF02,031,009,NULL,NULL,NULL
+2806,"V - SMB -000 HBC-0 Device               ",146,2MHCNM01A,103,069,NULL,NULL,
+4761,"Water Rec - Rake Gear                   ",234,AWFCNX01B,177,009,NULL,NULL,
+3705,"Cranes - omala 220                      ",191,-1MZFNG01,033,144,NULL,NULL,
+3452,"Condensate Mtr Upper                    ",10,3MCDNP01B,002,003,NULL,NULL,NULL
+3706,"Cranes - omala 220                      ",191,-1MZFNG01,033,145,NULL,NULL,
+2871,"Cont. Spray Mtr Lower                   ",150,3MSIBP03,002,004,NULL,NULL,NULL
+3707,"Cranes - omala 220                      ",191,-2MZFNG01,054,230,NULL,NULL,
+3708,"Cranes - omala 220                      ",191,-2MZFNG01,054,231,NULL,NULL,
+2889,"V - EB-30 gear                          ",87,1JCDNHV0002,097,040,NULL,NULL,NULL
+2892,"V - 40A/29 - gear -mild                 ",44,1JCDNHV0033,097,040,NULL,NULL,NULL
+2922,"Bridge Drive Motors                     ",161,2MZCNG01,036,009,NULL,NULL,
+2923,"Bridge Drive Motors                     ",161,2MZCNG01,037,009,NULL,NULL,
+2924,"Bridge Drive Motors                     ",161,3MZCNG01,035,009,NULL,NULL,
+2925,"Bridge Drive Motors                     ",161,3MZCNG01,038,009,NULL,NULL,
+2926,"Bridge Drive Motors                     ",161,3MZCNG01,036,009,NULL,NULL,
+2927,"Bridge Drive Motors                     ",161,3MZCNG01,037,009,NULL,NULL,
+3890,"                                        ",197,1JNCNUV0103,097,040,NULL,NULL,NULL
+2963,"Micro Drive                             ",165,1MZCNG01,226,007,NULL,NULL,NULL
+3730,"Cranes - omala 220                      ",191,-2MZFNG01,033,145,NULL,NULL,NULL
+3710,"Cranes - omala 220                      ",191,-2MZFNG01,033,144,NULL,NULL,
+2968,"Aux Hoist                               ",166,1MZTNG01,056,113,NULL,NULL,
+3731,"Cranes - omala 220                      ",191,-3MZFNG01,054,231,NULL,NULL,NULL
+5125,"Circ Wtr Mtrs                           ",4,2MCWNP01C,002,003,NULL,NULL,NULL
+2972,"Aux Hoist                               ",166,3MZCNG01,054,113,NULL,NULL,
+3712,"Cranes - omala 220                      ",191,-2MZFNG01,052,204,NULL,NULL,
+3900,"govenor speed regulator                 ",199,1MDGBH01,161,009,NULL,NULL,
+4762,"Water Rec - Rake Gear                   ",234,AWFCNX01C,177,009,NULL,NULL,
+3124,"V - 5AB/29 gear                         ",70,1JSGNUV0034,097,040,NULL,NULL,NULL
+3212,"FUEL CRANE HOIST/TROLLEY                ",179,3MZFNG02,169,007,NULL,NULL,
+5192,"hydraulic systems                       ",257,1MZCNG01,144,040,NULL,NULL,NULL
+3136,"HPSI pmp IB                             ",133,3MSIBP02,001,001,NULL,NULL,NULL
+3113,"V - SMB-00 LS 8910 mild                 ",56,2JAFBHV0030,099,040,NULL,NULL,NULL
+4637,"control oil pump                        ",228,1MCONP01A,001,063,NULL,NULL,
+5297,"SHC 630 as gearcase                     ",235,1MZCNG01,168,007,NULL,NULL,NULL
+3913,"EW Pmp Brgs                             ",27,2MEWBP01,001,002,NULL,NULL,NULL
+2997,"chem addition                           ",167,2MSCNP09,138,009,NULL,NULL,
+5159,"Nuc Cooling Mtr                         ",138,1MNCNP01B,002,001,NULL,NULL,NULL
+4466,"V - SMB-000 pinion 8910                 ",93,2JRDAUV0023,002,066,NULL,NULL,NULL
+3000,"chem addition                           ",167,2MSCNP14,138,009,NULL,NULL,
+3002,"aux compressor                          ",168,AMZYNE10,175,009,NULL,NULL,NULL
+4843,"Alvania grease Main gearbox             ",208,3JNCNUV0099,097,040,NULL,NULL,NULL
+5135,"Chem Addition                           ",18,1MSCNP15,001,238,NULL,NULL,NULL
+3006,"Turbine Out                             ",137,1MLONT01,016,011,NULL,NULL,NULL
+3795,"Water Rec                               ",195,AWFCNQ01A,177,009,NULL,NULL,
+3360,"V - SMB-000 pinion                      ",96,2JGSNHV0005,002,066,NULL,NULL,NULL
+3037,"Circ Wtr Mtrs                           ",4,3MCWNP01A,002,003,NULL,NULL,NULL
+2691,"Turbine Out                             ",137,2MLONT01,016,011,NULL,NULL,
+2692,"Turbine Out                             ",137,3MLONT01,016,011,NULL,NULL,
+2736,"Turb Cool Mtr                           ",141,2MTCNP01A,002,001,NULL,NULL,
+5129,"POP Up-Tellus                           ",253,AAZYNDPFB04,138,238,NULL,NULL,NULL
+5161,"SG snubbers                             ",255,2MRCEP01S,017,176,NULL,NULL,NULL
+2696,"Nuc Cooling Mtr                         ",138,1MNCNP01B,002,002,NULL,NULL,
+2698,"Nuc Cooling Mtr                         ",138,2MNCNP01A,002,002,NULL,NULL,
+2699,"Nuc Cooling Mtr                         ",138,2MNCNP01B,002,001,NULL,NULL,
+4548,"V - MT SMB-2 Pinion                     ",58,2JMTNHV0329B,002,066,NULL,NULL,NULL
+2702,"Nuc Cooling Mtr                         ",138,3MNCNP01A,002,002,NULL,NULL,
+2703,"Nuc Cooling Mtr                         ",138,3MNCNP01B,002,001,NULL,NULL,
+5315,"fuel crane dorris reducer               ",178,1MZFNG02,202,007,NULL,NULL,NULL
+4093,"Crane gearbox with Omala 320            ",181,-2MZFNG02,261,007,NULL,NULL,NULL
+4396,"V - SB-3 pinion 8910                    ",108,3JSIAUV0635,002,066,NULL,NULL,NULL
+2780,"AR Mtr Bearings                         ",144,1MARNP01A,002,001,NULL,NULL,NULL
+2781,"AR Mtr Bearings                         ",144,1MARNP01A,002,002,NULL,NULL,
+2782,"CT Mtr Bearings                         ",145,1MCWNA01B,002,002,NULL,NULL,NULL
+2783,"CT Mtr Bearings                         ",145,1MCWNA01B,002,001,NULL,NULL,
+2834,"Cont. Spray Mtr Lower                   ",150,2MSIAP03,002,004,NULL,NULL,
+2897,"V - 11NAZ1/ (86&21) - Gear              ",63,1JNCNHV0485,097,040,NULL,NULL,NULL
+2857,"Main Centrifuge                         ",155,3MOSNF01,031,009,NULL,NULL,
+2861,"Hydra Baler                             ",156,3NSRNM01,148,009,NULL,NULL,
+3550,"MSIV FWIV                               ",72,3JSGBUV0137,005,009,NULL,NULL,NULL
+2883,"RCP Snubber                             ",35,1MRCEP01S,017,167,NULL,NULL,NULL
+2886,"V - 7NA1-43 : 8910 Mild                 ",46,3JHPAUV0001,097,040,NULL,NULL,NULL
+2891,"V - 90A/86 gear                         ",73,1JFWNHV0032,097,040,NULL,NULL,NULL
+3187,"V - 40A/29 - gear -mild                 ",44,3JCDNUV0216B,097,040,NULL,NULL,NULL
+4315,"V - SMB-00 HBC-1 pinion 8910 m          ",81,1JCTAHV0001,002,066,NULL,NULL,NULL
+3195,"fuel crane bridge reducers              ",177,3MZFNG02,239,007,NULL,NULL,NULL
+2948,"Pendant Cable                           ",163,3MZFNG01,152,007,NULL,NULL,
+3566,"fuel crane bridge reducers              ",177,1MZFNG02,239,007,NULL,NULL,NULL
+3580,"Micro Drive                             ",165,2MZCNG01,226,007,NULL,NULL,NULL
+4550,"Circ Wtr Mtrs                           ",4,1MCWNP01D,002,003,NULL,NULL,NULL
+3056,"Facillity Compressor                    ",171,AMZYNE0X2,003,009,NULL,NULL,NULL
+5414,"Terry Turb Filter                       ",152,1MCHAP01,001,006,NULL,NULL,NULL
+3086,"tur bldg crane main hoist mtr           ",173,1MZTNG01,033,130,NULL,NULL,
+4317,"V - SMB-00 HBC-1 LS 8910 m              ",80,1JCTAHV0001,099,040,NULL,NULL,NULL
+3568,"Circ Wtr Mtrs                           ",4,3MCWNP01B,002,003,NULL,NULL,NULL
+3364,"Chillers                                ",151,3MWCNE01C,007,009,NULL,NULL,NULL
+3373,"V - SMB-000 HBC-0 Pinion                ",48,3MHCNM01C,002,066,NULL,NULL,NULL
+4861,"V - SMB-00 Pinion 8910 mild             ",55,2JSGEHV0041,002,066,NULL,NULL,NULL
+3593,"U1  tower gear                          ",3,1MCWNA02J,031,009,NULL,NULL,NULL
+3606,"V - 90A/86 gear                         ",73,2JFWNHV0031,097,040,NULL,NULL,NULL
+4445,"LPSI shaft bearing                      ",218,3MSIAP01,002,194,NULL,NULL,
+3623,"Circ Wtr Mtrs                           ",4,1MCWNP01A,002,003,NULL,NULL,NULL
+3624,"CT motor bearings                       ",188,-2MCWNA01A,002,001,NULL,NULL,NULL
+3625,"CT motor bearings                       ",188,-2MCWNA01A,002,002,NULL,NULL,
+3626,"CT motor bearings                       ",188,-2MCWNA01B,002,001,NULL,NULL,
+3627,"CT motor bearings                       ",188,-2MCWNA01B,002,002,NULL,NULL,
+3628,"CT motor bearings                       ",188,-2MCWNA01C,002,001,NULL,NULL,
+3629,"CT motor bearings                       ",188,-2MCWNA01C,002,002,NULL,NULL,
+3630,"CT motor bearings                       ",188,-2MCWNA01F,002,001,NULL,NULL,
+3631,"CT motor bearings                       ",188,-2MCWNA01F,002,002,NULL,NULL,
+3632,"CT motor bearings                       ",188,-2MCWNA01G,002,001,NULL,NULL,
+3633,"CT motor bearings                       ",188,-2MCWNA01G,002,002,NULL,NULL,
+3634,"CT motor bearings                       ",188,-2MCWNA01I,002,001,NULL,NULL,
+3635,"CT motor bearings                       ",188,-2MCWNA01I,002,002,NULL,NULL,
+3636,"CT motor bearings                       ",188,-2MCWNA01J,002,001,NULL,NULL,
+3637,"CT motor bearings                       ",188,-2MCWNA01J,002,002,NULL,NULL,
+3638,"CT motor bearings                       ",188,-2MCWNA01L,002,001,NULL,NULL,
+3639,"CT motor bearings                       ",188,-2MCWNA01L,002,002,NULL,NULL,
+3640,"CT motor bearings                       ",188,-2MCWNA01O,002,001,NULL,NULL,
+3641,"CT motor bearings                       ",188,-2MCWNA01O,002,002,NULL,NULL,
+3642,"CT motor bearings                       ",188,-2MCWNA03H,002,001,NULL,NULL,
+3643,"CT motor bearings                       ",188,-2MCWNA03H,002,002,NULL,NULL,
+3644,"CT motor bearings                       ",188,-2MCWNA03I,002,001,NULL,NULL,
+3645,"CT motor bearings                       ",188,-2MCWNA03I,002,002,NULL,NULL,
+4790,"RCP Mtr Brgs                            ",130,1MRCEP01D,002,003,NULL,NULL,NULL
+3660,"Turb Cool Mtr                           ",141,3MTCNP01B,002,002,NULL,NULL,NULL
+3667,"V - SMB-000 gear 8910                   ",97,1JMTNHV0245,097,040,NULL,NULL,NULL
+3796,"Water Rec                               ",195,AWFCNQ01A,004,009,NULL,NULL,
+3797,"Water Rec                               ",195,AWFCNQ01A,178,009,NULL,NULL,
+3798,"Water Rec                               ",195,AWFCNQ01B,031,009,NULL,NULL,
+3799,"Water Rec                               ",195,AWFCNQ01B,004,009,NULL,NULL,
+3800,"Water Rec                               ",195,AWFCNQ01B,178,009,NULL,NULL,
+3801,"Water Rec                               ",195,AWFCNQ01C,031,009,NULL,NULL,
+3802,"Water Rec                               ",195,AWFCNQ01C,004,009,NULL,NULL,
+3803,"Water Rec                               ",195,AWFCNQ01D,004,009,NULL,NULL,
+3804,"Water Rec                               ",195,AWFCNQ01E,031,009,NULL,NULL,
+3805,"Water Rec                               ",195,AWFCNQ01E,004,009,NULL,NULL,
+3806,"Water Rec                               ",195,AWFCNQ01E,178,009,NULL,NULL,
+3771,"Cranes - omala 220                      ",191,2MZFNG01,052,007,NULL,NULL,NULL
+4862,"PC Mtr Lower                            ",134,3MPWNP01A,002,004,NULL,NULL,NULL
+3973,"RCP Filters                             ",131,3MRCEP01A,001,172,NULL,NULL,
+3463,"V - EB-30 gear grease lubed             ",87,1JCDNHV0001,097,040,NULL,NULL,NULL
+4337,"V - SMB-000 LS 8910                     ",95,1JAFAHV0054,099,040,NULL,NULL,NULL
+2773,"V - EB-02 MG06 gear                     ",86,1JCWNHV0009,097,040,NULL,NULL,NULL
+3281,"SG Snubber                              ",34,3MRCEE10S,017,179,NULL,NULL,NULL
+4457,"V - SMB-000 HBC-1 pinion 8910           ",117,3JSIAHV0678,002,066,NULL,NULL,NULL
+4657,"Cooling tower motor bearings            ",229,2MCWNA01L,002,002,NULL,NULL,
+2809,"LPSI Upper Mtr bearing                  ",148,1MSIAP01,002,061,NULL,NULL,
+4463,"V - MT SMB-3-60 Pinion                  ",61,3JMTNUV0330D,002,066,NULL,NULL,NULL
+4658,"Cooling tower motor bearings            ",229,2MCWNA01O,002,001,NULL,NULL,
+4618,"LPSI Upper Mtr bearing                  ",148,2MSIBP01,002,003,NULL,NULL,
+4464,"V - MT SMB-3-60 Gear                    ",60,3JMTNUV0330D,097,040,NULL,NULL,NULL
+4659,"Cooling tower motor bearings            ",229,2MCWNA01O,002,002,NULL,NULL,
+4587,"GASEOUS RADWASTE COMP                   ",224,2NGRNC01A,003,006,NULL,NULL,
+4660,"Cooling tower motor bearings            ",229,2MCWNA03H,002,001,NULL,NULL,
+4600,"hpsi pmp ob                             ",17,1MSIAP02,001,002,NULL,NULL,NULL
+4661,"Cooling tower motor bearings            ",229,2MCWNA03H,002,002,NULL,NULL,
+4662,"Cooling tower motor bearings            ",229,2MCWNA03I,002,001,NULL,NULL,
+4663,"Cooling tower motor bearings            ",229,2MCWNA03I,002,002,NULL,NULL,
+4665,"Tellus                                  ",217,AMZCNM25B,072,009,NULL,NULL,NULL
+3807,"Water Rec                               ",195,AWFCNQ01F,031,009,NULL,NULL,
+4683,"V - SMB-3 gear 8910                     ",112,3JSIAUV0651,097,040,NULL,NULL,NULL
+3974,"RCP Filters                             ",131,3MRCEP01C,001,172,NULL,NULL,
+4339,"V - SMB-000 HBC-0                       ",47,1MHCNM01A,097,040,NULL,NULL,NULL
+2830,"Cont. Spray Mtr Upper                   ",149,3MSIBP03,002,003,NULL,NULL,
+2853,"Chiller                                 ",154,1MWCNE02,007,009,NULL,NULL,
+2854,"Chiller                                 ",154,3MWCNE02,003,009,NULL,NULL,
+3251,"Circ Wtr Mtrs                           ",4,2MCWNP01A,002,003,NULL,NULL,NULL
+3033,"Condensate Mtr Upper                    ",10,1MCDNP01B,002,003,NULL,NULL,NULL
+3737,"Cranes - omala 220                      ",191,-1MZFNG01,054,230,NULL,NULL,
+3747,"cask crane - hydraulic                  ",192,-2MZFNG01,144,189,NULL,NULL,
+4752,"U2 tower gear                           ",5,2MCWNA01A,031,009,NULL,NULL,NULL
+5217,"V - SMB-00 HBC-2 gear 8910 m            ",75,2JSIBHV0658,097,040,NULL,NULL,NULL
+2918,"Bridge Drive Motors                     ",161,1MZCNG01,037,009,NULL,NULL,NULL
+3268,"V - 5AB/29 gear                         ",70,3JSGNUV0038,097,040,NULL,NULL,NULL
+3269,"V - 5AB/29 gear                         ",70,1JSGNUV0035,097,040,NULL,NULL,NULL
+3759,"FUEL BLDG 5 TON HOIST                   ",194,-1MZFNG03,107,107,NULL,NULL,NULL
+5312,"Snubber tanks - Fyrguel GT              ",262,3MSGNX03A,011,009,NULL,NULL,NULL
+3887,"V - SMB-1 gear 8910 m                   ",91,2JSIBHV0690,097,040,NULL,NULL,NULL
+3808,"Water Rec                               ",195,AWFCNQ01F,177,009,NULL,NULL,
+4939,"GT engine                               ",170,AMGTNH01B,006,009,NULL,NULL,NULL
+2956,"Misc Cranes                             ",164,2MZCNG06B,031,009,NULL,NULL,
+2969,"Aux Hoist                               ",166,2MZCNG01,171,007,NULL,NULL,
+3288,"Charging Pmp Gear                       ",8,3MCHEP01,001,007,NULL,NULL,NULL
+4708,"hpsi pmp ob                             ",17,2MSIBP02,001,002,NULL,NULL,NULL
+3809,"Water Rec                               ",195,AWFCNQ01F,004,009,NULL,NULL,
+3292,"MT SMC-04 Gear                          ",42,3JMTNHV0389D,097,040,NULL,NULL,NULL
+3293,"MT SMC-04 Gear                          ",42,3JMTNHV0388B,097,040,NULL,NULL,NULL
+3294,"V - SMB-000 gear 8910                   ",97,3JGSNHV0005,097,040,NULL,NULL,NULL
+3299,"V - SMB-000 HBC-0 LS                    ",49,3MHCNM01D,099,040,NULL,NULL,NULL
+3810,"Water Rec                               ",195,AWFCNQ01F,178,009,NULL,NULL,
+5148,"AS DUMP Operators                       ",241,3JSGBHV0185,094,107,NULL,NULL,NULL
+5247,"MSIV FWIV                               ",72,2JSGEUV0181,005,009,NULL,NULL,NULL
+3811,"Water Rec                               ",195,AWFCNQ02A,031,009,NULL,NULL,
+3812,"Water Rec                               ",195,AWFCNQ02A,177,009,NULL,NULL,
+3813,"Water Rec                               ",195,AWFCNQ02A,004,009,NULL,NULL,
+3814,"Water Rec                               ",195,AWFCNQ02A,178,009,NULL,NULL,
+3815,"Water Rec                               ",195,AWFCNQ02B,031,009,NULL,NULL,
+3816,"Water Rec                               ",195,AWFCNQ02B,004,009,NULL,NULL,
+3817,"Water Rec                               ",195,AWFCNQ02C,031,009,NULL,NULL,
+3818,"Water Rec                               ",195,AWFCNQ02C,004,009,NULL,NULL,
+3819,"Water Rec                               ",195,AWFCNQ02C,178,009,NULL,NULL,
+3820,"Water Rec                               ",195,AWFCNQ02D,004,009,NULL,NULL,
+3821,"Water Rec                               ",195,AWFCNQ02D,178,009,NULL,NULL,
+3822,"Water Rec                               ",195,AWFCNQ02E,031,009,NULL,NULL,
+3823,"Water Rec                               ",195,AWFCNQ02E,004,009,NULL,NULL,
+3824,"Water Rec                               ",195,AWFCNQ02E,178,009,NULL,NULL,
+3825,"Water Rec                               ",195,AWFCNQ02F,031,009,NULL,NULL,
+3826,"Water Rec                               ",195,AWFCNQ02F,177,009,NULL,NULL,
+3827,"Water Rec                               ",195,AWFCNQ02F,004,009,NULL,NULL,
+3828,"Water Rec                               ",195,AWFCNQ02F,178,009,NULL,NULL,
+3829,"Water Rec                               ",195,AWFCNX01A,031,009,NULL,NULL,
+3830,"Water Rec                               ",195,AWFCNX01A,177,009,NULL,NULL,
+3831,"Water Rec                               ",195,AWFCNX01B,031,009,NULL,NULL,
+3832,"Water Rec                               ",195,AWFCNX01C,031,009,NULL,NULL,
+3833,"Water Rec                               ",195,AWFCNX01D,031,009,NULL,NULL,
+3834,"Water Rec                               ",195,AWFCNX01E,031,009,NULL,NULL,
+3835,"Water Rec                               ",195,AWFCNX01F,031,009,NULL,NULL,
+3836,"Water Rec                               ",195,AWFCNX02A,031,009,NULL,NULL,
+3837,"Water Rec                               ",195,AWFCNX02A,177,009,NULL,NULL,
+3838,"Water Rec                               ",195,AWFCNX02B,031,009,NULL,NULL,
+3839,"Water Rec                               ",195,AWFCNX02C,031,009,NULL,NULL,
+3840,"Water Rec                               ",195,AWFCNX02D,031,009,NULL,NULL,
+3841,"Water Rec                               ",195,AWFCNX02E,031,009,NULL,NULL,
+3096,"fuel bldg crane reducers                ",174,2MZTNG01,034,144,NULL,NULL,
+4652,"Cooling tower motor bearings            ",229,2MCWNA01I,002,001,NULL,NULL,
+4447,"LPSI shaft bearing                      ",218,2MSIAP01,002,194,NULL,NULL,
+5182,"Crane inching reducer                   ",180,2MZFNG02,224,007,NULL,NULL,NULL
+4653,"Cooling tower motor bearings            ",229,2MCWNA01I,002,002,NULL,NULL,
+3359,"Chem addition - hydraulic               ",184,3MSCNP11,138,009,NULL,NULL,NULL
+3350,"Chem addition - hydraulic               ",184,1MSCNP09,138,009,NULL,NULL,
+3351,"Chem addition - hydraulic               ",184,1MSCNP11,138,009,NULL,NULL,

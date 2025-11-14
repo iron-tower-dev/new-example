@@ -1,0 +1,51 @@
+﻿ID,Type,Description,SortOrder
+1,FTIRMACRO,General,0
+2,FTIRMACRO,Neb/MOVLL,1
+3,FTIRMACRO,Beacon,2
+4,FTIRMACRO,Mobil 28,3
+5,FTIRMACRO,Alvania,4
+6,FTIRMACRO,Dolium,5
+7,FTIRMACRO,Turbo,6
+8,FTIRMACRO,Polyol Ester,7
+9,FTIRMACRO,Rotella,8
+10,FTIRMACRO,Omala,9
+11,FTIRMACRO,Tellus,10
+12,FTIRMACRO,Donax,11
+13,FTIRMACRO,GST,12
+14,FTIRMACRO,Grease,13
+15,FTIRMACRO,Oil,14
+16,FTIRMACRO,Turbine,15
+17,FTIRMACRO,Morlina,16
+18,FTIRMACRO,PAO,17
+19,FTIRMACRO,CT,18
+20,FTIRMACRO,Fyrquel,19
+21,FTIRMACRO,Amokon,20
+22,FTIRMACRO,Silicon,21
+23,FTIRMACRO,Valvata,22
+24,FTIRMACRO,None,23
+25,FTIRMACRO,HFC,24
+26,FTIRMACRO,Poly Urea,25
+27,TRENDCODE,Bearing Installation,65
+28,TRENDCODE,Rust,141
+29,TRENDCODE,Acid Level,142
+30,TRENDCODE,Viscosity High,143
+31,TRENDCODE,Viscosity Low,144
+32,TRENDCODE,Wear Metals,145
+33,TRENDCODE,Discolored,146
+34,TRENDCODE,Emulsified,147
+35,TRENDCODE,Water Level High,148
+36,TRENDCODE,Degraded Cleanliness,149
+37,TRENDCODE,Caked,151
+38,TRENDCODE,Dried,152
+39,TRENDCODE,Hardening Grease,153
+40,TRENDCODE,Additive Depletion,155
+41,TRENDCODE,Micro-Oxidation,156
+42,TRENDCODE,Soluble Metals,200
+43,TRENDCODE,Oil Service Life Extension,220
+44,TRENDCODE,Mixture of Lubricants,240
+45,TRENDCODE,"Contamination, Foreign Material",300
+46,TRENDCODE,Change Oil - Water Level High,360
+47,TRENDCODE,Change Oil - Degraded Cleanliness,361
+48,TRENDCODE,Change Oil - Chemistry,380
+49,TRENDCODE,Inadequate Sample Volume,400
+50,TRENDCODE,Change Oil - Administrative,460

@@ -1,0 +1,55 @@
+{
+    "clearExistingData": true,
+    "createMissingTables": true,
+    "validateAgainstLegacy": true,
+    "removeAuthentication": false,
+    "includeTables": [],
+    "excludeTables": [
+        "AuditLog",
+        "System_Log"
+    ],
+    "maxConcurrentOperations": 2,
+    "operationTimeout": "00:30:00",
+    "seedingOptions": {
+        "clearExistingData": true,
+        "createMissingTables": true,
+        "batchSize": 500,
+        "continueOnError": true,
+        "validateBeforeInsert": true,
+        "csvDirectory": "db-seeding",
+        "sqlDirectory": "db-tables",
+        "useTransactions": true,
+        "commandTimeout": "00:10:00"
+    },
+    "validationOptions": {
+        "compareQueryResults": true,
+        "comparePerformance": true,
+        "generateDetailedReports": true,
+        "maxDiscrepanciesToReport": 50,
+        "performanceThresholdPercent": 30.0,
+        "queryTimeout": "00:05:00",
+        "legacyConnectionString": "",
+        "ignoreMinorDifferences": true,
+        "includeQueries": [],
+        "excludeQueries": [
+            "sp_SIMCAExportStub"
+        ]
+    },
+    "authRemovalOptions": {
+        "createBackup": true,
+        "backupDirectory": "auth-backup",
+        "removeFromApi": true,
+        "removeFromFrontend": true,
+        "updateDocumentation": true,
+        "filesToExclude": []
+    },
+    "loggingOptions": {
+        "minimumLevel": 1,
+        "logToFile": true,
+        "logToConsole": true,
+        "logDirectory": "logs/migration",
+        "includeStackTrace": true,
+        "maxLogFileSizeMB": 50,
+        "maxLogFiles": 5
+    }
+}

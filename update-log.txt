@@ -1,0 +1,425 @@
+Starting simple database update...
+Database: LabResultsDb
+Server: localhost
+
+Executing: update-database-structure.sql
+✓ Success: update-database-structure.sql
+
+Creating tables...
+Executing: site.sql
+✓ Success: site.sql
+Executing: Component.sql
+✓ Success: Component.sql
+Executing: Location.sql
+✓ Success: Location.sql
+Executing: MeasurementType.sql
+✓ Success: MeasurementType.sql
+Executing: TestStand.sql
+✓ Success: TestStand.sql
+Executing: Test.sql
+✓ Success: Test.sql
+Executing: UsedLubeSamples.sql
+✓ Success: UsedLubeSamples.sql
+Executing: TestReadings.sql
+✓ Success: TestReadings.sql
+Executing: FileUploads.sql
+✓ Success: FileUploads.sql
+
+Creating remaining tables...
+Executing: AllResults.sql
+✓ Success: AllResults.sql
+Executing: allsamplecomments.sql
+✓ Success: allsamplecomments.sql
+Executing: Comments.sql
+✓ Success: Comments.sql
+Executing: Control_Data.sql
+✓ Success: Control_Data.sql
+Executing: EmSpectro.sql
+✓ Success: EmSpectro.sql
+Executing: enterResultsFunctions.sql
+Sqlcmd: Error: Syntax error at line 512 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 742 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 744 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 784 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 795 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 880 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 1,029 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 1,200 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 1,249 near command 'ON ERROR'.
+✓ Success: enterResultsFunctions.sql
+Executing: enterResults.sql
+Sqlcmd: Error: Syntax error at line 356
+Sqlcmd: Error: Syntax error at line 560
+Sqlcmd: Error: Syntax error at line 569
+Sqlcmd: Error: Syntax error at line 574
+Sqlcmd: Error: Syntax error at line 577
+Sqlcmd: Error: Syntax error at line 580
+Sqlcmd: Error: Syntax error at line 583
+Sqlcmd: Error: Syntax error at line 586
+Sqlcmd: Error: Syntax error at line 589
+Sqlcmd: Error: Syntax error at line 592
+Sqlcmd: Error: Syntax error at line 595
+Sqlcmd: Error: Syntax error at line 982
+Sqlcmd: Error: Syntax error at line 983
+Sqlcmd: Error: Syntax error at line 985
+Sqlcmd: Error: Syntax error at line 987
+Sqlcmd: Error: Syntax error at line 991
+Sqlcmd: Error: Syntax error at line 992
+Sqlcmd: Error: Syntax error at line 998
+Sqlcmd: Error: Syntax error at line 1,006
+Sqlcmd: Error: Syntax error at line 1,010
+Sqlcmd: Error: Syntax error at line 1,020
+Sqlcmd: Error: Syntax error at line 1,024
+Sqlcmd: Error: Syntax error at line 1,359
+Sqlcmd: Error: Syntax error at line 1,369
+Sqlcmd: Error: Syntax error at line 1,377
+Sqlcmd: Error: Syntax error at line 1,386
+Sqlcmd: Error: Syntax error at line 1,389
+Sqlcmd: Error: Syntax error at line 1,393
+✓ Success: enterResults.sql
+Executing: eq_lubrication_pt_t.sql
+✓ Success: eq_lubrication_pt_t.sql
+Executing: ExportTestData.sql
+✓ Success: ExportTestData.sql
+Executing: Ferrogram.sql
+✓ Success: Ferrogram.sql
+Executing: FTIR.sql
+✓ Success: FTIR.sql
+Executing: InspectFilter.sql
+✓ Success: InspectFilter.sql
+Executing: lcde_limits.sql
+✓ Success: lcde_limits.sql
+Executing: lcde_t.sql
+✓ Success: lcde_t.sql
+Executing: limits.sql
+✓ Success: limits.sql
+Executing: limits_xref.sql
+✓ Success: limits_xref.sql
+Executing: LNFData.sql
+✓ Success: LNFData.sql
+Executing: LookupList.sql
+✓ Success: LookupList.sql
+Executing: Lube_Sampling_Point.sql
+✓ Success: Lube_Sampling_Point.sql
+Executing: LubeTechList.sql
+✓ Success: LubeTechList.sql
+Executing: LubeTechQualification.sql
+✓ Success: LubeTechQualification.sql
+Executing: lubpipointsNEW.sql
+✓ Success: lubpipointsNEW.sql
+Executing: lubpipoints.sql
+✓ Success: lubpipoints.sql
+Executing: Lubricant.sql
+✓ Success: Lubricant.sql
+Executing: M_And_T_Equip.sql
+✓ Success: M_And_T_Equip.sql
+Executing: ManualSIMCAData.sql
+✓ Success: ManualSIMCAData.sql
+Executing: NAS_lookup.sql
+✓ Success: NAS_lookup.sql
+Executing: NLGILookup.sql
+✓ Success: NLGILookup.sql
+Executing: ParticleCount.sql
+✓ Success: ParticleCount.sql
+Executing: ParticleSubTypeCategoryDefinition.sql
+✓ Success: ParticleSubTypeCategoryDefinition.sql
+Executing: ParticleSubTypeDefinition.sql
+✓ Success: ParticleSubTypeDefinition.sql
+Executing: ParticleSubType.sql
+✓ Success: ParticleSubType.sql
+Executing: ParticleTypeDefinition.sql
+✓ Success: ParticleTypeDefinition.sql
+Executing: ParticleType.sql
+✓ Success: ParticleType.sql
+Executing: piEngUnit.sql
+✓ Success: piEngUnit.sql
+Executing: ReviewerList.sql
+✓ Success: ReviewerList.sql
+Executing: RheometerCalcs.sql
+✓ Success: RheometerCalcs.sql
+Executing: rheometer.sql
+✓ Success: rheometer.sql
+Executing: saveResultsFunctions.sql
+Sqlcmd: Error: Syntax error at line 20 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 21 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 128 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 132 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 150 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 154 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 166 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 170 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 181 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 194 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 227 near command 'EXIT'.
+Sqlcmd: Error: Syntax error at line 271 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 286 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 367 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 396 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 417 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 475 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 531 near command 'ON ERROR'.
+Sqlcmd: Error: Syntax error at line 587 near command 'ON ERROR'.
+✓ Success: saveResultsFunctions.sql
+Executing: ScheduleDeletions.sql
+✓ Success: ScheduleDeletions.sql
+Executing: SWMSRecords.sql
+✓ Success: SWMSRecords.sql
+Executing: System_Log.sql
+✓ Success: System_Log.sql
+Executing: TestList.sql
+✓ Success: TestList.sql
+Executing: TestScheduleRule.sql
+✓ Success: TestScheduleRule.sql
+Executing: TestSchedule.sql
+✓ Success: TestSchedule.sql
+Executing: TestScheduleTest.sql
+✓ Success: TestScheduleTest.sql
+Executing: workmgmt.sql
+✓ Success: workmgmt.sql
+
+Creating functions...
+Executing: LEScheduleByEQID.sql
+✓ Success: LEScheduleByEQID.sql
+Executing: MiscTestResult.sql
+✓ Success: MiscTestResult.sql
+Executing: TestLELimit.sql
+✓ Success: TestLELimit.sql
+Executing: TestResultsForSampleSummary.sql
+✓ Success: TestResultsForSampleSummary.sql
+Executing: TestResultValue.sql
+✓ Success: TestResultValue.sql
+Executing: TestScheduleLimit.sql
+✓ Success: TestScheduleLimit.sql
+Executing: TestStatusForDisplay.sql
+✓ Success: TestStatusForDisplay.sql
+Executing: TestStatusText.sql
+✓ Success: TestStatusText.sql
+
+Creating stored procedures...
+Executing: getPoint.sql
+✓ Success: getPoint.sql
+Executing: sp_EmptySWMSRecords.sql
+✓ Success: sp_EmptySWMSRecords.sql
+Executing: sp_EportTestData.sql
+✓ Success: sp_EportTestData.sql
+Executing: sp_FTIR.sql
+✓ Success: sp_FTIR.sql
+Executing: sp_OtherTests.sql
+✓ Success: sp_OtherTests.sql
+Executing: sp_ParticleCount.sql
+✓ Success: sp_ParticleCount.sql
+Executing: sp_Rheometer.sql
+✓ Success: sp_Rheometer.sql
+Executing: sp_SIMCAExportFerro.sql
+✓ Success: sp_SIMCAExportFerro.sql
+Executing: sp_SIMCAExportFTIR.sql
+✓ Success: sp_SIMCAExportFTIR.sql
+Executing: sp_SIMCAExportPC.sql
+✓ Success: sp_SIMCAExportPC.sql
+Executing: sp_SIMCAExportResults.sql
+✓ Success: sp_SIMCAExportResults.sql
+Executing: sp_SIMCAExportRheo.sql
+✓ Success: sp_SIMCAExportRheo.sql
+Executing: sp_SIMCAExportSpecLrg.sql
+✓ Success: sp_SIMCAExportSpecLrg.sql
+Executing: sp_SIMCAExportSpecStd.sql
+✓ Success: sp_SIMCAExportSpecStd.sql
+Executing: sp_SIMCAExportStub.sql
+✓ Success: sp_SIMCAExportStub.sql
+Executing: sp_Spectroscopy.sql
+✓ Success: sp_Spectroscopy.sql
+Executing: sp_TempLimits.sql
+✓ Success: sp_TempLimits.sql
+Executing: sp_WorkManagement.sql
+✓ Success: sp_WorkManagement.sql
+
+Creating views...
+Executing: vwActiveLE.sql
+✓ Success: vwActiveLE.sql
+Executing: vwActiveLimits.sql
+✓ Success: vwActiveLimits.sql
+Executing: vwAllMTEUsage.sql
+✓ Success: vwAllMTEUsage.sql
+Executing: vwAllResultsIKS.sql
+✓ Success: vwAllResultsIKS.sql
+Executing: vwComponentForUnique.sql
+✓ Success: vwComponentForUnique.sql
+Executing: vwComponentForUsed.sql
+✓ Success: vwComponentForUsed.sql
+Executing: vwEmSpectroIPDAS.sql
+✓ Success: vwEmSpectroIPDAS.sql
+Executing: vwEqLubricationPtIPDAS.sql
+✓ Success: vwEqLubricationPtIPDAS.sql
+Executing: vwExportTestData.sql
+✓ Success: vwExportTestData.sql
+Executing: vwFerrogramIPDAS.sql
+✓ Success: vwFerrogramIPDAS.sql
+Executing: vwFieldRecords.sql
+✓ Success: vwFieldRecords.sql
+Executing: vwFilterResidueIPDAS.sql
+✓ Success: vwFilterResidueIPDAS.sql
+Executing: vwFlashPtIPDAS.sql
+✓ Success: vwFlashPtIPDAS.sql
+Executing: vwFtirIPDAS.sql
+✓ Success: vwFtirIPDAS.sql
+Executing: vwFTIR.sql
+✓ Success: vwFTIR.sql
+Executing: vwGoodnessLimitsAndResultsForSample.sql
+✓ Success: vwGoodnessLimitsAndResultsForSample.sql
+Executing: vwGoodnessLimitsForSamples.sql
+✓ Success: vwGoodnessLimitsForSamples.sql
+Executing: vwGoodnessTestResults.sql
+✓ Success: vwGoodnessTestResults.sql
+Executing: vwGroupSamples.sql
+✓ Success: vwGroupSamples.sql
+Executing: vwLabOverall.sql
+✓ Success: vwLabOverall.sql
+Executing: vwLabSampleMaterials.sql
+✓ Success: vwLabSampleMaterials.sql
+Executing: vwLabSampleTestList.sql
+✓ Success: vwLabSampleTestList.sql
+Executing: vwLabSampleTests.sql
+✓ Success: vwLabSampleTests.sql
+Executing: vwLELimitsForSampleTests.sql
+✓ Success: vwLELimitsForSampleTests.sql
+Executing: vwLimitsGroups.sql
+✓ Success: vwLimitsGroups.sql
+Executing: vwLimitValuesAndResultForSamples.sql
+✓ Success: vwLimitValuesAndResultForSamples.sql
+Executing: vwLimitValuesForSamples.sql
+✓ Success: vwLimitValuesForSamples.sql
+Executing: vwLocationForUnique.sql
+✓ Success: vwLocationForUnique.sql
+Executing: vwLocationForUsed.sql
+✓ Success: vwLocationForUsed.sql
+Executing: vwLocationsIPDAS.sql
+✓ Success: vwLocationsIPDAS.sql
+Executing: vwMiscTestHistory.sql
+✓ Success: vwMiscTestHistory.sql
+Executing: vwMiscTestResults.sql
+✓ Success: vwMiscTestResults.sql
+Executing: vwMTEErrorsFixed.sql
+✓ Success: vwMTEErrorsFixed.sql
+Executing: vwMTEErrors.sql
+✓ Success: vwMTEErrors.sql
+Executing: vwMTE_UsageForSample.sql
+✓ Success: vwMTE_UsageForSample.sql
+Executing: vwOtherTests.sql
+✓ Success: vwOtherTests.sql
+Executing: vwParticleCountIPDAS.sql
+✓ Success: vwParticleCountIPDAS.sql
+Executing: vwParticleCount.sql
+✓ Success: vwParticleCount.sql
+Executing: vwParticleTypeDefinition.sql
+✓ Success: vwParticleTypeDefinition.sql
+Executing: vwParticleTypeDI.sql
+✓ Success: vwParticleTypeDI.sql
+Executing: vwParticleTypeFE.sql
+✓ Success: vwParticleTypeFE.sql
+Executing: vwParticleTypeFR.sql
+✓ Success: vwParticleTypeFR.sql
+Executing: vwParticleTypeIF.sql
+✓ Success: vwParticleTypeIF.sql
+Executing: vwParticleType.sql
+✓ Success: vwParticleType.sql
+Executing: vwPIPointData.sql
+✓ Success: vwPIPointData.sql
+Executing: vwRbotIPDAS.sql
+✓ Success: vwRbotIPDAS.sql
+Executing: vwResultsBySample.sql
+✓ Success: vwResultsBySample.sql
+Executing: vwRheometerHistory1.sql
+✓ Success: vwRheometerHistory1.sql
+Executing: vwRheometerHistory2.sql
+✓ Success: vwRheometerHistory2.sql
+Executing: vwRheometerHistory3.sql
+✓ Success: vwRheometerHistory3.sql
+Executing: vwRheometerHistory4.sql
+✓ Success: vwRheometerHistory4.sql
+Executing: vwRheometerHistory5.sql
+✓ Success: vwRheometerHistory5.sql
+Executing: vwRheometerHistory6.sql
+✓ Success: vwRheometerHistory6.sql
+Executing: vwRheometerHistory7.sql
+✓ Success: vwRheometerHistory7.sql
+Executing: vwRheometerHistory.sql
+✓ Success: vwRheometerHistory.sql
+Executing: vwRheometer.sql
+✓ Success: vwRheometer.sql
+Executing: vwSampleCommentsIKS.sql
+✓ Success: vwSampleCommentsIKS.sql
+Executing: vwSampleReleaseFerrogram.sql
+✓ Success: vwSampleReleaseFerrogram.sql
+Executing: vwSampleReleaseFTIR.sql
+✓ Success: vwSampleReleaseFTIR.sql
+Executing: vwSampleReleaseIF.sql
+✓ Success: vwSampleReleaseIF.sql
+Executing: vwSampleReleaseMisc.sql
+✓ Success: vwSampleReleaseMisc.sql
+Executing: vwSampleReleasePC.sql
+✓ Success: vwSampleReleasePC.sql
+Executing: vwSampleReleasePT.sql
+✓ Success: vwSampleReleasePT.sql
+Executing: vwSampleReleaseResults.sql
+✓ Success: vwSampleReleaseResults.sql
+Executing: vwSampleReleaseSpectro.sql
+✓ Success: vwSampleReleaseSpectro.sql
+Executing: vwSampleReleaseSummary.sql
+✓ Success: vwSampleReleaseSummary.sql
+Executing: vwSamplesInProgress.sql
+✓ Success: vwSamplesInProgress.sql
+Executing: vwScheduledSamplesByTest.sql
+✓ Success: vwScheduledSamplesByTest.sql
+Executing: vwSpectroscopy.sql
+✓ Success: vwSpectroscopy.sql
+Executing: vwTempLimits.sql
+✓ Success: vwTempLimits.sql
+Executing: vwTestAddCriteria.sql
+✓ Success: vwTestAddCriteria.sql
+Executing: vwTestDeleteCriteria.sql
+✓ Success: vwTestDeleteCriteria.sql
+Executing: vwTestEntryUsers.sql
+✓ Success: vwTestEntryUsers.sql
+Executing: vwTestIPDAS.sql
+✓ Success: vwTestIPDAS.sql
+Executing: vwTestListBySample.sql
+✓ Success: vwTestListBySample.sql
+Executing: vwTestResultBySampleAndTest.sql
+✓ Success: vwTestResultBySampleAndTest.sql
+Executing: vwTestResultIPDAS.sql
+✓ Success: vwTestResultIPDAS.sql
+Executing: vwTestResultsBySample.sql
+✓ Success: vwTestResultsBySample.sql
+Executing: vwTestRuleDefinition.sql
+✓ Success: vwTestRuleDefinition.sql
+Executing: vwTestRulesByEQID.sql
+✓ Success: vwTestRulesByEQID.sql
+Executing: vwTestRulesByTestID.sql
+✓ Success: vwTestRulesByTestID.sql
+Executing: vwTestsBySampleAndEQID.sql
+✓ Success: vwTestsBySampleAndEQID.sql
+Executing: vwTestsbySampleAndEQIDsub.sql
+✓ Success: vwTestsbySampleAndEQIDsub.sql
+Executing: vwTestsBySchedule.sql
+✓ Success: vwTestsBySchedule.sql
+Executing: vwTestScheduleBySample.sql
+✓ Success: vwTestScheduleBySample.sql
+Executing: vwTestScheduleDefinitionByEQID.sql
+✓ Success: vwTestScheduleDefinitionByEQID.sql
+Executing: vwTestScheduleDefinitionByMaterial.sql
+✓ Success: vwTestScheduleDefinitionByMaterial.sql
+Executing: vwTestScheduleDefinitionBySample.sql
+✓ Success: vwTestScheduleDefinitionBySample.sql
+Executing: vwTestScheduleDefinition.sql
+✓ Success: vwTestScheduleDefinition.sql
+Executing: vwTestsForLab.sql
+✓ Success: vwTestsForLab.sql
+Executing: vwTestsForScheduling.sql
+✓ Success: vwTestsForScheduling.sql
+Executing: vwUsedLubeSamplesIPDAS.sql
+✓ Success: vwUsedLubeSamplesIPDAS.sql
+Executing: vwViscosityIPDAS.sql
+✓ Success: vwViscosityIPDAS.sql
+
+Database update completed!
+Run ./verify-database.sh to check results

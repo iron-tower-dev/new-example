@@ -1,0 +1,350 @@
+﻿employeeID,testStandID,testStand,qualificationLevel
+74362,10,TAN by Color Indication,Q/QAG
+74362,20,Water - KF,Q/QAG
+74362,30,Emission Spectroscopy - Standard,TRAIN
+74362,40,Emission Spectroscopy - Large,TRAIN
+74362,50,Viscosity @ 40,Q/QAG
+74362,60,Viscosity @ 100,Q/QAG
+74362,70,FT-IR,TRAIN
+74362,110,TBN by Auto Titration,Q/QAG
+74362,140,Grease Dropping Point,Q/QAG
+74362,170,RPVOT,TRAIN
+74362,180,Filter Residue,Q/QAG
+74362,240,Debris Identification,TRAIN
+83046,10,TAN by Color Indication,Q/QAG
+83046,20,Water - KF,Q/QAG
+83046,30,Emission Spectroscopy - Standard,Q/QAG
+83046,40,Emission Spectroscopy - Large,Q/QAG
+83046,50,Viscosity @ 40,Q/QAG
+83046,60,Viscosity @ 100,Q/QAG
+83046,70,FT-IR,Q/QAG
+83046,80,Flash Point,Q/QAG
+83046,110,TBN by Auto Titration,Q/QAG
+99850,120,Inspect Filter,Q/QAG
+b6214,280,Misc. Tests,Q/QAG
+83046,120,Inspect Filter,Q/QAG
+83046,130,Grease Penetration Worked,Q/QAG
+83046,140,Grease Dropping Point,TRAIN
+83046,160,Particle Count,Q/QAG
+83046,170,RPVOT,Q/QAG
+83046,180,Filter Residue,MicrE
+83046,210,Ferrography,MicrE
+83046,220,Rust,Q/QAG
+83046,230,TFOUT,Q/QAG
+B6674,40,Emission Spectroscopy - Large,TRAIN
+B6674,30,Emission Spectroscopy - Standard,TRAIN
+B6674,70,FT-IR,TRAIN
+83046,240,Debris Identification,MicrE
+83046,250,Deleterious,Q/QAG
+83046,270,Rheometer,Q/QAG
+83046,285,Oil Content,Q/QAG
+32418,10,TAN by Color Indication,TRAIN
+32418,70,FT-IR,TRAIN
+96949,10,TAN by Color Indication,Q/QAG
+96949,20,Water - KF,Q/QAG
+96949,30,Emission Spectroscopy - Standard,Q/QAG
+96949,40,Emission Spectroscopy - Large,Q/QAG
+96949,50,Viscosity @ 40,Q/QAG
+96949,60,Viscosity @ 100,Q/QAG
+96949,70,FT-IR,Q/QAG
+96949,80,Flash Point,Q/QAG
+96949,110,TBN by Auto Titration,Q/QAG
+96949,120,Inspect Filter,MicrE
+96949,130,Grease Penetration Worked,Q/QAG
+C7162,50,Viscosity @ 40,TRAIN
+99947,270,Rheometer,Q/QAG
+96949,140,Grease Dropping Point,Q/QAG
+96949,160,Particle Count,Q/QAG
+96949,170,RPVOT,Q/QAG
+96949,180,Filter Residue,MicrE
+96949,210,Ferrography,MicrE
+96949,220,Rust,Q/QAG
+96949,230,TFOUT,Q/QAG
+96949,240,Debris Identification,MicrE
+96949,250,Deleterious,Q/QAG
+96949,270,Rheometer,Q/QAG
+96949,285,Oil Content,TRAIN
+96949,286,Varnish Potential Rating,Q/QAG
+83046,286,Varnish Potential Rating,Q/QAG
+74362,270,Rheometer,Q/QAG
+74362,286,Varnish Potential Rating,Q/QAG
+02409,10,TAN by Color Indication,Q/QAG
+02409,20,Water - KF,Q/QAG
+02409,30,Emission Spectroscopy - Standard,Q/QAG
+02409,40,Emission Spectroscopy - Large,Q/QAG
+02409,50,Viscosity @ 40,Q/QAG
+02409,60,Viscosity @ 100,Q/QAG
+02409,70,FT-IR,Q/QAG
+02409,80,Flash Point,Q/QAG
+02409,110,TBN by Auto Titration,Q/QAG
+02409,120,Inspect Filter,MicrE
+02409,130,Grease Penetration Worked,Q/QAG
+02409,140,Grease Dropping Point,Q/QAG
+02409,160,Particle Count,Q/QAG
+02409,170,RPVOT,Q/QAG
+02409,180,Filter Residue,MicrE
+02409,210,Ferrography,MicrE
+02409,220,Rust,Q/QAG
+02409,230,TFOUT,Q/QAG
+02409,240,Debris Identification,MicrE
+02409,250,Deleterious,Q/QAG
+02409,270,Rheometer,Q/QAG
+99850,160,Particle Count,MicrE
+99850,180,Filter Residue,Q/QAG
+74004,70,FT-IR,TRAIN
+74004,10,TAN by Color Indication,Q/QAG
+74004,60,Viscosity @ 100,Q/QAG
+74004,50,Viscosity @ 40,Q/QAG
+74004,20,Water - KF,Q/QAG
+99850,210,Ferrography,Q/QAG
+99850,240,Debris Identification,Q/QAG
+Q3811,10,TAN by Color Indication,Q/QAG
+Q3811,40,Emission Spectroscopy - Large,Q/QAG
+Q3811,50,Viscosity @ 40,Q/QAG
+Q3811,60,Viscosity @ 100,Q/QAG
+Q3811,70,FT-IR,Q/QAG
+Q3811,80,Flash Point,Q/QAG
+Q3811,110,TBN by Auto Titration,Q/QAG
+Q3811,120,Inspect Filter,MicrE
+Q3811,130,Grease Penetration Worked,Q/QAG
+Q3811,140,Grease Dropping Point,Q/QAG
+Q3811,160,Particle Count,Q/QAG
+Q3811,170,RPVOT,Q/QAG
+01832,10,TAN by Color Indication,Q/QAG
+01832,20,Water - KF,Q/QAG
+02015,40,Emission Spectroscopy - Large,TRAIN
+02015,30,Emission Spectroscopy - Standard,TRAIN
+01832,30,Emission Spectroscopy - Standard,Q/QAG
+01832,40,Emission Spectroscopy - Large,Q/QAG
+01832,50,Viscosity @ 40,Q/QAG
+02015,210,Ferrography,TRAIN
+01832,60,Viscosity @ 100,Q/QAG
+01832,70,FT-IR,Q/QAG
+01832,80,Flash Point,TRAIN
+01832,110,TBN by Auto Titration,Q/QAG
+01832,120,Inspect Filter,Q/QAG
+01832,140,Grease Dropping Point,Q/QAG
+01832,160,Particle Count,Q/QAG
+01832,170,RPVOT,Q/QAG
+01832,180,Filter Residue,Q/QAG
+01832,210,Ferrography,TRAIN
+01832,220,Rust,Q/QAG
+01832,230,TFOUT,Q/QAG
+01832,240,Debris Identification,Q/QAG
+01832,250,Deleterious,Q/QAG
+01832,270,Rheometer,Q/QAG
+01832,286,Varnish Potential Rating,Q/QAG
+Q3811,180,Filter Residue,MicrE
+Q3811,210,Ferrography,MicrE
+Q3811,220,Rust,Q/QAG
+Q3811,230,TFOUT,Q/QAG
+Q3811,240,Debris Identification,MicrE
+Q3811,250,Deleterious,Q/QAG
+Q3811,280,Misc. Tests,Q/QAG
+Q3811,284,D-inch,Q/QAG
+Q3811,285,Oil Content,Q/QAG
+Q3811,286,Varnish Potential Rating,Q/QAG
+Q3811,20,Water - KF,Q/QAG
+Q3811,30,Emission Spectroscopy - Standard,Q/QAG
+Q3811,270,Rheometer,Q/QAG
+06175,10,TAN by Color Indication,Q/QAG
+06175,20,Water - KF,Q/QAG
+06175,30,Emission Spectroscopy - Standard,Q/QAG
+06175,40,Emission Spectroscopy - Large,Q/QAG
+06175,50,Viscosity @ 40,Q/QAG
+06175,60,Viscosity @ 100,Q/QAG
+06175,70,FT-IR,Q/QAG
+06175,80,Flash Point,Q/QAG
+06175,110,TBN by Auto Titration,Q/QAG
+06175,120,Inspect Filter,Q/QAG
+06175,140,Grease Dropping Point,Q/QAG
+06175,160,Particle Count,Q/QAG
+06175,170,RPVOT,Q/QAG
+06175,180,Filter Residue,Q/QAG
+06175,210,Ferrography,Q/QAG
+06175,220,Rust,Q/QAG
+06175,230,TFOUT,Q/QAG
+06175,240,Debris Identification,MicrE
+06175,250,Deleterious,Q/QAG
+06175,270,Rheometer,Q/QAG
+06175,286,Varnish Potential Rating,Q/QAG
+02409,280,Misc. Tests,Q/QAG
+02409,284,D-inch,Q/QAG
+02409,285,Oil Content,Q/QAG
+02409,286,Varnish Potential Rating,Q/QAG
+99850,280,Misc. Tests,Q/QAG
+56472,10,TAN by Color Indication,Q/QAG
+56472,20,Water - KF,Q/QAG
+56472,30,Emission Spectroscopy - Standard,Q/QAG
+56472,40,Emission Spectroscopy - Large,Q/QAG
+56472,50,Viscosity @ 40,Q/QAG
+56472,60,Viscosity @ 100,Q/QAG
+56472,70,FT-IR,Q/QAG
+56472,80,Flash Point,Q/QAG
+56472,110,TBN by Auto Titration,Q/QAG
+56472,120,Inspect Filter,Q/QAG
+56472,130,Grease Penetration Worked,Q/QAG
+56472,140,Grease Dropping Point,Q/QAG
+56472,160,Particle Count,Q/QAG
+56472,170,RBOT,Q/QAG
+56472,180,Filter Residue,Q/QAG
+56472,210,Ferrography,Q/QAG
+56472,220,Rust,Q/QAG
+56472,230,TFOUT,Q/QAG
+56472,240,Debris Identification,Q/QAG
+56472,250,Deleterious,Q/QAG
+56472,270,Rheometer,Q/QAG
+56472,280,Misc. Tests,Q/QAG
+56472,284,D-inch,Q/QAG
+56472,285,Oil Content,Q/QAG
+56472,286,Varnish Potential Rating,Q/QAG
+09926,10,TAN by Color Indication,Q/QAG
+09926,20,Water - KF,Q/QAG
+09926,30,Emission Spectroscopy - Standard,Q/QAG
+09926,40,Emission Spectroscopy - Large,Q/QAG
+09926,50,Viscosity @ 40,Q/QAG
+09926,60,Viscosity @ 100,Q/QAG
+09926,70,FT-IR,Q/QAG
+09926,80,Flash Point,Q/QAG
+09926,110,TBN by Auto Titration,Q/QAG
+09926,120,Inspect Filter,Q/QAG
+09926,130,Grease Penetration Worked,Q/QAG
+09926,140,Grease Dropping Point,Q/QAG
+09926,160,Particle Count,Q/QAG
+09926,170,RBOT,Q/QAG
+09926,180,Filter Residue,Q/QAG
+09926,210,Ferrography,Q/QAG
+09926,220,Rust,Q/QAG
+09926,230,TFOUT,Q/QAG
+09926,240,Debris Identification,Q/QAG
+09926,250,Deleterious,Q/QAG
+09926,270,Rheometer,Q/QAG
+09926,280,Misc. Tests,Q/QAG
+09926,284,D-inch,Q/QAG
+09926,285,Oil Content,Q/QAG
+09926,286,Varnish Potential Rating,Q/QAG
+14897,10,TAN by Color Indication,Q/QAG
+14897,20,Water - KF,Q/QAG
+14897,30,Emission Spectroscopy - Standard,Q/QAG
+14897,40,Emission Spectroscopy - Large,Q/QAG
+14897,50,Viscosity @ 40,Q/QAG
+14897,60,Viscosity @ 100,Q/QAG
+14897,70,FT-IR,Q/QAG
+14897,80,Flash Point,Q/QAG
+14897,110,TBN by Auto Titration,Q/QAG
+14897,120,Inspect Filter,Q/QAG
+14897,130,Grease Penetration Worked,Q/QAG
+14897,140,Grease Dropping Point,Q/QAG
+14897,160,Particle Count,Q/QAG
+14897,170,RBOT,Q/QAG
+14897,180,Filter Residue,Q/QAG
+14897,210,Ferrography,Q/QAG
+14897,220,Rust,Q/QAG
+14897,230,TFOUT,Q/QAG
+14897,240,Debris Identification,Q/QAG
+14897,250,Deleterious,Q/QAG
+14897,270,Rheometer,Q/QAG
+14897,280,Misc. Tests,Q/QAG
+14897,284,D-inch,Q/QAG
+14897,285,Oil Content,Q/QAG
+14897,286,Varnish Potential Rating,Q/QAG
+07446,10,TAN by Color Indication,Q/QAG
+07446,20,Water - KF,Q/QAG
+07446,30,Emission Spectroscopy - Standard,Q/QAG
+07446,40,Emission Spectroscopy - Large,Q/QAG
+07446,50,Viscosity @ 40,Q/QAG
+07446,60,Viscosity @ 100,Q/QAG
+07446,70,FT-IR,Q/QAG
+07446,80,Flash Point,Q/QAG
+07446,110,TBN by Auto Titration,Q/QAG
+07446,120,Inspect Filter,Q/QAG
+07446,130,Grease Penetration Worked,Q/QAG
+07446,140,Grease Dropping Point,Q/QAG
+07446,160,Particle Count,Q/QAG
+07446,170,RBOT,Q/QAG
+07446,180,Filter Residue,Q/QAG
+07446,210,Ferrography,Q/QAG
+07446,220,Rust,Q/QAG
+07446,230,TFOUT,Q/QAG
+07446,240,Debris Identification,Q/QAG
+07446,250,Deleterious,Q/QAG
+07446,270,Rheometer,Q/QAG
+07446,280,Misc. Tests,Q/QAG
+07446,284,D-inch,Q/QAG
+07446,285,Oil Content,Q/QAG
+07446,286,Varnish Potential Rating,Q/QAG
+18598,10,TAN by Color Indication,Q/QAG
+18598,20,Water - KF,Q/QAG
+18598,30,Emission Spectroscopy - Standard,Q/QAG
+18598,40,Emission Spectroscopy - Large,Q/QAG
+18598,50,Viscosity @ 40,Q/QAG
+18598,60,Viscosity @ 100,Q/QAG
+18598,70,FT-IR,Q/QAG
+18598,80,Flash Point,Q/QAG
+18598,110,TBN by Auto Titration,Q/QAG
+18598,120,Inspect Filter,Q/QAG
+18598,130,Grease Penetration Worked,Q/QAG
+18598,140,Grease Dropping Point,Q/QAG
+18598,160,Particle Count,Q/QAG
+18598,170,RBOT,Q/QAG
+18598,180,Filter Residue,Q/QAG
+18598,210,Ferrography,Q/QAG
+18598,220,Rust,Q/QAG
+18598,230,TFOUT,Q/QAG
+18598,240,Debris Identification,Q/QAG
+18598,250,Deleterious,Q/QAG
+18598,270,Rheometer,Q/QAG
+18598,280,Misc. Tests,Q/QAG
+18598,284,D-inch,Q/QAG
+18598,285,Oil Content,Q/QAG
+18598,286,Varnish Potential Rating,Q/QAG
+16585,10,TAN by Color Indication,Q/QAG
+16585,20,Water - KF,Q/QAG
+16585,30,Emission Spectroscopy - Standard,Q/QAG
+16585,40,Emission Spectroscopy - Large,Q/QAG
+16585,50,Viscosity @ 40,Q/QAG
+16585,60,Viscosity @ 100,Q/QAG
+16585,70,FT-IR,Q/QAG
+16585,80,Flash Point,Q/QAG
+16585,110,TBN by Auto Titration,Q/QAG
+16585,120,Inspect Filter,Q/QAG
+16585,130,Grease Penetration Worked,Q/QAG
+16585,140,Grease Dropping Point,Q/QAG
+16585,160,Particle Count,Q/QAG
+16585,170,RBOT,Q/QAG
+16585,180,Filter Residue,Q/QAG
+16585,210,Ferrography,Q/QAG
+16585,220,Rust,Q/QAG
+16585,230,TFOUT,Q/QAG
+16585,240,Debris Identification,Q/QAG
+16585,250,Deleterious,Q/QAG
+16585,270,Rheometer,Q/QAG
+16585,280,Misc. Tests,Q/QAG
+16585,284,D-inch,Q/QAG
+16585,285,Oil Content,Q/QAG
+16585,286,Varnish Potential Rating,Q/QAG
+99999,10,TAN by Color Indication,Q/QAG
+99999,20,Water - KF,Q/QAG
+99999,30,Emission Spectroscopy - Standard,Q/QAG
+99999,40,Emission Spectroscopy - Large,Q/QAG
+99999,50,Viscosity @ 40,Q/QAG
+99999,60,Viscosity @ 100,Q/QAG
+99999,70,FT-IR,Q/QAG
+99999,80,Flash Point,Q/QAG
+99999,110,TBN by Auto Titration,Q/QAG
+99999,120,Inspect Filter,MicrE
+99999,130,Grease Penetration Worked,Q/QAG
+99999,140,Grease Dropping Point,Q/QAG
+99999,160,Particle Count,MicrE
+99999,170,RBOT,Q/QAG
+99999,180,Filter Residue,MicrE
+99999,210,Ferrography,MicrE
+99999,220,Rust,Q/QAG
+99999,230,TFOUT,Q/QAG
+99999,240,Debris Identification,MicrE
+99999,250,Deleterious,Q/QAG
+99999,270,Rheometer,Q/QAG
+99999,280,Misc. Tests,Q/QAG
+99999,284,D-inch,Q/QAG
+99999,285,Oil Content,Q/QAG
+99999,286,Varnish Potential Rating,Q/QAG

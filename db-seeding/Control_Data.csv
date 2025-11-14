@@ -1,0 +1,11 @@
+﻿ID,Name,ControlValue
+1,HistSamps,12
+2,WODaysBack,60
+3,WODaysFwd,21
+4,StartDate,06/01/2002
+5,PSTCats1,"[Heat],[Concentration],[Size, Ave],[Size, Max],"
+6,PSTCats2,"[Color],[Texture],[Composition],[Severity]"
+7,WMDays,90
+8,SWMSLink,https://swms.apsc.com:8443/common/login.jsp?autologinEnabled=true&form=welcome.fmx&formsLogin=true&goLogin=true&REDIRECT=ID=
+9,WODaysOver,3
+10,WOWeekEnd,7

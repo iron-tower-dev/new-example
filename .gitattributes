@@ -1,0 +1,134 @@
+# =============================================================================
+# Git Attributes Configuration
+# =============================================================================
+
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# =============================================================================
+# Text Files - Enforce LF line endings
+# =============================================================================
+
+# Source code files
+*.cs text eol=lf
+*.ts text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# Configuration files
+*.config text eol=lf
+*.conf text eol=lf
+*.ini text eol=lf
+*.properties text eol=lf
+
+# SQL files
+*.sql text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.fish text eol=lf
+
+# Batch files (Windows) - keep CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# CSV files - keep original line endings
+*.csv text
+
+# =============================================================================
+# Binary Files - Do not normalize
+# =============================================================================
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.webp binary
+*.bmp binary
+*.tiff binary
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.eot binary
+*.ttf binary
+*.otf binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.rar binary
+
+# Executables
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+
+# Database files
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+*.mdb binary
+
+# Certificates and keys
+*.pfx binary
+*.p12 binary
+*.key binary
+*.pem binary
+*.crt binary
+*.cer binary
+
+# =============================================================================
+# Language-specific settings
+# =============================================================================
+
+# .NET
+*.sln text eol=crlf
+*.csproj text eol=lf
+*.vbproj text eol=lf
+*.fsproj text eol=lf
+*.dbproj text eol=lf
+
+# Angular/Node.js
+package.json text eol=lf
+package-lock.json text eol=lf
+*.npmrc text eol=lf
+angular.json text eol=lf
+tsconfig.json text eol=lf
+tslint.json text eol=lf
+.eslintrc.json text eol=lf
+
+# =============================================================================
+# Git LFS (Large File Storage) - if needed
+# =============================================================================
+
+# Uncomment if using Git LFS for large files
+# *.psd filter=lfs diff=lfs merge=lfs -text
+# *.ai filter=lfs diff=lfs merge=lfs -text
+# *.mp4 filter=lfs diff=lfs merge=lfs -text
+# *.mov filter=lfs diff=lfs merge=lfs -text

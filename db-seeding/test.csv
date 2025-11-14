@@ -1,0 +1,37 @@
+﻿ID,name,testStandID,sampleVolumeRequired,exclude,abbrev,displayGroupId,groupname,Lab,Schedule,ShortAbbrev
+10,TAN by Color Indication,10,30,NULL,"TAN         ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,TAN
+20,Water - KF,20,5,NULL,"K-F         ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,K-F
+30,Emission Spectroscopy - Standard,30,10,NULL,"Spec-Std    ",20,"ELEMENTS--STD                 ",1,1,S Sp
+40,Emission Spectroscopy - Large,40,10,NULL,"Spec-Lrg    ",30,"ELEMENTS--LARGE               ",1,1,L Sp
+50,Viscosity @ 40,50,20,NULL,"Vis@40      ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,V 40
+60,Viscosity @ 100,60,20,NULL,"Vis@100     ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,V 100
+70,FT-IR,70,20,NULL,"FT-IR       ",50,"INFRARED SPECTROSCOPY         ",1,1,FT-IR
+80,Flash Point,80,10,NULL,"Flash Pt.   ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,Fl Pt
+90,Fire Point,90,10,Y,"Fire Pt.    ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,FiPt
+120,Inspect Filter,120,NULL,NULL,InspectFilte,10,PHYSICAL & CHEMICAL PROPERTIES,1,1,I F
+130,Grease Penetration Worked,130,NULL,NULL,"Gr.Pen/60   ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,GP 60
+140,Grease Dropping Point,140,NULL,NULL,"Gr.DropPt   ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,GD Pt
+150,Grease Low Shear Apparent Viscosity,150,NULL,Y,"Gr.Low Shr  ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,GLS
+160,Particle Count,160,20,NULL,"PCnt        ",40,"PARTICLE COUNT                ",1,1,PC
+170,RBOT,170,NULL,NULL,"RBOT        ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,R BOT
+180,Filter Residue,180,50,NULL,"FltrRes     ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,F Res
+190,Solids,190,20,Y,"Solids      ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,Slds
+100,TAN by Titration,100,20,Y,"TAN         ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,TAN
+110,TBN by Auto Titration,110,20,NULL,"TBN         ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,TBN
+200,Wear Particle Analysis (DRIII),200,5,Y,"DR          ",60,"WEAR PARTICLE ANALYSIS        ",1,1,DR
+210,Ferrography,210,5,NULL,"Ferrography ",60,"WEAR PARTICLE ANALYSIS        ",1,1,Fer
+220,Rust,220,300,NULL,"Rust        ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,Rust
+230,TFOUT,230,NULL,NULL,"TFOUT       ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,TF OUT
+240,Debris Identification,240,NULL,NULL,"DebrisID    ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,Debr
+250,Deleterious,250,NULL,NULL,"Deleterious ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,Del
+260,XFR - Chlorine,260,NULL,Y,"XRF-Cl      ",10,PHYSICAL & CHEMICAL PROPERTIES,1,1,XRF
+270,Rheometer,270,NULL,NULL,"Rheometer   ",70,"RHEOMETER                     ",1,1,Rheo
+280,Resistivity,280,NULL,NULL,"Resistivity ",80,"MISCELLANEOUS                 ",0,0,Res
+400,Temperature,400,NULL,NULL,"Temp        ",90,"TEMPERATURE                   ",0,0,Temp
+281,Chlorides,281,NULL,NULL,"Chlorides   ",80,"MISCELLANEOUS                 ",0,0,Chlr
+282,Amine,282,NULL,NULL,"Amine       ",80,"MISCELLANEOUS                 ",0,0,Amn
+283,Phenol,283,NULL,NULL,"Phenol      ",80,"MISCELLANEOUS                 ",0,0,Phen
+284,D-inch,284,NULL,NULL,"D-inch      ",80,"MISCELLANEOUS                 ",1,1,D-in
+285,Oil Content,285,NULL,NULL,"Oil Content ",80,"MISCELLANEOUS                 ",1,1,Oil C
+286,Varnish Potential Rating,286,NULL,NULL,"VPR         ",80,"MISCELLANEOUS                 ",1,1,VPR
+300,Goodness,300,NULL,NULL,"Goodness    ",10,PHYSICAL & CHEMICAL PROPERTIES,0,0,Good

@@ -1,0 +1,55 @@
+{
+    "environments": {
+        "production": {
+            "api": {
+                "siteName": "LabResultsApi",
+                "sitePath": "C:\\inetpub\\wwwroot\\LabResultsApi",
+                "appPoolName": "LabResultsApiPool",
+                "port": "8080",
+                "connectionString": "Server=PROD-SQL-SERVER;Database=LabResultsDb;User Id=LabResultsUser;Password=REPLACE_WITH_SECURE_PASSWORD;TrustServerCertificate=true;MultipleActiveResultSets=true;Encrypt=true;Connection Timeout=30;Command Timeout=60;",
+                "jwtSecretKey": "REPLACE_WITH_SECURE_JWT_KEY_AT_LEAST_32_CHARACTERS_LONG",
+                "jwtIssuer": "LabResultsApi",
+                "jwtAudience": "LabResultsClient",
+                "fileUploadPath": "C:\\LabResults\\Uploads"
+            },
+            "frontend": {
+                "siteName": "LabResultsFrontend",
+                "sitePath": "C:\\inetpub\\wwwroot\\LabResultsFrontend",
+                "appPoolName": "LabResultsFrontendPool",
+                "port": "80",
+                "apiUrl": "http://localhost:8080/api"
+            }
+        },
+        "staging": {
+            "api": {
+                "siteName": "LabResultsApi-Staging",
+                "sitePath": "C:\\inetpub\\wwwroot\\LabResultsApi-Staging",
+                "appPoolName": "LabResultsApiPool-Staging",
+                "port": "8081",
+                "connectionString": "Server=STAGING-SQL-SERVER;Database=LabResultsDb_Staging;User Id=LabResultsUser;Password=REPLACE_WITH_SECURE_PASSWORD;TrustServerCertificate=true;MultipleActiveResultSets=true;Encrypt=true;Connection Timeout=30;Command Timeout=60;",
+                "jwtSecretKey": "REPLACE_WITH_SECURE_JWT_KEY_AT_LEAST_32_CHARACTERS_LONG",
+                "jwtIssuer": "LabResultsApi-Staging",
+                "jwtAudience": "LabResultsClient-Staging",
+                "fileUploadPath": "C:\\LabResults\\Uploads-Staging"
+            },
+            "frontend": {
+                "siteName": "LabResultsFrontend-Staging",
+                "sitePath": "C:\\inetpub\\wwwroot\\LabResultsFrontend-Staging",
+                "appPoolName": "LabResultsFrontendPool-Staging",
+                "port": "8082",
+                "apiUrl": "http://localhost:8081/api"
+            }
+        }
+    },
+    "security": {
+        "requireHttps": true,
+        "enableHsts": true,
+        "hstsMaxAge": 31536000,
+        "enableSecurityHeaders": true
+    },
+    "monitoring": {
+        "enableHealthChecks": true,
+        "enablePerformanceCounters": true,
+        "logRetentionDays": 30
+    }
+}

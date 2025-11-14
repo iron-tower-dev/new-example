@@ -1,0 +1,53 @@
+{
+    "clearExistingData": false,
+    "createMissingTables": true,
+    "validateAgainstLegacy": true,
+    "removeAuthentication": false,
+    "includeTables": [],
+    "excludeTables": [
+        "AuditLog",
+        "System_Log"
+    ],
+    "maxConcurrentOperations": 8,
+    "operationTimeout": "01:00:00",
+    "seedingOptions": {
+        "clearExistingData": false,
+        "createMissingTables": true,
+        "batchSize": 2000,
+        "continueOnError": false,
+        "validateBeforeInsert": true,
+        "csvDirectory": "db-seeding",
+        "sqlDirectory": "db-tables",
+        "useTransactions": true,
+        "commandTimeout": "00:15:00"
+    },
+    "validationOptions": {
+        "compareQueryResults": true,
+        "comparePerformance": true,
+        "generateDetailedReports": true,
+        "maxDiscrepanciesToReport": 200,
+        "performanceThresholdPercent": 15.0,
+        "queryTimeout": "00:10:00",
+        "legacyConnectionString": "",
+        "ignoreMinorDifferences": false,
+        "includeQueries": [],
+        "excludeQueries": []
+    },
+    "authRemovalOptions": {
+        "createBackup": true,
+        "backupDirectory": "auth-backup",
+        "removeFromApi": false,
+        "removeFromFrontend": false,
+        "updateDocumentation": true,
+        "filesToExclude": []
+    },
+    "loggingOptions": {
+        "minimumLevel": 4,
+        "logToFile": true,
+        "logToConsole": false,
+        "logDirectory": "logs/migration",
+        "includeStackTrace": false,
+        "maxLogFileSizeMB": 500,
+        "maxLogFiles": 30
+    }
+}
