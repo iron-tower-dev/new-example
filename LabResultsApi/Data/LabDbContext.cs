@@ -11,6 +11,7 @@ public class LabDbContext : DbContext
 
     // Entities with primary keys
     public DbSet<Sample> UsedLubeSamples { get; set; }
+    public DbSet<LubeSamplingPoint> LubeSamplingPoints { get; set; }
     public DbSet<Test> Tests { get; set; }
     public DbSet<Equipment> Equipment { get; set; }
     public DbSet<ParticleTypeDefinition> ParticleTypeDefinitions { get; set; }

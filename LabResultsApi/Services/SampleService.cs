@@ -23,9 +23,14 @@ public class SampleService : ISampleService
         
         try
         {
-            // First try to get samples that have test readings for the specific test
+            // Match legacy query pattern: JOIN with Lube_Sampling_Point for quality class
             var samplesWithReadings = await (from tr in _context.TestReadings
                                 join s in _context.UsedLubeSamples on tr.SampleId equals s.Id
+                                join lsp in _context.LubeSamplingPoints 
+                                    on new { s.TagNumber, s.Component, s.Location } 
+                                    equals new { lsp.TagNumber, lsp.Component, lsp.Location } 
+                                    into lspJoin
+                                from lsp in lspJoin.DefaultIfEmpty()
                                 where tr.TestId == testId && tr.Status == "A"
                                 select new SampleDto
                                 {
@@ -34,9 +39,15 @@ public class SampleService : ISampleService
                                     Component = s.Component,
                                     Location = s.Location,
                                     LubeType = s.LubeType,
-                                    QualityClass = s.QualityClass,
+                                    WoNumber = s.WoNumber,
                                     SampleDate = s.SampleDate,
-                                    Status = s.Status
+                                    ReceivedOn = s.ReceivedOn,
+                                    SampledBy = s.SampledBy,
+                                    Status = s.Status,
+                                    SiteId = s.SiteId,
+                                    ResultsReviewDate = s.ResultsReviewDate,
+                                    ResultsAvailDate = s.ResultsAvailDate,
+                                    QualityClass = lsp.QualityClass  // From Lube_Sampling_Point
                                 })
                                 .Distinct()
                                 .OrderBy(s => s.Id)
@@ -47,22 +58,34 @@ public class SampleService : ISampleService
             {
                 _logger.LogInformation("No samples found with test readings for test {TestId}, returning recent samples", testId);
                 
-                var recentSamples = await _context.UsedLubeSamples
-                    .Where(s => s.Status == "A" && s.SampleDate >= DateTime.Now.AddDays(-30)) // Last 30 days
-                    .OrderByDescending(s => s.SampleDate)
-                    .Take(20) // Limit to 20 most recent samples
-                    .Select(s => new SampleDto
-                    {
-                        Id = s.Id,
-                        TagNumber = s.TagNumber,
-                        Component = s.Component,
-                        Location = s.Location,
-                        LubeType = s.LubeType,
-                        QualityClass = s.QualityClass,
-                        SampleDate = s.SampleDate,
-                        Status = s.Status
-                    })
-                    .ToListAsync();
+                // Status 250 = Active samples (from legacy pattern)
+                var recentSamples = await (from s in _context.UsedLubeSamples
+                                          join lsp in _context.LubeSamplingPoints 
+                                              on new { s.TagNumber, s.Component, s.Location } 
+                                              equals new { lsp.TagNumber, lsp.Component, lsp.Location } 
+                                              into lspJoin
+                                          from lsp in lspJoin.DefaultIfEmpty()
+                                          where s.Status == 250 && s.SampleDate >= DateTime.Now.AddDays(-30)
+                                          orderby s.SampleDate descending
+                                          select new SampleDto
+                                          {
+                                              Id = s.Id,
+                                              TagNumber = s.TagNumber,
+                                              Component = s.Component,
+                                              Location = s.Location,
+                                              LubeType = s.LubeType,
+                                              WoNumber = s.WoNumber,
+                                              SampleDate = s.SampleDate,
+                                              ReceivedOn = s.ReceivedOn,
+                                              SampledBy = s.SampledBy,
+                                              Status = s.Status,
+                                              SiteId = s.SiteId,
+                                              ResultsReviewDate = s.ResultsReviewDate,
+                                              ResultsAvailDate = s.ResultsAvailDate,
+                                              QualityClass = lsp.QualityClass
+                                          })
+                                          .Take(20)
+                                          .ToListAsync();
                 
                 _logger.LogInformation("Found {Count} recent samples for test {TestId}", recentSamples.Count, testId);
                 return recentSamples;
@@ -84,48 +107,60 @@ public class SampleService : ISampleService
         
         try
         {
-            var query = _context.UsedLubeSamples.AsQueryable();
+            var query = from s in _context.UsedLubeSamples
+                       join lsp in _context.LubeSamplingPoints 
+                           on new { s.TagNumber, s.Component, s.Location } 
+                           equals new { lsp.TagNumber, lsp.Component, lsp.Location } 
+                           into lspJoin
+                       from lsp in lspJoin.DefaultIfEmpty()
+                       select new { Sample = s, QualityClass = lsp.QualityClass };
 
             if (filter != null)
             {
                 if (!string.IsNullOrEmpty(filter.TagNumber))
-                    query = query.Where(s => s.TagNumber.Contains(filter.TagNumber));
+                    query = query.Where(x => x.Sample.TagNumber != null && x.Sample.TagNumber.Contains(filter.TagNumber));
                 
                 if (!string.IsNullOrEmpty(filter.Component))
-                    query = query.Where(s => s.Component.Contains(filter.Component));
+                    query = query.Where(x => x.Sample.Component != null && x.Sample.Component.Contains(filter.Component));
                 
                 if (!string.IsNullOrEmpty(filter.Location))
-                    query = query.Where(s => s.Location.Contains(filter.Location));
+                    query = query.Where(x => x.Sample.Location != null && x.Sample.Location.Contains(filter.Location));
                 
                 if (!string.IsNullOrEmpty(filter.LubeType))
-                    query = query.Where(s => s.LubeType.Contains(filter.LubeType));
+                    query = query.Where(x => x.Sample.LubeType != null && x.Sample.LubeType.Contains(filter.LubeType));
                 
                 if (filter.FromDate.HasValue)
-                    query = query.Where(s => s.SampleDate >= filter.FromDate.Value);
+                    query = query.Where(x => x.Sample.SampleDate >= filter.FromDate.Value);
                 
                 if (filter.ToDate.HasValue)
-                    query = query.Where(s => s.SampleDate <= filter.ToDate.Value);
+                    query = query.Where(x => x.Sample.SampleDate <= filter.ToDate.Value);
                 
                 if (filter.Status.HasValue)
                 {
-                    var statusText = GetStatusText(filter.Status.Value);
-                    query = query.Where(s => s.Status == statusText);
+                    short statusValue = (short)filter.Status.Value;
+                    query = query.Where(x => x.Sample.Status == statusValue);
                 }
             }
 
             var samples = await query
-                .OrderByDescending(s => s.SampleDate)
+                .OrderByDescending(x => x.Sample.SampleDate)
                 .Take(200) // Limit results
-                .Select(s => new SampleDto
+                .Select(x => new SampleDto
                 {
-                    Id = s.Id,
-                    TagNumber = s.TagNumber,
-                    Component = s.Component,
-                    Location = s.Location,
-                    LubeType = s.LubeType,
-                    QualityClass = s.QualityClass,
-                    SampleDate = s.SampleDate,
-                    Status = s.Status
+                    Id = x.Sample.Id,
+                    TagNumber = x.Sample.TagNumber,
+                    Component = x.Sample.Component,
+                    Location = x.Sample.Location,
+                    LubeType = x.Sample.LubeType,
+                    WoNumber = x.Sample.WoNumber,
+                    SampleDate = x.Sample.SampleDate,
+                    ReceivedOn = x.Sample.ReceivedOn,
+                    SampledBy = x.Sample.SampledBy,
+                    Status = x.Sample.Status,
+                    SiteId = x.Sample.SiteId,
+                    ResultsReviewDate = x.Sample.ResultsReviewDate,
+                    ResultsAvailDate = x.Sample.ResultsAvailDate,
+                    QualityClass = x.QualityClass
                 })
                 .ToListAsync();
 
@@ -144,20 +179,46 @@ public class SampleService : ISampleService
         
         try
         {
-            var sample = await _context.UsedLubeSamples
-                .Where(s => s.Id == sampleId)
-                .Select(s => new SampleDto
-                {
-                    Id = s.Id,
-                    TagNumber = s.TagNumber,
-                    Component = s.Component,
-                    Location = s.Location,
-                    LubeType = s.LubeType,
-                    QualityClass = s.QualityClass,
-                    SampleDate = s.SampleDate,
-                    Status = s.Status
-                })
-                .FirstOrDefaultAsync();
+            var sample = await (from s in _context.UsedLubeSamples
+                               join lsp in _context.LubeSamplingPoints 
+                                   on new { s.TagNumber, s.Component, s.Location } 
+                                   equals new { lsp.TagNumber, lsp.Component, lsp.Location } 
+                                   into lspJoin
+                               from lsp in lspJoin.DefaultIfEmpty()
+                               where s.Id == sampleId
+                               select new SampleDto
+                               {
+                                   Id = s.Id,
+                                   TagNumber = s.TagNumber,
+                                   Component = s.Component,
+                                   Location = s.Location,
+                                   LubeType = s.LubeType,
+                                   WoNumber = s.WoNumber,
+                                   TrackingNumber = s.TrackingNumber,
+                                   WarehouseId = s.WarehouseId,
+                                   BatchNumber = s.BatchNumber,
+                                   ClassItem = s.ClassItem,
+                                   SampleDate = s.SampleDate,
+                                   ReceivedOn = s.ReceivedOn,
+                                   SampledBy = s.SampledBy,
+                                   Status = s.Status,
+                                   CmptSelectFlag = s.CmptSelectFlag,
+                                   NewUsedFlag = s.NewUsedFlag,
+                                   EntryId = s.EntryId,
+                                   ValidateId = s.ValidateId,
+                                   TestPricesId = s.TestPricesId,
+                                   PricingPackageId = s.PricingPackageId,
+                                   Evaluation = s.Evaluation,
+                                   SiteId = s.SiteId,
+                                   ResultsReviewDate = s.ResultsReviewDate,
+                                   ResultsAvailDate = s.ResultsAvailDate,
+                                   ResultsReviewId = s.ResultsReviewId,
+                                   StoreSource = s.StoreSource,
+                                   Schedule = s.Schedule,
+                                   ReturnedDate = s.ReturnedDate,
+                                   QualityClass = lsp.QualityClass
+                               })
+                               .FirstOrDefaultAsync();
 
             return sample;
         }
@@ -185,16 +246,5 @@ public class SampleService : ISampleService
         }
     }
 
-    private static string GetStatusText(int status)
-    {
-        return status switch
-        {
-            0 => "Pending",
-            1 => "Available", 
-            2 => "In Progress",
-            3 => "Complete",
-            4 => "Cancelled",
-            _ => "Unknown"
-        };
-    }
+
 }
