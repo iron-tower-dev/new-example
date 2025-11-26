@@ -1,0 +1,172 @@
+<div class="migration-dashboard">
+    <div class="dashboard-header">
+        <h1>Database Migration Dashboard</h1>
+        <div class="header-actions">
+            <button class="btn btn-sm btn-outline-primary" (click)="startPolling()" [disabled]="isPolling">
+                <i class="fas fa-sync-alt" [class.fa-spin]="isPolling"></i>
+                {{ isPolling ? 'Monitoring...' : 'Start Monitoring' }}
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" (click)="stopPolling()" [disabled]="!isPolling">
+                <i class="fas fa-stop"></i>
+                Stop Monitoring
+            </button>
+        </div>
+    </div>
+
+    <!-- Status Overview -->
+    @if (currentStatus) {
+    <div class="status-overview">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="status-card">
+                    <div class="status-header">
+                        <h5>Current Status</h5>
+                        <span class="badge" [class]="'badge-' + getStatusColor(currentStatus.status)">
+                            {{ currentStatus.status }}
+                        </span>
+                    </div>
+                    <div class="status-body">
+                        <p><strong>Migration ID:</strong> {{ currentStatus.migrationId }}</p>
+                        <p><strong>Started:</strong> {{ currentStatus.startTime | date:'medium' }}</p>
+                        @if (currentStatus.endTime) {
+                        <p><strong>Ended:</strong> {{ currentStatus.endTime | date:'medium' }}</p>
+                        }
+                        @if (currentStatus.duration) {
+                        <p><strong>Duration:</strong> {{ formatDuration(currentStatus.duration) }}</p>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="status-card">
+                    <div class="status-header">
+                        <h5>Progress</h5>
+                        <span class="progress-percentage">{{ currentStatus.progressPercentage | number:'1.1-1'
+                            }}%</span>
+                    </div>
+                    <div class="status-body">
+                        <div class="progress mb-2">
+                            <div class="progress-bar" [class]="'bg-' + getStatusColor(currentStatus.status)"
+                                [style.width.%]="currentStatus.progressPercentage">
+                            </div>
+                        </div>
+                        @if (currentStatus.currentOperation) {
+                        <p><strong>Current:</strong> {{ currentStatus.currentOperation }}</p>
+                        }
+                        @if (currentStatus.estimatedTimeRemaining) {
+                        <p><strong>ETA:</strong> {{ formatDuration(currentStatus.estimatedTimeRemaining) }}</p>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="status-card">
+                    <div class="status-header">
+                        <h5>Statistics</h5>
+                    </div>
+                    <div class="status-body">
+                        <p><strong>Tables:</strong> {{ currentStatus.statistics.tablesProcessed }} / {{
+                            currentStatus.statistics.totalTables }}</p>
+                        <p><strong>Records:</strong> {{ currentStatus.statistics.recordsProcessed | number }} / {{
+                            currentStatus.statistics.totalRecords | number }}</p>
+                        <p><strong>Errors:</strong> {{ currentStatus.statistics.errorCount }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="status-card">
+                    <div class="status-header">
+                        <h5>Recent Errors</h5>
+                        @if (currentStatus.recentErrors.length > 0) {
+                        <span class="badge badge-danger">
+                            {{ currentStatus.recentErrors.length }}
+                        </span>
+                        }
+                    </div>
+                    <div class="status-body">
+                        @if (currentStatus.recentErrors.length === 0) {
+                        <div class="text-muted">
+                            No recent errors
+                        </div>
+                        }
+                        @for (error of currentStatus.recentErrors.slice(0, 3); track error.timestamp) {
+                        <div class="error-item">
+                            <small class="text-muted">{{ error.timestamp | date:'short' }}</small>
+                            <div class="error-message"
+                                [class]="'text-' + migrationService.getErrorLevelColor(error.level)">
+                                {{ error.message }}
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+
+    <!-- No Migration Status -->
+    @if (!currentStatus || currentStatus.status === 'NotStarted') {
+    <div class="no-migration">
+        <div class="text-center py-5">
+            <i class="fas fa-database fa-3x text-muted mb-3"></i>
+            <h3>No Migration Running</h3>
+            <p class="text-muted">Start a new migration or view migration history</p>
+            <button class="btn btn-primary" (click)="setActiveTab('config')">
+                <i class="fas fa-play"></i>
+                Start New Migration
+            </button>
+        </div>
+    </div>
+    }
+
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs mt-4">
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="activeTab === 'dashboard'" (click)="setActiveTab('dashboard')"
+                href="javascript:void(0)">
+                <i class="fas fa-tachometer-alt"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="activeTab === 'history'" (click)="setActiveTab('history')"
+                href="javascript:void(0)">
+                <i class="fas fa-history"></i>
+                History
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="activeTab === 'config'" (click)="setActiveTab('config')"
+                href="javascript:void(0)">
+                <i class="fas fa-cog"></i>
+                Configuration
+            </a>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-3">
+        <div class="tab-pane" [class.active]="activeTab === 'dashboard'">
+            @if (activeTab === 'dashboard') {
+            <app-migration-progress [status]="currentStatus" [progress]="currentProgress">
+            </app-migration-progress>
+            }
+        </div>
+
+        <div class="tab-pane" [class.active]="activeTab === 'history'">
+            @if (activeTab === 'history') {
+            <app-migration-history></app-migration-history>
+            }
+        </div>
+
+        <div class="tab-pane" [class.active]="activeTab === 'config'">
+            @if (activeTab === 'config') {
+            <app-migration-config></app-migration-config>
+            }
+        </div>
+    </div>
+</div>

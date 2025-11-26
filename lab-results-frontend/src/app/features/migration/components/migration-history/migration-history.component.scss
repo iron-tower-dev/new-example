@@ -1,0 +1,285 @@
+.migration-history {
+    padding: 20px;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+
+    .header-info {
+        h4 {
+            margin: 0 0 5px 0;
+            color: #495057;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+}
+
+.statistics-summary {
+    margin-bottom: 25px;
+
+    .stat-card {
+        display: flex;
+        align-items: center;
+        background: white;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+        .stat-icon {
+            margin-right: 15px;
+            font-size: 28px;
+        }
+
+        .stat-content {
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                color: #495057;
+                line-height: 1;
+                margin-bottom: 2px;
+            }
+
+            .stat-label {
+                font-size: 12px;
+                color: #6c757d;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.filters {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+
+    .form-label {
+        font-weight: 600;
+        color: #495057;
+        margin-bottom: 5px;
+    }
+
+    .results-info {
+        display: flex;
+        align-items: center;
+        height: 38px; // Match form control height
+    }
+}
+
+.loading-state,
+.error-state {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.history-table {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .table {
+        margin: 0;
+
+        th {
+            background: #f8f9fa;
+            border-top: none;
+            font-weight: 600;
+            color: #495057;
+            font-size: 14px;
+            padding: 15px 12px;
+        }
+
+        td {
+            padding: 12px;
+            vertical-align: middle;
+            border-top: 1px solid #dee2e6;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+    }
+
+    .migration-id {
+        font-size: 12px;
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+
+    .date-info {
+        div {
+            font-weight: 500;
+        }
+
+        small {
+            font-size: 11px;
+        }
+    }
+
+    .progress-info {
+        .progress-sm {
+            height: 6px;
+            margin-bottom: 2px;
+        }
+
+        small {
+            font-size: 11px;
+            color: #6c757d;
+        }
+    }
+
+    .count-info {
+        span {
+            font-weight: 500;
+        }
+
+        small {
+            font-size: 11px;
+        }
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 5px;
+
+        .btn {
+            padding: 4px 8px;
+        }
+    }
+}
+
+.empty-state {
+    padding: 40px 20px;
+}
+
+.pagination-wrapper {
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+
+    .pagination {
+        margin-bottom: 10px;
+
+        .page-link {
+            color: #007bff;
+            border: 1px solid #dee2e6;
+            padding: 8px 12px;
+
+            &:hover {
+                background-color: #e9ecef;
+                border-color: #dee2e6;
+            }
+        }
+
+        .page-item.active .page-link {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .page-item.disabled .page-link {
+            color: #6c757d;
+            background-color: #fff;
+            border-color: #dee2e6;
+            cursor: not-allowed;
+        }
+    }
+
+    .pagination-info {
+        margin-top: 10px;
+    }
+}
+
+// Badge styles
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.badge-primary {
+    background-color: #007bff;
+}
+
+.badge-info {
+    background-color: #17a2b8;
+}
+
+.badge-secondary {
+    background-color: #6c757d;
+}
+
+// Progress bar colors
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    .history-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .statistics-summary .stat-card {
+        margin-bottom: 10px;
+    }
+
+    .filters .row {
+        row-gap: 15px;
+    }
+
+    .table-responsive {
+        font-size: 14px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 2px;
+    }
+}

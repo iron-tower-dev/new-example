@@ -1,0 +1,248 @@
+<div class="migration-progress" *ngIf="status">
+    <!-- Progress Header -->
+    <div class="progress-header">
+        <div class="progress-info">
+            <h4>Migration Progress</h4>
+            <div class="progress-stats">
+                <span class="badge" [class]="'badge-' + getStatusColor(status.status)">
+                    {{ status.status }}
+                </span>
+                <span class="progress-percentage">{{ status.progressPercentage | number:'1.1-1' }}%</span>
+            </div>
+        </div>
+
+        <div class="progress-actions" *ngIf="!isCompleted()">
+            <button class="btn btn-sm btn-warning" (click)="pauseMigration()" [disabled]="!canPause()"
+                title="Pause Migration">
+                <i class="fas fa-pause"></i>
+                Pause
+            </button>
+            <button class="btn btn-sm btn-success" (click)="resumeMigration()" [disabled]="!canResume()"
+                title="Resume Migration">
+                <i class="fas fa-play"></i>
+                Resume
+            </button>
+            <button class="btn btn-sm btn-danger" (click)="cancelMigration()" [disabled]="!canCancel()"
+                title="Cancel Migration">
+                <i class="fas fa-stop"></i>
+                Cancel
+            </button>
+        </div>
+
+        <div class="progress-actions" *ngIf="isCompleted()">
+            <button class="btn btn-sm btn-outline-primary" (click)="downloadReport()" title="Download Report">
+                <i class="fas fa-download"></i>
+                Report
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" (click)="downloadLogs()" title="Download Logs">
+                <i class="fas fa-file-alt"></i>
+                Logs
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Progress Bar -->
+    <div class="main-progress">
+        <div class="progress-label">
+            <span>Overall Progress</span>
+            <span>{{ status.progressPercentage | number:'1.1-1' }}%</span>
+        </div>
+        <div class="progress progress-lg">
+            <div class="progress-bar progress-bar-striped" [class]="getProgressBarClass()"
+                [class.progress-bar-animated]="status.status === 'InProgress'"
+                [style.width.%]="status.progressPercentage">
+            </div>
+        </div>
+    </div>
+
+    <!-- Current Operation -->
+    <div class="current-operation" *ngIf="status.currentOperation">
+        <div class="operation-info">
+            <i class="fas fa-cog fa-spin text-primary"></i>
+            <span>{{ status.currentOperation }}</span>
+        </div>
+        <div class="time-info" *ngIf="status.estimatedTimeRemaining">
+            <i class="fas fa-clock text-muted"></i>
+            <span>{{ formatDuration(status.estimatedTimeRemaining) }} remaining</span>
+        </div>
+    </div>
+
+    <!-- Detailed Statistics -->
+    <div class="detailed-stats">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h6>Tables Progress</h6>
+                        <span class="stat-value">{{ status.statistics.tablesProcessed }} / {{
+                            status.statistics.totalTables }}</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-info"
+                            [style.width.%]="status.statistics.totalTables > 0 ? (status.statistics.tablesProcessed / status.statistics.totalTables * 100) : 0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h6>Records Progress</h6>
+                        <span class="stat-value">{{ status.statistics.recordsProcessed | number }} / {{
+                            status.statistics.totalRecords | number }}</span>
+                    </div>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-success"
+                            [style.width.%]="status.statistics.totalRecords > 0 ? (status.statistics.recordsProcessed / status.statistics.totalRecords * 100) : 0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Real-time Progress (if available) -->
+    <div class="realtime-progress" *ngIf="progress">
+        <h6>Real-time Statistics</h6>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="realtime-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock text-primary"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-label">Elapsed Time</div>
+                        <div class="stat-value">{{ formatDuration(progress.elapsedTime) }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="realtime-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-hourglass-half text-warning"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-label">Time Remaining</div>
+                        <div class="stat-value">{{ formatDuration(progress.estimatedTimeRemaining) }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="realtime-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-database text-info"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-label">Current Operation</div>
+                        <div class="stat-value">{{ progress.currentOperation }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="realtime-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-percentage text-success"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-label">Progress</div>
+                        <div class="stat-value">{{ progress.progressPercentage | number:'1.1-1' }}%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Errors -->
+    <div class="recent-errors" *ngIf="status.recentErrors && status.recentErrors.length > 0">
+        <div class="errors-header">
+            <h6>Recent Errors</h6>
+            <span class="badge badge-danger">{{ status.recentErrors.length }}</span>
+        </div>
+
+        <div class="errors-list">
+            <div *ngFor="let error of status.recentErrors" class="error-item" (click)="showError(error)">
+                <div class="error-header">
+                    <span class="badge badge-sm" [class]="'badge-' + getErrorLevelColor(error.level)">
+                        {{ error.level }}
+                    </span>
+                    <span class="error-time">{{ error.timestamp | date:'short' }}</span>
+                </div>
+                <div class="error-message">{{ error.message }}</div>
+                <div class="error-details" *ngIf="error.tableName || error.recordNumber">
+                    <span *ngIf="error.tableName" class="detail-item">Table: {{ error.tableName }}</span>
+                    <span *ngIf="error.recordNumber" class="detail-item">Record: {{ error.recordNumber }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- No Errors Message -->
+    <div class="no-errors" *ngIf="!status.recentErrors || status.recentErrors.length === 0">
+        <div class="text-center py-3">
+            <i class="fas fa-check-circle fa-2x text-success mb-2"></i>
+            <p class="text-muted">No errors reported</p>
+        </div>
+    </div>
+</div>
+
+<!-- No Migration Message -->
+<div class="no-migration" *ngIf="!status">
+    <div class="text-center py-5">
+        <i class="fas fa-info-circle fa-2x text-muted mb-3"></i>
+        <h5>No Migration Data Available</h5>
+        <p class="text-muted">Start monitoring to see migration progress</p>
+    </div>
+</div>
+
+<!-- Error Details Modal -->
+<div class="modal fade" [class.show]="showErrorDetails" [style.display]="showErrorDetails ? 'block' : 'none'"
+    *ngIf="selectedError">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Error Details</h5>
+                <button type="button" class="btn-close" (click)="closeErrorDetails()"></button>
+            </div>
+            <div class="modal-body">
+                <div class="error-detail-item">
+                    <strong>Level:</strong>
+                    <span class="badge" [class]="'badge-' + getErrorLevelColor(selectedError.level)">
+                        {{ selectedError.level }}
+                    </span>
+                </div>
+                <div class="error-detail-item">
+                    <strong>Timestamp:</strong>
+                    {{ selectedError.timestamp | date:'medium' }}
+                </div>
+                <div class="error-detail-item">
+                    <strong>Component:</strong>
+                    {{ selectedError.component }}
+                </div>
+                <div class="error-detail-item" *ngIf="selectedError.tableName">
+                    <strong>Table:</strong>
+                    {{ selectedError.tableName }}
+                </div>
+                <div class="error-detail-item" *ngIf="selectedError.recordNumber">
+                    <strong>Record Number:</strong>
+                    {{ selectedError.recordNumber }}
+                </div>
+                <div class="error-detail-item">
+                    <strong>Message:</strong>
+                    <div class="error-message-detail">{{ selectedError.message }}</div>
+                </div>
+                <div class="error-detail-item" *ngIf="selectedError.details">
+                    <strong>Details:</strong>
+                    <div class="error-details-detail">{{ selectedError.details }}</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="closeErrorDetails()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop fade" [class.show]="showErrorDetails" *ngIf="showErrorDetails"></div>

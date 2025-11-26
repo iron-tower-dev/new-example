@@ -1,0 +1,363 @@
+<div class="migration-config">
+    <!-- Header -->
+    <div class="config-header">
+        <div class="header-info">
+            <h4>Migration Configuration</h4>
+            <p class="text-muted">Configure and start a new database migration</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline-secondary btn-sm" (click)="exportConfiguration()">
+                <i class="fas fa-download"></i>
+                Export Config
+            </button>
+            <label class="btn btn-outline-secondary btn-sm">
+                <i class="fas fa-upload"></i>
+                Import Config
+                <input type="file" accept=".json" (change)="importConfiguration($event)" style="display: none;">
+            </label>
+            <button class="btn btn-outline-warning btn-sm" (click)="resetForm()">
+                <i class="fas fa-undo"></i>
+                Reset
+            </button>
+        </div>
+    </div>
+
+    <!-- Alerts -->
+    <div class="alert alert-success" *ngIf="success">
+        <i class="fas fa-check-circle"></i>
+        {{ success }}
+    </div>
+
+    <div class="alert alert-danger" *ngIf="error">
+        <i class="fas fa-exclamation-triangle"></i>
+        {{ error }}
+    </div>
+
+    <form [formGroup]="migrationForm" (ngSubmit)="onSubmit()">
+        <!-- Quick Presets -->
+        <div class="config-section">
+            <h5>Quick Presets</h5>
+            <div class="preset-buttons">
+                <button type="button" class="btn btn-outline-primary" (click)="onPresetChange('full')">
+                    <i class="fas fa-database"></i>
+                    Full Migration
+                </button>
+                <button type="button" class="btn btn-outline-info" (click)="onPresetChange('seeding-only')">
+                    <i class="fas fa-seedling"></i>
+                    Seeding Only
+                </button>
+                <button type="button" class="btn btn-outline-warning" (click)="onPresetChange('validation-only')">
+                    <i class="fas fa-check-double"></i>
+                    Validation Only
+                </button>
+                <button type="button" class="btn btn-outline-danger" (click)="onPresetChange('auth-removal')">
+                    <i class="fas fa-user-slash"></i>
+                    Auth Removal
+                </button>
+            </div>
+        </div>
+
+        <!-- General Options -->
+        <div class="config-section">
+            <h5>General Options</h5>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="clearExistingData"
+                            formControlName="clearExistingData">
+                        <label class="form-check-label" for="clearExistingData">
+                            Clear Existing Data
+                        </label>
+                        <small class="form-text text-muted">Remove all existing data before seeding</small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="createMissingTables"
+                            formControlName="createMissingTables">
+                        <label class="form-check-label" for="createMissingTables">
+                            Create Missing Tables
+                        </label>
+                        <small class="form-text text-muted">Automatically create tables that don't exist</small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="validateAgainstLegacy"
+                            formControlName="validateAgainstLegacy">
+                        <label class="form-check-label" for="validateAgainstLegacy">
+                            Validate Against Legacy
+                        </label>
+                        <small class="form-text text-muted">Compare results with legacy VB.NET system</small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="removeAuthentication"
+                            formControlName="removeAuthentication">
+                        <label class="form-check-label" for="removeAuthentication">
+                            Remove Authentication
+                        </label>
+                        <small class="form-text text-muted">Prepare for SSO by removing JWT auth</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="maxConcurrentOperations" class="form-label">Max Concurrent Operations</label>
+                    <input type="number" class="form-control" id="maxConcurrentOperations"
+                        formControlName="maxConcurrentOperations"
+                        [class.is-invalid]="isFieldInvalid('maxConcurrentOperations')">
+                    <div class="invalid-feedback">{{ getFieldError('maxConcurrentOperations') }}</div>
+                </div>
+                <div class="col-md-6">
+                    <label for="operationTimeoutMinutes" class="form-label">Operation Timeout (minutes)</label>
+                    <input type="number" class="form-control" id="operationTimeoutMinutes"
+                        formControlName="operationTimeoutMinutes"
+                        [class.is-invalid]="isFieldInvalid('operationTimeoutMinutes')">
+                    <div class="invalid-feedback">{{ getFieldError('operationTimeoutMinutes') }}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table Selection -->
+        <div class="config-section">
+            <h5>Table Selection</h5>
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="form-label">Include Tables (leave empty for all)</label>
+                    <div class="table-selection">
+                        <div *ngFor="let control of includeTablesArray.controls; let i = index"
+                            class="input-group mb-2">
+                            <select class="form-select" [formControlName]="i">
+                                <option value="">Select a table...</option>
+                                <option *ngFor="let table of availableTables" [value]="table">{{ table }}</option>
+                            </select>
+                            <button type="button" class="btn btn-outline-danger" (click)="removeIncludeTable(i)">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary btn-sm" (click)="addIncludeTable()">
+                            <i class="fas fa-plus"></i>
+                            Add Table
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Exclude Tables</label>
+                    <div class="table-selection">
+                        <div *ngFor="let control of excludeTablesArray.controls; let i = index"
+                            class="input-group mb-2">
+                            <select class="form-select" [formControlName]="i">
+                                <option value="">Select a table...</option>
+                                <option *ngFor="let table of availableTables" [value]="table">{{ table }}</option>
+                            </select>
+                            <button type="button" class="btn btn-outline-danger" (click)="removeExcludeTable(i)">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary btn-sm" (click)="addExcludeTable()">
+                            <i class="fas fa-plus"></i>
+                            Add Table
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seeding Options -->
+        <div class="config-section" formGroupName="seedingOptions">
+            <h5>Seeding Options</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="seedingClearData"
+                            formControlName="clearExistingData">
+                        <label class="form-check-label" for="seedingClearData">Clear Existing Data</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="seedingCreateTables"
+                            formControlName="createMissingTables">
+                        <label class="form-check-label" for="seedingCreateTables">Create Missing Tables</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="continueOnError"
+                            formControlName="continueOnError">
+                        <label class="form-check-label" for="continueOnError">Continue On Error</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="validateBeforeInsert"
+                            formControlName="validateBeforeInsert">
+                        <label class="form-check-label" for="validateBeforeInsert">Validate Before Insert</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="useTransactions"
+                            formControlName="useTransactions">
+                        <label class="form-check-label" for="useTransactions">Use Transactions</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="batchSize" class="form-label">Batch Size</label>
+                    <input type="number" class="form-control" id="batchSize" formControlName="batchSize"
+                        [class.is-invalid]="isFieldInvalid('seedingOptions.batchSize')">
+                    <div class="invalid-feedback">{{ getFieldError('seedingOptions.batchSize') }}</div>
+                </div>
+                <div class="col-md-6">
+                    <label for="commandTimeoutMinutes" class="form-label">Command Timeout (minutes)</label>
+                    <input type="number" class="form-control" id="commandTimeoutMinutes"
+                        formControlName="commandTimeoutMinutes"
+                        [class.is-invalid]="isFieldInvalid('seedingOptions.commandTimeoutMinutes')">
+                    <div class="invalid-feedback">{{ getFieldError('seedingOptions.commandTimeoutMinutes') }}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Validation Options -->
+        <div class="config-section" formGroupName="validationOptions">
+            <h5>Validation Options</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="compareQueryResults"
+                            formControlName="compareQueryResults">
+                        <label class="form-check-label" for="compareQueryResults">Compare Query Results</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="comparePerformance"
+                            formControlName="comparePerformance">
+                        <label class="form-check-label" for="comparePerformance">Compare Performance</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="generateDetailedReports"
+                            formControlName="generateDetailedReports">
+                        <label class="form-check-label" for="generateDetailedReports">Generate Detailed Reports</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="ignoreMinorDifferences"
+                            formControlName="ignoreMinorDifferences">
+                        <label class="form-check-label" for="ignoreMinorDifferences">Ignore Minor Differences</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="maxDiscrepanciesToReport" class="form-label">Max Discrepancies to Report</label>
+                    <input type="number" class="form-control" id="maxDiscrepanciesToReport"
+                        formControlName="maxDiscrepanciesToReport"
+                        [class.is-invalid]="isFieldInvalid('validationOptions.maxDiscrepanciesToReport')">
+                    <div class="invalid-feedback">{{ getFieldError('validationOptions.maxDiscrepanciesToReport') }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="performanceThresholdPercent" class="form-label">Performance Threshold (%)</label>
+                    <input type="number" step="0.1" class="form-control" id="performanceThresholdPercent"
+                        formControlName="performanceThresholdPercent"
+                        [class.is-invalid]="isFieldInvalid('validationOptions.performanceThresholdPercent')">
+                    <div class="invalid-feedback">{{ getFieldError('validationOptions.performanceThresholdPercent') }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="queryTimeoutMinutes" class="form-label">Query Timeout (minutes)</label>
+                    <input type="number" class="form-control" id="queryTimeoutMinutes"
+                        formControlName="queryTimeoutMinutes"
+                        [class.is-invalid]="isFieldInvalid('validationOptions.queryTimeoutMinutes')">
+                    <div class="invalid-feedback">{{ getFieldError('validationOptions.queryTimeoutMinutes') }}</div>
+                </div>
+                <div class="col-md-6">
+                    <label for="legacyConnectionString" class="form-label">Legacy Connection String</label>
+                    <input type="text" class="form-control" id="legacyConnectionString"
+                        formControlName="legacyConnectionString" placeholder="Connection string for legacy database">
+                </div>
+            </div>
+        </div>
+
+        <!-- Auth Removal Options -->
+        <div class="config-section" formGroupName="authRemovalOptions">
+            <h5>Authentication Removal Options</h5>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="createBackup"
+                            formControlName="createBackup">
+                        <label class="form-check-label" for="createBackup">Create Backup</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="removeFromApi"
+                            formControlName="removeFromApi">
+                        <label class="form-check-label" for="removeFromApi">Remove from API</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="removeFromFrontend"
+                            formControlName="removeFromFrontend">
+                        <label class="form-check-label" for="removeFromFrontend">Remove from Frontend</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="updateDocumentation"
+                            formControlName="updateDocumentation">
+                        <label class="form-check-label" for="updateDocumentation">Update Documentation</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="backupDirectory" class="form-label">Backup Directory</label>
+                    <input type="text" class="form-control" id="backupDirectory" formControlName="backupDirectory"
+                        [class.is-invalid]="isFieldInvalid('authRemovalOptions.backupDirectory')">
+                    <div class="invalid-feedback">{{ getFieldError('authRemovalOptions.backupDirectory') }}</div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Files to Exclude</label>
+                    <div class="files-selection">
+                        <div *ngFor="let control of filesToExcludeArray.controls; let i = index"
+                            class="input-group mb-2">
+                            <input type="text" class="form-control" [formControlName]="i"
+                                placeholder="File path or pattern">
+                            <button type="button" class="btn btn-outline-danger" (click)="removeFileToExclude(i)">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary btn-sm" (click)="addFileToExclude()">
+                            <i class="fas fa-plus"></i>
+                            Add File
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="config-actions">
+            <button type="submit" class="btn btn-primary btn-lg" [disabled]="isStarting || migrationForm.invalid">
+                <i class="fas fa-play" *ngIf="!isStarting"></i>
+                <i class="fas fa-spinner fa-spin" *ngIf="isStarting"></i>
+                {{ isStarting ? 'Starting Migration...' : 'Start Migration' }}
+            </button>
+        </div>
+    </form>
+</div>

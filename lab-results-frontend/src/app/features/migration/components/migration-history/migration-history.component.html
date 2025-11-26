@@ -1,0 +1,244 @@
+<div class="migration-history">
+    <!-- Header -->
+    <div class="history-header">
+        <div class="header-info">
+            <h4>Migration History</h4>
+            <p class="text-muted">View past migration executions and their results</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline-primary btn-sm" (click)="refresh()">
+                <i class="fas fa-sync-alt"></i>
+                Refresh
+            </button>
+        </div>
+    </div>
+
+    <!-- Statistics Summary -->
+    <div class="statistics-summary" *ngIf="statistics">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-list-alt text-primary"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">{{ statistics.totalMigrations }}</div>
+                        <div class="stat-label">Total Migrations</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle text-success"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">{{ statistics.successRate | number:'1.1-1' }}%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock text-info"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">{{ formatDuration(statistics.averageDuration) }}</div>
+                        <div class="stat-label">Avg Duration</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-database text-warning"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">{{ statistics.totalRecordsProcessed | number }}</div>
+                        <div class="stat-label">Records Processed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="statusFilter" class="form-label">Status Filter</label>
+                <select id="statusFilter" class="form-select" [(ngModel)]="statusFilter"
+                    (change)="onStatusFilterChange()">
+                    <option value="all">All Statuses</option>
+                    <option value="completed">Completed</option>
+                    <option value="failed">Failed</option>
+                    <option value="cancelled">Cancelled</option>
+                    <option value="inprogress">In Progress</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="dateFilter" class="form-label">Date Range</label>
+                <select id="dateFilter" class="form-select" [(ngModel)]="dateFilter" (change)="onDateFilterChange()">
+                    <option [value]="7">Last 7 days</option>
+                    <option [value]="30">Last 30 days</option>
+                    <option [value]="90">Last 90 days</option>
+                    <option [value]="365">Last year</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label">Results</label>
+                <div class="results-info">
+                    <span class="badge badge-secondary">{{ totalItems }} migrations found</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading State -->
+    <div class="loading-state" *ngIf="loading">
+        <div class="text-center py-5">
+            <i class="fas fa-spinner fa-spin fa-2x text-primary mb-3"></i>
+            <p>Loading migration history...</p>
+        </div>
+    </div>
+
+    <!-- Error State -->
+    <div class="error-state" *ngIf="error && !loading">
+        <div class="alert alert-danger">
+            <i class="fas fa-exclamation-triangle"></i>
+            {{ error }}
+        </div>
+    </div>
+
+    <!-- History Table -->
+    <div class="history-table" *ngIf="!loading && !error">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Migration ID</th>
+                        <th>Status</th>
+                        <th>Started</th>
+                        <th>Duration</th>
+                        <th>Progress</th>
+                        <th>Tables</th>
+                        <th>Records</th>
+                        <th>Errors</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let migration of getPaginatedHistory()">
+                        <td>
+                            <code class="migration-id">{{ migration.migrationId.substring(0, 8) }}...</code>
+                        </td>
+                        <td>
+                            <span class="badge" [class]="'badge-' + getStatusColor(migration.status)">
+                                {{ migration.status }}
+                            </span>
+                        </td>
+                        <td>
+                            <div class="date-info">
+                                <div>{{ migration.startTime | date:'short' }}</div>
+                                <small class="text-muted">{{ migration.startTime | date:'mediumDate' }}</small>
+                            </div>
+                        </td>
+                        <td>
+                            <span *ngIf="migration.duration">{{ formatDuration(migration.duration) }}</span>
+                            <span *ngIf="!migration.duration" class="text-muted">-</span>
+                        </td>
+                        <td>
+                            <div class="progress-info">
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar" [class]="'bg-' + getStatusColor(migration.status)"
+                                        [style.width.%]="migration.progressPercentage">
+                                    </div>
+                                </div>
+                                <small>{{ migration.progressPercentage | number:'1.0-0' }}%</small>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="count-info">
+                                <span>{{ migration.statistics.tablesProcessed }}</span>
+                                <small class="text-muted">/ {{ migration.statistics.totalTables }}</small>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="count-info">
+                                <span>{{ migration.statistics.recordsProcessed | number }}</span>
+                                <small class="text-muted">/ {{ migration.statistics.totalRecords | number }}</small>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="badge"
+                                [class]="migration.statistics.errorCount > 0 ? 'badge-danger' : 'badge-success'">
+                                {{ migration.statistics.errorCount }}
+                            </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="btn btn-sm btn-outline-primary"
+                                    (click)="downloadReport(migration.migrationId)" title="Download Report">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary"
+                                    (click)="downloadLogs(migration.migrationId)" title="Download Logs">
+                                    <i class="fas fa-file-alt"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" *ngIf="getPaginatedHistory().length === 0">
+            <div class="text-center py-5">
+                <i class="fas fa-history fa-3x text-muted mb-3"></i>
+                <h5>No Migration History</h5>
+                <p class="text-muted">No migrations found matching the current filters</p>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination-wrapper" *ngIf="getTotalPages() > 1">
+            <nav aria-label="Migration history pagination">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item" [class.disabled]="currentPage === 1">
+                        <a class="page-link" (click)="goToPage(currentPage - 1)" href="javascript:void(0)">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                    </li>
+
+                    <li *ngFor="let page of [].constructor(getTotalPages()); let i = index" class="page-item"
+                        [class.active]="currentPage === i + 1">
+                        <a class="page-link" (click)="goToPage(i + 1)" href="javascript:void(0)">
+                            {{ i + 1 }}
+                        </a>
+                    </li>
+
+                    <li class="page-item" [class.disabled]="currentPage === getTotalPages()">
+                        <a class="page-link" (click)="goToPage(currentPage + 1)" href="javascript:void(0)">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="pagination-info text-center">
+                <small class="text-muted">
+                    Showing {{ (currentPage - 1) * pageSize + 1 }} to
+                    {{ Math.min(currentPage * pageSize, totalItems) }} of
+                    {{ totalItems }} migrations
+                </small>
+            </div>
+        </div>
+    </div>
+</div>

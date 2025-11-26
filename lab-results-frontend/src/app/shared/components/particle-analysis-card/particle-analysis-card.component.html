@@ -1,0 +1,200 @@
+<mat-card class="particle-analysis-card">
+    <mat-card-header>
+        <mat-card-title>
+            <mat-icon>science</mat-icon>
+            Particle Analysis
+        </mat-card-title>
+        <mat-card-subtitle>
+            Microscopic particle identification and characterization
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <!-- Loading state -->
+        @if (isLoading()) {
+        <div class="loading-container">
+            <mat-icon class="loading-spinner">refresh</mat-icon>
+            <span>Loading particle analysis data...</span>
+        </div>
+        }
+
+        <!-- Error state -->
+        @if (errorMessage()) {
+        <div class="error-container">
+            <mat-icon color="warn">error</mat-icon>
+            <span>{{ errorMessage() }}</span>
+        </div>
+        }
+
+        <!-- Main content -->
+        @if (!isLoading() && !errorMessage()) {
+        <form [formGroup]="particleAnalysisForm" class="particle-analysis-form">
+            <div formArrayName="analyses" class="particle-types-container">
+
+                <!-- Overall severity display -->
+                @if (config?.enableSeverityCalculation && overallSeverity() > 0) {
+                <div class="overall-severity-display">
+                    <mat-icon [class]="'severity-icon severity-' + overallSeverity()"
+                        matTooltip="Overall Severity Level">
+                        warning
+                    </mat-icon>
+                    <span class="severity-text">
+                        Overall Severity: {{ overallSeverity() }}
+                    </span>
+                </div>
+                }
+
+                <!-- Particle type sections -->
+                @for (particleType of filteredParticleTypes(); track trackByParticleId($index, particleType); let i =
+                $index) {
+                <mat-expansion-panel class="particle-type-panel" [formGroupName]="i">
+
+                    <!-- Panel header -->
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="particle-header">
+                                <span class="particle-type-name">{{ particleType.type }}</span>
+                                <span class="particle-category-badge" [class]="'category-' + particleType.category">
+                                    {{ particleType.category }}
+                                </span>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            {{ particleType.description }}
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+
+                    <!-- Panel content -->
+                    <div class="particle-content">
+
+                        <!-- Particle images -->
+                        @if (showImages && (particleType.image1 || particleType.image2)) {
+                        <div class="particle-images">
+                            @if (particleType.image1) {
+                            <img [src]="particleType.image1" [alt]="particleType.type + ' - Image 1'"
+                                class="particle-image" loading="lazy">
+                            }
+                            @if (particleType.image2) {
+                            <img [src]="particleType.image2" [alt]="particleType.type + ' - Image 2'"
+                                class="particle-image" loading="lazy">
+                            }
+                        </div>
+                        }
+
+                        <!-- Analysis fields -->
+                        <div class="analysis-fields" formGroupName="subTypeValues">
+                            @for (category of subTypeCategories; track category.id) {
+                            <div class="analysis-field">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>{{ category.description }}</mat-label>
+                                    <mat-select [formControlName]="'category_' + category.id" [disabled]="readonly">
+                                        <mat-option [value]="null">Not Applicable</mat-option>
+                                        @for (subType of category.subTypes; track subType.value) {
+                                        <mat-option [value]="subType.value">
+                                            {{ subType.description }}
+                                        </mat-option>
+                                        }
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            }
+                        </div>
+
+                        <!-- Severity field -->
+                        @if (config?.enableSeverityCalculation) {
+                        <div class="severity-field">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Severity Level</mat-label>
+                                <mat-select formControlName="severity" [disabled]="readonly">
+                                    <mat-option [value]="0">None</mat-option>
+                                    <mat-option [value]="1">Low</mat-option>
+                                    <mat-option [value]="2">Moderate</mat-option>
+                                    <mat-option [value]="3">High</mat-option>
+                                    <mat-option [value]="4">Critical</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        }
+
+                        <!-- Comments field -->
+                        <div class="comments-field">
+                            <mat-form-field appearance="outline" class="full-width">
+                                <mat-label>Comments</mat-label>
+                                <textarea matInput formControlName="comments" [readonly]="readonly" rows="3"
+                                    placeholder="Enter observations, notes, or additional details...">
+                    </textarea>
+                            </mat-form-field>
+                        </div>
+
+                        <!-- Validation messages -->
+                        @if (validationResult().errors[particleType.id]) {
+                        <div class="validation-errors">
+                            @for (error of validationResult().errors[particleType.id]; track error) {
+                            <div class="error-message">
+                                <mat-icon color="warn">error</mat-icon>
+                                <span>{{ error }}</span>
+                            </div>
+                            }
+                        </div>
+                        }
+
+                        @if (validationResult().warnings[particleType.id]) {
+                        <div class="validation-warnings">
+                            @for (warning of validationResult().warnings[particleType.id]; track warning) {
+                            <div class="warning-message">
+                                <mat-icon color="accent">warning</mat-icon>
+                                <span>{{ warning }}</span>
+                            </div>
+                            }
+                        </div>
+                        }
+
+                    </div>
+                </mat-expansion-panel>
+                }
+            </div>
+
+            <!-- Summary section -->
+            @if (overallSeverity() > 0 || validationResult().warnings) {
+            <div class="analysis-summary">
+                <h4>Analysis Summary</h4>
+
+                @if (overallSeverity() > 0) {
+                <div class="summary-item">
+                    <strong>Overall Severity:</strong> {{ overallSeverity() }}
+                </div>
+                }
+
+                @if (validationResult().warnings && getWarningKeys().length > 0) {
+                <div class="summary-item">
+                    <strong>Recommendations:</strong>
+                    <ul>
+                        @for (particleId of getWarningKeys(); track particleId) {
+                        @for (warning of validationResult().warnings[+particleId]; track warning) {
+                        <li>{{ warning }}</li>
+                        }
+                        }
+                    </ul>
+                </div>
+                }
+            </div>
+            }
+
+        </form>
+        }
+    </mat-card-content>
+
+    <!-- Card actions -->
+    @if (!readonly) {
+    <mat-card-actions align="end">
+        <button mat-button type="button" (click)="resetForm()" matTooltip="Reset to initial values">
+            <mat-icon>refresh</mat-icon>
+            Reset
+        </button>
+        <button mat-button type="button" (click)="clearForm()" matTooltip="Clear all data">
+            <mat-icon>clear</mat-icon>
+            Clear
+        </button>
+    </mat-card-actions>
+    }
+</mat-card>

@@ -1,0 +1,17 @@
+Particle Counter Results
+Sample: TAG001
+Date: 2024-01-15
+
+Channel 4µm: 1250
+Channel 6µm: 625
+Channel 14µm: 125
+Channel 21µm: 62
+Channel 38µm: 12
+Channel 70µm: 3
+
+ISO Cleanliness Code: 20/18/15
+NAS 1638: 9
+
+Dilution: 1:1
+Volume Analyzed: 5.0 mL
+Temperature: 22°C

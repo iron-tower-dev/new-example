@@ -1,0 +1,27 @@
+EMISSION SPECTROSCOPY DATA
+Sample ID: TEST001
+Analysis Date: 2024-11-12
+Instrument: ICP-OES Spectrometer
+
+Element Concentrations (ppm):
+Na: 5.2
+Cr: 2.1
+Sn: 1.0
+Si: 15.3
+Mo: 3.2
+Ca: 2485.7
+Al: 8.1
+Ba: 1.2
+Mg: 12.4
+Ni: 1.1
+Mn: 2.3
+Zn: 847.2
+P: 752.8
+Ag: 0.0
+Pb: 5.1
+H: 0.0
+B: 24.8
+Cu: 15.2
+Fe: 25.1
+
+Analysis Complete
