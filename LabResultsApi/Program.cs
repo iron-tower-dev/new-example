@@ -34,7 +34,11 @@ builder.Services.AddCors(options =>
     {
         options.AddPolicy("AllowAngularApp", policy =>
         {
-            policy.WithOrigins("http://localhost:4200")
+            policy.WithOrigins(
+                    "http://localhost:4200",
+                    "http://localhost:5173",  // Vite dev server
+                    "http://localhost:38205"  // Alternative port
+                  )
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials();

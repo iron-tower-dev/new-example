@@ -67,7 +67,8 @@ public static class TestEndpoints
     }
 
     private static async Task<IResult> GetQualifiedTests(
-        ITestResultService testResultService)
+        ITestResultService testResultService,
+        ILogger<Program> logger)
     {
         try
         {
@@ -75,18 +76,18 @@ public static class TestEndpoints
             // TODO: Implement proper user qualification checking with Active Directory
             var allTests = await testResultService.GetTestsAsync();
             
-            // Remove duplicates and filter out invalid tests
-            var uniqueTests = allTests
-                .Where(t => t.Active && !string.IsNullOrEmpty(t.TestName))
-                .GroupBy(t => new { t.TestName, t.TestDescription })
-                .Select(g => g.OrderBy(t => t.TestId).First()) // Take the first occurrence of each unique test
-                .OrderBy(t => t.TestName)
-                .ToList();
+            logger.LogInformation("Retrieved {Count} tests from service", allTests.Count());
             
-            return Results.Ok(uniqueTests);
+            // GetTestsAsync already filters for active tests, so just return them
+            var testsList = allTests.ToList();
+            
+            logger.LogInformation("Returning {Count} qualified tests", testsList.Count);
+            
+            return Results.Ok(testsList);
         }
         catch (Exception ex)
         {
+            logger.LogError(ex, "Error retrieving qualified tests");
             return Results.Problem($"Error retrieving qualified tests: {ex.Message}");
         }
     }
