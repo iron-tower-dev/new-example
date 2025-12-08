@@ -196,7 +196,7 @@ public class OptimizedRawSqlService : IRawSqlService
             var results = await _context.EmSpectro
                 .FromSqlRaw(@"
                     SELECT ID, testID, trialNum, Na, Cr, Sn, Si, Mo, Ca, Al, Ba, Mg, 
-                           Ni, Mn, Zn, P, Ag, Pb, H, B, Cu, Fe, trialDate, status
+                           Ni, Mn, Zn, P, Ag, Pb, H, B, Cu, Fe, trialDate, Sb
                     FROM EmSpectro WITH (INDEX(IX_EmSpectro_ID_TestID))
                     WHERE ID = {0} AND testID = {1} 
                     ORDER BY trialNum", sampleId, testId)
@@ -232,12 +232,12 @@ public class OptimizedRawSqlService : IRawSqlService
             var result = await _context.Database.ExecuteSqlRawAsync(@"
                 INSERT INTO EmSpectro 
                 (ID, testID, trialNum, Na, Cr, Sn, Si, Mo, Ca, Al, Ba, Mg, 
-                 Ni, Mn, Zn, P, Ag, Pb, H, B, Cu, Fe, trialDate, status)
+                 Ni, Mn, Zn, P, Ag, Pb, H, B, Cu, Fe, trialDate, Sb)
                 VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, 
                         {12}, {13}, {14}, {15}, {16}, {17}, {18}, {19}, {20}, {21}, {22}, {23})",
                 data.Id, data.TestId, data.TrialNum, data.Na, data.Cr, data.Sn, data.Si,
                 data.Mo, data.Ca, data.Al, data.Ba, data.Mg, data.Ni, data.Mn, data.Zn,
-                data.P, data.Ag, data.Pb, data.H, data.B, data.Cu, data.Fe, data.TrialDate, data.Status);
+                data.P, data.Ag, data.Pb, data.H, data.B, data.Cu, data.Fe, data.TrialDate, data.Sb);
 
             // Invalidate cache
             var cacheKey = $"EmSpectro_{data.Id}_{data.TestId}";
@@ -271,11 +271,11 @@ public class OptimizedRawSqlService : IRawSqlService
                 UPDATE EmSpectro 
                 SET Na = {3}, Cr = {4}, Sn = {5}, Si = {6}, Mo = {7}, Ca = {8}, Al = {9}, Ba = {10}, 
                     Mg = {11}, Ni = {12}, Mn = {13}, Zn = {14}, P = {15}, Ag = {16}, Pb = {17}, 
-                    H = {18}, B = {19}, Cu = {20}, Fe = {21}, status = {22}
+                    H = {18}, B = {19}, Cu = {20}, Fe = {21}, Sb = {22}
                 WHERE ID = {0} AND testID = {1} AND trialNum = {2}",
                 data.Id, data.TestId, data.TrialNum, data.Na, data.Cr, data.Sn, data.Si,
                 data.Mo, data.Ca, data.Al, data.Ba, data.Mg, data.Ni, data.Mn, data.Zn,
-                data.P, data.Ag, data.Pb, data.H, data.B, data.Cu, data.Fe, data.Status);
+                data.P, data.Ag, data.Pb, data.H, data.B, data.Cu, data.Fe, data.Sb);
 
             // Invalidate cache
             var cacheKey = $"EmSpectro_{data.Id}_{data.TestId}";
@@ -607,5 +607,54 @@ public class OptimizedRawSqlService : IRawSqlService
         // Also invalidate related history cache
         var historyCacheKey = $"SampleHistory_{sampleId}_{testId}";
         _cache.Remove(historyCacheKey);
+    }
+
+    // Filter Residue and Debris Identification methods - delegate to original service
+    public async Task<FilterResidueResult?> GetFilterResidueAsync(int sampleId, int testId)
+    {
+        if (_originalService != null)
+            return await _originalService.GetFilterResidueAsync(sampleId, testId);
+        
+        throw new NotImplementedException("Filter Residue functionality requires RawSqlService");
+    }
+
+    public async Task<int> SaveFilterResidueAsync(FilterResidueResult filterResidue)
+    {
+        if (_originalService != null)
+            return await _originalService.SaveFilterResidueAsync(filterResidue);
+        
+        throw new NotImplementedException("Filter Residue functionality requires RawSqlService");
+    }
+
+    public async Task<int> DeleteFilterResidueAsync(int sampleId, int testId)
+    {
+        if (_originalService != null)
+            return await _originalService.DeleteFilterResidueAsync(sampleId, testId);
+        
+        throw new NotImplementedException("Filter Residue functionality requires RawSqlService");
+    }
+
+    public async Task<DebrisIdentificationResult?> GetDebrisIdentificationAsync(int sampleId, int testId)
+    {
+        if (_originalService != null)
+            return await _originalService.GetDebrisIdentificationAsync(sampleId, testId);
+        
+        throw new NotImplementedException("Debris Identification functionality requires RawSqlService");
+    }
+
+    public async Task<int> SaveDebrisIdentificationAsync(DebrisIdentificationResult debrisId)
+    {
+        if (_originalService != null)
+            return await _originalService.SaveDebrisIdentificationAsync(debrisId);
+        
+        throw new NotImplementedException("Debris Identification functionality requires RawSqlService");
+    }
+
+    public async Task<int> DeleteDebrisIdentificationAsync(int sampleId, int testId)
+    {
+        if (_originalService != null)
+            return await _originalService.DeleteDebrisIdentificationAsync(sampleId, testId);
+        
+        throw new NotImplementedException("Debris Identification functionality requires RawSqlService");
     }
 }

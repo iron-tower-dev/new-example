@@ -30,6 +30,16 @@ public interface IRawSqlService
     Task<int> DeleteParticleSubTypesAsync(int sampleId, int testId);
     Task<int> DeleteInspectFilterAsync(int sampleId, int testId);
     
+    // Filter Residue methods (Test ID 180)
+    Task<FilterResidueResult?> GetFilterResidueAsync(int sampleId, int testId);
+    Task<int> SaveFilterResidueAsync(FilterResidueResult filterResidue);
+    Task<int> DeleteFilterResidueAsync(int sampleId, int testId);
+    
+    // Debris Identification methods (Test ID 240)
+    Task<DebrisIdentificationResult?> GetDebrisIdentificationAsync(int sampleId, int testId);
+    Task<int> SaveDebrisIdentificationAsync(DebrisIdentificationResult debrisId);
+    Task<int> DeleteDebrisIdentificationAsync(int sampleId, int testId);
+    
     // Stored procedure and function support
     Task<List<T>> ExecuteStoredProcedureAsync<T>(string procedureName, params object[] parameters) where T : class;
     Task<T?> ExecuteFunctionAsync<T>(string functionName, params object[] parameters);

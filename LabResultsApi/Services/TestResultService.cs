@@ -31,14 +31,14 @@ public class TestResultService : ITestResultService
         try
         {
             var tests = await _context.Tests
-                .Where(t => t.Active)
-                .OrderBy(t => t.TestName)
+                .Where(t => t.Exclude != "Y")
+                .OrderBy(t => t.Name)
                 .Select(t => new TestDto
                 {
-                    TestId = t.TestId,
-                    TestName = t.TestName,
-                    TestDescription = t.TestDescription,
-                    Active = t.Active
+                    TestId = t.Id ?? 0,
+                    TestName = t.Name ?? string.Empty,
+                    TestDescription = t.Abbrev, // Use abbreviation as description
+                    Active = t.Exclude != "Y"
                 })
                 .ToListAsync();
 
@@ -60,16 +60,16 @@ public class TestResultService : ITestResultService
             // Get user qualifications and map to available tests
             var qualifiedTests = await (from q in _context.LubeTechQualifications
                                       join tsm in _context.TestStandMappings on q.TestStandId equals tsm.TestStandId
-                                      join t in _context.Tests on tsm.TestId equals t.TestId
+                                      join t in _context.Tests on (short?)tsm.TestId equals t.Id
                                       where q.EmployeeId == employeeId && 
-                                            t.Active && 
+                                            t.Exclude != "Y" && 
                                             tsm.IsActive
                                       select new TestDto
                                       {
-                                          TestId = t.TestId,
-                                          TestName = t.TestName,
-                                          TestDescription = t.TestDescription,
-                                          Active = t.Active
+                                          TestId = t.Id ?? 0,
+                                          TestName = t.Name ?? string.Empty,
+                                          TestDescription = t.Abbrev,
+                                          Active = t.Exclude != "Y"
                                       })
                                       .Distinct()
                                       .OrderBy(t => t.TestName)
@@ -92,13 +92,13 @@ public class TestResultService : ITestResultService
         try
         {
             var test = await _context.Tests
-                .Where(t => t.TestId == testId)
+                .Where(t => t.Id == testId)
                 .Select(t => new TestDto
                 {
-                    TestId = t.TestId,
-                    TestName = t.TestName,
-                    TestDescription = t.TestDescription,
-                    Active = t.Active
+                    TestId = t.Id ?? 0,
+                    TestName = t.Name ?? string.Empty,
+                    TestDescription = t.Abbrev,
+                    Active = t.Exclude != "Y"
                 })
                 .FirstOrDefaultAsync();
 

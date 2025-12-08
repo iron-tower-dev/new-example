@@ -37,7 +37,7 @@ public class ValidationService : IValidationService
                 return result;
             }
 
-            var testExists = await _context.Tests.AnyAsync(t => t.TestId == testId && t.Active);
+            var testExists = await _context.Tests.AnyAsync(t => t.Id == testId && t.Exclude != "Y");
             if (!testExists)
             {
                 result.AddError("TestId", "Test not found or inactive");
