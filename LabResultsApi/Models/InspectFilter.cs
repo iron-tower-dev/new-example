@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LabResultsApi.Models;
@@ -12,6 +13,7 @@ public class InspectFilter
     public short? TestId { get; set; }
     
     [Column("narrative")]
+    [MaxLength(4000)]
     public string? Narrative { get; set; }
     
     [Column("major")]

@@ -78,6 +78,8 @@ builder.Services.AddScoped<IAuthorizationService, AuthorizationService>();
 builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddScoped<IAuditService, AuditService>();
 builder.Services.AddScoped<IParticleAnalysisService, ParticleAnalysisService>();
+builder.Services.AddScoped<IParticleTestService, ParticleTestService>();
+builder.Services.AddScoped<IEmissionSpectroscopyService, EmissionSpectroscopyService>();
 
 // Critical gap-filling services
 builder.Services.AddScoped<ITestSchedulingService, TestSchedulingService>();
@@ -111,7 +113,7 @@ builder.Services.AddScoped<LabResultsApi.Services.Migration.IAuthenticationRemov
 builder.Services.AddSingleton<IPerformanceMonitoringService, PerformanceMonitoringService>();
 builder.Services.AddScoped<IDatabaseIndexingService, DatabaseIndexingService>();
 
-// Raw SQL services - register both original and optimized versions
+// Raw SQL services - temporarily keep for health checks and legacy endpoints
 builder.Services.AddScoped<RawSqlService>();
 builder.Services.AddScoped<IRawSqlService>(provider =>
 {
@@ -198,6 +200,7 @@ app.MapHistoricalResultsEndpoints();
 app.MapEmissionSpectroscopyEndpoints();
 app.MapLookupEndpoints();
 app.MapParticleAnalysisEndpoints();
+app.MapParticleTestEndpoints();
 app.MapPerformanceEndpoints();
 
 // Critical gap-filling endpoints

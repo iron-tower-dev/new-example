@@ -11,7 +11,6 @@ public class LabDbContext : DbContext
 
     // Entities with primary keys
     public DbSet<Sample> UsedLubeSamples { get; set; }
-    public DbSet<LubeSamplingPoint> LubeSamplingPoints { get; set; }
     public DbSet<Test> Tests { get; set; }
     public DbSet<Equipment> Equipment { get; set; }
     public DbSet<ParticleTypeDefinition> ParticleTypeDefinitions { get; set; }
@@ -34,6 +33,7 @@ public class LabDbContext : DbContext
     public DbSet<AuditLog> AuditLogs { get; set; }
 
     // Keyless entities (tables without primary keys)
+    public DbSet<LubeSamplingPoint> LubeSamplingPoints { get; set; }
     public DbSet<TestReading> TestReadings { get; set; }
     public DbSet<EmissionSpectroscopy> EmSpectro { get; set; }
     public DbSet<ParticleType> ParticleTypes { get; set; }
@@ -86,6 +86,7 @@ public class LabDbContext : DbContext
         });
 
         // Configure keyless entities
+        modelBuilder.Entity<LubeSamplingPoint>().HasNoKey();
         modelBuilder.Entity<TestReading>().HasNoKey();
         modelBuilder.Entity<EmissionSpectroscopy>().HasNoKey();
         modelBuilder.Entity<ParticleType>().HasNoKey();
@@ -131,8 +132,8 @@ public class LabDbContext : DbContext
 
         modelBuilder.Entity<Test>(entity =>
         {
-            entity.HasKey(e => e.TestId);
-            entity.Property(e => e.TestName).HasMaxLength(100);
+            entity.HasNoKey(); // Test table has no primary key
+            entity.ToTable("Test");
         });
 
         modelBuilder.Entity<Equipment>(entity =>

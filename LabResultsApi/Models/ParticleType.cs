@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LabResultsApi.Models;
@@ -15,8 +16,10 @@ public class ParticleType
     public int ParticleTypeDefinitionId { get; set; }
     
     [Column("Status")]
+    [MaxLength(20)]
     public string? Status { get; set; }
     
     [Column("Comments")]
+    [MaxLength(500)]
     public string? Comments { get; set; }
 }

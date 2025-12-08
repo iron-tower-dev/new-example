@@ -357,6 +357,78 @@ export class TestService {
     }
 
     /**
+     * Get Filter Residue results for a sample
+     */
+    getFilterResidueResults(sampleId: number, testId: number = 180): Observable<any> {
+        return this.http.get<any>(`/api/particle-tests/filter-residue/${sampleId}?testId=${testId}`).pipe(
+            catchError(error => {
+                this._error.set(`Failed to get Filter Residue results: ${error.message}`);
+                throw error;
+            })
+        );
+    }
+
+    /**
+     * Save Filter Residue results
+     */
+    saveFilterResidueResults(request: any): Observable<{ success: boolean; message: string; sampleId: number; testId: number; rowsAffected: number }> {
+        return this.http.post<{ success: boolean; message: string; sampleId: number; testId: number; rowsAffected: number }>('/api/particle-tests/filter-residue', request).pipe(
+            catchError(error => {
+                this._error.set(`Failed to save Filter Residue results: ${error.message}`);
+                throw error;
+            })
+        );
+    }
+
+    /**
+     * Delete Filter Residue results
+     */
+    deleteFilterResidueResults(sampleId: number, testId: number): Observable<{ success: boolean; message: string; sampleId: number; testId: number; rowsAffected: number }> {
+        return this.http.delete<{ success: boolean; message: string; sampleId: number; testId: number; rowsAffected: number }>(`/api/particle-tests/filter-residue/${sampleId}/${testId}`).pipe(
+            catchError(error => {
+                this._error.set(`Failed to delete Filter Residue results: ${error.message}`);
+                throw error;
+            })
+        );
+    }
+
+    /**
+     * Get Debris Identification results for a sample
+     */
+    getDebrisIdentificationResults(sampleId: number, testId: number = 240): Observable<any> {
+        return this.http.get<any>(`/api/particle-tests/debris-identification/${sampleId}?testId=${testId}`).pipe(
+            catchError(error => {
+                this._error.set(`Failed to get Debris Identification results: ${error.message}`);
+                throw error;
+            })
+        );
+    }
+
+    /**
+     * Save Debris Identification results
+     */
+    saveDebrisIdentificationResults(request: any): Observable<{ success: boolean; message: string; sampleId: number; testId: number; rowsAffected: number }> {
+        return this.http.post<{ success: boolean; message: string; sampleId: number; testId: number; rowsAffected: number }>('/api/particle-tests/debris-identification', request).pipe(
+            catchError(error => {
+                this._error.set(`Failed to save Debris Identification results: ${error.message}`);
+                throw error;
+            })
+        );
+    }
+
+    /**
+     * Delete Debris Identification results
+     */
+    deleteDebrisIdentificationResults(sampleId: number, testId: number): Observable<{ success: boolean; message: string; sampleId: number; testId: number; rowsAffected: number }> {
+        return this.http.delete<{ success: boolean; message: string; sampleId: number; testId: number; rowsAffected: number }>(`/api/particle-tests/debris-identification/${sampleId}/${testId}`).pipe(
+            catchError(error => {
+                this._error.set(`Failed to delete Debris Identification results: ${error.message}`);
+                throw error;
+            })
+        );
+    }
+
+    /**
      * Select a test for entry
      */
     selectTest(test: Test | null): void {

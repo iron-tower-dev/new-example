@@ -105,6 +105,26 @@ const routes: Routes = [
         loadComponent: () => import('./components/varnish-potential-rating-test-entry/varnish-potential-rating-test-entry.component').then(c => c.VarnishPotentialRatingTestEntryComponent),
         data: { title: 'Varnish Potential Rating Test Entry' }
     },
+    {
+        path: 'ft-ir/:sampleId',
+        loadComponent: () => import('./components/ftir-test-entry/ftir-test-entry.component').then(c => c.FtirTestEntryComponent),
+        data: { title: 'FT-IR Test Entry' }
+    },
+    {
+        path: 'filter-residue/:sampleId',
+        loadComponent: () => import('./components/filter-residue-test-entry/filter-residue-test-entry.component').then(c => c.FilterResidueTestEntryComponent),
+        data: { title: 'Filter Residue Test Entry' }
+    },
+    {
+        path: 'debris-identification/:sampleId',
+        loadComponent: () => import('./components/debris-identification-test-entry/debris-identification-test-entry.component').then(c => c.DebrisIdentificationTestEntryComponent),
+        data: { title: 'Debris Identification Test Entry' }
+    },
+    {
+        path: 'rheometer/:sampleId',
+        loadComponent: () => import('./components/rheometer-test-entry/rheometer-test-entry.component').then(c => c.RheometerTestEntryComponent),
+        data: { title: 'Rheometer Test Entry' }
+    },
 
     // Test workspace routes (fallback for tests without dedicated components)
     {

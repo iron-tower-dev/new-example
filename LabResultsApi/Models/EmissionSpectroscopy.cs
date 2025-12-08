@@ -78,6 +78,4 @@ public class EmissionSpectroscopy
     
     [Column("Sb")]
     public double? Sb { get; set; }
-    
-    public string? Status { get; set; }
 }

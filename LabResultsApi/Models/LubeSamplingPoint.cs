@@ -1,59 +1,63 @@
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LabResultsApi.Models;
 
+[Keyless]
 [Table("Lube_Sampling_Point")]
 public class LubeSamplingPoint
 {
-    [Key]
-    public int Id { get; set; }
-    
     [Column("tagNumber")]
-    [MaxLength(50)]
+    [MaxLength(22)]
     public string? TagNumber { get; set; }
     
     [Column("component")]
-    [MaxLength(10)]
+    [MaxLength(3)]
     public string? Component { get; set; }
     
     [Column("location")]
-    [MaxLength(10)]
+    [MaxLength(3)]
     public string? Location { get; set; }
     
     [Column("lubeClassItemNumber")]
+    [MaxLength(10)]
     public string? LubeClassItemNumber { get; set; }
     
     [Column("lubeQuantityRequired")]
-    public decimal? LubeQuantityRequired { get; set; }
+    public double? LubeQuantityRequired { get; set; }
     
     [Column("lubeUnitsOfMeasure")]
+    [MaxLength(3)]
     public string? LubeUnitsOfMeasure { get; set; }
     
     [Column("testCategory")]
+    [MaxLength(1)]
     public string? TestCategory { get; set; }
     
     [Column("qualityClass")]
-    [MaxLength(10)]
+    [MaxLength(6)]
     public string? QualityClass { get; set; }
     
     [Column("pricingPackageId")]
-    public int? PricingPackageId { get; set; }
+    public short? PricingPackageId { get; set; }
     
     [Column("testPricesId")]
-    public int? TestPricesId { get; set; }
+    public short? TestPricesId { get; set; }
     
     [Column("lastSampleDate")]
     public DateTime? LastSampleDate { get; set; }
     
     [Column("changeTaskNumber")]
+    [MaxLength(6)]
     public string? ChangeTaskNumber { get; set; }
     
     [Column("changeIntervalType")]
+    [MaxLength(1)]
     public string? ChangeIntervalType { get; set; }
     
     [Column("changeIntervalNumber")]
-    public int? ChangeIntervalNumber { get; set; }
+    public byte? ChangeIntervalNumber { get; set; }
     
     [Column("lastChangeDate")]
     public DateTime? LastChangeDate { get; set; }
@@ -62,11 +66,12 @@ public class LubeSamplingPoint
     public bool? InProgram { get; set; }
     
     [Column("testsScheduled")]
-    public int? TestsScheduled { get; set; }
+    public bool? TestsScheduled { get; set; }
     
     [Column("applid")]
     public int? ApplId { get; set; }
     
     [Column("material_info")]
+    [MaxLength(500)]
     public string? MaterialInfo { get; set; }
 }

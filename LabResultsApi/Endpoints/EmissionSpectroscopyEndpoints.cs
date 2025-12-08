@@ -115,7 +115,7 @@ public static class EmissionSpectroscopyEndpoints
             // Map DTO to entity
             var entity = mapper.Map<EmissionSpectroscopy>(createDto);
             entity.TrialDate = DateTime.Now;
-            entity.Status = createDto.Status ?? "E"; // Default to 'E' (In Progress)
+            // Note: Status property removed from model as it doesn't exist in SQL table
 
             // Save the data
             var result = await rawSqlService.SaveEmissionSpectroscopyAsync(entity);

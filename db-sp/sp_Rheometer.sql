@@ -259,7 +259,7 @@ if (@vType=3)
 			Calc3 as Val1
 		FROM         
 			dbo.vwRheometer 
-		WHERE     
+		WHERE     
 			(TestType = @vType)
 
 		

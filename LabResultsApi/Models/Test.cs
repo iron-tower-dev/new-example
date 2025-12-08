@@ -6,16 +6,41 @@ namespace LabResultsApi.Models;
 [Table("Test")]
 public class Test
 {
-    [Key]
-    [Column("testID")]
-    public int TestId { get; set; }
+    [Column("ID")]
+    public short? Id { get; set; }
     
-    [Column("testName")]
-    public string TestName { get; set; } = string.Empty;
+    [Column("name")]
+    [MaxLength(40)]
+    public string? Name { get; set; }
     
-    [Column("testDescription")]
-    public string? TestDescription { get; set; }
+    [Column("testStandID")]
+    public short? TestStandId { get; set; }
     
-    [Column("active")]
-    public bool Active { get; set; }
+    [Column("sampleVolumeRequired")]
+    public short? SampleVolumeRequired { get; set; }
+    
+    [Column("exclude")]
+    [MaxLength(1)]
+    public string? Exclude { get; set; }
+    
+    [Column("abbrev")]
+    [MaxLength(12)]
+    public string? Abbrev { get; set; }
+    
+    [Column("displayGroupId")]
+    public short? DisplayGroupId { get; set; }
+    
+    [Column("groupname")]
+    [MaxLength(30)]
+    public string? GroupName { get; set; }
+    
+    [Column("Lab")]
+    public bool? Lab { get; set; }
+    
+    [Column("Schedule")]
+    public bool? Schedule { get; set; }
+    
+    [Column("ShortAbbrev")]
+    [MaxLength(6)]
+    public string? ShortAbbrev { get; set; }
 }
