@@ -1,15 +1,15 @@
 namespace LabResultsApi.DTOs;
 
-public class ParticleSubTypeCategoryDto
+public class ParticleSubTypeCategoryDefinitionDto
 {
     public int Id { get; set; }
     public string? Description { get; set; }
     public bool Active { get; set; }
     public int SortOrder { get; set; }
-    public List<ParticleSubTypeDto> SubTypes { get; set; } = new();
+    public List<ParticleSubTypeDefinitionDto> SubTypes { get; set; } = new();
 }
 
-public class ParticleSubTypeDto
+public class ParticleSubTypeDefinitionDto
 {
     public int ParticleSubTypeCategoryId { get; set; }
     public int Value { get; set; }

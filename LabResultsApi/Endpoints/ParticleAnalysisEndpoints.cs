@@ -14,13 +14,13 @@ public static class ParticleAnalysisEndpoints
         group.MapGet("/particle-types", GetParticleTypes)
             .WithName("GetParticleTypes")
             .WithSummary("Get all active particle type definitions")
-            .Produces<IEnumerable<ParticleTypeDto>>(200)
+            .Produces<IEnumerable<ParticleTypeDefinitionDto>>(200)
             .Produces(500);
 
         group.MapGet("/sub-type-categories", GetSubTypeCategories)
             .WithName("GetSubTypeCategories")
             .WithSummary("Get all active particle sub-type categories with their definitions")
-            .Produces<IEnumerable<ParticleSubTypeCategoryDto>>(200)
+            .Produces<IEnumerable<ParticleSubTypeCategoryDefinitionDto>>(200)
             .Produces(500);
     }
 

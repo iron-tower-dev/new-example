@@ -16,7 +16,7 @@ public class ParticleAnalysisService : IParticleAnalysisService
         _logger = logger;
     }
 
-    public async Task<IEnumerable<ParticleTypeDto>> GetParticleTypesAsync()
+    public async Task<IEnumerable<ParticleTypeDefinitionDto>> GetParticleTypesAsync()
     {
         _logger.LogInformation("Getting particle type definitions");
         
@@ -25,7 +25,7 @@ public class ParticleAnalysisService : IParticleAnalysisService
             var particleTypes = await _context.ParticleTypeDefinitions
                 .Where(pt => pt.Active == "1")
                 .OrderBy(pt => pt.SortOrder)
-                .Select(pt => new ParticleTypeDto
+                .Select(pt => new ParticleTypeDefinitionDto
                 {
                     Id = pt.Id,
                     Type = pt.Type,
@@ -47,7 +47,7 @@ public class ParticleAnalysisService : IParticleAnalysisService
         }
     }
 
-    public async Task<IEnumerable<ParticleSubTypeCategoryDto>> GetSubTypeCategoriesAsync()
+    public async Task<IEnumerable<ParticleSubTypeCategoryDefinitionDto>> GetSubTypeCategoriesAsync()
     {
         _logger.LogInformation("Getting particle sub-type categories");
         
@@ -66,7 +66,7 @@ public class ParticleAnalysisService : IParticleAnalysisService
                 .ToListAsync();
 
             // Build the result with sub-types grouped by category
-            var result = categories.Select(category => new ParticleSubTypeCategoryDto
+            var result = categories.Select(category => new ParticleSubTypeCategoryDefinitionDto
             {
                 Id = category.Id,
                 Description = category.Description,
@@ -74,7 +74,7 @@ public class ParticleAnalysisService : IParticleAnalysisService
                 SortOrder = category.SortOrder ?? 0,
                 SubTypes = subTypes
                     .Where(st => st.ParticleSubTypeCategoryId == category.Id)
-                    .Select(st => new ParticleSubTypeDto
+                    .Select(st => new ParticleSubTypeDefinitionDto
                     {
                         ParticleSubTypeCategoryId = st.ParticleSubTypeCategoryId,
                         Value = st.Value,

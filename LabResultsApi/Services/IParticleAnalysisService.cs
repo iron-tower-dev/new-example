@@ -6,8 +6,8 @@ namespace LabResultsApi.Services;
 public interface IParticleAnalysisService
 {
     // Definition methods
-    Task<IEnumerable<ParticleTypeDto>> GetParticleTypesAsync();
-    Task<IEnumerable<ParticleSubTypeCategoryDto>> GetSubTypeCategoriesAsync();
+    Task<IEnumerable<ParticleTypeDefinitionDto>> GetParticleTypesAsync();
+    Task<IEnumerable<ParticleSubTypeCategoryDefinitionDto>> GetSubTypeCategoriesAsync();
     
     // CRUD methods for particle analysis data
     Task<List<ParticleType>> GetParticleTypeDataAsync(int sampleId, int testId);
