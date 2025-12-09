@@ -2,20 +2,17 @@ using LabResultsApi.Data;
 using LabResultsApi.DTOs;
 using LabResultsApi.Models;
 using Microsoft.EntityFrameworkCore;
-using AutoMapper;
 
 namespace LabResultsApi.Services;
 
 public class EquipmentService : IEquipmentService
 {
     private readonly LabDbContext _context;
-    private readonly IMapper _mapper;
     private readonly ILogger<EquipmentService> _logger;
 
-    public EquipmentService(LabDbContext context, IMapper mapper, ILogger<EquipmentService> logger)
+    public EquipmentService(LabDbContext context, ILogger<EquipmentService> logger)
     {
         _context = context;
-        _mapper = mapper;
         _logger = logger;
     }
 
@@ -233,7 +230,7 @@ public class EquipmentService : IEquipmentService
                 .ThenBy(e => e.EquipName)
                 .ToListAsync();
 
-            return _mapper.Map<List<EquipmentDto>>(equipment);
+            return EquipmentDto.ToDtoList(equipment);
         }
         catch (Exception ex)
         {
@@ -249,7 +246,7 @@ public class EquipmentService : IEquipmentService
             var equipment = await _context.Equipment
                 .FirstOrDefaultAsync(e => e.Id == id);
 
-            return equipment != null ? _mapper.Map<EquipmentDto>(equipment) : null;
+            return equipment != null ? EquipmentDto.ToDto(equipment) : null;
         }
         catch (Exception ex)
         {

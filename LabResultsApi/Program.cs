@@ -59,9 +59,6 @@ builder.Services.AddCors(options =>
     }
 });
 
-// Add AutoMapper
-builder.Services.AddAutoMapper(typeof(Program));
-
 // Add controllers
 builder.Services.AddControllers();
 

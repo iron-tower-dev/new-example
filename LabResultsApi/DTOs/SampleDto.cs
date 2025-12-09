@@ -1,3 +1,5 @@
+using LabResultsApi.Models;
+
 namespace LabResultsApi.DTOs;
 
 public class SampleDto
@@ -33,6 +35,78 @@ public class SampleDto
     
     // From Lube_Sampling_Point JOIN
     public string? QualityClass { get; set; }
+
+    public static SampleDto ToDto(Sample entity)
+    {
+        return new SampleDto
+        {
+            Id = entity.Id,
+            TagNumber = entity.TagNumber,
+            Component = entity.Component,
+            Location = entity.Location,
+            LubeType = entity.LubeType,
+            WoNumber = entity.WoNumber,
+            TrackingNumber = entity.TrackingNumber,
+            WarehouseId = entity.WarehouseId,
+            BatchNumber = entity.BatchNumber,
+            ClassItem = entity.ClassItem,
+            SampleDate = entity.SampleDate,
+            ReceivedOn = entity.ReceivedOn,
+            SampledBy = entity.SampledBy,
+            Status = entity.Status,
+            CmptSelectFlag = entity.CmptSelectFlag,
+            NewUsedFlag = entity.NewUsedFlag,
+            EntryId = entity.EntryId,
+            ValidateId = entity.ValidateId,
+            TestPricesId = entity.TestPricesId,
+            PricingPackageId = entity.PricingPackageId,
+            Evaluation = entity.Evaluation,
+            SiteId = entity.SiteId,
+            ResultsReviewDate = entity.ResultsReviewDate,
+            ResultsAvailDate = entity.ResultsAvailDate,
+            ResultsReviewId = entity.ResultsReviewId,
+            StoreSource = entity.StoreSource,
+            Schedule = entity.Schedule,
+            ReturnedDate = entity.ReturnedDate,
+            QualityClass = entity.QualityClass
+        };
+    }
+
+    public static Sample ToEntity(SampleDto dto)
+    {
+        return new Sample
+        {
+            Id = dto.Id,
+            TagNumber = dto.TagNumber,
+            Component = dto.Component,
+            Location = dto.Location,
+            LubeType = dto.LubeType,
+            WoNumber = dto.WoNumber,
+            TrackingNumber = dto.TrackingNumber,
+            WarehouseId = dto.WarehouseId,
+            BatchNumber = dto.BatchNumber,
+            ClassItem = dto.ClassItem,
+            SampleDate = dto.SampleDate,
+            ReceivedOn = dto.ReceivedOn,
+            SampledBy = dto.SampledBy,
+            Status = dto.Status,
+            CmptSelectFlag = dto.CmptSelectFlag,
+            NewUsedFlag = dto.NewUsedFlag,
+            EntryId = dto.EntryId,
+            ValidateId = dto.ValidateId,
+            TestPricesId = dto.TestPricesId,
+            PricingPackageId = dto.PricingPackageId,
+            Evaluation = dto.Evaluation,
+            SiteId = dto.SiteId,
+            ResultsReviewDate = dto.ResultsReviewDate,
+            ResultsAvailDate = dto.ResultsAvailDate,
+            ResultsReviewId = dto.ResultsReviewId,
+            StoreSource = dto.StoreSource,
+            Schedule = dto.Schedule,
+            ReturnedDate = dto.ReturnedDate,
+            QualityClass = dto.QualityClass
+        };
+    }
 }
 
 public class SampleHistoryDto

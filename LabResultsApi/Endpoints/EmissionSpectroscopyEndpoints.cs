@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using AutoMapper;
 using LabResultsApi.Services;
 using LabResultsApi.Models;
 using LabResultsApi.DTOs;
@@ -56,8 +55,7 @@ public static class EmissionSpectroscopyEndpoints
     private static async Task<IResult> GetEmissionSpectroscopyData(
         int sampleId, 
         int testId, 
-        IRawSqlService rawSqlService, 
-        IMapper mapper,
+        IRawSqlService rawSqlService,
         ILogger<Program> logger)
     {
         try
@@ -73,7 +71,7 @@ public static class EmissionSpectroscopyEndpoints
             }
 
             var data = await rawSqlService.GetEmissionSpectroscopyAsync(sampleId, testId);
-            var dtos = mapper.Map<List<EmissionSpectroscopyDto>>(data);
+            var dtos = EmissionSpectroscopyDto.ToDtoList(data);
 
             logger.LogInformation("Retrieved {Count} emission spectroscopy records for sample {SampleId}, test {TestId}", 
                 dtos.Count, sampleId, testId);
@@ -90,7 +88,6 @@ public static class EmissionSpectroscopyEndpoints
     private static async Task<IResult> CreateEmissionSpectroscopyData(
         [FromBody] EmissionSpectroscopyCreateDto createDto,
         IRawSqlService rawSqlService,
-        IMapper mapper,
         ILogger<Program> logger)
     {
         try
@@ -113,7 +110,7 @@ public static class EmissionSpectroscopyEndpoints
             }
 
             // Map DTO to entity
-            var entity = mapper.Map<EmissionSpectroscopy>(createDto);
+            var entity = createDto.ToEntity();
             entity.TrialDate = DateTime.Now;
             // Note: Status property removed from model as it doesn't exist in SQL table
 
@@ -128,7 +125,7 @@ public static class EmissionSpectroscopyEndpoints
             }
 
             // Return the created data
-            var responseDto = mapper.Map<EmissionSpectroscopyDto>(entity);
+            var responseDto = EmissionSpectroscopyDto.ToDto(entity);
             responseDto.ScheduleFerrography = createDto.ScheduleFerrography;
 
             logger.LogInformation("Created emission spectroscopy data for sample {SampleId}, test {TestId}, trial {TrialNum}", 
@@ -150,7 +147,6 @@ public static class EmissionSpectroscopyEndpoints
         int trialNum,
         [FromBody] EmissionSpectroscopyUpdateDto updateDto,
         IRawSqlService rawSqlService,
-        IMapper mapper,
         ILogger<Program> logger)
     {
         try
@@ -176,7 +172,7 @@ public static class EmissionSpectroscopyEndpoints
             }
 
             // Map update DTO to existing entity
-            mapper.Map(updateDto, existingRecord);
+            updateDto.UpdateEntity(existingRecord);
             existingRecord.Id = sampleId;
             existingRecord.TestId = testId;
             existingRecord.TrialNum = trialNum;
@@ -192,7 +188,7 @@ public static class EmissionSpectroscopyEndpoints
             }
 
             // Return the updated data
-            var responseDto = mapper.Map<EmissionSpectroscopyDto>(existingRecord);
+            var responseDto = EmissionSpectroscopyDto.ToDto(existingRecord);
             responseDto.ScheduleFerrography = updateDto.ScheduleFerrography;
 
             logger.LogInformation("Updated emission spectroscopy data for sample {SampleId}, test {TestId}, trial {TrialNum}", 

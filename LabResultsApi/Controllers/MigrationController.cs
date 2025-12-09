@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using LabResultsApi.Services.Migration;
 using LabResultsApi.DTOs.Migration;
 using LabResultsApi.Models.Migration;
-using AutoMapper;
 using System.Text.Json;
 
 namespace LabResultsApi.Controllers;
@@ -12,16 +11,13 @@ namespace LabResultsApi.Controllers;
 public class MigrationController : ControllerBase
 {
     private readonly IMigrationControlService _migrationService;
-    private readonly IMapper _mapper;
     private readonly ILogger<MigrationController> _logger;
 
     public MigrationController(
         IMigrationControlService migrationService,
-        IMapper mapper,
         ILogger<MigrationController> logger)
     {
         _migrationService = migrationService;
-        _mapper = mapper;
         _logger = logger;
     }
 
@@ -38,9 +34,9 @@ public class MigrationController : ControllerBase
                 return Conflict("A migration is already in progress");
             }
 
-            var options = _mapper.Map<MigrationOptions>(request.Options);
+            var options = request.Options.ToModel();
             var result = await _migrationService.ExecuteFullMigrationAsync(options);
-            var statusDto = _mapper.Map<MigrationStatusDto>(result);
+            var statusDto = result.ToDto();
 
             _logger.LogInformation("Migration started with ID {MigrationId}", result.MigrationId);
             
@@ -72,7 +68,7 @@ public class MigrationController : ControllerBase
                 });
             }
 
-            var statusDto = _mapper.Map<MigrationStatusDto>(currentMigration);
+            var statusDto = currentMigration.ToDto();
             return Ok(statusDto);
         }
         catch (Exception ex)
@@ -122,7 +118,7 @@ public class MigrationController : ControllerBase
                 return NotFound($"Migration with ID {migrationId} not found");
             }
 
-            var reportDto = _mapper.Map<MigrationReportDto>(result);
+            var reportDto = result.ToReportDto();
             return Ok(reportDto);
         }
         catch (Exception ex)
@@ -141,7 +137,7 @@ public class MigrationController : ControllerBase
         try
         {
             var history = await _migrationService.GetMigrationHistoryAsync(limit);
-            var historyDto = _mapper.Map<List<MigrationStatusDto>>(history);
+            var historyDto = history.Select(h => h.ToDto()).ToList();
             
             return Ok(historyDto);
         }
@@ -190,7 +186,7 @@ public class MigrationController : ControllerBase
                 MigrationId = currentMigration.MigrationId,
                 ProgressPercentage = currentMigration.Statistics.ProgressPercentage,
                 CurrentOperation = currentMigration.CurrentOperation ?? "Unknown",
-                Statistics = _mapper.Map<MigrationStatisticsDto>(currentMigration.Statistics),
+                Statistics = currentMigration.Statistics.ToDto(),
                 EstimatedTimeRemaining = currentMigration.EstimatedTimeRemaining,
                 StartTime = currentMigration.StartTime,
                 ElapsedTime = DateTime.UtcNow - currentMigration.StartTime,
@@ -221,7 +217,7 @@ public class MigrationController : ControllerBase
                 return NotFound($"Migration with ID {migrationId} not found");
             }
 
-            var reportDto = _mapper.Map<MigrationReportDto>(result);
+            var reportDto = result.ToReportDto();
 
             switch (format.ToLowerInvariant())
             {

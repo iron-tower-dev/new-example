@@ -1,3 +1,5 @@
+using LabResultsApi.Models;
+
 namespace LabResultsApi.DTOs;
 
 public class TestDto
@@ -6,6 +8,28 @@ public class TestDto
     public string TestName { get; set; } = string.Empty;
     public string? TestDescription { get; set; }
     public bool Active { get; set; }
+
+    public static TestDto ToDto(Test entity)
+    {
+        return new TestDto
+        {
+            TestId = entity.Id ?? 0,
+            TestName = entity.Name ?? string.Empty,
+            TestDescription = entity.Abbrev,
+            Active = entity.Exclude != "Y"
+        };
+    }
+
+    public static Test ToEntity(TestDto dto)
+    {
+        return new Test
+        {
+            Id = (short)dto.TestId,
+            Name = dto.TestName,
+            Abbrev = dto.TestDescription,
+            Exclude = dto.Active ? null : "Y"
+        };
+    }
 }
 
 public class TestTemplateDto
