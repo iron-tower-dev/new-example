@@ -1,12 +1,13 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace LabResultsApi.Models;
 
+[Keyless]
 [Table("UsedLubeSamples")]
 public class Sample
 {
-    [Key]
     [Column("ID")]
     public int Id { get; set; }
     
@@ -105,9 +106,4 @@ public class Sample
     
     [Column("returnedDate")]
     public DateTime? ReturnedDate { get; set; }
-    
-    // Navigation property for quality class (from Lube_Sampling_Point)
-    // This is populated via JOIN, not a direct column
-    [NotMapped]
-    public string? QualityClass { get; set; }
 }

@@ -9,9 +9,18 @@ public class LabDbContext : DbContext
     {
     }
 
-    // Entities with primary keys
+    // Keyless entities (tables without primary keys)
     public DbSet<Sample> UsedLubeSamples { get; set; }
     public DbSet<Test> Tests { get; set; }
+    public DbSet<LubeTechQualification> LubeTechQualifications { get; set; }
+    public DbSet<LubeSamplingPoint> LubeSamplingPoints { get; set; }
+    public DbSet<TestReading> TestReadings { get; set; }
+    public DbSet<EmissionSpectroscopy> EmSpectro { get; set; }
+    public DbSet<ParticleType> ParticleTypes { get; set; }
+    public DbSet<ParticleSubType> ParticleSubTypes { get; set; }
+    public DbSet<InspectFilter> InspectFilters { get; set; }
+
+    // Entities with primary keys
     public DbSet<Equipment> Equipment { get; set; }
     public DbSet<ParticleTypeDefinition> ParticleTypeDefinitions { get; set; }
     public DbSet<ParticleSubTypeCategoryDefinition> ParticleSubTypeCategoryDefinitions { get; set; }
@@ -19,26 +28,10 @@ public class LabDbContext : DbContext
     public DbSet<Comment> Comments { get; set; }
     public DbSet<NasLookup> NasLookup { get; set; }
     public DbSet<NlgiLookup> NlgiLookup { get; set; }
-
-    // Authentication entities
     public DbSet<LubeTech> LubeTechs { get; set; }
-    public DbSet<LubeTechQualification> LubeTechQualifications { get; set; }
     public DbSet<Reviewer> Reviewers { get; set; }
-    
-    // Test stand entities
     public DbSet<TestStand> TestStands { get; set; }
-    public DbSet<TestStandMapping> TestStandMappings { get; set; }
-    
-    // Audit trail
     public DbSet<AuditLog> AuditLogs { get; set; }
-
-    // Keyless entities (tables without primary keys)
-    public DbSet<LubeSamplingPoint> LubeSamplingPoints { get; set; }
-    public DbSet<TestReading> TestReadings { get; set; }
-    public DbSet<EmissionSpectroscopy> EmSpectro { get; set; }
-    public DbSet<ParticleType> ParticleTypes { get; set; }
-    public DbSet<ParticleSubType> ParticleSubTypes { get; set; }
-    public DbSet<InspectFilter> InspectFilters { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -71,21 +64,9 @@ public class LabDbContext : DbContext
             entity.ToTable("TestStand");
         });
 
-        modelBuilder.Entity<TestStandMapping>(entity =>
-        {
-            entity.HasKey(e => new { e.TestStandId, e.TestId });
-            entity.ToTable("TestStandMapping");
-            
-            entity.HasOne(e => e.TestStand)
-                .WithMany()
-                .HasForeignKey(e => e.TestStandId);
-                
-            entity.HasOne(e => e.Test)
-                .WithMany()
-                .HasForeignKey(e => e.TestId);
-        });
-
         // Configure keyless entities
+        modelBuilder.Entity<Sample>().HasNoKey();
+        modelBuilder.Entity<Test>().HasNoKey();
         modelBuilder.Entity<LubeSamplingPoint>().HasNoKey();
         modelBuilder.Entity<TestReading>().HasNoKey();
         modelBuilder.Entity<EmissionSpectroscopy>().HasNoKey();
@@ -120,20 +101,13 @@ public class LabDbContext : DbContext
         modelBuilder.Entity<InspectFilter>().ToTable("InspectFilter");
         modelBuilder.Entity<Comment>().ToTable("Comments");
 
-        // Configure any additional constraints or relationships
+        // Configure property constraints for keyless entities
         modelBuilder.Entity<Sample>(entity =>
         {
-            entity.HasKey(e => e.Id);
             entity.Property(e => e.TagNumber).HasMaxLength(50);
             entity.Property(e => e.Component).HasMaxLength(100);
             entity.Property(e => e.Location).HasMaxLength(100);
             entity.Property(e => e.LubeType).HasMaxLength(50);
-        });
-
-        modelBuilder.Entity<Test>(entity =>
-        {
-            entity.HasNoKey(); // Test table has no primary key
-            entity.ToTable("Test");
         });
 
         modelBuilder.Entity<Equipment>(entity =>

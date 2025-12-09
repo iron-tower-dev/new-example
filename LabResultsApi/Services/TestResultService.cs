@@ -58,12 +58,11 @@ public class TestResultService : ITestResultService
         try
         {
             // Get user qualifications and map to available tests
+            // Tests are directly linked to TestStands via Test.testStandID
             var qualifiedTests = await (from q in _context.LubeTechQualifications
-                                      join tsm in _context.TestStandMappings on q.TestStandId equals tsm.TestStandId
-                                      join t in _context.Tests on (short?)tsm.TestId equals t.Id
+                                      join t in _context.Tests on q.TestStandId equals t.TestStandId
                                       where q.EmployeeId == employeeId && 
-                                            t.Exclude != "Y" && 
-                                            tsm.IsActive
+                                            t.Exclude != "Y"
                                       select new TestDto
                                       {
                                           TestId = t.Id ?? 0,

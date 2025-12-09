@@ -195,7 +195,9 @@ src/app/
 - `M_And_T_Equip`: Equipment/MTE information
 - `ParticleType`, `ParticleSubType`: Particle analysis (**keyless entities**)
 - `LubeTechList`, `ReviewerList`: Authentication tables
-- `TestStand`, `TestStandMapping`: Test scheduling
+- `TestStand`: Test stand definitions (qualification stations)
+- `LubeTechQualification`: Links employees to qualified test stands
+- Tests are directly linked to TestStands via `Test.testStandID` column
 
 **SQL Directory Structure:**
 - `db-tables/`: 56 table creation scripts

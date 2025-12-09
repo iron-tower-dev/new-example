@@ -67,8 +67,8 @@ public class SampleDto
             ResultsReviewId = entity.ResultsReviewId,
             StoreSource = entity.StoreSource,
             Schedule = entity.Schedule,
-            ReturnedDate = entity.ReturnedDate,
-            QualityClass = entity.QualityClass
+            ReturnedDate = entity.ReturnedDate
+            // Note: QualityClass is populated via JOIN in service layer, not from entity
         };
     }
 
@@ -103,8 +103,8 @@ public class SampleDto
             ResultsReviewId = dto.ResultsReviewId,
             StoreSource = dto.StoreSource,
             Schedule = dto.Schedule,
-            ReturnedDate = dto.ReturnedDate,
-            QualityClass = dto.QualityClass
+            ReturnedDate = dto.ReturnedDate
+            // Note: QualityClass is not stored in UsedLubeSamples table
         };
     }
 }
