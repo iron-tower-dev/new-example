@@ -7,13 +7,11 @@ namespace LabResultsApi.Services;
 public class SampleService : ISampleService
 {
     private readonly LabDbContext _context;
-    private readonly IRawSqlService _rawSqlService;
     private readonly ILogger<SampleService> _logger;
 
-    public SampleService(LabDbContext context, IRawSqlService rawSqlService, ILogger<SampleService> logger)
+    public SampleService(LabDbContext context, ILogger<SampleService> logger)
     {
         _context = context;
-        _rawSqlService = rawSqlService;
         _logger = logger;
     }
 
@@ -235,9 +233,62 @@ public class SampleService : ISampleService
         
         try
         {
-            // Use raw SQL to get historical data since TestReadings is keyless
-            var historyData = await _rawSqlService.GetSampleHistoryAsync(sampleId, testId);
-            return historyData;
+            // Get last 12 results for the same equipment/component combination
+            var sql = @"
+                SELECT TOP 12 
+                    s.ID as SampleId,
+                    s.tagNumber as TagNumber,
+                    s.sampleDate as SampleDate,
+                    t.testName as TestName,
+                    CASE 
+                        WHEN tr.status = 'C' THEN 'Complete'
+                        WHEN tr.status = 'E' THEN 'In Progress'
+                        WHEN tr.status = 'X' THEN 'Pending'
+                        ELSE 'Unknown'
+                    END as Status,
+                    tr.entryDate as EntryDate
+                FROM UsedLubeSamples s
+                INNER JOIN TestReadings tr ON s.ID = tr.sampleID
+                INNER JOIN Test t ON tr.testID = t.testID
+                WHERE s.tagNumber = (SELECT tagNumber FROM UsedLubeSamples WHERE ID = {0})
+                    AND s.component = (SELECT component FROM UsedLubeSamples WHERE ID = {0})
+                    AND tr.testID = {1}
+                    AND s.ID <= {0}
+                ORDER BY s.sampleDate DESC, s.ID DESC";
+
+            var connection = _context.Database.GetDbConnection();
+            await connection.OpenAsync();
+            
+            using var command = connection.CreateCommand();
+            command.CommandText = sql;
+            
+            var sampleIdParam = command.CreateParameter();
+            sampleIdParam.ParameterName = "@sampleId";
+            sampleIdParam.Value = sampleId;
+            command.Parameters.Add(sampleIdParam);
+            
+            var testIdParam = command.CreateParameter();
+            testIdParam.ParameterName = "@testId";
+            testIdParam.Value = testId;
+            command.Parameters.Add(testIdParam);
+            
+            var results = new List<SampleHistoryDto>();
+            using var reader = await command.ExecuteReaderAsync();
+            
+            while (await reader.ReadAsync())
+            {
+                results.Add(new SampleHistoryDto
+                {
+                    SampleId = reader.GetInt32(reader.GetOrdinal("SampleId")),
+                    TagNumber = reader.GetString(reader.GetOrdinal("TagNumber")),
+                    SampleDate = reader.GetDateTime(reader.GetOrdinal("SampleDate")),
+                    TestName = reader.GetString(reader.GetOrdinal("TestName")),
+                    Status = reader.GetString(reader.GetOrdinal("Status")),
+                    EntryDate = reader.IsDBNull(reader.GetOrdinal("EntryDate")) ? null : reader.GetDateTime(reader.GetOrdinal("EntryDate"))
+                });
+            }
+            
+            return results;
         }
         catch (Exception ex)
         {
@@ -246,5 +297,18 @@ public class SampleService : ISampleService
         }
     }
 
-
+    public async Task<bool> TestDatabaseConnectionAsync()
+    {
+        try
+        {
+            _logger.LogInformation("Testing database connection");
+            var count = await _context.Database.SqlQueryRaw<int>("SELECT 1").FirstAsync();
+            return count == 1;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Database connection test failed");
+            return false;
+        }
+    }
 }

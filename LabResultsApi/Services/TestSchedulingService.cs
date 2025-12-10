@@ -7,16 +7,13 @@ namespace LabResultsApi.Services;
 public class TestSchedulingService : ITestSchedulingService
 {
     private readonly LabDbContext _context;
-    private readonly IRawSqlService _rawSqlService;
     private readonly ILogger<TestSchedulingService> _logger;
 
     public TestSchedulingService(
         LabDbContext context,
-        IRawSqlService rawSqlService,
         ILogger<TestSchedulingService> logger)
     {
         _context = context;
-        _rawSqlService = rawSqlService;
         _logger = logger;
     }
 

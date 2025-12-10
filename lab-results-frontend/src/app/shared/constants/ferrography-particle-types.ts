@@ -1,8 +1,12 @@
 /**
- * Ferrography-specific particle type definitions
+ * @deprecated This file is deprecated and will be removed in a future version.
  * 
- * This file contains the 10 standard ferrography particle types used for
- * microscopic wear particle analysis in lubrication systems.
+ * Particle type definitions should be fetched from the API using:
+ * - LookupService.getParticleTypeDefinitions() for particle types
+ * - Use particle-type.util.ts functions for category mapping and filtering
+ * 
+ * The hardcoded data below is kept for backwards compatibility but should not be used.
+ * All particle type data now comes from the ParticleTypeDefinition database table.
  */
 
 import { ParticleTypeDefinition } from '../models/particle-analysis.model';

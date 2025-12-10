@@ -73,7 +73,7 @@ public static class HistoricalResultsEndpoints
     private static async Task<IResult> GetExtendedHistoricalResults(
         int sampleId,
         int testId,
-        IRawSqlService rawSqlService,
+        ISampleService sampleService,
         ITestResultService testResultService,
         ILogger<Program> logger,
         [FromQuery] DateTime? fromDate = null,
@@ -87,9 +87,10 @@ public static class HistoricalResultsEndpoints
             logger.LogInformation("Getting extended historical results for sample {SampleId}, test {TestId}", 
                 sampleId, testId);
 
-            // Get extended history with filtering
-            var extendedHistory = await rawSqlService.GetExtendedSampleHistoryAsync(
-                sampleId, testId, fromDate, toDate, page, pageSize, status);
+            // TODO: Implement GetExtendedSampleHistoryAsync in ISampleService
+            // For now, return basic history
+            var history = await sampleService.GetSampleHistoryAsync(sampleId, testId);
+            var extendedHistory = new { Results = history, TotalCount = history.Count(), Page = page, PageSize = pageSize, TotalPages = 1 };
 
             var results = new List<TestResultDto>();
             foreach (var historyItem in extendedHistory.Results)
@@ -126,7 +127,7 @@ public static class HistoricalResultsEndpoints
     private static async Task<IResult> GetHistoricalResultsSummary(
         int sampleId,
         int testId,
-        IRawSqlService rawSqlService,
+        ISampleService sampleService,
         ILogger<Program> logger,
         [FromQuery] int count = 12)
     {
@@ -135,7 +136,7 @@ public static class HistoricalResultsEndpoints
             logger.LogInformation("Getting historical results summary for sample {SampleId}, test {TestId}", 
                 sampleId, testId);
 
-            var history = await rawSqlService.GetSampleHistoryAsync(sampleId, testId);
+            var history = await sampleService.GetSampleHistoryAsync(sampleId, testId);
             var summary = history.Take(count).Select(h => new HistoricalResultSummaryDto
             {
                 SampleId = h.SampleId,

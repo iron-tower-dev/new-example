@@ -25,7 +25,7 @@ public class QualificationService : IQualificationService
                 SELECT ltq.qualificationLevel 
                 FROM LubeTechQualification ltq
                 INNER JOIN Test t ON ltq.testStandID = t.testStandID
-                WHERE ltq.employeeID = {0} AND t.testID = {1}";
+                WHERE ltq.employeeID = {0} AND t.ID = {1}";
 
             var qualification = await _context.Database.SqlQueryRaw<string>(sql, employeeId, testId)
                 .FirstOrDefaultAsync();
@@ -102,14 +102,14 @@ public class QualificationService : IQualificationService
             
             var sql = @"
                 SELECT DISTINCT 
-                    t.testID as TestId,
-                    t.testName as TestName,
-                    t.testDescription as TestDescription,
-                    t.active as Active
+                    t.ID as TestId,
+                    t.name as TestName,
+                    t.abbrev as TestAbbrev,
+                    CASE WHEN t.exclude = 'Y' THEN 0 ELSE 1 END as Active
                 FROM LubeTechQualification ltq
                 INNER JOIN Test t ON ltq.testStandID = t.testStandID
-                WHERE ltq.employeeID = @employeeId AND t.active = 1
-                ORDER BY t.testName";
+                WHERE ltq.employeeID = @employeeId AND (t.exclude IS NULL OR t.exclude != 'Y')
+                ORDER BY t.name";
 
             var connection = _context.Database.GetDbConnection();
             await connection.OpenAsync();
@@ -131,7 +131,7 @@ public class QualificationService : IQualificationService
                 {
                     TestId = Convert.ToInt32(reader["TestId"]),
                     TestName = reader["TestName"]?.ToString() ?? string.Empty,
-                    TestDescription = reader["TestDescription"] == DBNull.Value ? string.Empty : reader["TestDescription"]?.ToString() ?? string.Empty,
+                    TestDescription = reader["TestAbbrev"] == DBNull.Value ? null : reader["TestAbbrev"]?.ToString()?.Trim(),
                     Active = Convert.ToBoolean(reader["Active"])
                 });
             }

@@ -86,42 +86,15 @@ builder.Services.AddScoped<IQualificationService, QualificationService>();
 // Add HttpContextAccessor for audit service
 builder.Services.AddHttpContextAccessor();
 
-// Add HttpClient for migration notification service
+// Add HttpClient
 builder.Services.AddHttpClient();
 
-// Migration services
-builder.Services.AddScoped<LabResultsApi.Services.Migration.IMigrationControlService, LabResultsApi.Services.Migration.MigrationControlService>();
-builder.Services.AddScoped<LabResultsApi.Services.Migration.IMigrationLoggingService, LabResultsApi.Services.Migration.MigrationLoggingService>();
-builder.Services.AddScoped<LabResultsApi.Services.Migration.IMigrationConfigurationService, LabResultsApi.Services.Migration.MigrationConfigurationService>();
-builder.Services.AddScoped<LabResultsApi.Services.Migration.IMigrationPerformanceService, LabResultsApi.Services.Migration.MigrationPerformanceService>();
-builder.Services.AddScoped<LabResultsApi.Services.Migration.IMigrationNotificationService, LabResultsApi.Services.Migration.MigrationNotificationService>();
-
-// Placeholder services for migration dependencies (will be implemented in later tasks)
-builder.Services.AddScoped<LabResultsApi.Services.Migration.ISqlValidationService>(provider => 
-    throw new NotImplementedException("SQL validation service will be implemented in task 3"));
-
-// SSO Migration services
-builder.Services.AddScoped<LabResultsApi.Services.Migration.ISsoMigrationService, LabResultsApi.Services.Migration.SsoMigrationService>();
-builder.Services.AddScoped<LabResultsApi.Services.Migration.IAuthenticationRemovalService, LabResultsApi.Services.Migration.AuthenticationRemovalService>();
 
 
 
-// Performance monitoring services
-builder.Services.AddSingleton<IPerformanceMonitoringService, PerformanceMonitoringService>();
+// Database indexing service
 builder.Services.AddScoped<IDatabaseIndexingService, DatabaseIndexingService>();
 
-// Raw SQL services - temporarily keep for health checks and legacy endpoints
-builder.Services.AddScoped<RawSqlService>();
-builder.Services.AddScoped<IRawSqlService>(provider =>
-{
-    var context = provider.GetRequiredService<LabDbContext>();
-    var logger = provider.GetRequiredService<ILogger<OptimizedRawSqlService>>();
-    var performanceService = provider.GetRequiredService<IPerformanceMonitoringService>();
-    var cache = provider.GetRequiredService<Microsoft.Extensions.Caching.Memory.IMemoryCache>();
-    var originalService = provider.GetRequiredService<RawSqlService>();
-    
-    return new OptimizedRawSqlService(context, logger, performanceService, cache, originalService);
-});
 
 // Add memory cache for lookup caching
 builder.Services.AddMemoryCache();
@@ -179,11 +152,8 @@ app.UseCors("AllowAngularApp");
 // Add global exception handling
 app.UseGlobalExceptionHandling();
 
-// Add audit middleware (before performance monitoring)
+// Add audit middleware
 app.UseMiddleware<AuditMiddleware>();
-
-// Add performance monitoring middleware
-app.UseMiddleware<PerformanceMonitoringMiddleware>();
 
 // Map controllers
 app.MapControllers();
@@ -198,7 +168,6 @@ app.MapEmissionSpectroscopyEndpoints();
 app.MapLookupEndpoints();
 app.MapParticleAnalysisEndpoints();
 app.MapParticleTestEndpoints();
-app.MapPerformanceEndpoints();
 
 // Critical gap-filling endpoints
 app.MapTestSchedulingEndpoints();
@@ -217,11 +186,11 @@ app.MapGet("/health", () => Results.Ok(new {
 .AllowAnonymous();
 
 // Database connection test endpoint
-app.MapGet("/health/database", async (IRawSqlService rawSqlService) =>
+app.MapGet("/health/database", async (ISampleService sampleService) =>
 {
     try
     {
-        var isConnected = await rawSqlService.TestDatabaseConnectionAsync();
+        var isConnected = await sampleService.TestDatabaseConnectionAsync();
         return isConnected 
             ? Results.Ok(new { Status = "Database Connected", Timestamp = DateTime.UtcNow })
             : Results.Problem("Database connection failed", statusCode: 503);
@@ -287,9 +256,9 @@ app.MapGet("/health/filesystem", (IConfiguration config) =>
 .AllowAnonymous();
 
 // Comprehensive health check
-app.MapGet("/health/detailed", async (IRawSqlService rawSqlService, IConfiguration config) =>
+app.MapGet("/health/detailed", async (ISampleService sampleService, IConfiguration config) =>
 {
-    var databaseHealth = await CheckDatabaseHealth(rawSqlService);
+    var databaseHealth = await CheckDatabaseHealth(sampleService);
     var memoryHealth = CheckMemoryHealth();
     var fileSystemHealth = CheckFileSystemHealth(config);
     
@@ -315,11 +284,11 @@ app.MapGet("/health/detailed", async (IRawSqlService rawSqlService, IConfigurati
 .WithTags("Health")
 .AllowAnonymous();
 
-static async Task<HealthCheckResult> CheckDatabaseHealth(IRawSqlService rawSqlService)
+static async Task<HealthCheckResult> CheckDatabaseHealth(ISampleService sampleService)
 {
     try
     {
-        var isConnected = await rawSqlService.TestDatabaseConnectionAsync();
+        var isConnected = await sampleService.TestDatabaseConnectionAsync();
         return new HealthCheckResult 
         { 
             Status = isConnected ? "Healthy" : "Unhealthy", 

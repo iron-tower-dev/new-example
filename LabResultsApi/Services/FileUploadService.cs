@@ -8,7 +8,6 @@ namespace LabResultsApi.Services;
 public class FileUploadService : IFileUploadService
 {
     private readonly LabDbContext _context;
-    private readonly IRawSqlService _rawSqlService;
     private readonly IConfiguration _configuration;
     private readonly ILogger<FileUploadService> _logger;
 
@@ -30,12 +29,10 @@ public class FileUploadService : IFileUploadService
 
     public FileUploadService(
         LabDbContext context,
-        IRawSqlService rawSqlService,
         IConfiguration configuration,
         ILogger<FileUploadService> logger)
     {
         _context = context;
-        _rawSqlService = rawSqlService;
         _configuration = configuration;
         _logger = logger;
     }
@@ -281,9 +278,11 @@ public class FileUploadService : IFileUploadService
             errors.Add("Invalid filename. Filename contains invalid characters");
         }
 
-        // Check if sample and test exist
-        var sampleExists = await _rawSqlService.SampleExistsAsync(request.SampleId);
-        if (!sampleExists)
+        // Check if sample exists
+        var sampleCount = await _context.Database.SqlQueryRaw<int>(
+            "SELECT COUNT(*) FROM UsedLubeSamples WHERE ID = {0}", request.SampleId)
+            .FirstAsync();
+        if (sampleCount == 0)
         {
             errors.Add($"Sample {request.SampleId} does not exist");
         }

@@ -887,29 +887,104 @@ export class TestWorkspaceComponent implements OnInit {
   }
 
   private loadHistoricalResults(sampleId: number) {
-    // Mock historical data
-    const mockHistory: HistoricalResult[] = [
-      {
-        date: new Date('2024-11-01'),
-        result: '2.45 mg KOH/g',
-        technician: 'J.Smith',
-        status: 'Complete'
-      },
-      {
-        date: new Date('2024-10-15'),
-        result: '2.38 mg KOH/g',
-        technician: 'M.Johnson',
-        status: 'Complete'
-      },
-      {
-        date: new Date('2024-09-30'),
-        result: '2.52 mg KOH/g',
-        technician: 'K.Wilson',
-        status: 'Complete'
-      }
-    ];
+    const testId = this.getTestIdFromRoute(this.currentTestRoute());
+    
+    if (!testId) {
+      console.warn('Cannot load history: test ID not found for route', this.currentTestRoute());
+      this.historicalResults.set([]);
+      return;
+    }
 
-    this.historicalResults.set(mockHistory);
+    // Load historical test results from API
+    this.testService.getTestResultsHistory(testId, sampleId, 12).subscribe({
+      next: (testResults) => {
+        // Transform TestResult[] to HistoricalResult[]
+        const history: HistoricalResult[] = testResults.map(result => ({
+          date: result.entryDate || new Date(),
+          result: this.formatTestResult(result),
+          technician: result.entryId || 'Unknown',
+          status: this.getStatusText(result.status)
+        }));
+        
+        this.historicalResults.set(history);
+      },
+      error: (error) => {
+        console.error('Error loading historical results:', error);
+        // Clear history on error
+        this.historicalResults.set([]);
+      }
+    });
+  }
+  
+  /**
+   * Format test result based on test type
+   * Extracts the most relevant value from trials
+   */
+  private formatTestResult(testResult: any): string {
+    if (!testResult.trials || testResult.trials.length === 0) {
+      return 'No data';
+    }
+    
+    // Get the first completed trial or the last trial
+    const trial = testResult.trials.find((t: any) => t.isComplete) || testResult.trials[testResult.trials.length - 1];
+    
+    if (!trial || !trial.values) {
+      return 'No data';
+    }
+    
+    const testRoute = this.currentTestRoute();
+    const values = trial.values;
+    
+    // Format based on test type
+    switch (testRoute) {
+      case 'tan':
+        return values.tanResult ? `${values.tanResult} mg KOH/g` : 'No result';
+      case 'water-kf':
+        return values.waterContent ? `${values.waterContent}%` : 'No result';
+      case 'tbn':
+        return values.tbnResult ? `${values.tbnResult} mg KOH/g` : 'No result';
+      case 'viscosity-40c':
+        return values.viscosity40 ? `${values.viscosity40} cSt` : 'No result';
+      case 'viscosity-100c':
+        return values.viscosity100 ? `${values.viscosity100} cSt` : 'No result';
+      case 'flash-point':
+        return values.flashPoint ? `${values.flashPoint} °C` : 'No result';
+      case 'particle-count':
+        return values.particleCount || 'No result';
+      case 'grease-dropping-point':
+        return values.droppingPoint ? `${values.droppingPoint} °C` : 'No result';
+      case 'grease-penetration':
+        return values.penetration ? `${values.penetration} (0.1mm)` : 'No result';
+      default:
+        // For other tests, try to find calculated result or first numeric value
+        if (trial.calculatedResult !== undefined) {
+          return `${trial.calculatedResult}`;
+        }
+        
+        // Find first numeric value
+        const firstValue = Object.values(values).find(v => typeof v === 'number');
+        if (firstValue !== undefined) {
+          return `${firstValue}`;
+        }
+        
+        return 'Result available';
+    }
+  }
+  
+  /**
+   * Convert status code to readable text
+   */
+  private getStatusText(status: string): string {
+    switch (status) {
+      case 'C':
+        return 'Complete';
+      case 'E':
+        return 'In Progress';
+      case 'X':
+        return 'Pending';
+      default:
+        return 'Unknown';
+    }
   }
 
   calculateTAN(): void {

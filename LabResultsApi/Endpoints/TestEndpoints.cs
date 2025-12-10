@@ -67,21 +67,37 @@ public static class TestEndpoints
     }
 
     private static async Task<IResult> GetQualifiedTests(
-        ITestResultService testResultService,
+        HttpContext httpContext,
+        IQualificationService qualificationService,
+        IAuthorizationService authorizationService,
         ILogger<Program> logger)
     {
         try
         {
-            // For SSO migration: return all tests since authentication is removed
-            // TODO: Implement proper user qualification checking with Active Directory
-            var allTests = await testResultService.GetTestsAsync();
+            var user = httpContext.User;
             
-            logger.LogInformation("Retrieved {Count} tests from service", allTests.Count());
+            // Check if user is authenticated
+            if (!user.Identity?.IsAuthenticated ?? true)
+            {
+                logger.LogWarning("Unauthenticated request for qualified tests");
+                return Results.Unauthorized();
+            }
             
-            // GetTestsAsync already filters for active tests, so just return them
-            var testsList = allTests.ToList();
+            // Get employee ID from claims
+            var employeeId = authorizationService.GetEmployeeId(user);
+            if (string.IsNullOrEmpty(employeeId))
+            {
+                logger.LogWarning("No employee ID found in user claims");
+                return Results.Problem("User identity could not be determined", statusCode: 401);
+            }
             
-            logger.LogInformation("Returning {Count} qualified tests", testsList.Count);
+            logger.LogInformation("Getting qualified tests for employee {EmployeeId}", employeeId);
+            
+            // Get tests user is qualified to perform based on LubeTechQualification table
+            var qualifiedTests = await qualificationService.GetQualifiedTestsAsync(employeeId);
+            var testsList = qualifiedTests.ToList();
+            
+            logger.LogInformation("Returning {Count} qualified tests for employee {EmployeeId}", testsList.Count, employeeId);
             
             return Results.Ok(testsList);
         }

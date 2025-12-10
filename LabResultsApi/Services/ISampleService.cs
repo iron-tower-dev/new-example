@@ -8,4 +8,5 @@ public interface ISampleService
     Task<IEnumerable<SampleDto>> GetSamplesAsync(SampleFilterDto? filter = null);
     Task<SampleDto?> GetSampleAsync(int sampleId);
     Task<IEnumerable<SampleHistoryDto>> GetSampleHistoryAsync(int sampleId, int testId);
+    Task<bool> TestDatabaseConnectionAsync();
 }

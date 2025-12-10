@@ -112,48 +112,20 @@ export class TestWorkflowService {
     }
 
     private loadSamplesForTest(testId: number): Observable<SampleForTest[]> {
-        // For now, return mock data. In real implementation, this would call the API
-        return new Observable(observer => {
-            setTimeout(() => {
-                const mockSamples: SampleForTest[] = [
-                    {
-                        id: 'S001',
-                        tagNumber: 'ENG-001',
-                        component: 'Engine Oil',
-                        location: 'Main Engine',
-                        lubeType: 'Lubricating Oil',
-                        sampleDate: new Date('2024-11-10'),
-                        status: 'Ready for Testing',
-                        customerName: 'Acme Corp',
-                        hasPartialData: false
-                    },
-                    {
-                        id: 'S002',
-                        tagNumber: 'HYD-002',
-                        component: 'Hydraulic Fluid',
-                        location: 'Hydraulic System',
-                        lubeType: 'Hydraulic Oil',
-                        sampleDate: new Date('2024-11-11'),
-                        status: 'Ready for Testing',
-                        customerName: 'Beta Industries',
-                        hasPartialData: true
-                    },
-                    {
-                        id: 'S003',
-                        tagNumber: 'GR-003',
-                        component: 'Gear Oil',
-                        location: 'Gearbox',
-                        lubeType: 'Gear Oil',
-                        sampleDate: new Date('2024-11-12'),
-                        status: 'Ready for Testing',
-                        customerName: 'Gamma LLC',
-                        hasPartialData: false
-                    }
-                ];
-                observer.next(mockSamples);
-                observer.complete();
-            }, 500); // Simulate API delay
-        });
+        const samplesUrl = this.environment.getApiEndpoint('samples');
+        return this.http.get<any[]>(`${samplesUrl}/by-test/${testId}`).pipe(
+            map(samples => samples.map(sample => ({
+                id: sample.id.toString(),
+                tagNumber: sample.tagNumber,
+                component: sample.component,
+                location: sample.location,
+                lubeType: sample.lubeType,
+                sampleDate: new Date(sample.sampleDate),
+                status: sample.status,
+                customerName: sample.customerName || 'Unknown',
+                hasPartialData: sample.hasPartialData || false
+            })))
+        );
     }
 
     getTestRoute(testName: string): string {

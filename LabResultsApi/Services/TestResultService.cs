@@ -8,19 +8,19 @@ namespace LabResultsApi.Services;
 public class TestResultService : ITestResultService
 {
     private readonly LabDbContext _context;
-    private readonly IRawSqlService _rawSqlService;
     private readonly ICalculationService _calculationService;
+    private readonly ISampleService _sampleService;
     private readonly ILogger<TestResultService> _logger;
 
     public TestResultService(
         LabDbContext context, 
-        IRawSqlService rawSqlService, 
         ICalculationService calculationService,
+        ISampleService sampleService,
         ILogger<TestResultService> logger)
     {
         _context = context;
-        _rawSqlService = rawSqlService;
         _calculationService = calculationService;
+        _sampleService = sampleService;
         _logger = logger;
     }
 
@@ -136,7 +136,7 @@ public class TestResultService : ITestResultService
         
         try
         {
-            var testReadings = await _rawSqlService.GetTestReadingsAsync(sampleId, testId);
+            var testReadings = await GetTestReadingsAsync(sampleId, testId);
             
             if (!testReadings.Any()) return null;
 
@@ -217,7 +217,7 @@ public class TestResultService : ITestResultService
                     }
                 }
 
-                var saved = await _rawSqlService.SaveTestReadingAsync(testReading);
+                var saved = await SaveTestReadingAsync(testReading);
                 totalSaved += saved;
             }
 
@@ -237,7 +237,7 @@ public class TestResultService : ITestResultService
         try
         {
             // Delete existing results first
-            await _rawSqlService.DeleteTestReadingsAsync(sampleId, testId);
+            await DeleteTestReadingsAsync(sampleId, testId);
             
             // Save new results
             return await SaveTestResultsAsync(request);
@@ -255,7 +255,7 @@ public class TestResultService : ITestResultService
         
         try
         {
-            return await _rawSqlService.DeleteTestReadingsAsync(sampleId, testId);
+            return await DeleteTestReadingsAsync(sampleId, testId);
         }
         catch (Exception ex)
         {
@@ -289,7 +289,7 @@ public class TestResultService : ITestResultService
         
         try
         {
-            var historyData = await _rawSqlService.GetSampleHistoryAsync(sampleId, testId);
+            var historyData = await _sampleService.GetSampleHistoryAsync(sampleId, testId);
             
             var results = new List<TestResultDto>();
             
@@ -484,4 +484,73 @@ public class TestResultService : ITestResultService
         if (values.TryGetValue("result", out var result))
             reading.Value1 = Convert.ToDouble(result);
     }
+
+    #region TestReadings Data Access Methods
+
+    private async Task<List<TestReading>> GetTestReadingsAsync(int sampleId, int testId)
+    {
+        try
+        {
+            _logger.LogInformation("Getting test readings for sample {SampleId}, test {TestId}", sampleId, testId);
+            
+            return await _context.TestReadings
+                .FromSqlRaw(@"
+                    SELECT sampleID, testID, trialNumber, value1, value2, value3, 
+                           trialCalc, ID1, ID2, ID3, trialComplete, status, 
+                           schedType, entryID, validateID, entryDate, valiDate, MainComments
+                    FROM TestReadings 
+                    WHERE sampleID = {0} AND testID = {1} 
+                    ORDER BY trialNumber", sampleId, testId)
+                .ToListAsync();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error getting test readings for sample {SampleId}, test {TestId}", sampleId, testId);
+            throw;
+        }
+    }
+
+    private async Task<int> SaveTestReadingAsync(TestReading reading)
+    {
+        try
+        {
+            _logger.LogInformation("Saving test reading for sample {SampleId}, test {TestId}, trial {TrialNumber}", 
+                reading.SampleId, reading.TestId, reading.TrialNumber);
+            
+            return await _context.Database.ExecuteSqlRawAsync(@"
+                INSERT INTO TestReadings 
+                (sampleID, testID, trialNumber, value1, value2, value3, trialCalc, 
+                 ID1, ID2, ID3, status, entryDate, MainComments, entryID)
+                VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13})",
+                reading.SampleId, reading.TestId, reading.TrialNumber, 
+                reading.Value1, reading.Value2, reading.Value3, reading.TrialCalc,
+                reading.Id1, reading.Id2, reading.Id3, reading.Status, 
+                reading.EntryDate, reading.MainComments, reading.EntryId);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error saving test reading for sample {SampleId}, test {TestId}", 
+                reading.SampleId, reading.TestId);
+            throw;
+        }
+    }
+
+    private async Task<int> DeleteTestReadingsAsync(int sampleId, int testId)
+    {
+        try
+        {
+            _logger.LogInformation("Deleting test readings for sample {SampleId}, test {TestId}", sampleId, testId);
+            
+            return await _context.Database.ExecuteSqlRawAsync(
+                "DELETE FROM TestReadings WHERE sampleID = {0} AND testID = {1}",
+                sampleId, testId);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error deleting test readings for sample {SampleId}, test {TestId}", sampleId, testId);
+            throw;
+        }
+    }
+
+    #endregion
 }

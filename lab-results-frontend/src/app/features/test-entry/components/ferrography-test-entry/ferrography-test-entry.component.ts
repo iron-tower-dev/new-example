@@ -24,6 +24,7 @@ import {
     getSeverityColorClass,
     getSeverityRecommendations
 } from '../../../../shared/utils/severity-mapping.util';
+import { addCategoryToParticleType } from '../../../../shared/utils/particle-type.util';
 
 // Interfaces for Ferrography Analysis
 interface ParticleTypeDefinition {
@@ -694,17 +695,8 @@ export class FerrographyTestEntryComponent implements OnInit, OnDestroy {
             subTypeCategories: this.testService.getSubTypeCategories()
         }).subscribe({
             next: (data) => {
-                // Convert API particle types to ParticleTypeDefinition format for the particle analysis card
-                const particleTypeDefinitions = data.particleTypes.map(pt => ({
-                    id: pt.id,
-                    type: pt.type || '',
-                    description: pt.description || '',
-                    image1: pt.image1 || '',
-                    image2: pt.image2 || '',
-                    active: pt.active,
-                    sortOrder: pt.sortOrder,
-                    category: this.categorizeParticleType(pt.type || '') as 'wear' | 'oxide' | 'contaminant' | 'other'
-                }));
+                // Convert API particle types to ParticleTypeDefinition format with category
+                const particleTypeDefinitions = data.particleTypes.map(pt => addCategoryToParticleType(pt));
 
                 // Also convert to internal ParticleType format for legacy compatibility
                 const particleTypes: ParticleType[] = data.particleTypes.map(pt => ({
@@ -732,11 +724,59 @@ export class FerrographyTestEntryComponent implements OnInit, OnDestroy {
     }
 
     private loadExistingResults(sampleId: number): void {
-        // TODO: Implement when ferrography results endpoint is available
+        this.testService.getFerrographyResults(sampleId, this.testId).subscribe({
+            next: (result) => {
+                if (result) {
+                    this.populateFormWithResults(result);
+                    
+                    // Transform and set particle analysis data
+                    if (result.particleAnalyses && result.particleAnalyses.length > 0) {
+                        const analyses = result.particleAnalyses.map((analysis: any) => ({
+                            particleTypeId: analysis.particleTypeDefinitionId,
+                            subTypeValues: analysis.subTypeValues || {},
+                            comments: analysis.comments || '',
+                            severity: this.getSeverityFromSubTypeValues(analysis.subTypeValues),
+                            status: (analysis.status || 'active') as 'active' | 'review' | 'complete'
+                        }));
+                        
+                        const particleData: ParticleAnalysisData = {
+                            analyses,
+                            overallSeverity: result.overallSeverity || 0,
+                            isValid: true,
+                            summary: {
+                                totalParticles: analyses.length,
+                                criticalParticles: analyses.filter(a => a.severity >= 3).length,
+                                recommendations: []
+                            }
+                        };
+                        
+                        this.particleAnalysisData.set(particleData);
+                    }
+                }
+            },
+            error: (error) => {
+                // No existing results - this is normal for new entries
+                console.log('No existing ferrography results found:', error);
+            }
+        });
     }
 
     private loadTestHistory(sampleId: number): void {
-        // TODO: Implement when test history endpoint is available
+        this.testService.getTestResultsHistory(this.testId, sampleId, 12).subscribe({
+            next: (history) => {
+                // History loaded successfully and stored in testService.testResultHistory signal
+                console.log('Loaded test history:', history.length, 'results');
+            },
+            error: (error) => {
+                console.warn('Failed to load test history:', error);
+            }
+        });
+    }
+    
+    private getSeverityFromSubTypeValues(subTypeValues: { [key: number]: number | null }): number {
+        // Severity is typically stored in category 1
+        // If not found, default to 0
+        return subTypeValues[1] || 0;
     }
 
     private initializeForm(): void {
@@ -931,6 +971,7 @@ export class FerrographyTestEntryComponent implements OnInit, OnDestroy {
     onPartialSave(): void {
         const dilutionFactor = this.ferrographyForm.get('dilutionFactor')?.value;
         const customDilutionFactor = this.ferrographyForm.get('customDilutionFactor')?.value;
+        const currentSample = this.currentSample();
 
         if (!dilutionFactor) {
             this.snackBar.open('Please select a dilution factor', 'Close', {
@@ -939,13 +980,39 @@ export class FerrographyTestEntryComponent implements OnInit, OnDestroy {
             });
             return;
         }
+        
+        if (!currentSample) {
+            this.snackBar.open('No sample selected', 'Close', {
+                duration: 3000,
+                panelClass: ['error-snackbar']
+            });
+            return;
+        }
 
-        // TODO: Implement actual save when API endpoint is available
-        this.snackBar.open('Partial save successful - dilution factor saved (simulated)', 'Close', {
-            duration: 3000,
-            panelClass: ['success-snackbar']
+        const finalDilutionFactor = dilutionFactor === 'X/YYYY' ? customDilutionFactor : dilutionFactor;
+        
+        const request = {
+            sampleId: currentSample.id,
+            testId: this.testId,
+            dilutionFactor: finalDilutionFactor || ''
+        };
+        
+        this.testService.savePartialFerrographyResults(request).subscribe({
+            next: () => {
+                this.snackBar.open('Dilution factor saved successfully', 'Close', {
+                    duration: 3000,
+                    panelClass: ['success-snackbar']
+                });
+                this.testStatus.set('E');
+            },
+            error: (error) => {
+                console.error('Error saving partial results:', error);
+                this.snackBar.open('Failed to save dilution factor', 'Close', {
+                    duration: 3000,
+                    panelClass: ['error-snackbar']
+                });
+            }
         });
-        this.testStatus.set('E');
     }
 
     onSave(): void {
@@ -957,60 +1024,59 @@ export class FerrographyTestEntryComponent implements OnInit, OnDestroy {
             });
             return;
         }
+        
+        const currentSample = this.currentSample();
+        if (!currentSample) {
+            this.snackBar.open('No sample selected', 'Close', {
+                duration: 3000,
+                panelClass: ['error-snackbar']
+            });
+            return;
+        }
 
         const formValue = this.ferrographyForm.value;
         const dilutionFactor = formValue.dilutionFactor === 'X/YYYY' ? formValue.customDilutionFactor : formValue.dilutionFactor;
-        const particleAnalyses: ParticleAnalysis[] = [];
-
-        // Build particle analyses from particle types data
-        this.particleTypes().forEach(particle => {
-            // Only include particle analyses that have some data
-            if (particle.heat || particle.concentration || particle.sizeAvg || particle.severity || particle.comment) {
-                const subTypeValues: { [categoryId: number]: number | null } = {};
-
-                // Map particle properties to sub-type values (this would need proper mapping based on your API structure)
-                if (particle.severity) {
-                    subTypeValues[1] = particle.severity; // Assuming category 1 is Severity
-                }
-
-                particleAnalyses.push({
-                    sampleId: 6, // Mock sample ID
-                    testId: this.testId,
-                    particleTypeDefinitionId: particle.id,
-                    status: 'E',
-                    comments: particle.comment || '',
-                    subTypeValues
-                });
-            }
-        });
 
         // Get particle analysis data from the new particle analysis card
         const particleAnalysisData = this.particleAnalysisData();
         const finalParticleAnalyses = particleAnalysisData ?
             particleAnalysisData.analyses.map(analysis => ({
-                sampleId: 6, // Mock sample ID
-                testId: this.testId,
                 particleTypeDefinitionId: analysis.particleTypeId,
-                status: 'E',
+                status: analysis.status || 'active',
                 comments: analysis.comments || '',
                 subTypeValues: analysis.subTypeValues
-            })) : particleAnalyses;
+            })) : [];
 
         const request = {
-            sampleId: 6, // Mock sample ID
+            sampleId: currentSample.id,
             testId: this.testId,
             particleAnalyses: finalParticleAnalyses,
             dilutionFactor: dilutionFactor || '',
             overallSeverity: formValue.overallSeverity || (particleAnalysisData?.overallSeverity || 0),
-            overallComments: formValue.overallComments,
-            entryId: 'USER', // This should come from authentication
-            particleAnalysisData: particleAnalysisData
+            status: 'C' // Complete status
         };
 
-        // TODO: Implement actual save when API endpoint is available
-        this.snackBar.open('Successfully saved ferrography results (simulated)', 'Close', {
-            duration: 3000,
-            panelClass: ['success-snackbar']
+        this.testService.saveFerrographyResults(request).subscribe({
+            next: (response) => {
+                this.snackBar.open('Successfully saved ferrography results', 'Close', {
+                    duration: 3000,
+                    panelClass: ['success-snackbar']
+                });
+                this.testStatus.set('C');
+                
+                // Reload results and history
+                if (currentSample) {
+                    this.loadExistingResults(currentSample.id);
+                    this.loadTestHistory(currentSample.id);
+                }
+            },
+            error: (error) => {
+                console.error('Error saving ferrography results:', error);
+                this.snackBar.open('Failed to save ferrography results', 'Close', {
+                    duration: 3000,
+                    panelClass: ['error-snackbar']
+                });
+            }
         });
     }
 
@@ -1052,6 +1118,15 @@ export class FerrographyTestEntryComponent implements OnInit, OnDestroy {
     }
 
     onDelete(): void {
+        const currentSample = this.currentSample();
+        
+        if (!currentSample) {
+            this.snackBar.open('No sample selected', 'Close', {
+                duration: 3000,
+                panelClass: ['error-snackbar']
+            });
+            return;
+        }
 
         const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
             data: {
@@ -1063,15 +1138,26 @@ export class FerrographyTestEntryComponent implements OnInit, OnDestroy {
         });
 
         dialogRef.afterClosed().subscribe(result => {
-            if (result) {
-                // TODO: Implement actual delete when API endpoint is available
-                this.snackBar.open('Successfully deleted ferrography results (simulated)', 'Close', {
-                    duration: 3000,
-                    panelClass: ['success-snackbar']
+            if (result && currentSample) {
+                this.testService.deleteFerrographyResults(currentSample.id, this.testId).subscribe({
+                    next: () => {
+                        this.snackBar.open('Successfully deleted ferrography results', 'Close', {
+                            duration: 3000,
+                            panelClass: ['success-snackbar']
+                        });
+                        this.ferrographyForm.reset();
+                        this.initializeForm();
+                        this.testStatus.set('X');
+                        this.particleAnalysisData.set(null);
+                    },
+                    error: (error) => {
+                        console.error('Error deleting ferrography results:', error);
+                        this.snackBar.open('Failed to delete ferrography results', 'Close', {
+                            duration: 3000,
+                            panelClass: ['error-snackbar']
+                        });
+                    }
                 });
-                this.ferrographyForm.reset();
-                this.initializeForm();
-                this.testStatus.set('X');
             }
         });
     }
@@ -1122,25 +1208,4 @@ export class FerrographyTestEntryComponent implements OnInit, OnDestroy {
         });
     }
 
-    /**
-     * Categorize particle type based on its name
-     */
-    private categorizeParticleType(typeName: string): 'wear' | 'oxide' | 'contaminant' | 'other' {
-        const lowerName = typeName.toLowerCase();
-
-        if (lowerName.includes('oxide') || lowerName.includes('rust')) {
-            return 'oxide';
-        } else if (lowerName.includes('fiber') || lowerName.includes('contaminant') ||
-            lowerName.includes('crystalline') || lowerName.includes('amorphous') ||
-            lowerName.includes('polymer') || lowerName.includes('corrosive')) {
-            return 'contaminant';
-        } else if (lowerName.includes('wear') || lowerName.includes('rubbing') ||
-            lowerName.includes('abrasive') || lowerName.includes('severe') ||
-            lowerName.includes('chunk') || lowerName.includes('sphere') ||
-            lowerName.includes('metal') || lowerName.includes('rework')) {
-            return 'wear';
-        } else {
-            return 'other';
-        }
-    }
 }

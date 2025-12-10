@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map, tap, catchError } from 'rxjs/operators';
 import { EnvironmentService } from './environment.service';
+import { LookupService, ParticleTypeDefinitionDto, ParticleSubTypeCategoryDefinitionDto } from './lookup.service';
 import {
     Test,
     TestTemplate,
@@ -18,6 +19,7 @@ import {
 export class TestService {
     private http = inject(HttpClient);
     private environment = inject(EnvironmentService);
+    private lookupService = inject(LookupService);
     private readonly baseUrl = this.environment.getApiEndpoint('tests');
 
     // Signals for reactive state management
@@ -250,26 +252,18 @@ export class TestService {
 
     /**
      * Get particle type definitions for particle analysis
+     * @deprecated Use LookupService.getParticleTypeDefinitions() instead
      */
-    getParticleTypes(): Observable<any[]> {
-        return this.http.get<any[]>(this.environment.getApiEndpoint('particle-analysis/particle-types')).pipe(
-            catchError(error => {
-                this._error.set(`Failed to get particle types: ${error.message}`);
-                throw error;
-            })
-        );
+    getParticleTypes(): Observable<ParticleTypeDefinitionDto[]> {
+        return this.lookupService.getParticleTypeDefinitions();
     }
 
     /**
      * Get particle sub-type categories with their definitions
+     * Note: This returns categories without their sub-types. Use LookupService methods for full data.
      */
-    getSubTypeCategories(): Observable<any[]> {
-        return this.http.get<any[]>(this.environment.getApiEndpoint('particle-analysis/sub-type-categories')).pipe(
-            catchError(error => {
-                this._error.set(`Failed to get sub-type categories: ${error.message}`);
-                throw error;
-            })
-        );
+    getSubTypeCategories(): Observable<ParticleSubTypeCategoryDefinitionDto[]> {
+        return this.lookupService.getParticleSubTypeCategories();
     }
 
     /**

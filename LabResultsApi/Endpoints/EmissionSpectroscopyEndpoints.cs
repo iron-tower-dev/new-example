@@ -55,7 +55,7 @@ public static class EmissionSpectroscopyEndpoints
     private static async Task<IResult> GetEmissionSpectroscopyData(
         int sampleId, 
         int testId, 
-        IRawSqlService rawSqlService,
+        IEmissionSpectroscopyService emissionSpectroscopyService,
         ILogger<Program> logger)
     {
         try
@@ -63,14 +63,14 @@ public static class EmissionSpectroscopyEndpoints
             logger.LogInformation("Getting emission spectroscopy data for sample {SampleId}, test {TestId}", sampleId, testId);
 
             // Validate that the sample exists
-            var sampleExists = await rawSqlService.SampleExistsAsync(sampleId);
+            var sampleExists = await emissionSpectroscopyService.SampleExistsAsync(sampleId);
             if (!sampleExists)
             {
                 logger.LogWarning("Sample {SampleId} not found", sampleId);
                 return Results.NotFound($"Sample {sampleId} not found");
             }
 
-            var data = await rawSqlService.GetEmissionSpectroscopyAsync(sampleId, testId);
+            var data = await emissionSpectroscopyService.GetEmissionSpectroscopyAsync(sampleId, testId);
             var dtos = EmissionSpectroscopyDto.ToDtoList(data);
 
             logger.LogInformation("Retrieved {Count} emission spectroscopy records for sample {SampleId}, test {TestId}", 
@@ -87,7 +87,7 @@ public static class EmissionSpectroscopyEndpoints
 
     private static async Task<IResult> CreateEmissionSpectroscopyData(
         [FromBody] EmissionSpectroscopyCreateDto createDto,
-        IRawSqlService rawSqlService,
+        IEmissionSpectroscopyService emissionSpectroscopyService,
         ILogger<Program> logger)
     {
         try
@@ -102,7 +102,7 @@ public static class EmissionSpectroscopyEndpoints
             }
 
             // Validate that the sample exists
-            var sampleExists = await rawSqlService.SampleExistsAsync(createDto.Id);
+            var sampleExists = await emissionSpectroscopyService.SampleExistsAsync(createDto.Id);
             if (!sampleExists)
             {
                 logger.LogWarning("Sample {SampleId} not found", createDto.Id);
@@ -115,12 +115,12 @@ public static class EmissionSpectroscopyEndpoints
             // Note: Status property removed from model as it doesn't exist in SQL table
 
             // Save the data
-            var result = await rawSqlService.SaveEmissionSpectroscopyAsync(entity);
+            var result = await emissionSpectroscopyService.SaveEmissionSpectroscopyAsync(entity);
 
             // Handle Ferrography scheduling if requested
             if (createDto.ScheduleFerrography && createDto.TrialNum == 1)
             {
-                await rawSqlService.ScheduleFerrographyAsync(createDto.Id);
+                await emissionSpectroscopyService.ScheduleFerrographyAsync(createDto.Id);
                 logger.LogInformation("Ferrography scheduled for sample {SampleId}", createDto.Id);
             }
 
@@ -146,7 +146,7 @@ public static class EmissionSpectroscopyEndpoints
         int testId,
         int trialNum,
         [FromBody] EmissionSpectroscopyUpdateDto updateDto,
-        IRawSqlService rawSqlService,
+        IEmissionSpectroscopyService emissionSpectroscopyService,
         ILogger<Program> logger)
     {
         try
@@ -161,7 +161,7 @@ public static class EmissionSpectroscopyEndpoints
             }
 
             // Check if the record exists
-            var existingData = await rawSqlService.GetEmissionSpectroscopyAsync(sampleId, testId);
+            var existingData = await emissionSpectroscopyService.GetEmissionSpectroscopyAsync(sampleId, testId);
             var existingRecord = existingData.FirstOrDefault(x => x.TrialNum == trialNum);
             
             if (existingRecord == null)
@@ -178,12 +178,12 @@ public static class EmissionSpectroscopyEndpoints
             existingRecord.TrialNum = trialNum;
 
             // Update the data
-            var result = await rawSqlService.UpdateEmissionSpectroscopyAsync(existingRecord);
+            var result = await emissionSpectroscopyService.UpdateEmissionSpectroscopyAsync(existingRecord);
 
             // Handle Ferrography scheduling if requested and this is trial 1
             if (updateDto.ScheduleFerrography && trialNum == 1)
             {
-                await rawSqlService.ScheduleFerrographyAsync(sampleId);
+                await emissionSpectroscopyService.ScheduleFerrographyAsync(sampleId);
                 logger.LogInformation("Ferrography scheduled for sample {SampleId}", sampleId);
             }
 
@@ -208,7 +208,7 @@ public static class EmissionSpectroscopyEndpoints
         int sampleId,
         int testId,
         int trialNum,
-        IRawSqlService rawSqlService,
+        IEmissionSpectroscopyService emissionSpectroscopyService,
         ILogger<Program> logger)
     {
         try
@@ -223,7 +223,7 @@ public static class EmissionSpectroscopyEndpoints
             }
 
             // Check if the record exists
-            var existingData = await rawSqlService.GetEmissionSpectroscopyAsync(sampleId, testId);
+            var existingData = await emissionSpectroscopyService.GetEmissionSpectroscopyAsync(sampleId, testId);
             var existingRecord = existingData.FirstOrDefault(x => x.TrialNum == trialNum);
             
             if (existingRecord == null)
@@ -234,7 +234,7 @@ public static class EmissionSpectroscopyEndpoints
             }
 
             // Delete the data
-            var result = await rawSqlService.DeleteEmissionSpectroscopyAsync(sampleId, testId, trialNum);
+            var result = await emissionSpectroscopyService.DeleteEmissionSpectroscopyAsync(sampleId, testId, trialNum);
 
             logger.LogInformation("Deleted emission spectroscopy data for sample {SampleId}, test {TestId}, trial {TrialNum}", 
                 sampleId, testId, trialNum);
@@ -251,7 +251,7 @@ public static class EmissionSpectroscopyEndpoints
 
     private static async Task<IResult> ScheduleFerrography(
         int sampleId,
-        IRawSqlService rawSqlService,
+        IEmissionSpectroscopyService emissionSpectroscopyService,
         ILogger<Program> logger)
     {
         try
@@ -259,14 +259,14 @@ public static class EmissionSpectroscopyEndpoints
             logger.LogInformation("Scheduling Ferrography for sample {SampleId}", sampleId);
 
             // Validate that the sample exists
-            var sampleExists = await rawSqlService.SampleExistsAsync(sampleId);
+            var sampleExists = await emissionSpectroscopyService.SampleExistsAsync(sampleId);
             if (!sampleExists)
             {
                 logger.LogWarning("Sample {SampleId} not found", sampleId);
                 return Results.BadRequest($"Sample {sampleId} not found");
             }
 
-            var result = await rawSqlService.ScheduleFerrographyAsync(sampleId);
+            var result = await emissionSpectroscopyService.ScheduleFerrographyAsync(sampleId);
 
             if (result > 0)
             {
